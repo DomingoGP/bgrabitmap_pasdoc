@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Class TBGRACustomFillInfo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRACustomFillInfo"></span><h1 class="cio">Class TBGRACustomFillInfo</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRACustomFillInfo = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+* Abstract class defining any shape that can be filled</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRACustomFillInfo</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#CreateIntersectionArray">CreateIntersectionArray</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#CreateIntersectionInfo">CreateIntersectionInfo</a></strong>: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#GetBounds">GetBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#GetSliceIndex">GetSliceIndex</a></strong>: integer; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#IsPointInside">IsPointInside</a></strong>(x,y: single; windingMode: boolean): boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#SegmentsCurved">SegmentsCurved</a></strong>: boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#ComputeAndSort">ComputeAndSort</a></strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; out nbInter: integer; windingMode: boolean); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFillInfo.html#FreeIntersectionArray">FreeIntersectionArray</a></strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>); virtual; abstract;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateIntersectionArray"></span><code>function <strong>CreateIntersectionArray</strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create an array that will contain computed intersections. To augment that array, use ''<a class="normal" href="BGRABitmapTypes.TBGRACustomFillInfo.html#CreateIntersectionInfo">CreateIntersectionInfo</a>'' for new items</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateIntersectionInfo"></span><code>function <strong>CreateIntersectionInfo</strong>: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create a structure to define one single intersection</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBounds"></span><code>function <strong>GetBounds</strong>: <a href="BGRAClasses.html#TRect">TRect</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns integer bounds for the shape</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSliceIndex"></span><code>function <strong>GetSliceIndex</strong>: integer; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsPointInside"></span><code>function <strong>IsPointInside</strong>(x,y: single; windingMode: boolean): boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if the <a class="normal" href="BGRAClasses.html#Point">point</a> is inside the shape</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SegmentsCurved"></span><code>function <strong>SegmentsCurved</strong>: boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns true if one segment number can represent a curve and thus cannot be considered exactly straight</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeAndSort"></span><code>procedure <strong>ComputeAndSort</strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; out nbInter: integer; windingMode: boolean); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fill an array ''inter'' with actual intersections with the shape at the y coordinate ''cury''. ''nbInter'' receives the number of computed intersections. ''windingMode'' specifies if the winding method must be used to determine what is inside of the shape</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FreeIntersectionArray"></span><code>procedure <strong>FreeIntersectionArray</strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Free an array of intersections</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

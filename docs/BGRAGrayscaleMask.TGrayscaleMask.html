@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAGrayscaleMask: Class TGrayscaleMask</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TGrayscaleMask"></span><h1 class="cio">Class TGrayscaleMask</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAGrayscaleMask.html">BGRAGrayscaleMask</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TGrayscaleMask = class(<a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html">specialize TGenericUniversalBitmap&lt;TByteMask,TByteMaskColorspace&gt;</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TGrayscaleMask</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TFPCustomImage</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a></li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html">TGenericUniversalBitmap</a></li>
+<li class="thisitem">TGrayscaleMask</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanInterpolationFilter">ScanInterpolationFilter</a></strong>: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Create">Create</a></strong>(AWidth,AHeight: Integer; AValue: byte); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Create">Create</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AChannel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CreateDownSample">CreateDownSample</a></strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; AWidth,AHeight: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CreateDownSample">CreateDownSample</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CreateDownSample">CreateDownSample</a></strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; AWidth,AHeight: integer; ASourceRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CreateDownSample">CreateDownSample</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer; ASourceRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CreateBrushTexture">CreateBrushTexture</a></strong>(ABrushStyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; APatternColor, ABackgroundColor: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; AWidth: integer = 8; AHeight: integer = 8; APenWidth: single = 1): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Duplicate">Duplicate</a></strong>(DuplicateProperties: Boolean = False): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurMotion">FilterBlurMotion</a></strong>(distance: single; angle: single; oriented: boolean): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurMotion">FilterBlurMotion</a></strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; distance: single; angle: single; oriented: boolean): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurRadial">FilterBlurRadial</a></strong>(radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurRadial">FilterBlurRadial</a></strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurRadial">FilterBlurRadial</a></strong>(radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterBlurRadial">FilterBlurRadial</a></strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterContour">FilterContour</a></strong>(ABorderValue: byte = 0): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterCustomBlur">FilterCustomBlur</a></strong>(mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterCustomBlur">FilterCustomBlur</a></strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterCylinder">FilterCylinder</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#FilterSphere">FilterSphere</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetImageBounds">GetImageBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetImageBoundsWithin">GetImageBoundsWithin</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetImageBoundsWithin">GetImageBoundsWithin</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a> = <a href="BGRABitmapTypes.html#cAlpha">cAlpha</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetPart">GetPart</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetPixel">GetPixel</a></strong>(X,Y: integer): byte; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetPixel">GetPixel</a></strong>(x, y: single; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>; smoothBorder: boolean = true): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetPixel256">GetPixel256</a></strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>; smoothBorder: boolean = true): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#GetUnique">GetUnique</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NewBitmap">NewBitmap</a></strong>(AWidth, AHeight: integer; const Color: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NewBitmap">NewBitmap</a></strong>(AWidth, AHeight: integer; AColor: Pointer): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NewBitmap">NewBitmap</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NewBitmap">NewBitmap</a></strong>(AWidth, AHeight: integer): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NewReference">NewReference</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#RotateCCW">RotateCCW</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#RotateCW">RotateCW</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#RotateUD">RotateUD</a></strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanAt">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanAtInteger">ScanAtInteger</a></strong>(X, Y: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanAtIntegerMask">ScanAtIntegerMask</a></strong>(X,Y: integer): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanAtMask">ScanAtMask</a></strong>(X,Y: Single): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#InternalGetPixel256">InternalGetPixel256</a></strong>(ix,iy: <a href="BGRAClasses.html#Int32or64">int32or64</a>; iFactX,iFactY: <a href="BGRAClasses.html#Int32or64">int32or64</a>; smoothBorder: boolean): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#InternalGetPixelCycle256">InternalGetPixelCycle256</a></strong>(ix,iy: <a href="BGRAClasses.html#Int32or64">int32or64</a>; iFactX,iFactY: <a href="BGRAClasses.html#Int32or64">int32or64</a>): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#InternalNew">InternalNew</a></strong>: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#AlphaBrush">AlphaBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CopyFrom">CopyFrom</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AChannel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CopyFrom">CopyFrom</a></strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#CopyPropertiesTo">CopyPropertiesTo</a></strong>(ABitmap: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Draw">Draw</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; AGammaCorrection: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#DrawAsAlpha">DrawAsAlpha</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#DrawAsAlpha">DrawAsAlpha</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#EraseBrush">EraseBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#InplaceNormalize">InplaceNormalize</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#InplaceNormalize">InplaceNormalize</a></strong>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#MaskBrush">MaskBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX: integer = 0; AOffsetY: integer = 0); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Negative">Negative</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#NegativeRect">NegativeRect</a></strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScannerBrush">ScannerBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AOffsetX: integer = 0; AOffsetY: integer = 0); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanNextMaskChunk">ScanNextMaskChunk</a></strong>(var ACount: integer; out AMask: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; out AStride: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#SetPixel">SetPixel</a></strong>(X,Y: integer; AValue: byte);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#SolidBrush">SolidBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; const AColor: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#AssignTransparentPixel">AssignTransparentPixel</a></strong>(out ADest); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Init">Init</a></strong>; override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#Data">Data</a></strong>: PByte read <a href="BGRABitmapTypes.TCustomUniversalBitmap.html#FDataByte">FDataByte</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGrayscaleMask.TGrayscaleMask.html#ScanLine">ScanLine</a></strong>[Y:Integer]: PByte read GetScanLine;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanInterpolationFilter"></span><code><strong>ScanInterpolationFilter</strong>: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AWidth,AHeight: Integer; AValue: byte); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AChannel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateDownSample"></span><code>constructor <strong>CreateDownSample</strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; AWidth,AHeight: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateDownSample"></span><code>constructor <strong>CreateDownSample</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateDownSample"></span><code>constructor <strong>CreateDownSample</strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; AWidth,AHeight: integer; ASourceRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateDownSample"></span><code>constructor <strong>CreateDownSample</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer; ASourceRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateBrushTexture"></span><code>function <strong>CreateBrushTexture</strong>(ABrushStyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; APatternColor, ABackgroundColor: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; AWidth: integer = 8; AHeight: integer = 8; APenWidth: single = 1): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Duplicate"></span><code>function <strong>Duplicate</strong>(DuplicateProperties: Boolean = False): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurMotion"></span><code>function <strong>FilterBlurMotion</strong>(distance: single; angle: single; oriented: boolean): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurMotion"></span><code>function <strong>FilterBlurMotion</strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; distance: single; angle: single; oriented: boolean): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterContour"></span><code>function <strong>FilterContour</strong>(ABorderValue: byte = 0): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterCustomBlur"></span><code>function <strong>FilterCustomBlur</strong>(mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterCustomBlur"></span><code>function <strong>FilterCustomBlur</strong>(const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterCylinder"></span><code>function <strong>FilterCylinder</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterSphere"></span><code>function <strong>FilterSphere</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageBounds"></span><code>function <strong>GetImageBounds</strong>: <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageBoundsWithin"></span><code>function <strong>GetImageBoundsWithin</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageBoundsWithin"></span><code>function <strong>GetImageBoundsWithin</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a> = <a href="BGRABitmapTypes.html#cAlpha">cAlpha</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPart"></span><code>function <strong>GetPart</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixel"></span><code>function <strong>GetPixel</strong>(X,Y: integer): byte; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixel"></span><code>function <strong>GetPixel</strong>(x, y: single; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>; smoothBorder: boolean = true): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixel256"></span><code>function <strong>GetPixel256</strong>(x, y, fracX256,fracY256: <a href="BGRAClasses.html#Int32or64">int32or64</a>; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>; smoothBorder: boolean = true): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetUnique"></span><code>function <strong>GetUnique</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap"></span><code>function <strong>NewBitmap</strong>(AWidth, AHeight: integer; const Color: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap"></span><code>function <strong>NewBitmap</strong>(AWidth, AHeight: integer; AColor: Pointer): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap"></span><code>function <strong>NewBitmap</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+return type helpers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap"></span><code>function <strong>NewBitmap</strong>(AWidth, AHeight: integer): <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewReference"></span><code>function <strong>NewReference</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateCCW"></span><code>function <strong>RotateCCW</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateCW"></span><code>function <strong>RotateCW</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateUD"></span><code>function <strong>RotateUD</strong>: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAt"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtInteger"></span><code>function <strong>ScanAtInteger</strong>(X, Y: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtIntegerMask"></span><code>function <strong>ScanAtIntegerMask</strong>(X,Y: integer): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtMask"></span><code>function <strong>ScanAtMask</strong>(X,Y: Single): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalGetPixel256"></span><code>function <strong>InternalGetPixel256</strong>(ix,iy: <a href="BGRAClasses.html#Int32or64">int32or64</a>; iFactX,iFactY: <a href="BGRAClasses.html#Int32or64">int32or64</a>; smoothBorder: boolean): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalGetPixelCycle256"></span><code>function <strong>InternalGetPixelCycle256</strong>(ix,iy: <a href="BGRAClasses.html#Int32or64">int32or64</a>; iFactX,iFactY: <a href="BGRAClasses.html#Int32or64">int32or64</a>): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalNew"></span><code>function <strong>InternalNew</strong>: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AlphaBrush"></span><code>class procedure <strong>AlphaBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyFrom"></span><code>procedure <strong>CopyFrom</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AChannel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyFrom"></span><code>procedure <strong>CopyFrom</strong>(ABitmap: <a href="BGRAGrayscaleMask.TGrayscaleMask.html">TGrayscaleMask</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyPropertiesTo"></span><code>procedure <strong>CopyPropertiesTo</strong>(ABitmap: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Draw"></span><code>procedure <strong>Draw</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; AGammaCorrection: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawAsAlpha"></span><code>procedure <strong>DrawAsAlpha</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawAsAlpha"></span><code>procedure <strong>DrawAsAlpha</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; X,Y: Integer; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EraseBrush"></span><code>class procedure <strong>EraseBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InplaceNormalize"></span><code>procedure <strong>InplaceNormalize</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InplaceNormalize"></span><code>procedure <strong>InplaceNormalize</strong>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaskBrush"></span><code>class procedure <strong>MaskBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX: integer = 0; AOffsetY: integer = 0); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Negative"></span><code>procedure <strong>Negative</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+inplace filters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NegativeRect"></span><code>procedure <strong>NegativeRect</strong>(ABounds: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScannerBrush"></span><code>class procedure <strong>ScannerBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AOffsetX: integer = 0; AOffsetY: integer = 0); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextMaskChunk"></span><code>procedure <strong>ScanNextMaskChunk</strong>(var ACount: integer; out AMask: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; out AStride: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPixel"></span><code>procedure <strong>SetPixel</strong>(X,Y: integer; AValue: byte);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolidBrush"></span><code>class procedure <strong>SolidBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; const AColor: <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AssignTransparentPixel"></span><code>procedure <strong>AssignTransparentPixel</strong>(out ADest); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Data"></span><code>property <strong>Data</strong>: PByte read <a href="BGRABitmapTypes.TCustomUniversalBitmap.html#FDataByte">FDataByte</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanLine"></span><code>property <strong>ScanLine</strong>[Y:Integer]: PByte read GetScanLine;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

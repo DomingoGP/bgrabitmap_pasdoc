@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAFilters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAFilters</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRAFilterType.html">BGRAFilterType</a></li><li><a href="BGRAFilterBlur.html">BGRAFilterBlur</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAFilters.TGrayscaleTask.html"><code>TGrayscaleTask</code></a></td>
+<td class="itemdesc">Grayscale converts colored pixel into grayscale with same luminosity</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateBlurTask">CreateBlurTask</a></strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AMaskIsThreadSafe: boolean = false): <a href="BGRAFilters.html#TFilterTask">TFilterTask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateGrayscaleTask">CreateGrayscaleTask</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAFilters.html#TFilterTask">TFilterTask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateMotionBlurTask">CreateMotionBlurTask</a></strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ADistance,AAngle: single; AOriented: boolean): <a href="BGRAFilters.html#TMotionBlurTask">TMotionBlurTask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateRadialBlurTask">CreateRadialBlurTask</a></strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadius: single; ABlurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateRadialBlurTask">CreateRadialBlurTask</a></strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadiusX,ARadiusY: single; ABlurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#CreateRadialPreciseBlurTask">CreateRadialPreciseBlurTask</a></strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadius: single): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; deprecated 'Use CreateRadialBlurTask with blurType:=rbPrecise and radius multiplied by 10';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterBlur">FilterBlur</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AMaskIsThreadSafe: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterBlurMotion">FilterBlurMotion</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; distance: single; angle: single; oriented: boolean): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterBlurRadial">FilterBlurRadial</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterBlurRadial">FilterBlurRadial</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radiusX: single; radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterBlurRadialPrecise">FilterBlurRadialPrecise</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radius: single): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; deprecated 'Use FilterBlurRadial with blurType:=rbPrecise and radius multiplied by 10';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterContour">FilterContour</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AGammaCorrection: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterCylinder">FilterCylinder</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterEmboss">FilterEmboss</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; angle: single; AStrength: integer= 64; AOptions: <a href="BGRABitmapTypes.html#TEmbossOptions">TEmbossOptions</a> = []): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterEmboss">FilterEmboss</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; angle: single; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AStrength: integer= 64; AOptions: <a href="BGRABitmapTypes.html#TEmbossOptions">TEmbossOptions</a> = []): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterEmbossHighlight">FilterEmbossHighlight</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; FillSelection: boolean; DefineBorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterEmbossHighlightOffset">FilterEmbossHighlightOffset</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; FillSelection: boolean; DefineBorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; var Offset: <a href="BGRAClasses.html#TPoint">TPoint</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterGrayscale">FilterGrayscale</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterGrayscale">FilterGrayscale</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterMedian">FilterMedian</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Option: <a href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterNormalize">FilterNormalize</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterNormalize">FilterNormalize</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; eachChannel: boolean = True): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterPixelate">FilterPixelate</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; pixelSize: integer; useResample: boolean; filter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterPlane">FilterPlane</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterRotate">FilterRotate</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; origin: <a href="BGRAClasses.html#TPointF">TPointF</a>; angle: single; correctBlur: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterSharpen">FilterSharpen</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AAmount: integer = 256): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterSharpen">FilterSharpen</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAmount: integer = 256): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterSmartZoom3">FilterSmartZoom3</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Option: <a href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterSphere">FilterSphere</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterTwirl">FilterTwirl</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAFilters.html#FilterTwirl">FilterTwirl</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAFilters.html#TFilterTask">TFilterTask</a></strong> = <a href="BGRAFilterType.TFilterTask.html">BGRAFilterType.TFilterTask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAFilters.html#TMotionBlurTask">TMotionBlurTask</a></strong> = <a href="BGRAFilterBlur.TMotionBlurTask.html">BGRAFilterBlur.TMotionBlurTask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a></strong> = <a href="BGRAFilterBlur.TRadialBlurTask.html">BGRAFilterBlur.TRadialBlurTask</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateBlurTask"></span><code>function <strong>CreateBlurTask</strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AMaskIsThreadSafe: boolean = false): <a href="BGRAFilters.html#TFilterTask">TFilterTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateGrayscaleTask"></span><code>function <strong>CreateGrayscaleTask</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAFilters.html#TFilterTask">TFilterTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateMotionBlurTask"></span><code>function <strong>CreateMotionBlurTask</strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ADistance,AAngle: single; AOriented: boolean): <a href="BGRAFilters.html#TMotionBlurTask">TMotionBlurTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRadialBlurTask"></span><code>function <strong>CreateRadialBlurTask</strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadius: single; ABlurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRadialBlurTask"></span><code>function <strong>CreateRadialBlurTask</strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadiusX,ARadiusY: single; ABlurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRadialPreciseBlurTask"></span><code>function <strong>CreateRadialPreciseBlurTask</strong>(ABmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ARadius: single): <a href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a>; deprecated 'Use CreateRadialBlurTask with blurType:=rbPrecise and radius multiplied by 10';</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated: Use CreateRadialBlurTask with blurType:=rbPrecise and radius multiplied by 10</p>&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterBlur"></span><code>function <strong>FilterBlur</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AMaskIsThreadSafe: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+General purpose blur filter, with a blur mask as parameter to describe how pixels influence each other</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterBlurMotion"></span><code>function <strong>FilterBlurMotion</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; distance: single; angle: single; oriented: boolean): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radius: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>function <strong>FilterBlurRadial</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radiusX: single; radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterBlurRadialPrecise"></span><code>function <strong>FilterBlurRadialPrecise</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; radius: single): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; deprecated 'Use FilterBlurRadial with blurType:=rbPrecise and radius multiplied by 10';</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated: Use FilterBlurRadial with blurType:=rbPrecise and radius multiplied by 10</p><p>
+The precise blur allow to specify the blur radius with subpixel accuracy</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterContour"></span><code>function <strong>FilterContour</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AGammaCorrection: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compute a contour, as if the image was drawn with a 2 pixels-wide black pencil</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterCylinder"></span><code>function <strong>FilterCylinder</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Distort the image as if it were on a vertical cylinder</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterEmboss"></span><code>function <strong>FilterEmboss</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; angle: single; AStrength: integer= 64; AOptions: <a href="BGRABitmapTypes.html#TEmbossOptions">TEmbossOptions</a> = []): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Emboss filter compute a color difference in the angle direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterEmboss"></span><code>function <strong>FilterEmboss</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; angle: single; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AStrength: integer= 64; AOptions: <a href="BGRABitmapTypes.html#TEmbossOptions">TEmbossOptions</a> = []): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterEmbossHighlight"></span><code>function <strong>FilterEmbossHighlight</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; FillSelection: boolean; DefineBorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Emboss highlight computes a sort of emboss with 45 degrees angle and with standard selection color (white/black and filled with blue)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterEmbossHighlightOffset"></span><code>function <strong>FilterEmbossHighlightOffset</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; FillSelection: boolean; DefineBorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; var Offset: <a href="BGRAClasses.html#TPoint">TPoint</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterGrayscale"></span><code>function <strong>FilterGrayscale</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Grayscale converts colored pixel into grayscale with same luminosity</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterGrayscale"></span><code>function <strong>FilterGrayscale</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterMedian"></span><code>function <strong>FilterMedian</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Option: <a href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+The median filter consist in calculating the median value of pixels. Here a square of 9x9 pixel is considered. The median allow to select the most representative colors. The option parameter allow to choose to smooth the result or not.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterNormalize"></span><code>function <strong>FilterNormalize</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; eachChannel: boolean = True): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterNormalize"></span><code>function <strong>FilterNormalize</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; eachChannel: boolean = True): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Normalize use the whole available range of values, making dark colors darkest possible and light colors lightest possible</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterPixelate"></span><code>function <strong>FilterPixelate</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; pixelSize: integer; useResample: boolean; filter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterPlane"></span><code>function <strong>FilterPlane</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compute a plane projection towards infinity (SLOW)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterRotate"></span><code>function <strong>FilterRotate</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; origin: <a href="BGRAClasses.html#TPointF">TPointF</a>; angle: single; correctBlur: boolean = false): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Rotate filter rotate the image and clip it in the bounding rectangle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterSharpen"></span><code>function <strong>FilterSharpen</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; AAmount: integer = 256): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterSharpen"></span><code>function <strong>FilterSharpen</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAmount: integer = 256): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sharpen filter add more contrast between pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterSmartZoom3"></span><code>function <strong>FilterSmartZoom3</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; Option: <a href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+SmartZoom x3 is a filter that upsizes 3 times the picture and add pixels that could be logically expected (horizontal, vertical, diagonal lines)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterSphere"></span><code>function <strong>FilterSphere</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Distort the image as if it were on a sphere</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterTwirl"></span><code>function <strong>FilterTwirl</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Twirl distortion, i.e. a progressive rotation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FilterTwirl"></span><code>function <strong>FilterTwirl</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; ACenter: <a href="BGRAClasses.html#TPoint">TPoint</a>; ARadius: Single; ATurn: Single=1; AExponent: Single=3): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFilterTask"></span><code><strong>TFilterTask</strong> = <a href="BGRAFilterType.TFilterTask.html">BGRAFilterType.TFilterTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMotionBlurTask"></span><code><strong>TMotionBlurTask</strong> = <a href="BGRAFilterBlur.TMotionBlurTask.html">BGRAFilterBlur.TMotionBlurTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Motion blur merge pixels in a direction. The oriented parameter specifies if the weights of the pixels are the same along the line or not.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRadialBlurTask"></span><code><strong>TRadialBlurTask</strong> = <a href="BGRAFilterBlur.TRadialBlurTask.html">BGRAFilterBlur.TRadialBlurTask</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A radial blur applies a blur with a circular influence, i.e, each pixel is merged with pixels within the specified radius. There is an exception with <a class="normal" href="BGRABitmapTypes.html#rbFast">rbFast</a> blur, the optimization entails a hyperbolic shape.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

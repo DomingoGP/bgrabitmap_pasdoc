@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Class TBGRAColorList</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAColorList"></span><h1 class="cio">Class TBGRAColorList</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAColorList = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+* Contains a fixed list of colors</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRAColorList</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAColorList.html#FColors">FColors</a></strong>: array of <a href="BGRABitmapTypes.TBGRAColorDefinition.html">TBGRAColorDefinition</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAColorList.html#FFinished">FFinished</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRAColorList.html#FNbColors">FNbColors</a></strong>: integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAColorList.html#IndexOf">IndexOf</a></strong>(Name: string): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAColorList.html#IndexOfColor">IndexOfColor</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AMaxDiff: Word = 0): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAColorList.html#GetByIndex">GetByIndex</a></strong>(Index: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAColorList.html#GetByName">GetByName</a></strong>(Name: string): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRAColorList.html#GetName">GetName</a></strong>(Index: integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Add">Add</a></strong>(Name: string; const Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Finished">Finished</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Add">Add</a></strong>(Name: string; out Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; red,green,blue: byte); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAColorList.html#ByIndex">ByIndex</a></strong>[Index:integer]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRABitmapTypes.TBGRAColorList.html#GetByIndex">GetByIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAColorList.html#ByName">ByName</a></strong>[Name:string]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRABitmapTypes.TBGRAColorList.html#GetByName">GetByName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Count">Count</a></strong>: integer read <a href="BGRABitmapTypes.TBGRAColorList.html#FNbColors">FNbColors</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRAColorList.html#Name">Name</a></strong>[Index:integer]: string read <a href="BGRABitmapTypes.TBGRAColorList.html#GetName">GetName</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FColors"></span><code><strong>FColors</strong>: array of <a href="BGRABitmapTypes.TBGRAColorDefinition.html">TBGRAColorDefinition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFinished"></span><code><strong>FFinished</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FNbColors"></span><code><strong>FNbColors</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an empty color list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOf"></span><code>function <strong>IndexOf</strong>(Name: string): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the index of a color with a given <a class="normal" href="BGRABitmapTypes.TBGRAColorList.html#Name">name</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOfColor"></span><code>function <strong>IndexOfColor</strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AMaxDiff: Word = 0): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the index of a color. Colors are considered to match if the difference is less than or equal to ''AMaxDiff''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetByIndex"></span><code>function <strong>GetByIndex</strong>(Index: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetByName"></span><code>function <strong>GetByName</strong>(Name: string): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetName"></span><code>function <strong>GetName</strong>(Index: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(Name: string; const Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>Add</code> a color to the list</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Finished"></span><code>procedure <strong>Finished</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Ends the color list and prevents further modifications</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(Name: string; out Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; red,green,blue: byte); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByIndex"></span><code>property <strong>ByIndex</strong>[Index:integer]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRABitmapTypes.TBGRAColorList.html#GetByIndex">GetByIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the color at the specified index</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByName"></span><code>property <strong>ByName</strong>[Name:string]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRABitmapTypes.TBGRAColorList.html#GetByName">GetByName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the color associated with a color <a class="normal" href="BGRABitmapTypes.TBGRAColorList.html#Name">name</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Count"></span><code>property <strong>Count</strong>: integer read <a href="BGRABitmapTypes.TBGRAColorList.html#FNbColors">FNbColors</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the number of colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>[Index:integer]: string read <a href="BGRABitmapTypes.TBGRAColorList.html#GetName">GetName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Gets the <code>name</code> of the color at the specified index</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRALayerOriginal: Class TBGRALayerCustomOriginal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRALayerCustomOriginal"></span><h1 class="cio">Class TBGRALayerCustomOriginal</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRALayerOriginal.html">BGRALayerOriginal</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRALayerCustomOriginal = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRALayerCustomOriginal</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRALayerCustomOriginal</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#FGuid">FGuid</a></strong>: TGuid;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Create">Create</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#CanConvertToSVG">CanConvertToSVG</a></strong>: boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#ConvertToSVG">ConvertToSVG</a></strong>(const AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): TObject; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#CreateEditor">CreateEditor</a></strong>: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Duplicate">Duplicate</a></strong>: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#GetRenderBounds">GetRenderBounds</a></strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#IsInfiniteSurface">IsInfiniteSurface</a></strong>: boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#StorageClassName">StorageClassName</a></strong>: RawByteString; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#GetGuid">GetGuid</a></strong>: TGuid;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#ConfigureEditor">ConfigureEditor</a></strong>(AEditor: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#LoadFromFile">LoadFromFile</a></strong>(AFilenameUTF8: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#LoadFromResource">LoadFromResource</a></strong>(AFilename: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#LoadFromStorage">LoadFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#LoadFromStream">LoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Render">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARenderOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Render">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SaveToFile">SaveToFile</a></strong>(AFilenameUTF8: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SaveToStorage">SaveToStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SaveToStream">SaveToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#NotifyChange">NotifyChange</a></strong>(ABounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a> = nil); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#NotifyChange">NotifyChange</a></strong>(ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a> = nil); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#NotifyEditorChange">NotifyEditorChange</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SetGuid">SetGuid</a></strong>(AValue: TGuid);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#DiffExpected">DiffExpected</a></strong>: boolean read GetDiffExpected;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Guid">Guid</a></strong>: TGuid read <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#GetGuid">GetGuid</a> write <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SetGuid">SetGuid</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#OnChange">OnChange</a></strong>: <a href="BGRALayerOriginal.html#TOriginalChangeEvent">TOriginalChangeEvent</a> read FOnChange write SetOnChange;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#OnEditingChange">OnEditingChange</a></strong>: <a href="BGRALayerOriginal.html#TOriginalEditingChangeEvent">TOriginalEditingChangeEvent</a> read FOnEditingChange write FOnEditingChange;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#RenderStorage">RenderStorage</a></strong>: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a> read FRenderStorage write SetRenderStorage;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGuid"></span><code><strong>FGuid</strong>: TGuid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CanConvertToSVG"></span><code>class function <strong>CanConvertToSVG</strong>: boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToSVG"></span><code>function <strong>ConvertToSVG</strong>(const AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): TObject; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateEditor"></span><code>function <strong>CreateEditor</strong>: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Duplicate"></span><code>function <strong>Duplicate</strong>: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRenderBounds"></span><code>function <strong>GetRenderBounds</strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsInfiniteSurface"></span><code>function <strong>IsInfiniteSurface</strong>: boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageClassName"></span><code>class function <strong>StorageClassName</strong>: RawByteString; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGuid"></span><code>function <strong>GetGuid</strong>: TGuid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConfigureEditor"></span><code>procedure <strong>ConfigureEditor</strong>(AEditor: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>procedure <strong>LoadFromFile</strong>(AFilenameUTF8: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>procedure <strong>LoadFromResource</strong>(AFilename: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStorage"></span><code>procedure <strong>LoadFromStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <strong>Render</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARenderOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <strong>Render</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+one of the two <a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#Render">Render</a> functions must be overriden</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>procedure <strong>SaveToFile</strong>(AFilenameUTF8: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStorage"></span><code>procedure <strong>SaveToStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NotifyChange"></span><code>procedure <strong>NotifyChange</strong>(ABounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a> = nil); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NotifyChange"></span><code>procedure <strong>NotifyChange</strong>(ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a> = nil); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NotifyEditorChange"></span><code>procedure <strong>NotifyEditorChange</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetGuid"></span><code>procedure <strong>SetGuid</strong>(AValue: TGuid);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DiffExpected"></span><code>property <strong>DiffExpected</strong>: boolean read GetDiffExpected;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Guid"></span><code>property <strong>Guid</strong>: TGuid read <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#GetGuid">GetGuid</a> write <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html#SetGuid">SetGuid</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnChange"></span><code>property <strong>OnChange</strong>: <a href="BGRALayerOriginal.html#TOriginalChangeEvent">TOriginalChangeEvent</a> read FOnChange write SetOnChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnEditingChange"></span><code>property <strong>OnEditingChange</strong>: <a href="BGRALayerOriginal.html#TOriginalEditingChangeEvent">TOriginalEditingChangeEvent</a> read FOnEditingChange write FOnEditingChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderStorage"></span><code>property <strong>RenderStorage</strong>: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a> read FRenderStorage write SetRenderStorage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

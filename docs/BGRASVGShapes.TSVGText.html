@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGShapes: Class TSVGText</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TSVGText"></span><h1 class="cio">Class TSVGText</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGShapes.html">BGRASVGShapes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSVGText = class(<a class="normal" href="BGRASVGShapes.TSVGTextPositioning.html">TSVGTextPositioning</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TSVGText</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRASVGType.TSVGCustomElement.html">TSVGCustomElement</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGType.TSVGElement.html">TSVGElement</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGShapes.TSVGElementWithGradient.html">TSVGElementWithGradient</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGShapes.TSVGTextElement.html">TSVGTextElement</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGShapes.TSVGTextElementWithContent.html">TSVGTextElementWithContent</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGShapes.TSVGTextPositioning.html">TSVGTextPositioning</a></li>
+<li class="thisitem">TSVGText</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGShapes.TSVGText.html#GetDOMTag">GetDOMTag</a></strong>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGText.html#GetAllText">GetAllText</a></strong>(AInheritedRotation: single): <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGText.html#GetTRefContent">GetTRefContent</a></strong>(AElement: <a href="BGRASVGShapes.TSVGTRef.html">TSVGTRef</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#ConvertToUnit">ConvertToUnit</a></strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#CleanText">CleanText</a></strong>(var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#InternalDraw">InternalDraw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#InternalDrawOrCompute">InternalDrawOrCompute</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>; ALevel: integer; AStartPart, AEndPart: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#InternalDrawOrCompute">InternalDrawOrCompute</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGText.html#InternalDrawOrComputePart">InternalDrawOrComputePart</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; AText: string; APosUnicode: integer; AInheritedRotation: single; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; out ABounds: <a href="BGRAClasses.html#TRectF">TRectF</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontBold">fontBold</a></strong>: boolean read GetFontBold write SetFontBold;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontFamily">fontFamily</a></strong>: string read GetFontFamily write SetFontFamily;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontFamilyList">fontFamilyList</a></strong>: <a href="BGRACanvas2D.html#ArrayOfString">ArrayOfString</a> read GetFontFamilyList write SetFontFamilyList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontItalic">fontItalic</a></strong>: boolean read GetFontItalic write SetFontItalic;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontSize">fontSize</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetFontSize write SetFontSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontStyle">fontStyle</a></strong>: string read GetFontStyle write SetFontStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontStyleLCL">fontStyleLCL</a></strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> read GetFontStyleLCL write SetFontStyleLCL;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#fontWeight">fontWeight</a></strong>: string read GetFontWeight write SetFontWeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#lengthAdjust">lengthAdjust</a></strong>: <a href="BGRASVGType.html#TSVGLengthAdjust">TSVGLengthAdjust</a> read GetLengthAdjust write SetLengthAdjust;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#SimpleText">SimpleText</a></strong>: string read GetSimpleText write SetSimpleText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#textAnchor">textAnchor</a></strong>: <a href="BGRASVGType.html#TSVGTextAnchor">TSVGTextAnchor</a> read GetTextAnchor write SetTextAnchor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#textDecoration">textDecoration</a></strong>: string read GetTextDecoration write SetTextDecoration;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#textDirection">textDirection</a></strong>: <a href="BGRASVGType.html#TSVGTextDirection">TSVGTextDirection</a> read GetTextDirection write SetTextDirection;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGText.html#textLength">textLength</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetTextLength write SetTextLength;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDOMTag"></span><code>class function <strong>GetDOMTag</strong>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAllText"></span><code>function <strong>GetAllText</strong>(AInheritedRotation: single): <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTRefContent"></span><code>function <strong>GetTRefContent</strong>(AElement: <a href="BGRASVGShapes.TSVGTRef.html">TSVGTRef</a>): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToUnit"></span><code>procedure <strong>ConvertToUnit</strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CleanText"></span><code>procedure <strong>CleanText</strong>(var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDraw"></span><code>procedure <strong>InternalDraw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDrawOrCompute"></span><code>procedure <strong>InternalDrawOrCompute</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>; ALevel: integer; AStartPart, AEndPart: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDrawOrCompute"></span><code>procedure <strong>InternalDrawOrCompute</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; var ATextParts: <a href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDrawOrComputePart"></span><code>procedure <strong>InternalDrawOrComputePart</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; AText: string; APosUnicode: integer; AInheritedRotation: single; ADraw: boolean; AAllTextBounds: <a href="BGRAClasses.html#TRectF">TRectF</a>; var APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; out ABounds: <a href="BGRAClasses.html#TRectF">TRectF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontBold"></span><code>property <strong>fontBold</strong>: boolean read GetFontBold write SetFontBold;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontFamily"></span><code>property <strong>fontFamily</strong>: string read GetFontFamily write SetFontFamily;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontFamilyList"></span><code>property <strong>fontFamilyList</strong>: <a href="BGRACanvas2D.html#ArrayOfString">ArrayOfString</a> read GetFontFamilyList write SetFontFamilyList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontItalic"></span><code>property <strong>fontItalic</strong>: boolean read GetFontItalic write SetFontItalic;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontSize"></span><code>property <strong>fontSize</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetFontSize write SetFontSize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontStyle"></span><code>property <strong>fontStyle</strong>: string read GetFontStyle write SetFontStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontStyleLCL"></span><code>property <strong>fontStyleLCL</strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> read GetFontStyleLCL write SetFontStyleLCL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fontWeight"></span><code>property <strong>fontWeight</strong>: string read GetFontWeight write SetFontWeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="lengthAdjust"></span><code>property <strong>lengthAdjust</strong>: <a href="BGRASVGType.html#TSVGLengthAdjust">TSVGLengthAdjust</a> read GetLengthAdjust write SetLengthAdjust;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SimpleText"></span><code>property <strong>SimpleText</strong>: string read GetSimpleText write SetSimpleText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="textAnchor"></span><code>property <strong>textAnchor</strong>: <a href="BGRASVGType.html#TSVGTextAnchor">TSVGTextAnchor</a> read GetTextAnchor write SetTextAnchor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="textDecoration"></span><code>property <strong>textDecoration</strong>: string read GetTextDecoration write SetTextDecoration;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="textDirection"></span><code>property <strong>textDirection</strong>: <a href="BGRASVGType.html#TSVGTextDirection">TSVGTextDirection</a> read GetTextDirection write SetTextDirection;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="textLength"></span><code>property <strong>textLength</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetTextLength write SetTextLength;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

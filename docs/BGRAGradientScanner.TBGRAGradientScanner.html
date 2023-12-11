@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAGradientScanner: Class TBGRAGradientScanner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAGradientScanner"></span><h1 class="cio">Class TBGRAGradientScanner</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAGradientScanner.html">BGRAGradientScanner</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAGradientScanner = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomScanner.html">TBGRACustomScanner</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAGradientScanner</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a></li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomScanner.html">TBGRACustomScanner</a></li>
+<li class="thisitem">TBGRAGradientScanner</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FAverageColor">FAverageColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FAverageExpandedColor">FAverageExpandedColor</a></strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FDir1">FDir1</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FDir2">FDir2</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFlipGradient">FFlipGradient</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFocalDirection">FFocalDirection</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFocalDistance">FFocalDistance</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFocalNormal">FFocalNormal</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFocalRadius">FFocalRadius</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGetGradientColor">FGetGradientColor</a></strong>: <a href="BGRABitmapTypes.html#TBGRAGradientGetColorAtFloatFunc">TBGRAGradientGetColorAtFloatFunc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGetGradientExpandedColor">FGetGradientExpandedColor</a></strong>: <a href="BGRABitmapTypes.html#TBGRAGradientGetExpandedColorAtFloatFunc">TBGRAGradientGetExpandedColorAtFloatFunc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGradient">FGradient</a></strong>: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGradientOwner">FGradientOwner</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGradientType">FGradientType</a></strong>: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FHiddenTransform">FHiddenTransform</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FHorizColor">FHorizColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FHorizExpandedColor">FHorizExpandedColor</a></strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FIsAverage">FIsAverage</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FMatrix">FMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FOrigin">FOrigin</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FPosition">FPosition</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FRadialDeltaSign">FRadialDeltaSign</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FRadialDenominator">FRadialDenominator</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FRadius">FRadius</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FRelativeFocal">FRelativeFocal</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FRepeatHoriz">FRepeatHoriz</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FScanAtFunc">FScanAtFunc</a></strong>: <a href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanAtFunc">TBGRAGradientScannerInternalScanAtFunc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FScanNextFunc">FScanNextFunc</a></strong>: <a href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanNextFunc">TBGRAGradientScannerInternalScanNextFunc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FSinus">FSinus</a></strong>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FTransform">FTransform</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#maxW1">maxW1</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#maxW2">maxW2</a></strong>: single;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Sinus: Boolean=False; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Sinus: Boolean=False; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(AOrigin, d1, d2, AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadiusRatio: single = 1; AFocalRadiusRatio: single = 0); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Create">Create</a></strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#IsScanPutPixelsDefined">IsScanPutPixelsDefined</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAt">ScanAt</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtExpanded">ScanAtExpanded</a></strong>(X, Y: Single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextExpandedPixel">ScanNextExpandedPixel</a></strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextPixel">ScanNextPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ComputeRadialFocal">ComputeRadialFocal</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientColor">GetGradientColor</a></strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientColorFlipped">GetGradientColorFlipped</a></strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientColorSinus">GetGradientColorSinus</a></strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientExpandedColor">GetGradientExpandedColor</a></strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientExpandedColorFlipped">GetGradientExpandedColorFlipped</a></strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#GetGradientExpandedColorSinus">GetGradientExpandedColorSinus</a></strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtAngular">ScanAtAngular</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtDiamond">ScanAtDiamond</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtLinear">ScanAtLinear</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtRadial">ScanAtRadial</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtRadial2">ScanAtRadial2</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtRadialFocal">ScanAtRadialFocal</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanAtReflected">ScanAtReflected</a></strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextAngular">ScanNextAngular</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextDiamond">ScanNextDiamond</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextExpandedInline">ScanNextExpandedInline</a></strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextInline">ScanNextInline</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextLinear">ScanNextLinear</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextRadial">ScanNextRadial</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextRadial2">ScanNextRadial2</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextRadialFocal">ScanNextRadialFocal</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanNextReflected">ScanNextReflected</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanMoveTo">ScanMoveTo</a></strong>(X, Y: Integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanPutPixels">ScanPutPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#ScanSkipPixels">ScanSkipPixels</a></strong>(ACount: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetGradient">SetGradient</a></strong>(AGradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AOwner: boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetGradient">SetGradient</a></strong>(c1,c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGammaCorrection: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Init">Init</a></strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Init">Init</a></strong>(AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AHiddenTransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Init">Init</a></strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#InitGradient">InitGradient</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#InitGradientType">InitGradientType</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#InitTransform">InitTransform</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetFlipGradient">SetFlipGradient</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetSinus">SetSinus</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetTransform">SetTransform</a></strong>(AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#UpdateGetGradientColorFunctions">UpdateGetGradientColorFunctions</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#FlipGradient">FlipGradient</a></strong>: boolean read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFlipGradient">FFlipGradient</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetFlipGradient">SetFlipGradient</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Gradient">Gradient</a></strong>: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a> read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGradient">FGradient</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Sinus">Sinus</a></strong>: boolean Read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FSinus">FSinus</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetSinus">SetSinus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAGradientScanner.TBGRAGradientScanner.html#Transform">Transform</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FTransform">FTransform</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetTransform">SetTransform</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAverageColor"></span><code><strong>FAverageColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAverageExpandedColor"></span><code><strong>FAverageExpandedColor</strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDir1"></span><code><strong>FDir1</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDir2"></span><code><strong>FDir2</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFlipGradient"></span><code><strong>FFlipGradient</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFocalDirection"></span><code><strong>FFocalDirection</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFocalDistance"></span><code><strong>FFocalDistance</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFocalNormal"></span><code><strong>FFocalNormal</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFocalRadius"></span><code><strong>FFocalRadius</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGetGradientColor"></span><code><strong>FGetGradientColor</strong>: <a href="BGRABitmapTypes.html#TBGRAGradientGetColorAtFloatFunc">TBGRAGradientGetColorAtFloatFunc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGetGradientExpandedColor"></span><code><strong>FGetGradientExpandedColor</strong>: <a href="BGRABitmapTypes.html#TBGRAGradientGetExpandedColorAtFloatFunc">TBGRAGradientGetExpandedColorAtFloatFunc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGradient"></span><code><strong>FGradient</strong>: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGradientOwner"></span><code><strong>FGradientOwner</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGradientType"></span><code><strong>FGradientType</strong>: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHiddenTransform"></span><code><strong>FHiddenTransform</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHorizColor"></span><code><strong>FHorizColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHorizExpandedColor"></span><code><strong>FHorizExpandedColor</strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FIsAverage"></span><code><strong>FIsAverage</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMatrix"></span><code><strong>FMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOrigin"></span><code><strong>FOrigin</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPosition"></span><code><strong>FPosition</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRadialDeltaSign"></span><code><strong>FRadialDeltaSign</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRadialDenominator"></span><code><strong>FRadialDenominator</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRadius"></span><code><strong>FRadius</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRelativeFocal"></span><code><strong>FRelativeFocal</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRepeatHoriz"></span><code><strong>FRepeatHoriz</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FScanAtFunc"></span><code><strong>FScanAtFunc</strong>: <a href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanAtFunc">TBGRAGradientScannerInternalScanAtFunc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FScanNextFunc"></span><code><strong>FScanNextFunc</strong>: <a href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanNextFunc">TBGRAGradientScannerInternalScanNextFunc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSinus"></span><code><strong>FSinus</strong>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTransform"></span><code><strong>FTransform</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="maxW1"></span><code><strong>maxW1</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="maxW2"></span><code><strong>maxW2</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; gammaColorCorrection: boolean = True; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Sinus: Boolean=False; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Sinus: Boolean=False; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AOrigin, d1, d2, AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadiusRatio: single = 1; AFocalRadiusRatio: single = 0); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(gradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single; AGradientOwner: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsScanPutPixelsDefined"></span><code>function <strong>IsScanPutPixelsDefined</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAt"></span><code>function <strong>ScanAt</strong>(X, Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtExpanded"></span><code>function <strong>ScanAtExpanded</strong>(X, Y: Single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextExpandedPixel"></span><code>function <strong>ScanNextExpandedPixel</strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextPixel"></span><code>function <strong>ScanNextPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeRadialFocal"></span><code>function <strong>ComputeRadialFocal</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientColor"></span><code>function <strong>GetGradientColor</strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientColorFlipped"></span><code>function <strong>GetGradientColorFlipped</strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientColorSinus"></span><code>function <strong>GetGradientColorSinus</strong>(a: single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientExpandedColor"></span><code>function <strong>GetGradientExpandedColor</strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientExpandedColorFlipped"></span><code>function <strong>GetGradientExpandedColorFlipped</strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGradientExpandedColorSinus"></span><code>function <strong>GetGradientExpandedColorSinus</strong>(a: single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtAngular"></span><code>function <strong>ScanAtAngular</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtDiamond"></span><code>function <strong>ScanAtDiamond</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtLinear"></span><code>function <strong>ScanAtLinear</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtRadial"></span><code>function <strong>ScanAtRadial</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtRadial2"></span><code>function <strong>ScanAtRadial2</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtRadialFocal"></span><code>function <strong>ScanAtRadialFocal</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanAtReflected"></span><code>function <strong>ScanAtReflected</strong>(const p: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextAngular"></span><code>function <strong>ScanNextAngular</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextDiamond"></span><code>function <strong>ScanNextDiamond</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextExpandedInline"></span><code>function <strong>ScanNextExpandedInline</strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextInline"></span><code>function <strong>ScanNextInline</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextLinear"></span><code>function <strong>ScanNextLinear</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextRadial"></span><code>function <strong>ScanNextRadial</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextRadial2"></span><code>function <strong>ScanNextRadial2</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextRadialFocal"></span><code>function <strong>ScanNextRadialFocal</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ScanNextReflected"></span><code>function <strong>ScanNextReflected</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanMoveTo"></span><code>procedure <strong>ScanMoveTo</strong>(X, Y: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanPutPixels"></span><code>procedure <strong>ScanPutPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanSkipPixels"></span><code>procedure <strong>ScanSkipPixels</strong>(ACount: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetGradient"></span><code>procedure <strong>SetGradient</strong>(AGradient: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a>; AOwner: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetGradient"></span><code>procedure <strong>SetGradient</strong>(c1,c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AGammaCorrection: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1, d2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(AOrigin: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ARadius: single; AFocal: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AFocalRadius: single; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AHiddenTransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(AGradientType: <a href="BGRABitmapTypes.html#TGradientType">TGradientType</a>; AOrigin, d1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ATransform: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; Sinus: Boolean=False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InitGradient"></span><code>procedure <strong>InitGradient</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InitGradientType"></span><code>procedure <strong>InitGradientType</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InitTransform"></span><code>procedure <strong>InitTransform</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFlipGradient"></span><code>procedure <strong>SetFlipGradient</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetSinus"></span><code>procedure <strong>SetSinus</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetTransform"></span><code>procedure <strong>SetTransform</strong>(AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UpdateGetGradientColorFunctions"></span><code>procedure <strong>UpdateGetGradientColorFunctions</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FlipGradient"></span><code>property <strong>FlipGradient</strong>: boolean read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FFlipGradient">FFlipGradient</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetFlipGradient">SetFlipGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Gradient"></span><code>property <strong>Gradient</strong>: <a href="BGRABitmapTypes.TBGRACustomGradient.html">TBGRACustomGradient</a> read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FGradient">FGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Sinus"></span><code>property <strong>Sinus</strong>: boolean Read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FSinus">FSinus</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetSinus">SetSinus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Transform"></span><code>property <strong>Transform</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRAGradientScanner.TBGRAGradientScanner.html#FTransform">FTransform</a> write <a href="BGRAGradientScanner.TBGRAGradientScanner.html#SetTransform">SetTransform</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

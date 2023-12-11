@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGType: Class TSVGElement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TSVGElement"></span><h1 class="cio">Class TSVGElement</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGType.html">BGRASVGType</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSVGElement = class(<a class="normal" href="BGRASVGType.TSVGCustomElement.html">TSVGCustomElement</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TSVGElement</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRASVGType.TSVGCustomElement.html">TSVGCustomElement</a></li>
+<li class="thisitem">TSVGElement</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGType.TSVGElement.html#FDataLink">FDataLink</a></strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGType.TSVGElement.html#Create">Create</a></strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGType.TSVGElement.html#Create">Create</a></strong>(ADocument: TDOMDocument; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRASVGType.TSVGElement.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGElement.html#fillMode">fillMode</a></strong>: <a href="BGRASVGType.html#TSVGFillMode">TSVGFillMode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGType.TSVGElement.html#GetDOMTag">GetDOMTag</a></strong>: string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGElement.html#GetStyleFromStyleSheet">GetStyleFromStyleSheet</a></strong>(const AName,ADefault: string): string; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#ConvertToUnit">ConvertToUnit</a></strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#CopyPathTo">CopyPathTo</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Draw">Draw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#fillNone">fillNone</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#ListIdentifiers">ListIdentifiers</a></strong>(AResult: <a href="BGRAClasses.html#TStringList">TStringList</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Recompute">Recompute</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#RenameIdentifiers">RenameIdentifiers</a></strong>(AFrom, ATo: <a href="BGRAClasses.html#TStringList">TStringList</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#strokeDashArrayNone">strokeDashArrayNone</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#strokeNone">strokeNone</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#transformNone">transformNone</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#ApplyFillStyle">ApplyFillStyle</a></strong>(ACanvas2D: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#ApplyStrokeStyle">ApplyStrokeStyle</a></strong>(ACanvas2D: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Init">Init</a></strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Init">Init</a></strong>(ADocument: TDOMDocument; ATag: string; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Initialize">Initialize</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#InternalCopyPathTo">InternalCopyPathTo</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#InternalDraw">InternalDraw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#Paint">Paint</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#SetDatalink">SetDatalink</a></strong>(AValue: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#SetFill">SetFill</a></strong>(AValue: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGElement.html#SetStroke">SetStroke</a></strong>(AValue: string); virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfAttributeNumber">ArrayOfAttributeNumber</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeNumber">SetArrayOfAttributeNumber</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfAttributeNumberInherit">ArrayOfAttributeNumberInherit</a></strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfAttributeWithUnit">ArrayOfAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeWithUnit">SetArrayOfAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfAttributeWithUnitInherit">ArrayOfAttributeWithUnitInherit</a></strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfHorizAttributeOrStyleWithUnit">ArrayOfHorizAttributeOrStyleWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeOrStyleWithUnit">GetArrayOfHorizAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfHorizAttributeWithUnit">ArrayOfHorizAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfHorizAttributeWithUnit">SetArrayOfHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfHorizAttributeWithUnitInherit">ArrayOfHorizAttributeWithUnitInherit</a></strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfOrthoAttributeOrStyleWithUnit">ArrayOfOrthoAttributeOrStyleWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeOrStyleWithUnit">GetArrayOfOrthoAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfOrthoAttributeWithUnit">ArrayOfOrthoAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeWithUnit">GetArrayOfOrthoAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfOrthoAttributeWithUnit">SetArrayOfOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfVerticalAttributeOrStyleWithUnit">ArrayOfVerticalAttributeOrStyleWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeOrStyleWithUnit">GetArrayOfVerticalAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfVerticalAttributeWithUnit">ArrayOfVerticalAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfVerticalAttributeWithUnit">SetArrayOfVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ArrayOfVerticalAttributeWithUnitInherit">ArrayOfVerticalAttributeWithUnitInherit</a></strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#Attribute">Attribute</a></strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetAttribute">SetAttribute</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#AttributeDef">AttributeDef</a></strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#AttributeOrStyle">AttributeOrStyle</a></strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#AttributeOrStyleDef">AttributeOrStyleDef</a></strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#AttributeWithUnit">AttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetAttributeWithUnit">SetAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#AttributeWithUnitDef">AttributeWithUnitDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#classAttr">classAttr</a></strong>: string read GetClassAttr write SetClassAttr;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#clipPath">clipPath</a></strong>: string read GetClipPath write SetClipPath;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#DataLink">DataLink</a></strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a> read <a href="BGRASVGType.TSVGElement.html#FDataLink">FDataLink</a> write <a href="BGRASVGType.TSVGElement.html#SetDatalink">SetDataLink</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#DOMElement">DOMElement</a></strong>: TDOMElement read <a href="BGRASVGType.TSVGCustomElement.html#GetDOMElement">GetDOMElement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#fill">fill</a></strong>: string read GetFill write <a href="BGRASVGType.TSVGElement.html#SetFill">SetFill</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#fillColor">fillColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetFillColor write SetFillColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#fillOpacity">fillOpacity</a></strong>: single read GetFillOpacity write SetFillOpacity;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#fillRule">fillRule</a></strong>: string read GetFillRule write SetFillRule;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#HorizAttribute">HorizAttribute</a></strong>[AName:string]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttribute">SetHorizAttribute</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#HorizAttributeDef">HorizAttributeDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#HorizAttributeOrStyleWithUnit">HorizAttributeOrStyleWithUnit</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeOrStyleWithUnit">GetHorizAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#HorizAttributeWithUnit">HorizAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttributeWithUnit">SetHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#HorizAttributeWithUnitDef">HorizAttributeWithUnitDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#ID">ID</a></strong>: string read GetID write SetID;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#isFillNone">isFillNone</a></strong>: boolean read GetIsFillNone;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#isStrokeNone">isStrokeNone</a></strong>: boolean read GetIsStrokeNone;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#matrix">matrix</a></strong>[AUnit:<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>]: <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a> read GetMatrix write SetMatrix;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#mixBlendMode">mixBlendMode</a></strong>: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a> read GetMixBlendMode write SetMixBlendMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#opacity">opacity</a></strong>: single read GetOpacity write SetOpacity;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#OrthoAttributeOrStyleWithUnit">OrthoAttributeOrStyleWithUnit</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeOrStyleWithUnit">GetOrthoAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#OrthoAttributeWithUnit">OrthoAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetOrthoAttributeWithUnit">SetOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#OrthoAttributeWithUnitDef">OrthoAttributeWithUnitDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#paintOrder">paintOrder</a></strong>: <a href="BGRASVGType.html#TSVGPaintOrder">TSVGPaintOrder</a> read GetPaintOrder write SetPaintOrder;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#stroke">stroke</a></strong>: string read GetStroke write <a href="BGRASVGType.TSVGElement.html#SetStroke">SetStroke</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeColor">strokeColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetStrokeColor write SetStrokeColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeDashArray">strokeDashArray</a></strong>: string read GetStrokeDashArray write SetStrokeDashArray;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeDashArrayF">strokeDashArrayF</a></strong>: <a href="BGRASVGType.html#ArrayOfFloat">ArrayOfFloat</a> read GetStrokeDashArrayF write SetStrokeDashArrayF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeDashOffset">strokeDashOffset</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetStrokeDashOffset write SetStrokeDashOffset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeLineCap">strokeLineCap</a></strong>: string read GetStrokeLineCap write SetStrokeLineCap;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeLineCapLCL">strokeLineCapLCL</a></strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a> read GetStrokeLineCapLCL write SetStrokeLineCapLCL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeLineJoin">strokeLineJoin</a></strong>: string read GetStrokeLineJoin write SetStrokeLineJoin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeLineJoinLCL">strokeLineJoinLCL</a></strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> read GetStrokeLineJoinLCL write SetStrokeLineJoinLCL;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeMiterLimit">strokeMiterLimit</a></strong>: single read GetStrokeMiterLimit write SetStrokeMiterLimit;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeOpacity">strokeOpacity</a></strong>: single read GetStrokeOpacity write SetStrokeOpacity;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#strokeWidth">strokeWidth</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetStrokeWidth write SetStrokeWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#transform">transform</a></strong>: string read GetTransform write SetTransform;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#Units">Units</a></strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a> read <a href="BGRASVGType.TSVGCustomElement.html#FUnits">FUnits</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#VerticalAttribute">VerticalAttribute</a></strong>[AName:string]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttribute">SetVerticalAttribute</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#VerticalAttributeDef">VerticalAttributeDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#VerticalAttributeOrStyleWithUnit">VerticalAttributeOrStyleWithUnit</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeOrStyleWithUnit">GetVerticalAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#VerticalAttributeWithUnit">VerticalAttributeWithUnit</a></strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttributeWithUnit">SetVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#VerticalAttributeWithUnitDef">VerticalAttributeWithUnitDef</a></strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGElement.html#Visible">Visible</a></strong>: boolean read GetVisible write SetVisible;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDataLink"></span><code><strong>FDataLink</strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ADocument: TDOMDocument; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fillMode"></span><code>function <strong>fillMode</strong>: <a href="BGRASVGType.html#TSVGFillMode">TSVGFillMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDOMTag"></span><code>class function <strong>GetDOMTag</strong>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStyleFromStyleSheet"></span><code>function <strong>GetStyleFromStyleSheet</strong>(const AName,ADefault: string): string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToUnit"></span><code>procedure <strong>ConvertToUnit</strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyPathTo"></span><code>procedure <strong>CopyPathTo</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Draw"></span><code>procedure <strong>Draw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fillNone"></span><code>procedure <strong>fillNone</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ListIdentifiers"></span><code>procedure <strong>ListIdentifiers</strong>(AResult: <a href="BGRAClasses.html#TStringList">TStringList</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Recompute"></span><code>procedure <strong>Recompute</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenameIdentifiers"></span><code>procedure <strong>RenameIdentifiers</strong>(AFrom, ATo: <a href="BGRAClasses.html#TStringList">TStringList</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeDashArrayNone"></span><code>procedure <strong>strokeDashArrayNone</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeNone"></span><code>procedure <strong>strokeNone</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="transformNone"></span><code>procedure <strong>transformNone</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ApplyFillStyle"></span><code>procedure <strong>ApplyFillStyle</strong>(ACanvas2D: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ApplyStrokeStyle"></span><code>procedure <strong>ApplyStrokeStyle</strong>(ACanvas2D: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(ADocument: TDOMDocument; ATag: string; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Initialize"></span><code>procedure <strong>Initialize</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalCopyPathTo"></span><code>procedure <strong>InternalCopyPathTo</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDraw"></span><code>procedure <strong>InternalDraw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Paint"></span><code>procedure <strong>Paint</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetDatalink"></span><code>procedure <strong>SetDatalink</strong>(AValue: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFill"></span><code>procedure <strong>SetFill</strong>(AValue: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStroke"></span><code>procedure <strong>SetStroke</strong>(AValue: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfAttributeNumber"></span><code>property <strong>ArrayOfAttributeNumber</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeNumber">SetArrayOfAttributeNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfAttributeNumberInherit"></span><code>property <strong>ArrayOfAttributeNumberInherit</strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfAttributeWithUnit"></span><code>property <strong>ArrayOfAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeWithUnit">SetArrayOfAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfAttributeWithUnitInherit"></span><code>property <strong>ArrayOfAttributeWithUnitInherit</strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfHorizAttributeOrStyleWithUnit"></span><code>property <strong>ArrayOfHorizAttributeOrStyleWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeOrStyleWithUnit">GetArrayOfHorizAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfHorizAttributeWithUnit"></span><code>property <strong>ArrayOfHorizAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfHorizAttributeWithUnit">SetArrayOfHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfHorizAttributeWithUnitInherit"></span><code>property <strong>ArrayOfHorizAttributeWithUnitInherit</strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfOrthoAttributeOrStyleWithUnit"></span><code>property <strong>ArrayOfOrthoAttributeOrStyleWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeOrStyleWithUnit">GetArrayOfOrthoAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfOrthoAttributeWithUnit"></span><code>property <strong>ArrayOfOrthoAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeWithUnit">GetArrayOfOrthoAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfOrthoAttributeWithUnit">SetArrayOfOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfVerticalAttributeOrStyleWithUnit"></span><code>property <strong>ArrayOfVerticalAttributeOrStyleWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeOrStyleWithUnit">GetArrayOfVerticalAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfVerticalAttributeWithUnit"></span><code>property <strong>ArrayOfVerticalAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfVerticalAttributeWithUnit">SetArrayOfVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrayOfVerticalAttributeWithUnitInherit"></span><code>property <strong>ArrayOfVerticalAttributeWithUnitInherit</strong>[AName:string;ACanInherit:boolean]: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Attribute"></span><code>property <strong>Attribute</strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetAttribute">SetAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AttributeDef"></span><code>property <strong>AttributeDef</strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AttributeOrStyle"></span><code>property <strong>AttributeOrStyle</strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AttributeOrStyleDef"></span><code>property <strong>AttributeOrStyleDef</strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AttributeWithUnit"></span><code>property <strong>AttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetAttributeWithUnit">SetAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AttributeWithUnitDef"></span><code>property <strong>AttributeWithUnitDef</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="classAttr"></span><code>property <strong>classAttr</strong>: string read GetClassAttr write SetClassAttr;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="clipPath"></span><code>property <strong>clipPath</strong>: string read GetClipPath write SetClipPath;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DataLink"></span><code>property <strong>DataLink</strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a> read <a href="BGRASVGType.TSVGElement.html#FDataLink">FDataLink</a> write <a href="BGRASVGType.TSVGElement.html#SetDatalink">SetDataLink</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DOMElement"></span><code>property <strong>DOMElement</strong>: TDOMElement read <a href="BGRASVGType.TSVGCustomElement.html#GetDOMElement">GetDOMElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill"></span><code>property <strong>fill</strong>: string read GetFill write <a href="BGRASVGType.TSVGElement.html#SetFill">SetFill</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fillColor"></span><code>property <strong>fillColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetFillColor write SetFillColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fillOpacity"></span><code>property <strong>fillOpacity</strong>: single read GetFillOpacity write SetFillOpacity;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fillRule"></span><code>property <strong>fillRule</strong>: string read GetFillRule write SetFillRule;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizAttribute"></span><code>property <strong>HorizAttribute</strong>[AName:string]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttribute">SetHorizAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizAttributeDef"></span><code>property <strong>HorizAttributeDef</strong>[AName:string;ADefault:<a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizAttributeOrStyleWithUnit"></span><code>property <strong>HorizAttributeOrStyleWithUnit</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeOrStyleWithUnit">GetHorizAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizAttributeWithUnit"></span><code>property <strong>HorizAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttributeWithUnit">SetHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizAttributeWithUnitDef"></span><code>property <strong>HorizAttributeWithUnitDef</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ID"></span><code>property <strong>ID</strong>: string read GetID write SetID;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="isFillNone"></span><code>property <strong>isFillNone</strong>: boolean read GetIsFillNone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="isStrokeNone"></span><code>property <strong>isStrokeNone</strong>: boolean read GetIsStrokeNone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="matrix"></span><code>property <strong>matrix</strong>[AUnit:<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>]: <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a> read GetMatrix write SetMatrix;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="mixBlendMode"></span><code>property <strong>mixBlendMode</strong>: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a> read GetMixBlendMode write SetMixBlendMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="opacity"></span><code>property <strong>opacity</strong>: single read GetOpacity write SetOpacity;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OrthoAttributeOrStyleWithUnit"></span><code>property <strong>OrthoAttributeOrStyleWithUnit</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeOrStyleWithUnit">GetOrthoAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OrthoAttributeWithUnit"></span><code>property <strong>OrthoAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetOrthoAttributeWithUnit">SetOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OrthoAttributeWithUnitDef"></span><code>property <strong>OrthoAttributeWithUnitDef</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="paintOrder"></span><code>property <strong>paintOrder</strong>: <a href="BGRASVGType.html#TSVGPaintOrder">TSVGPaintOrder</a> read GetPaintOrder write SetPaintOrder;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke"></span><code>property <strong>stroke</strong>: string read GetStroke write <a href="BGRASVGType.TSVGElement.html#SetStroke">SetStroke</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeColor"></span><code>property <strong>strokeColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetStrokeColor write SetStrokeColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeDashArray"></span><code>property <strong>strokeDashArray</strong>: string read GetStrokeDashArray write SetStrokeDashArray;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeDashArrayF"></span><code>property <strong>strokeDashArrayF</strong>: <a href="BGRASVGType.html#ArrayOfFloat">ArrayOfFloat</a> read GetStrokeDashArrayF write SetStrokeDashArrayF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeDashOffset"></span><code>property <strong>strokeDashOffset</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetStrokeDashOffset write SetStrokeDashOffset;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeLineCap"></span><code>property <strong>strokeLineCap</strong>: string read GetStrokeLineCap write SetStrokeLineCap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeLineCapLCL"></span><code>property <strong>strokeLineCapLCL</strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a> read GetStrokeLineCapLCL write SetStrokeLineCapLCL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeLineJoin"></span><code>property <strong>strokeLineJoin</strong>: string read GetStrokeLineJoin write SetStrokeLineJoin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeLineJoinLCL"></span><code>property <strong>strokeLineJoinLCL</strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> read GetStrokeLineJoinLCL write SetStrokeLineJoinLCL;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeMiterLimit"></span><code>property <strong>strokeMiterLimit</strong>: single read GetStrokeMiterLimit write SetStrokeMiterLimit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeOpacity"></span><code>property <strong>strokeOpacity</strong>: single read GetStrokeOpacity write SetStrokeOpacity;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="strokeWidth"></span><code>property <strong>strokeWidth</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetStrokeWidth write SetStrokeWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="transform"></span><code>property <strong>transform</strong>: string read GetTransform write SetTransform;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Units"></span><code>property <strong>Units</strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a> read <a href="BGRASVGType.TSVGCustomElement.html#FUnits">FUnits</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAttribute"></span><code>property <strong>VerticalAttribute</strong>[AName:string]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttribute">SetVerticalAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAttributeDef"></span><code>property <strong>VerticalAttributeDef</strong>[AName:string;ADefault:<a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>]: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAttributeOrStyleWithUnit"></span><code>property <strong>VerticalAttributeOrStyleWithUnit</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeOrStyleWithUnit">GetVerticalAttributeOrStyleWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAttributeWithUnit"></span><code>property <strong>VerticalAttributeWithUnit</strong>[AName:string]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttributeWithUnit">SetVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAttributeWithUnitDef"></span><code>property <strong>VerticalAttributeWithUnitDef</strong>[AName:string;ADefault:<a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>]: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Visible"></span><code>property <strong>Visible</strong>: boolean read GetVisible write SetVisible;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

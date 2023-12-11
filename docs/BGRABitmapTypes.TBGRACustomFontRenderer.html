@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Class TBGRACustomFontRenderer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRACustomFontRenderer"></span><h1 class="cio">Class TBGRACustomFontRenderer</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRACustomFontRenderer = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+* Abstract class for all font renderers</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRACustomFontRenderer</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FFontEmHeightF">FFontEmHeightF</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontName">FontName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontOrientation">FontOrientation</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontQuality">FontQuality</a></strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontStyle">FontStyle</a></strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontExists">FontExists</a></strong>(AName: string): boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#GetFontPixelMetric">GetFontPixelMetric</a></strong>: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#GetFontPixelMetricF">GetFontPixelMetricF</a></strong>: <a href="BGRABitmapTypes.TFontPixelMetricF.html">TFontPixelMetricF</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#HandlesTextPath">HandlesTextPath</a></strong>: boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextFitInfo">TextFitInfo</a></strong>(sUTF8: string; AMaxWidth: integer): integer; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextFitInfoF">TextFitInfoF</a></strong>(sUTF8: string; AMaxWidthF: single): integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSize">TextSize</a></strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRABitmapTypes.html#TSize">TSize</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSize">TextSize</a></strong>(sUTF8: string): <a href="BGRABitmapTypes.html#TSize">TSize</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSizeAngle">TextSizeAngle</a></strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRABitmapTypes.html#TSize">TSize</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSizeAngleF">TextSizeAngleF</a></strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSizeF">TextSizeF</a></strong>(sUTF8: string): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextSizeF">TextSizeF</a></strong>(sUTF8: string; AMaxWidthF: single; ARightToLeft: boolean): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextVisible">TextVisible</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#GetFontEmHeight">GetFontEmHeight</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#CopyTextPathTo">CopyTextPathTo</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; s: string; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#CopyTextPathTo">CopyTextPathTo</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; s: string; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOut">TextOut</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOut">TextOut</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOut">TextOut</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOut">TextOut</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOutAngle">TextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOutAngle">TextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOutAngle">TextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextOutAngle">TextOutAngle</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextRect">TextRect</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; x, y: integer; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#TextRect">TextRect</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; x, y: integer; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#SetFontEmHeight">SetFontEmHeight</a></strong>(AValue: integer);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontEmHeight">FontEmHeight</a></strong>: integer read <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#GetFontEmHeight">GetFontEmHeight</a> write <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#SetFontEmHeight">SetFontEmHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontEmHeightF">FontEmHeightF</a></strong>: single read <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FFontEmHeightF">FFontEmHeightF</a> write <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FFontEmHeightF">FFontEmHeightF</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFontEmHeightF"></span><code><strong>FFontEmHeightF</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the height of the font without taking into account additional line spacing. A negative value means that it is the full height instead</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontName"></span><code><strong>FontName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the font to use. Unless the font renderer accept otherwise, the name is in human readable form, like 'Arial', 'Times New Roman', ...</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontOrientation"></span><code><strong>FontOrientation</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the rotation of the text, for functions that support text rotation. It is expressed in tenth of degrees, positive values going counter-clockwise</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontQuality"></span><code><strong>FontQuality</strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the quality of rendering. Default value is <a class="normal" href="BGRABitmapTypes.html#fqSystem">fqSystem</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontStyle"></span><code><strong>FontStyle</strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the set of styles to be applied to the font. These can be <a class="normal" href="BGRAGraphics.html#fsBold">fsBold</a>, <a class="normal" href="BGRAGraphics.html#fsItalic">fsItalic</a>, <a class="normal" href="BGRAGraphics.html#fsStrikeOut">fsStrikeOut</a>, <a class="normal" href="BGRAGraphics.html#fsUnderline">fsUnderline</a>. So the value [<a class="normal" href="BGRAGraphics.html#fsBold">fsBold</a>,<a class="normal" href="BGRAGraphics.html#fsItalic">fsItalic</a>] means that the font must be bold and italic</p>
+</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontExists"></span><code>function <strong>FontExists</strong>(AName: string): boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFontPixelMetric"></span><code>function <strong>GetFontPixelMetric</strong>: <a href="BGRABitmapTypes.TFontPixelMetric.html">TFontPixelMetric</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns measurement for the current font in pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFontPixelMetricF"></span><code>function <strong>GetFontPixelMetricF</strong>: <a href="BGRABitmapTypes.TFontPixelMetricF.html">TFontPixelMetricF</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HandlesTextPath"></span><code>function <strong>HandlesTextPath</strong>: boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+optional</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextFitInfo"></span><code>function <strong>TextFitInfo</strong>(sUTF8: string; AMaxWidth: integer): integer; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the number of Unicode characters that fit into the specified <a class="normal" href="BGRAClasses.html#Size">size</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextFitInfoF"></span><code>function <strong>TextFitInfoF</strong>(sUTF8: string; AMaxWidthF: single): integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSize"></span><code>function <strong>TextSize</strong>(sUTF8: string; AMaxWidth: integer; ARightToLeft: boolean): <a href="BGRABitmapTypes.html#TSize">TSize</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSize"></span><code>function <strong>TextSize</strong>(sUTF8: string): <a href="BGRABitmapTypes.html#TSize">TSize</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the total <a class="normal" href="BGRAClasses.html#Size">size</a> of the string provided using the current font. Orientation is not taken into account, so that the width is along the text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSizeAngle"></span><code>function <strong>TextSizeAngle</strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRABitmapTypes.html#TSize">TSize</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSizeAngleF"></span><code>function <strong>TextSizeAngleF</strong>(sUTF8: string; orientationTenthDegCCW: integer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSizeF"></span><code>function <strong>TextSizeF</strong>(sUTF8: string): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextSizeF"></span><code>function <strong>TextSizeF</strong>(sUTF8: string; AMaxWidthF: single; ARightToLeft: boolean): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextVisible"></span><code>function <strong>TextVisible</strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if any text would be visible using the specified color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontEmHeight"></span><code>function <strong>GetFontEmHeight</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextPathTo"></span><code>procedure <strong>CopyTextPathTo</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; s: string; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy the path for the UTF8 encoded string into ''ADest''. If ''align'' is ''<a class="normal" href="BGRAClasses.html#taLeftJustify">taLeftJustify</a>'', (''x'',''y'') is the top-left corner. If ''align'' is ''<a class="normal" href="BGRAClasses.html#taCenter">taCenter</a>'', (''x'',''y'') is at the top and middle of the text. If ''align'' is ''<a class="normal" href="BGRAClasses.html#taRightJustify">taRightJustify</a>'', (''x'',''y'') is the top-right corner.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextPathTo"></span><code>procedure <strong>CopyTextPathTo</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; s: string; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+optional</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOut"></span><code>procedure <strong>TextOut</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOut"></span><code>procedure <strong>TextOut</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOut"></span><code>procedure <strong>TextOut</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws the UTF8 encoded string, with color ''c''. If align is <a class="normal" href="BGRAClasses.html#taLeftJustify">taLeftJustify</a>, (''x'',''y'') is the top-left corner. If align is <a class="normal" href="BGRAClasses.html#taCenter">taCenter</a>, (''x'',''y'') is at the top and middle of the text. If align is <a class="normal" href="BGRAClasses.html#taRightJustify">taRightJustify</a>, (''x'',''y'') is the top-right corner. The value of ''<a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontOrientation">FontOrientation</a>'' is taken into account, so that the text may be rotated</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOut"></span><code>procedure <strong>TextOut</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Same as above functions, except that the text is filled using texture. The value of ''<a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontOrientation">FontOrientation</a>'' is taken into account, so that the text may be rotated</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOutAngle"></span><code>procedure <strong>TextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOutAngle"></span><code>procedure <strong>TextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; ARightToLeft: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOutAngle"></span><code>procedure <strong>TextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Same as above, except that the orientation is specified, overriding the value of the property ''<a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontOrientation">FontOrientation</a>''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextOutAngle"></span><code>procedure <strong>TextOutAngle</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; orientationTenthDegCCW: integer; sUTF8: string; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; align: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Same as above, except that the orientation is specified, overriding the value of the property ''<a class="normal" href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FontOrientation">FontOrientation</a>''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextRect"></span><code>procedure <strong>TextRect</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; x, y: integer; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the UTF8 encoded string at the coordinate (''x'',''y''), clipped inside the rectangle ''ARect''. Additional style information is provided by the style parameter. The color ''c'' is used to fill the text. No rotation is applied.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextRect"></span><code>procedure <strong>TextRect</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; x, y: integer; sUTF8: string; style: <a href="BGRAGraphics.html#TTextStyle">TTextStyle</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Same as above except a ''texture'' is used to fill the text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFontEmHeight"></span><code>procedure <strong>SetFontEmHeight</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontEmHeight"></span><code>property <strong>FontEmHeight</strong>: integer read <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#GetFontEmHeight">GetFontEmHeight</a> write <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#SetFontEmHeight">SetFontEmHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontEmHeightF"></span><code>property <strong>FontEmHeightF</strong>: single read <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FFontEmHeightF">FFontEmHeightF</a> write <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html#FFontEmHeightF">FFontEmHeightF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

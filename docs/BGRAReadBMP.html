@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAReadBMP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAReadBMP</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+***************************************************************************</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>FPImage</li><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li>BMPcomn</li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAReadBMP.TBGRAReaderBMP.html"><code>TBGRAReaderBMP</code></a></td>
+<td class="itemdesc"><code>TBGRAReaderBMP</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAReadBMP.TMinimumBitmapHeader.html"><code>TMinimumBitmapHeader</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAReadBMP.TOS2BitmapHeader.html"><code>TOS2BitmapHeader</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.html#MakeBitmapFileHeader">MakeBitmapFileHeader</a></strong>(AData: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a></strong> = BMPcomn.TBitMapFileHeader;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TBitMapInfoHeader">TBitMapInfoHeader</a></strong> = BMPcomn.TBitMapInfoHeader;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TBitmapSubFormat">TBitmapSubFormat</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TProgressProc">TProgressProc</a></strong> = procedure(Percent: integer; var ShouldContinue: boolean) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TReadScanlineProc">TReadScanlineProc</a></strong> = procedure(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.html#TWriteScanlineProc">TWriteScanlineProc</a></strong> = procedure(Row : Integer; Img : TFPCustomImage) of object;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MakeBitmapFileHeader"></span><code>function <strong>MakeBitmapFileHeader</strong>(AData: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBitMapFileHeader"></span><code><strong>TBitMapFileHeader</strong> = BMPcomn.TBitMapFileHeader;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBitMapInfoHeader"></span><code><strong>TBitMapInfoHeader</strong> = BMPcomn.TBitMapInfoHeader;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBitmapSubFormat"></span><code><strong>TBitmapSubFormat</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="bsfWithFileHeader">bsfWithFileHeader</span></li>
+<li>
+<span id="bsfHeaderless">bsfHeaderless</span></li>
+<li>
+<span id="bsfHeaderlessWithMask">bsfHeaderlessWithMask</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBMPTransparencyOption"></span><code><strong>TBMPTransparencyOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="toAuto">toAuto</span></li>
+<li>
+<span id="toTransparent">toTransparent</span></li>
+<li>
+<span id="toOpaque">toOpaque</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TProgressProc"></span><code><strong>TProgressProc</strong> = procedure(Percent: integer; var ShouldContinue: boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TReadScanlineProc"></span><code><strong>TReadScanlineProc</strong> = procedure(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWriteScanlineProc"></span><code><strong>TWriteScanlineProc</strong> = procedure(Row : Integer; Img : TFPCustomImage) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

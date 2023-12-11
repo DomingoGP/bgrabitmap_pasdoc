@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAArrow: Class TBGRAArrow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAArrow"></span><h1 class="cio">Class TBGRAArrow</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAArrow.html">BGRAArrow</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAArrow = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAArrow</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a></li>
+<li class="thisitem">TBGRAArrow</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAArrow.TBGRAArrow.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#ComputeEndAt">ComputeEndAt</a></strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#ComputeStartAt">ComputeStartAt</a></strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndOffsetX">GetEndOffsetX</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndRepeatCount">GetEndRepeatCount</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetEndSizeFactor">GetEndSizeFactor</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetIsEndDefined">GetIsEndDefined</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetIsStartDefined">GetIsStartDefined</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetLineCap">GetLineCap</a></strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartOffsetX">GetStartOffsetX</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartRepeatCount">GetStartRepeatCount</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAArrow.TBGRAArrow.html#GetStartSizeFactor">GetStartSizeFactor</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsClassic">EndAsClassic</a></strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsNone">EndAsNone</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsTail">EndAsTail</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#EndAsTriangle">EndAsTriangle</a></strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsClassic">StartAsClassic</a></strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsNone">StartAsNone</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsTail">StartAsTail</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#StartAsTriangle">StartAsTriangle</a></strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEnd">SetEnd</a></strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndOffsetX">SetEndOffsetX</a></strong>(AValue: single); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndRepeatCount">SetEndRepeatCount</a></strong>(AValue: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetEndSizeFactor">SetEndSizeFactor</a></strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetLineCap">SetLineCap</a></strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStart">SetStart</a></strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartOffsetX">SetStartOffsetX</a></strong>(AValue: single); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartRepeatCount">SetStartRepeatCount</a></strong>(AValue: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAArrow.TBGRAArrow.html#SetStartSizeFactor">SetStartSizeFactor</a></strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeEndAt"></span><code>function <strong>ComputeEndAt</strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeStartAt"></span><code>function <strong>ComputeStartAt</strong>(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndOffsetX"></span><code>function <strong>GetEndOffsetX</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndRepeatCount"></span><code>function <strong>GetEndRepeatCount</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEndSizeFactor"></span><code>function <strong>GetEndSizeFactor</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetIsEndDefined"></span><code>function <strong>GetIsEndDefined</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetIsStartDefined"></span><code>function <strong>GetIsStartDefined</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLineCap"></span><code>function <strong>GetLineCap</strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartOffsetX"></span><code>function <strong>GetStartOffsetX</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartRepeatCount"></span><code>function <strong>GetStartRepeatCount</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartSizeFactor"></span><code>function <strong>GetStartSizeFactor</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsClassic"></span><code>procedure <strong>EndAsClassic</strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsNone"></span><code>procedure <strong>EndAsNone</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsTail"></span><code>procedure <strong>EndAsTail</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndAsTriangle"></span><code>procedure <strong>EndAsTriangle</strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsClassic"></span><code>procedure <strong>StartAsClassic</strong>(AFlipped: boolean = false; ACut: boolean = false; ARelativePenWidth: single = 1); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsNone"></span><code>procedure <strong>StartAsNone</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsTail"></span><code>procedure <strong>StartAsTail</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartAsTriangle"></span><code>procedure <strong>StartAsTriangle</strong>(ABackOffset: single = 0; ARounded: boolean = false; AHollow: boolean = false; AHollowPenWidth: single = 0.5); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEnd"></span><code>procedure <strong>SetEnd</strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndOffsetX"></span><code>procedure <strong>SetEndOffsetX</strong>(AValue: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndRepeatCount"></span><code>procedure <strong>SetEndRepeatCount</strong>(AValue: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEndSizeFactor"></span><code>procedure <strong>SetEndSizeFactor</strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLineCap"></span><code>procedure <strong>SetLineCap</strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStart"></span><code>procedure <strong>SetStart</strong>(AStyle: <a href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a>; ATipStyle: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> = <a href="BGRAGraphics.html#pjsMiter">pjsMiter</a>; ARelativePenWidth: single = 1; ATriangleBackOffset: single = 0);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartOffsetX"></span><code>procedure <strong>SetStartOffsetX</strong>(AValue: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartRepeatCount"></span><code>procedure <strong>SetStartRepeatCount</strong>(AValue: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStartSizeFactor"></span><code>procedure <strong>SetStartSizeFactor</strong>(AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

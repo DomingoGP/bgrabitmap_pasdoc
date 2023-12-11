@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Class TGenericUniversalBitmap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TGenericUniversalBitmap"></span><h1 class="cio">Class TGenericUniversalBitmap</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type generic TGenericUniversalBitmap&lt;TPixel,TColorspace&gt; = class(<a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TGenericUniversalBitmap</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TFPCustomImage</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a></li>
+<li class="thisitem">TGenericUniversalBitmap</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Create">Create</a></strong>(AWidth, AHeight: integer; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#CreateBrushTexture">CreateBrushTexture</a></strong>(ABrushStyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; APatternColor, ABackgroundColor: TPixel; AWidth: integer = 8; AHeight: integer = 8; APenWidth: single = 1): <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Equals">Equals</a></strong>(const comp: TPixel): boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Equals">Equals</a></strong>(comp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetDifferenceBounds">GetDifferenceBounds</a></strong>(ABitmap: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetPixel">GetPixel</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>): TPixel; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetPixelAddress">GetPixelAddress</a></strong>(x, y: integer): PByte; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetPixelCycle">GetPixelCycle</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>): TPixel; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#NewBitmap">NewBitmap</a></strong>(AWidth, AHeight: integer; const AColor: TPixel): <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DefaultColorspace">DefaultColorspace</a></strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetScanlineFast">GetScanlineFast</a></strong>(y: integer): PPixel; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawCheckers">DrawCheckers</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColorEven,AColorOdd: TPixel; AGridWidth: integer = 8; AGridHeight: integer = 8; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLine">DrawLine</a></strong>(x1, y1, x2, y2: integer; const AColor: TPixel; ADrawLastPixel: boolean; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLineAntialias">DrawLineAntialias</a></strong>(x1, y1, x2, y2: integer; const AColor1, AColor2: TPixel; ADashLen: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLineAntialias">DrawLineAntialias</a></strong>(x1, y1, x2, y2: integer; const AColor1, AColor2: TPixel; ADashLen: integer; var ADashPos: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLineAntialias">DrawLineAntialias</a></strong>(x1, y1, x2, y2: integer; const AColor: TPixel; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLineAntialias">DrawLineAntialias</a></strong>(x1, y1, x2, y2: single; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawLineAntialias">DrawLineAntialias</a></strong>(x1, y1, x2, y2: single; const AColor: TPixel; APenWidth: single; AClosedCap: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPath">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; AWidth: single; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPath">DrawPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; AWidth: single; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPathAliased">DrawPathAliased</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPathAliased">DrawPathAliased</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPixel">DrawPixel</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPixel">DrawPixel</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPixel">DrawPixel</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPixelF">DrawPixelF</a></strong>(x,y: single; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolygon">DrawPolygon</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor1, AColor2: TPixel; ADashLen: integer; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLine">DrawPolyLine</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; ADrawLastPixel: boolean; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single; AClosedCap: boolean); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor1, AColor2: TPixel; ADashLen: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#DrawPolyLineAntialiasAutocycle">DrawPolyLineAntialiasAutocycle</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Ellipse">Ellipse</a></strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; AWidth: single; AMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Ellipse">Ellipse</a></strong>(x, y, rx, ry: single; const AColor: TPixel; AWidth: single; AMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#EllipseAntialias">EllipseAntialias</a></strong>(x, y, rx, ry: single; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#EllipseAntialias">EllipseAntialias</a></strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#EllipseInRect">EllipseInRect</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#EllipseInRect">EllipseInRect</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Fill">Fill</a></strong>(const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Fill">Fill</a></strong>(const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha : Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(x, y, rx, ry: single; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillEllipseInRect">FillEllipseInRect</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillMask">FillMask</a></strong>(x,y: integer; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillMask">FillMask</a></strong>(x,y: integer; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPath">FillPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPath">FillPath</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPathAliased">FillPathAliased</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPathAliased">FillPathAliased</a></strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPoly">FillPoly</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillPolyAntialias">FillPolyAntialias</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRect">FillRect</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRect">FillRect</a></strong>(ALeft, ATop, ARight, ABottom: integer; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRectAntialias">FillRectAntialias</a></strong>(x, y, x2, y2: single; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRectAntialias">FillRectAntialias</a></strong>(const ARectF: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRoundRect">FillRoundRect</a></strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillRoundRectAntialias">FillRoundRectAntialias</a></strong>(x, y, x2, y2, rx, ry: single; const AColor: TPixel; AOptions: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#FillShape">FillShape</a></strong>(AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetPixelCycleIndirect">GetPixelCycleIndirect</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#GetPixelIndirect">GetPixelIndirect</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#HorizLine">HorizLine</a></strong>(x, y, x2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#IdleBrush">IdleBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">Rectangle</a></strong>(x, y, x2, y2: integer; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">Rectangle</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">Rectangle</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">Rectangle</a></strong>(x, y, x2, y2: integer; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#RectangleAntialias">RectangleAntialias</a></strong>(x, y, x2, y2: single; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#ReplaceColor">ReplaceColor</a></strong>(const ABefore, AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#ReplaceColor">ReplaceColor</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABefore, AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#ReplaceTransparent">ReplaceTransparent</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#ReplaceTransparent">ReplaceTransparent</a></strong>(const AAfter: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#RoundRect">RoundRect</a></strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#RoundRect">RoundRect</a></strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SetHorizLine">SetHorizLine</a></strong>(x, y, x2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SetPixel">SetPixel</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SetPixelIndirect">SetPixelIndirect</a></strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SetVertLine">SetVertLine</a></strong>(x, y, y2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SolidBrush">SolidBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#SolidBrushIndirect">SolidBrushIndirect</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AColor: Pointer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#VertLine">VertLine</a></strong>(x, y, y2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Init">Init</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#InternalCopyPixels">InternalCopyPixels</a></strong>(ASource,ADest: PByte; ASourceStride,ADestStride: PtrInt; ACount: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#InternalSetPixels">InternalSetPixels</a></strong>(ASource,ADest: PByte; ADestStride: PtrInt; ACount: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#InternalSwapPixels">InternalSwapPixels</a></strong>(ABuf1,ABuf2: PByte; AStride1,AStride2: PtrInt; ACount: integer); override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#Data">Data</a></strong>: PPixel read GetDataPtr;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TGenericUniversalBitmap.html#ScanLine">ScanLine</a></strong>[y:integer]: PPixel Read GetScanLine;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AWidth, AHeight: integer; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an image of dimensions ''AWidth'' and ''AHeight'' and fills it with ''Color''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateBrushTexture"></span><code>function <strong>CreateBrushTexture</strong>(ABrushStyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; APatternColor, ABackgroundColor: TPixel; AWidth: integer = 8; AHeight: integer = 8; APenWidth: single = 1): <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Equals"></span><code>function <strong>Equals</strong>(const comp: TPixel): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Equals"></span><code>function <strong>Equals</strong>(comp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDifferenceBounds"></span><code>function <strong>GetDifferenceBounds</strong>(ABitmap: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixel"></span><code>function <strong>GetPixel</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>): TPixel; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixelAddress"></span><code>function <strong>GetPixelAddress</strong>(x, y: integer): PByte; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixelCycle"></span><code>function <strong>GetPixelCycle</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>): TPixel; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NewBitmap"></span><code>function <strong>NewBitmap</strong>(AWidth, AHeight: integer; const AColor: TPixel): <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DefaultColorspace"></span><code>class function <strong>DefaultColorspace</strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetScanlineFast"></span><code>function <strong>GetScanlineFast</strong>(y: integer): PPixel; inline;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+ensure <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Colorspace">colorspace</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawCheckers"></span><code>procedure <strong>DrawCheckers</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColorEven,AColorOdd: TPixel; AGridWidth: integer = 8; AGridHeight: integer = 8; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLine"></span><code>procedure <strong>DrawLine</strong>(x1, y1, x2, y2: integer; const AColor: TPixel; ADrawLastPixel: boolean; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>procedure <strong>DrawLineAntialias</strong>(x1, y1, x2, y2: integer; const AColor1, AColor2: TPixel; ADashLen: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>procedure <strong>DrawLineAntialias</strong>(x1, y1, x2, y2: integer; const AColor1, AColor2: TPixel; ADashLen: integer; var ADashPos: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>procedure <strong>DrawLineAntialias</strong>(x1, y1, x2, y2: integer; const AColor: TPixel; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>procedure <strong>DrawLineAntialias</strong>(x1, y1, x2, y2: single; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+* These functions use the current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> style/cap/join. The parameter ''APenWidth'' specifies the <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Width">width</a> of the line and the base unit for dashes. See [[<a class="normal" href="BGRABitmap.html">BGRABitmap</a> <a class="normal" href="introduction.html#Tutorial">tutorial</a> 13|coordinate system]]. * The coordinates are pixel-centered by default, so that when filling a <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">rectangle</a>, if the supplied values are integers, the border will be half transparent. If you want the border to be completely filled, you can subtract/add 0.5 to the coordinates to include the remaining thin border. See [[<a class="normal" href="BGRABitmap.html">BGRABitmap</a> <a class="normal" href="introduction.html#Tutorial">tutorial</a> 13|coordinate system]].</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>procedure <strong>DrawLineAntialias</strong>(x1, y1, x2, y2: single; const AColor: TPixel; APenWidth: single; AClosedCap: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPath"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; AWidth: single; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPath"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; AWidth: single; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPathAliased"></span><code>procedure <strong>DrawPathAliased</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPathAliased"></span><code>procedure <strong>DrawPathAliased</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPixel"></span><code>procedure <strong>DrawPixel</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPixel"></span><code>procedure <strong>DrawPixel</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPixel"></span><code>procedure <strong>DrawPixel</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPixelF"></span><code>procedure <strong>DrawPixelF</strong>(x,y: single; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygon"></span><code>procedure <strong>DrawPolygon</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>procedure <strong>DrawPolygonAntialias</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>procedure <strong>DrawPolygonAntialias</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor1, AColor2: TPixel; ADashLen: integer; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>procedure <strong>DrawPolygonAntialias</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a polygon using current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> style/cap/join. The polygon is always closed. You don't need to set the last <a class="normal" href="BGRAClasses.html#Point">point</a> to be the same as the first <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLine"></span><code>procedure <strong>DrawPolyLine</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; ADrawLastPixel: boolean; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>procedure <strong>DrawPolyLineAntialias</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single; AClosedCap: boolean); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a polyline using current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> style/cap/join. ''Closed'' specifies if the end of the line is roundly closed. If it is not closed, a space is left so that the next line can fit</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>procedure <strong>DrawPolyLineAntialias</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a polyline using current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> style/cap/join</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>procedure <strong>DrawPolyLineAntialias</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor1, AColor2: TPixel; ADashLen: integer; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>procedure <strong>DrawPolyLineAntialias</strong>(const points: array of <a href="BGRABitmapTypes.html#TPoint">TPoint</a>; const AColor: TPixel; ADrawLastPixel: boolean; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialiasAutocycle"></span><code>procedure <strong>DrawPolyLineAntialiasAutocycle</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APenWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws a polyline using current <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Pen">pen</a> style/cap/join. The last <a class="normal" href="BGRAClasses.html#Point">point</a> considered as a join with the first <a class="normal" href="BGRAClasses.html#Point">point</a> if it has the same coordinate</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>procedure <strong>Ellipse</strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; AWidth: single; AMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>procedure <strong>Ellipse</strong>(x, y, rx, ry: single; const AColor: TPixel; AWidth: single; AMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html#Ellipse">ellipse</a> without antialising. ''rx'' is the horizontal radius and ''ry'' the vertical radius</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseAntialias"></span><code>procedure <strong>EllipseAntialias</strong>(x, y, rx, ry: single; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws an <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html#Ellipse">ellipse</a> with antialising. ''rx'' is the horizontal radius and ''ry'' the vertical radius</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseAntialias"></span><code>procedure <strong>EllipseAntialias</strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseInRect"></span><code>procedure <strong>EllipseInRect</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseInRect"></span><code>procedure <strong>EllipseInRect</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fill"></span><code>procedure <strong>Fill</strong>(const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fill"></span><code>procedure <strong>Fill</strong>(const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AAlpha : Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>procedure <strong>FillEllipseAntialias</strong>(x, y, rx, ry: single; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>procedure <strong>FillEllipseAntialias</strong>(const AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseInRect"></span><code>procedure <strong>FillEllipseInRect</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillMask"></span><code>procedure <strong>FillMask</strong>(x,y: integer; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillMask"></span><code>procedure <strong>FillMask</strong>(x,y: integer; AMask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPath"></span><code>procedure <strong>FillPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPath"></span><code>procedure <strong>FillPath</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPathAliased"></span><code>procedure <strong>FillPathAliased</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPathAliased"></span><code>procedure <strong>FillPathAliased</strong>(APath: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPoly"></span><code>procedure <strong>FillPoly</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPolyAntialias"></span><code>procedure <strong>FillPolyAntialias</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; antialias <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html#Fill">fill</a> &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(ALeft, ATop, ARight, ABottom: integer; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSet">dmSet</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRectAntialias"></span><code>procedure <strong>FillRectAntialias</strong>(x, y, x2, y2: single; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRectAntialias"></span><code>procedure <strong>FillRectAntialias</strong>(const ARectF: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; const AColor: TPixel; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRoundRect"></span><code>procedure <strong>FillRoundRect</strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRoundRectAntialias"></span><code>procedure <strong>FillRoundRectAntialias</strong>(x, y, x2, y2, rx, ry: single; const AColor: TPixel; AOptions: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fills a rounded <a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html#Rectangle">rectangle</a> with antialiasing. The corners have an elliptical radius of ''rx'' and ''ry''. ''options'' specifies how to draw the corners. See [[<a class="normal" href="BGRABitmap.html">BGRABitmap</a> Geometry types|geometry types]]</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillShape"></span><code>procedure <strong>FillShape</strong>(AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; const AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixelCycleIndirect"></span><code>procedure <strong>GetPixelCycleIndirect</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPixelIndirect"></span><code>procedure <strong>GetPixelIndirect</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizLine"></span><code>procedure <strong>HorizLine</strong>(x, y, x2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IdleBrush"></span><code>class procedure <strong>IdleBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x, y, x2, y2: integer; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x, y, x2, y2: integer; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectangleAntialias"></span><code>procedure <strong>RectangleAntialias</strong>(x, y, x2, y2: single; const AColor: TPixel; AWidth: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReplaceColor"></span><code>procedure <strong>ReplaceColor</strong>(const ABefore, AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReplaceColor"></span><code>procedure <strong>ReplaceColor</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const ABefore, AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReplaceTransparent"></span><code>procedure <strong>ReplaceTransparent</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; const AAfter: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReplaceTransparent"></span><code>procedure <strong>ReplaceTransparent</strong>(const AAfter: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>procedure <strong>RoundRect</strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>procedure <strong>RoundRect</strong>(X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderColor, AFillColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetHorizLine"></span><code>procedure <strong>SetHorizLine</strong>(x, y, x2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Replaces the content of the pixels at line ''y'' and at columns ''x'' to ''x2'' included, using specified color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPixel"></span><code>procedure <strong>SetPixel</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPixelIndirect"></span><code>procedure <strong>SetPixelIndirect</strong>(x,y: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; AColor: pointer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+optimized</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVertLine"></span><code>procedure <strong>SetVertLine</strong>(x, y, y2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Replaces a vertical line at column ''x'' and at row ''y'' to ''y2''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolidBrush"></span><code>class procedure <strong>SolidBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; const AColor: TPixel; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SolidBrushIndirect"></span><code>procedure <strong>SolidBrushIndirect</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AColor: Pointer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VertLine"></span><code>procedure <strong>VertLine</strong>(x, y, y2: <a href="BGRABitmapTypes.html#Int32or64">int32or64</a>; const AColor: TPixel; AMode : <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AAlpha: Word = 65535); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalCopyPixels"></span><code>procedure <strong>InternalCopyPixels</strong>(ASource,ADest: PByte; ASourceStride,ADestStride: PtrInt; ACount: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+typed function</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSetPixels"></span><code>procedure <strong>InternalSetPixels</strong>(ASource,ADest: PByte; ADestStride: PtrInt; ACount: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSwapPixels"></span><code>procedure <strong>InternalSwapPixels</strong>(ABuf1,ABuf2: PByte; AStride1,AStride2: PtrInt; ACount: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Data"></span><code>property <strong>Data</strong>: PPixel read GetDataPtr;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanLine"></span><code>property <strong>ScanLine</strong>[y:integer]: PPixel Read GetScanLine;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the address of the left-most pixel of any line. The parameter y ranges from 0 to <a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html#Height">Height</a>-1</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

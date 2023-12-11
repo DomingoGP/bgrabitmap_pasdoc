@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAGradients</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAGradients</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRABitmap.html">BGRABitmap</a></li><li><a href="BGRABlend.html">BGRABlend</a></li><li><a href="BGRAPhongTypes.html">BGRAPhongTypes</a></li><li><a href="BGRASSE.html">BGRASSE</a></li><li><a href="BGRAGrayscaleMask.html">BGRAGrayscaleMask</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRAGradients.TnGradientInfo.html"><code>TnGradientInfo</code></a></td>
+<td class="itemdesc">Functions to draw multiple gradients.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAGradients.TPhongShading.html"><code>TPhongShading</code></a></td>
+<td class="itemdesc"><code>TPhongShading</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateConeMap">CreateConeMap</a></strong>(size: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateConePreciseMap">CreateConePreciseMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateCyclicPerlinNoiseMap">CreateCyclicPerlinNoiseMap</a></strong>(AWidth, AHeight: integer; HorizontalPeriod: Single = 1; VerticalPeriod: Single = 1; Exponent: Double = 1; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfCosine">rfCosine</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateHorizontalCylinderPreciseMap">CreateHorizontalCylinderPreciseMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreatePerlinNoiseMap">CreatePerlinNoiseMap</a></strong>(AWidth, AHeight: integer; HorizontalPeriod: Single = 1; VerticalPeriod: Single = 1; Exponent: Double = 1; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfCosine">rfCosine</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRectangleMap">CreateRectangleMap</a></strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRectanglePreciseMap">CreateRectanglePreciseMap</a></strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRectanglePreciseMap">CreateRectanglePreciseMap</a></strong>(width, height, borderWidth, borderHeight: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRoundRectangleMap">CreateRoundRectangleMap</a></strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRoundRectanglePreciseMap">CreateRoundRectanglePreciseMap</a></strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateRoundRectanglePreciseMap">CreateRoundRectanglePreciseMap</a></strong>(width,height,borderWidth,borderHeight: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateSphereMap">CreateSphereMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateSpherePreciseMap">CreateSpherePreciseMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateVerticalConePreciseMap">CreateVerticalConePreciseMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#CreateVerticalCylinderPreciseMap">CreateVerticalCylinderPreciseMap</a></strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#DoubleGradientAlphaFill">DoubleGradientAlphaFill</a></strong>(AWidth,AHeight: Integer; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#DoubleGradientAlphaFill">DoubleGradientAlphaFill</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradients.html#DoubleGradientAlphaFill">DoubleGradientAlphaFill</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradients.html#DoubleGradientAlphaFill">DoubleGradientAlphaFill</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#nGradientAlphaFill">nGradientAlphaFill</a></strong>(AWidth, AHeight: Integer; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#nGradientAlphaFill">nGradientAlphaFill</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradients.html#nGradientAlphaFill">nGradientAlphaFill</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAGradients.html#nGradientAlphaFill">nGradientAlphaFill</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#nGradientInfo">nGradientInfo</a></strong>(StartColor, StopColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Direction: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; EndPercent: Single): <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGradients.html#TextShadow">TextShadow</a></strong>(AWidth,AHeight: Integer; AText: String; AFontHeight: Integer; ATextColor,AShadowColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOffSetX,AOffSetY: Integer; ARadius: Integer = 0; AFontStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []; AFontName: String = 'Default'; AShowText: Boolean = True): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGradients.html#TRectangleMapOption">TRectangleMapOption</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a></strong> = set of <a href="BGRAGradients.html#TRectangleMapOption">TRectangleMapOption</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateConeMap"></span><code>function <strong>CreateConeMap</strong>(size: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a grayscale height map for a cone (may not be precise enough)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateConePreciseMap"></span><code>function <strong>CreateConePreciseMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a cone (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateCyclicPerlinNoiseMap"></span><code>function <strong>CreateCyclicPerlinNoiseMap</strong>(AWidth, AHeight: integer; HorizontalPeriod: Single = 1; VerticalPeriod: Single = 1; Exponent: Double = 1; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfCosine">rfCosine</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a tilable random grayscale image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateHorizontalCylinderPreciseMap"></span><code>function <strong>CreateHorizontalCylinderPreciseMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for an horizontal cylinder (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreatePerlinNoiseMap"></span><code>function <strong>CreatePerlinNoiseMap</strong>(AWidth, AHeight: integer; HorizontalPeriod: Single = 1; VerticalPeriod: Single = 1; Exponent: Double = 1; ResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfCosine">rfCosine</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a non-tilable random grayscale image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRectangleMap"></span><code>function <strong>CreateRectangleMap</strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a rectangle height map with a border</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRectanglePreciseMap"></span><code>function <strong>CreateRectanglePreciseMap</strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a rectangle height map with a border (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRectanglePreciseMap"></span><code>function <strong>CreateRectanglePreciseMap</strong>(width, height, borderWidth, borderHeight: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRoundRectangleMap"></span><code>function <strong>CreateRoundRectangleMap</strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a round rectangle height map with a border</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRoundRectanglePreciseMap"></span><code>function <strong>CreateRoundRectanglePreciseMap</strong>(width,height,border: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a round rectangle height map with a border (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateRoundRectanglePreciseMap"></span><code>function <strong>CreateRoundRectanglePreciseMap</strong>(width,height,borderWidth,borderHeight: integer; options: <a href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a> = []): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateSphereMap"></span><code>function <strong>CreateSphereMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a grayscale height map for a sphere (may not be precise enough)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateSpherePreciseMap"></span><code>function <strong>CreateSpherePreciseMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a sphere (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateVerticalConePreciseMap"></span><code>function <strong>CreateVerticalConePreciseMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a vertical cone (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateVerticalCylinderPreciseMap"></span><code>function <strong>CreateVerticalCylinderPreciseMap</strong>(width,height: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create a precise height map for a vertical cylinder (not grayscale anymore but more precise)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoubleGradientAlphaFill"></span><code>function <strong>DoubleGradientAlphaFill</strong>(AWidth,AHeight: Integer; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoubleGradientAlphaFill"></span><code>function <strong>DoubleGradientAlphaFill</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoubleGradientAlphaFill"></span><code>procedure <strong>DoubleGradientAlphaFill</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DoubleGradientAlphaFill"></span><code>procedure <strong>DoubleGradientAlphaFill</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AStart1,AStop1,AStart2,AStop2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADirection1,ADirection2,ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; AValue: Single); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nGradientAlphaFill"></span><code>function <strong>nGradientAlphaFill</strong>(AWidth, AHeight: Integer; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nGradientAlphaFill"></span><code>function <strong>nGradientAlphaFill</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nGradientAlphaFill"></span><code>procedure <strong>nGradientAlphaFill</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nGradientAlphaFill"></span><code>procedure <strong>nGradientAlphaFill</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; ADir: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; const AGradient: array of <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="nGradientInfo"></span><code>function <strong>nGradientInfo</strong>(StartColor, StopColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Direction: <a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a>; EndPercent: Single): <a href="BGRAGradients.TnGradientInfo.html">TnGradientInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TextShadow"></span><code>function <strong>TextShadow</strong>(AWidth,AHeight: Integer; AText: String; AFontHeight: Integer; ATextColor,AShadowColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOffSetX,AOffSetY: Integer; ARadius: Integer = 0; AFontStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []; AFontName: String = 'Default'; AShowText: Boolean = True): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Creates a bitmap with the specified text horizontally centered and with a shadow</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRectangleMapOption"></span><code><strong>TRectangleMapOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Phong shading functions. Use a height map (grayscale image or a precise map filled with <a class="normal" href="BGRABitmapTypes.html#MapHeightToBGRA">MapHeightToBGRA</a>) to determine orientation and position of the surface.
+
+<p>Phong shading consist in adding an ambiant light, a diffuse light (angle between light and object), and a specular light (angle between light, object and observer, i.e. reflected light)</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="rmoNoLeftBorder">rmoNoLeftBorder</span></li>
+<li>
+<span id="rmoNoTopBorder">rmoNoTopBorder</span></li>
+<li>
+<span id="rmoNoRightBorder">rmoNoRightBorder</span></li>
+<li>
+<span id="rmoNoBottomBorder">rmoNoBottomBorder</span></li>
+<li>
+<span id="rmoLinearBorder">rmoLinearBorder</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRectangleMapOptions"></span><code><strong>TRectangleMapOptions</strong> = set of <a href="BGRAGradients.html#TRectangleMapOption">TRectangleMapOption</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

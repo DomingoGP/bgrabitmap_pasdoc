@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRALayerOriginal: Class TBGRALayerImageOriginal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRALayerImageOriginal"></span><h1 class="cio">Class TBGRALayerImageOriginal</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRALayerOriginal.html">BGRALayerOriginal</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRALayerImageOriginal = class(<a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRALayerImageOriginal</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a></li>
+<li class="thisitem">TBGRALayerImageOriginal</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#FContentVersion">FContentVersion</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#FDiff">FDiff</a></strong>: <a href="BGRALayerOriginal.TBGRAImageOriginalDiff.html">TBGRAImageOriginalDiff</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#FImage">FImage</a></strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#FJpegStream">FJpegStream</a></strong>: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Create">Create</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#CanConvertToSVG">CanConvertToSVG</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#ConvertToSVG">ConvertToSVG</a></strong>(const AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): TObject; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#GetImageCopy">GetImageCopy</a></strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#GetRenderBounds">GetRenderBounds</a></strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#StorageClassName">StorageClassName</a></strong>: RawByteString; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#AssignImage">AssignImage</a></strong>(AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Clear">Clear</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#LoadFromStorage">LoadFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#LoadFromStream">LoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#LoadImageFromStream">LoadImageFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Render">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#SaveImageToStream">SaveImageToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#SaveToStorage">SaveToStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#BeginUpdate">BeginUpdate</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#EndUpdate">EndUpdate</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#InternalClear">InternalClear</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#InternalLoadImageFromStream">InternalLoadImageFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AUpdate: boolean);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Height">Height</a></strong>: integer read GetImageHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRALayerImageOriginal.html#Width">Width</a></strong>: integer read GetImageWidth;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FContentVersion"></span><code><strong>FContentVersion</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDiff"></span><code><strong>FDiff</strong>: <a href="BGRALayerOriginal.TBGRAImageOriginalDiff.html">TBGRAImageOriginalDiff</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FImage"></span><code><strong>FImage</strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FJpegStream"></span><code><strong>FJpegStream</strong>: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CanConvertToSVG"></span><code>class function <strong>CanConvertToSVG</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToSVG"></span><code>function <strong>ConvertToSVG</strong>(const AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): TObject; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageCopy"></span><code>function <strong>GetImageCopy</strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRenderBounds"></span><code>function <strong>GetRenderBounds</strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageClassName"></span><code>class function <strong>StorageClassName</strong>: RawByteString; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AssignImage"></span><code>procedure <strong>AssignImage</strong>(AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStorage"></span><code>procedure <strong>LoadFromStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadImageFromStream"></span><code>procedure <strong>LoadImageFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <strong>Render</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveImageToStream"></span><code>procedure <strong>SaveImageToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStorage"></span><code>procedure <strong>SaveToStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BeginUpdate"></span><code>procedure <strong>BeginUpdate</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="EndUpdate"></span><code>procedure <strong>EndUpdate</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalClear"></span><code>procedure <strong>InternalClear</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalLoadImageFromStream"></span><code>procedure <strong>InternalLoadImageFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AUpdate: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: integer read GetImageHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong>: integer read GetImageWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

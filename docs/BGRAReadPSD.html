@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAReadPSD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAReadPSD</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+The original file was part of the Free Pascal run time library. Copyright (c) 2008 by the Free Pascal development team
+
+<p>Psd reader for fpImage modified by circular.
+
+<p>**********************************************************************
+
+<p>03/2014 changes by circular : - added MinifyHeight,WantedHeight and OutputHeight (useful for thumbnails)
+
+<p>2023-06 - Massimo Magnano - added Read of Image Resources Section - added Resolution support 2023-07 - Massimo Magnano - code fixes for reading palettes</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li>SysUtils</li><li>FPimage</li><li>FPReadPSD</li><li>PSDcomn</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAReadPSD.TBGRAReaderPSD.html"><code>TBGRAReaderPSD</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAReadPSD.TPSDResourceBlock.html"><code>TPSDResourceBlock</code></a></td>
+<td class="itemdesc">Image Resource Blocks</td>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAReadPSD.TPSDResourceBlockData.html"><code>TPSDResourceBlockData</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAReadPSD.html#PSDResolutionUnitToResolutionUnit">PSDResolutionUnitToResolutionUnit</a></strong>(APSDResolutionUnit: Word): <a href="BGRABitmapTypes.html#TResolutionUnit">TResolutionUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAReadPSD.html#ResolutionUnitToPSdResolutionUnit">ResolutionUnitToPSdResolutionUnit</a></strong>(AResolutionUnit: <a href="BGRABitmapTypes.html#TResolutionUnit">TResolutionUnit</a>): Word;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PPSDResourceBlock">PPSDResourceBlock</a></strong> =&circ;<a href="BGRAReadPSD.TPSDResourceBlock.html">TPSDResourceBlock</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PPSDResourceBlockData">PPSDResourceBlockData</a></strong> =&circ;<a href="BGRAReadPSD.TPSDResourceBlockData.html">TPSDResourceBlockData</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ALPHA_ID">PSD_ALPHA_ID</a></strong> = $041d;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ALPHA_NAMES">PSD_ALPHA_NAMES</a></strong> = $03ee;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ALPHA_NAMES_UNI">PSD_ALPHA_NAMES_UNI</a></strong> = $0415;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ALT_DUOTONE_COLOR">PSD_ALT_DUOTONE_COLOR</a></strong> = $042A;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ALT_SPOT_COLOR">PSD_ALT_SPOT_COLOR</a></strong> = $042B;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_AUTO_SAVE_FORMAT">PSD_AUTO_SAVE_FORMAT</a></strong> = $043F;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_AUTO_SAVE_PATH">PSD_AUTO_SAVE_PATH</a></strong> = $043E;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_BACKGROUND_COL">PSD_BACKGROUND_COL</a></strong> = $03f2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_BITMAP">PSD_BITMAP</a></strong> = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_BORDER_INFO">PSD_BORDER_INFO</a></strong> = $03f1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CAPTION">PSD_CAPTION</a></strong> = $03f0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CAPTION_DIGEST">PSD_CAPTION_DIGEST</a></strong> = $0425;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CLIPPING_PATH">PSD_CLIPPING_PATH</a></strong> = $0bb7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CMYK">PSD_CMYK</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COLOR_HALFTONE">PSD_COLOR_HALFTONE</a></strong> = $03f5;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COLOR_SAMPLER">PSD_COLOR_SAMPLER</a></strong> = $040e;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COLOR_SAMPLER_NEW">PSD_COLOR_SAMPLER_NEW</a></strong> = $0431;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COLOR_XFER">PSD_COLOR_XFER</a></strong> = $03f8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COPYRIGHT_FLG">PSD_COPYRIGHT_FLG</a></strong> = $040a;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_COUNT_INFO">PSD_COUNT_INFO</a></strong> = $0438;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_ANPA">PSD_CS_ANPA</a></strong> = 3000;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_CMYK">PSD_CS_CMYK</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_DIC">PSD_CS_DIC</a></strong> = 11;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_FOCOLTONE">PSD_CS_FOCOLTONE</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_GRAYSCALE">PSD_CS_GRAYSCALE</a></strong> = 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_HKS">PSD_CS_HKS</a></strong> = 10;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_HSB">PSD_CS_HSB</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_LAB">PSD_CS_LAB</a></strong> = 7;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_PANTONE">PSD_CS_PANTONE</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_RGB">PSD_CS_RGB</a></strong> = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_TOYO">PSD_CS_TOYO</a></strong> = 6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_CS_TRUMATCH">PSD_CS_TRUMATCH</a></strong> = 5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DISPLAY_INFO">PSD_DISPLAY_INFO</a></strong> = $03ef;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DISPLAY_INFO_NEW">PSD_DISPLAY_INFO_NEW</a></strong> = $0435;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DOC_IDS">PSD_DOC_IDS</a></strong> = $0414;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DUOTONE">PSD_DUOTONE</a></strong> = 8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DUOTONE_HALFTONE">PSD_DUOTONE_HALFTONE</a></strong> = $03f6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DUOTONE_INFO">PSD_DUOTONE_INFO</a></strong> = $03fa;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_DUOTONE_XFER">PSD_DUOTONE_XFER</a></strong> = $03f9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_EFFECTIVE_BW">PSD_EFFECTIVE_BW</a></strong> = $03fb;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_EFFECTS_VISIBLE">PSD_EFFECTS_VISIBLE</a></strong> = $0412;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_EPS_OPT">PSD_EPS_OPT</a></strong> = $03fd;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_EXIF_DATA">PSD_EXIF_DATA</a></strong> = $0422;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_EXIF_DATA_3">PSD_EXIF_DATA_3</a></strong> = $0423;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GLOBAL_ALT">PSD_GLOBAL_ALT</a></strong> = $0419;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GLOBAL_ANGLE">PSD_GLOBAL_ANGLE</a></strong> = $040d;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GRAYSCALE">PSD_GRAYSCALE</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GREY_HALFTONE">PSD_GREY_HALFTONE</a></strong> = $03f4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GREY_XFER">PSD_GREY_XFER</a></strong> = $03f7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_GRID_GUIDE">PSD_GRID_GUIDE</a></strong> = $0408;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_HDR_TONING_INFO">PSD_HDR_TONING_INFO</a></strong> = $042E;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ICC_PROFILE">PSD_ICC_PROFILE</a></strong> = $040f;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ICC_UNTAGGED">PSD_ICC_UNTAGGED</a></strong> = $0411;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IDX_COL_TAB_CNT">PSD_IDX_COL_TAB_CNT</a></strong> = $0416;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IDX_TRANSPARENT">PSD_IDX_TRANSPARENT</a></strong> = $0417;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IMAGEREADY_DATA">PSD_IMAGEREADY_DATA</a></strong> = $1B59;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IMAGEREADY_VARS">PSD_IMAGEREADY_VARS</a></strong> = $1B58;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IMAGE_MODE_RAW">PSD_IMAGE_MODE_RAW</a></strong> = $0405;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_INDEXED">PSD_INDEXED</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_IPTC_NAA_DATA">PSD_IPTC_NAA_DATA</a></strong> = $0404;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_JPEG_QUAL">PSD_JPEG_QUAL</a></strong> = $0406;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_JUMP_TO_XPEP">PSD_JUMP_TO_XPEP</a></strong> = $041c;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAB">PSD_LAB</a></strong> = 9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAYER_COMPS">PSD_LAYER_COMPS</a></strong> = $0429;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAYER_GROUP">PSD_LAYER_GROUP</a></strong> = $0402;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAYER_GROUP_E_ID">PSD_LAYER_GROUP_E_ID</a></strong> = $0430;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAYER_SELECT_ID">PSD_LAYER_SELECT_ID</a></strong> = $042D;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LAYER_STATE">PSD_LAYER_STATE</a></strong> = $0400;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_LIGHTROOM_WORK">PSD_LIGHTROOM_WORK</a></strong> = $1F40;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_MAC_NSPRINTINFO">PSD_MAC_NSPRINTINFO</a></strong> = $043C;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_MAC_PRINT_INFO">PSD_MAC_PRINT_INFO</a></strong> = $03e9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_MEASURE_SCALE">PSD_MEASURE_SCALE</a></strong> = $0432;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_MULTICHANNEL">PSD_MULTICHANNEL</a></strong> = 7;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_OBSOLETE_01">PSD_OBSOLETE_01</a></strong> = $03fc;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_OBSOLETE_02">PSD_OBSOLETE_02</a></strong> = $03ff;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_OBSOLETE_03">PSD_OBSOLETE_03</a></strong> = $0403;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ONION_SKINS">PSD_ONION_SKINS</a></strong> = $0436;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PATH_INFO_FIRST">PSD_PATH_INFO_FIRST</a></strong> = $07d0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PATH_INFO_LAST">PSD_PATH_INFO_LAST</a></strong> = $0bb6;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PIXEL_AR">PSD_PIXEL_AR</a></strong> = $0428;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PLUGIN_R_FIRST">PSD_PLUGIN_R_FIRST</a></strong> = $0FA0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PLUGIN_R_LAST">PSD_PLUGIN_R_LAST</a></strong> = $1387;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_FLAGS">PSD_PRINT_FLAGS</a></strong> = $03f3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_FLAGS_2">PSD_PRINT_FLAGS_2</a></strong> = $2710;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_INFO">PSD_PRINT_INFO</a></strong> = $043A;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_INFO_SCALE">PSD_PRINT_INFO_SCALE</a></strong> = $042F;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_SCALE">PSD_PRINT_SCALE</a></strong> = $0426;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PRINT_STYLE">PSD_PRINT_STYLE</a></strong> = $043B;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PS2_COLOR_TAB">PSD_PS2_COLOR_TAB</a></strong> = $03eb;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_PS2_IMAGE_INFO">PSD_PS2_IMAGE_INFO</a></strong> = $03e8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_QUICK_MASK">PSD_QUICK_MASK</a></strong> = $03fe;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_RESN_INFO">PSD_RESN_INFO</a></strong> = $03ed;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_ResourceSectionSignature">PSD_ResourceSectionSignature</a></strong> ='8BIM';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_RES_CM">PSD_RES_CM</a></strong> = 2;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_RES_INCH">PSD_RES_INCH</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_RGB">PSD_RGB</a></strong> = 3;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_SHEET_DISCLOSE">PSD_SHEET_DISCLOSE</a></strong> = $0434;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_SLICES">PSD_SLICES</a></strong> = $041a;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_SPOT_HALFTONE">PSD_SPOT_HALFTONE</a></strong> = $0413;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_THUMB_RES">PSD_THUMB_RES</a></strong> = $0409;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_THUMB_RES2">PSD_THUMB_RES2</a></strong> = $040c;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_TIMELINE_INFO">PSD_TIMELINE_INFO</a></strong> = $0433;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_UNIT_CM">PSD_UNIT_CM</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_UNIT_COLUMN">PSD_UNIT_COLUMN</a></strong> = 5;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_UNIT_INCH">PSD_UNIT_INCH</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_UNIT_PICA">PSD_UNIT_PICA</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_UNIT_POINT">PSD_UNIT_POINT</a></strong> = 3;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_URL">PSD_URL</a></strong> = $040b;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_URL_LIST_UNI">PSD_URL_LIST_UNI</a></strong> = $041e;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_VERSION_INFO">PSD_VERSION_INFO</a></strong> = $0421;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_WATERMARK">PSD_WATERMARK</a></strong> = $0410;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_WIN_DEVMODE">PSD_WIN_DEVMODE</a></strong> = $043D;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_WORKFLOW_URL_UNI">PSD_WORKFLOW_URL_UNI</a></strong> = $041b;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_WORKING_PATH">PSD_WORKING_PATH</a></strong> = $0401;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAReadPSD.html#PSD_XMP_DATA">PSD_XMP_DATA</a></strong> = $0424;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSDResolutionUnitToResolutionUnit"></span><code>function <strong>PSDResolutionUnitToResolutionUnit</strong>(APSDResolutionUnit: Word): <a href="BGRABitmapTypes.html#TResolutionUnit">TResolutionUnit</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ResolutionUnitToPSdResolutionUnit"></span><code>function <strong>ResolutionUnitToPSdResolutionUnit</strong>(AResolutionUnit: <a href="BGRABitmapTypes.html#TResolutionUnit">TResolutionUnit</a>): Word;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PPSDResourceBlock"></span><code><strong>PPSDResourceBlock</strong> =&circ;<a href="BGRAReadPSD.TPSDResourceBlock.html">TPSDResourceBlock</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PPSDResourceBlockData"></span><code><strong>PPSDResourceBlockData</strong> =&circ;<a href="BGRAReadPSD.TPSDResourceBlockData.html">TPSDResourceBlockData</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ALPHA_ID"></span><code><strong>PSD_ALPHA_ID</strong> = $041d;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Jump to XPEP (?)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ALPHA_NAMES"></span><code><strong>PSD_ALPHA_NAMES</strong> = $03ee;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+ResolutionInfo structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ALPHA_NAMES_UNI"></span><code><strong>PSD_ALPHA_NAMES_UNI</strong> = $0415;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Document specific IDs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ALT_DUOTONE_COLOR"></span><code><strong>PSD_ALT_DUOTONE_COLOR</strong> = $042A;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Layer comps</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ALT_SPOT_COLOR"></span><code><strong>PSD_ALT_SPOT_COLOR</strong> = $042B;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Alternative Duotone colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_AUTO_SAVE_FORMAT"></span><code><strong>PSD_AUTO_SAVE_FORMAT</strong> = $043F;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auto save file path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_AUTO_SAVE_PATH"></span><code><strong>PSD_AUTO_SAVE_PATH</strong> = $043E;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Windows DEVMODE</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_BACKGROUND_COL"></span><code><strong>PSD_BACKGROUND_COL</strong> = $03f2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Border info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_BITMAP"></span><code><strong>PSD_BITMAP</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Image color modes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_BORDER_INFO"></span><code><strong>PSD_BORDER_INFO</strong> = $03f1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Optional - Caption string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CAPTION"></span><code><strong>PSD_CAPTION</strong> = $03f0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Superceded by <a class="normal" href="BGRAReadPSD.html#PSD_DISPLAY_INFO_NEW">PSD_DISPLAY_INFO_NEW</a> for ps CS3 and higher - DisplayInfo structure</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CAPTION_DIGEST"></span><code><strong>PSD_CAPTION_DIGEST</strong> = $0425;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+XMP data block</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CLIPPING_PATH"></span><code><strong>PSD_CLIPPING_PATH</strong> = $0bb7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Last path info block</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CMYK"></span><code><strong>PSD_CMYK</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RGB image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COLOR_HALFTONE"></span><code><strong>PSD_COLOR_HALFTONE</strong> = $03f5;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Greyscale and multichannel halftoning info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COLOR_SAMPLER"></span><code><strong>PSD_COLOR_SAMPLER</strong> = $040e;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Superceded by PSD_NEW_COLOR_SAMPLER for ps CS3 and higher - Global angle</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COLOR_SAMPLER_NEW"></span><code><strong>PSD_COLOR_SAMPLER_NEW</strong> = $0431;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Layer group(s) enabled ID</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COLOR_XFER"></span><code><strong>PSD_COLOR_XFER</strong> = $03f8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Greyscale and multichannel transfer functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COPYRIGHT_FLG"></span><code><strong>PSD_COPYRIGHT_FLG</strong> = $040a;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Thumbnail resource</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_COUNT_INFO"></span><code><strong>PSD_COUNT_INFO</strong> = $0438;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Onion skins</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_ANPA"></span><code><strong>PSD_CS_ANPA</strong> = 3000;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+DIC color guide (Lab)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_CMYK"></span><code><strong>PSD_CS_CMYK</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Hue, Saturation, Brightness</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_DIC"></span><code><strong>PSD_CS_DIC</strong> = 11;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+HKS colors (CMYK)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_FOCOLTONE"></span><code><strong>PSD_CS_FOCOLTONE</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pantone matching system (Lab)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_GRAYSCALE"></span><code><strong>PSD_CS_GRAYSCALE</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+L*a*b</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_HKS"></span><code><strong>PSD_CS_HKS</strong> = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Grey scale</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_HSB"></span><code><strong>PSD_CS_HSB</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RGB</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_LAB"></span><code><strong>PSD_CS_LAB</strong> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Toyo 88 colorfinder 1050 (Lab)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_PANTONE"></span><code><strong>PSD_CS_PANTONE</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+CMYK</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_RGB"></span><code><strong>PSD_CS_RGB</strong> = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Image color spaces</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_TOYO"></span><code><strong>PSD_CS_TOYO</strong> = 6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Trumatch color (CMYK)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_CS_TRUMATCH"></span><code><strong>PSD_CS_TRUMATCH</strong> = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Focoltone color system (CMYK)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DISPLAY_INFO"></span><code><strong>PSD_DISPLAY_INFO</strong> = $03ef;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Alpha channel names</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DISPLAY_INFO_NEW"></span><code><strong>PSD_DISPLAY_INFO_NEW</strong> = $0435;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Sheet discloser</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DOC_IDS"></span><code><strong>PSD_DOC_IDS</strong> = $0414;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Spot halftone</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DUOTONE"></span><code><strong>PSD_DUOTONE</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Multichannel image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DUOTONE_HALFTONE"></span><code><strong>PSD_DUOTONE_HALFTONE</strong> = $03f6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Color halftoning info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DUOTONE_INFO"></span><code><strong>PSD_DUOTONE_INFO</strong> = $03fa;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Duotone transfer functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_DUOTONE_XFER"></span><code><strong>PSD_DUOTONE_XFER</strong> = $03f9;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Color transfer functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_EFFECTIVE_BW"></span><code><strong>PSD_EFFECTIVE_BW</strong> = $03fb;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Duotone image information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_EFFECTS_VISIBLE"></span><code><strong>PSD_EFFECTS_VISIBLE</strong> = $0412;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Do not use ICC profile flag</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_EPS_OPT"></span><code><strong>PSD_EPS_OPT</strong> = $03fd;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Obsolete</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_EXIF_DATA"></span><code><strong>PSD_EXIF_DATA</strong> = $0422;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Version info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_EXIF_DATA_3"></span><code><strong>PSD_EXIF_DATA_3</strong> = $0423;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Exif data block 1</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GLOBAL_ALT"></span><code><strong>PSD_GLOBAL_ALT</strong> = $0419;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Index of transparent color (if any)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GLOBAL_ANGLE"></span><code><strong>PSD_GLOBAL_ANGLE</strong> = $040d;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Thumbnail resource</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GRAYSCALE"></span><code><strong>PSD_GRAYSCALE</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Bitmap image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GREY_HALFTONE"></span><code><strong>PSD_GREY_HALFTONE</strong> = $03f4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Print flags</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GREY_XFER"></span><code><strong>PSD_GREY_XFER</strong> = $03f7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Duotone halftoning info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_GRID_GUIDE"></span><code><strong>PSD_GRID_GUIDE</strong> = $0408;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+JPEG quality</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_HDR_TONING_INFO"></span><code><strong>PSD_HDR_TONING_INFO</strong> = $042E;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Layer selection ID</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ICC_PROFILE"></span><code><strong>PSD_ICC_PROFILE</strong> = $040f;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Superceded by PSD_NEW_COLOR_SAMPLER for ps CS3 and higher - Color samplers resource</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ICC_UNTAGGED"></span><code><strong>PSD_ICC_UNTAGGED</strong> = $0411;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Watermark</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IDX_COL_TAB_CNT"></span><code><strong>PSD_IDX_COL_TAB_CNT</strong> = $0416;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Unicode alpha names</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IDX_TRANSPARENT"></span><code><strong>PSD_IDX_TRANSPARENT</strong> = $0417;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indexed color table count</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IMAGEREADY_DATA"></span><code><strong>PSD_IMAGEREADY_DATA</strong> = $1B59;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Imageready variables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IMAGEREADY_VARS"></span><code><strong>PSD_IMAGEREADY_VARS</strong> = $1B58;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Last plugin resource</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IMAGE_MODE_RAW"></span><code><strong>PSD_IMAGE_MODE_RAW</strong> = $0405;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+IPTC-NAA record (IMV4.pdf)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_INDEXED"></span><code><strong>PSD_INDEXED</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Greyscale image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_IPTC_NAA_DATA"></span><code><strong>PSD_IPTC_NAA_DATA</strong> = $0404;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Obsolete</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_JPEG_QUAL"></span><code><strong>PSD_JPEG_QUAL</strong> = $0406;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Image mode for raw format files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_JUMP_TO_XPEP"></span><code><strong>PSD_JUMP_TO_XPEP</strong> = $041c;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Workflow URL - Unicode string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAB"></span><code><strong>PSD_LAB</strong> = 9;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Duotone image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAYER_COMPS"></span><code><strong>PSD_LAYER_COMPS</strong> = $0429;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pixel aspect ratio</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAYER_GROUP"></span><code><strong>PSD_LAYER_GROUP</strong> = $0402;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Working path (not saved)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAYER_GROUP_E_ID"></span><code><strong>PSD_LAYER_GROUP_E_ID</strong> = $0430;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Print scale</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAYER_SELECT_ID"></span><code><strong>PSD_LAYER_SELECT_ID</strong> = $042D;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Alternative Spot colors</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LAYER_STATE"></span><code><strong>PSD_LAYER_STATE</strong> = $0400;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Obsolete</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_LIGHTROOM_WORK"></span><code><strong>PSD_LIGHTROOM_WORK</strong> = $1F40;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Imageready data sets</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_MAC_NSPRINTINFO"></span><code><strong>PSD_MAC_NSPRINTINFO</strong> = $043C;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Print style</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_MAC_PRINT_INFO"></span><code><strong>PSD_MAC_PRINT_INFO</strong> = $03e9;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Obsolete - ps 2.0 image info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_MEASURE_SCALE"></span><code><strong>PSD_MEASURE_SCALE</strong> = $0432;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Color sampler resource for ps CS3 and higher PSD files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_MULTICHANNEL"></span><code><strong>PSD_MULTICHANNEL</strong> = 7;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+CMYK</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_OBSOLETE_01"></span><code><strong>PSD_OBSOLETE_01</strong> = $03fc;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Effective black &amp; white values for dot range</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_OBSOLETE_02"></span><code><strong>PSD_OBSOLETE_02</strong> = $03ff;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Quick mask info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_OBSOLETE_03"></span><code><strong>PSD_OBSOLETE_03</strong> = $0403;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Layers group info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ONION_SKINS"></span><code><strong>PSD_ONION_SKINS</strong> = $0436;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+DisplayInfo structure for ps CS3 and higher PSD files</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PATH_INFO_FIRST"></span><code><strong>PSD_PATH_INFO_FIRST</strong> = $07d0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Auto save format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PATH_INFO_LAST"></span><code><strong>PSD_PATH_INFO_LAST</strong> = $0bb6;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+First path info block</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PIXEL_AR"></span><code><strong>PSD_PIXEL_AR</strong> = $0428;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Print scale</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PLUGIN_R_FIRST"></span><code><strong>PSD_PLUGIN_R_FIRST</strong> = $0FA0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Name of clipping path</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PLUGIN_R_LAST"></span><code><strong>PSD_PLUGIN_R_LAST</strong> = $1387;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+First plugin resource</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_FLAGS"></span><code><strong>PSD_PRINT_FLAGS</strong> = $03f3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Background color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_FLAGS_2"></span><code><strong>PSD_PRINT_FLAGS_2</strong> = $2710;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Lightroom workflow</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_INFO"></span><code><strong>PSD_PRINT_INFO</strong> = $043A;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Count information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_INFO_SCALE"></span><code><strong>PSD_PRINT_INFO_SCALE</strong> = $042F;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+HDR toning information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_SCALE"></span><code><strong>PSD_PRINT_SCALE</strong> = $0426;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Caption digest</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PRINT_STYLE"></span><code><strong>PSD_PRINT_STYLE</strong> = $043B;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Print information added in ps CS5</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PS2_COLOR_TAB"></span><code><strong>PSD_PS2_COLOR_TAB</strong> = $03eb;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Optional - Mac print manager print info record</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_PS2_IMAGE_INFO"></span><code><strong>PSD_PS2_IMAGE_INFO</strong> = $03e8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_QUICK_MASK"></span><code><strong>PSD_QUICK_MASK</strong> = $03fe;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+EPS options</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_RESN_INFO"></span><code><strong>PSD_RESN_INFO</strong> = $03ed;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Obsolete - ps 2.0 indexed color table</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_ResourceSectionSignature"></span><code><strong>PSD_ResourceSectionSignature</strong> ='8BIM';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Image Resource IDs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_RES_CM"></span><code><strong>PSD_RES_CM</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Pixels / inch</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_RES_INCH"></span><code><strong>PSD_RES_INCH</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Display resolution units</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_RGB"></span><code><strong>PSD_RGB</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Indexed image</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_SHEET_DISCLOSE"></span><code><strong>PSD_SHEET_DISCLOSE</strong> = $0434;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Timeline information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_SLICES"></span><code><strong>PSD_SLICES</strong> = $041a;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Global altitude</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_SPOT_HALFTONE"></span><code><strong>PSD_SPOT_HALFTONE</strong> = $0413;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Show / hide all effects layers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_THUMB_RES"></span><code><strong>PSD_THUMB_RES</strong> = $0409;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Grid &amp; guide info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_THUMB_RES2"></span><code><strong>PSD_THUMB_RES2</strong> = $040c;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+URL string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_TIMELINE_INFO"></span><code><strong>PSD_TIMELINE_INFO</strong> = $0433;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Measurement scale</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_UNIT_CM"></span><code><strong>PSD_UNIT_CM</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+inches</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_UNIT_COLUMN"></span><code><strong>PSD_UNIT_COLUMN</strong> = 5;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+pica ( 6 pica = 1 inch)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_UNIT_INCH"></span><code><strong>PSD_UNIT_INCH</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Width and height units</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_UNIT_PICA"></span><code><strong>PSD_UNIT_PICA</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+points (72 points = 1 inch)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_UNIT_POINT"></span><code><strong>PSD_UNIT_POINT</strong> = 3;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+cm</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_URL"></span><code><strong>PSD_URL</strong> = $040b;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copyright flag</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_URL_LIST_UNI"></span><code><strong>PSD_URL_LIST_UNI</strong> = $041e;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Alpha IDs</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_VERSION_INFO"></span><code><strong>PSD_VERSION_INFO</strong> = $0421;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+URL list - unicode</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_WATERMARK"></span><code><strong>PSD_WATERMARK</strong> = $0410;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+ICC Profile</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_WIN_DEVMODE"></span><code><strong>PSD_WIN_DEVMODE</strong> = $043D;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Mac NSPrintInfo</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_WORKFLOW_URL_UNI"></span><code><strong>PSD_WORKFLOW_URL_UNI</strong> = $041b;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Slices</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_WORKING_PATH"></span><code><strong>PSD_WORKING_PATH</strong> = $0401;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Layer state info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSD_XMP_DATA"></span><code><strong>PSD_XMP_DATA</strong> = $0424;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Exif data block 3 (?)</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

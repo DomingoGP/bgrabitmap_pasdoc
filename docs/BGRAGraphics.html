@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAGraphics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAGraphics</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Graphics</li><li>GraphType</li><li>FPImage</li><li>FPCanvas</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#clRgbBtnHighlight">clRgbBtnHighlight</a></strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#clRgbBtnShadow">clRgbBtnShadow</a></strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#ColorToRGB">ColorToRGB</a></strong>(c: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#FPColorToTColor">FPColorToTColor</a></strong>(const FPColor: TFPColor): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAGraphics.html#RedGreenBlue">RedGreenBlue</a></strong>(rgb: <a href="BGRAGraphics.html#TColor">TColor</a>; out Red, Green, Blue: Byte); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#RGBToColor">RGBToColor</a></strong>(R, G, B: Byte): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAGraphics.html#TColorToFPColor">TColorToFPColor</a></strong>(const c: <a href="BGRAGraphics.html#TColor">TColor</a>): TFPColor; inline;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#PColor">PColor</a></strong> = Graphics.PColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TAntialiasingMode">TAntialiasingMode</a></strong> = Graphics.TAntialiasingMode;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TBitmap">TBitmap</a></strong> = Graphics.TBitmap;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TBrush">TBrush</a></strong> = Graphics.TBrush;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a></strong> = Graphics.TBrushStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TCanvas">TCanvas</a></strong> = Graphics.TCanvas;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TColor">TColor</a></strong> = Graphics.TColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFillMode">TFillMode</a></strong> = Graphics.TFillMode;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFillStyle">TFillStyle</a></strong> = Graphics.TFillStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFont">TFont</a></strong> = Graphics.TFont;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFontQuality">TFontQuality</a></strong> = Graphics.TFontQuality;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFontStyle">TFontStyle</a></strong> = Graphics.TFontStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TFontStyles">TFontStyles</a></strong> = Graphics.TFontStyles;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a></strong> = Graphics.TGradientDirection;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TGraphic">TGraphic</a></strong> = Graphics.TGraphic;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TPen">TPen</a></strong> = Graphics.TPen;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a></strong> = Graphics.TPenEndCap;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a></strong> = Graphics.TPenJoinStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TPenMode">TPenMode</a></strong> = Graphics.TPenMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TPenStyle">TPenStyle</a></strong> = Graphics.TPenStyle;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TRasterImage">TRasterImage</a></strong> = Graphics.TRasterImage;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TRawImage">TRawImage</a></strong> = GraphType.TRawImage;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TTextLayout">TTextLayout</a></strong> = Graphics.TTextLayout;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#TTextStyle">TTextStyle</a></strong> = Graphics.TTextStyle;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#amDontCare">amDontCare</a></strong> = Graphics.amDontCare;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#amOff">amOff</a></strong> = Graphics.amOff;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#amOn">amOn</a></strong> = Graphics.amOn;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsBDiagonal">bsBDiagonal</a></strong> = Graphics.bsBDiagonal;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsClear">bsClear</a></strong> = Graphics.bsClear;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsCross">bsCross</a></strong> = Graphics.bsCross;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsDiagCross">bsDiagCross</a></strong> = Graphics.bsDiagCross;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsFDiagonal">bsFDiagonal</a></strong> = Graphics.bsFDiagonal;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsHorizontal">bsHorizontal</a></strong> = Graphics.bsHorizontal;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsImage">bsImage</a></strong> = FPCanvas.bsImage;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsSolid">bsSolid</a></strong> = Graphics.bsSolid;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#bsVertical">bsVertical</a></strong> = Graphics.bsVertical;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clAqua">clAqua</a></strong>    = Graphics.clAqua;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clBlack">clBlack</a></strong>   = Graphics.clBlack;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clBlue">clBlue</a></strong>    = Graphics.clBlue;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clDkGray">clDkGray</a></strong>  = Graphics.clDkGray;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clFuchsia">clFuchsia</a></strong> = Graphics.clFuchsia;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clGray">clGray</a></strong>    = Graphics.clGray;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clGreen">clGreen</a></strong>   = Graphics.clGreen;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clLime">clLime</a></strong>    = Graphics.clLime;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clLtGray">clLtGray</a></strong>  = Graphics.clLtGray;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clMaroon">clMaroon</a></strong>  = Graphics.clMaroon;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clNavy">clNavy</a></strong>    = Graphics.clNavy;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clNone">clNone</a></strong> = Graphics.clNone;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clOlive">clOlive</a></strong>   = Graphics.clOlive;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clPurple">clPurple</a></strong>  = Graphics.clPurple;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clRed">clRed</a></strong>     = Graphics.clRed;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clSilver">clSilver</a></strong>  = Graphics.clSilver;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clTeal">clTeal</a></strong>    = Graphics.clTeal;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clWhite">clWhite</a></strong>   = Graphics.clWhite;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#clYellow">clYellow</a></strong>  = Graphics.clYellow;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fmAlternate">fmAlternate</a></strong> = Graphics.fmAlternate;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fmWinding">fmWinding</a></strong> = Graphics.fmWinding;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqAntialiased">fqAntialiased</a></strong> = Graphics.fqAntialiased;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqCleartype">fqCleartype</a></strong> = Graphics.fqCleartype;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqCleartypeNatural">fqCleartypeNatural</a></strong> = Graphics.fqCleartypeNatural;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqDefault">fqDefault</a></strong> = Graphics.fqDefault;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqDraft">fqDraft</a></strong> = Graphics.fqDraft;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqNonAntialiased">fqNonAntialiased</a></strong> = Graphics.fqNonAntialiased;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fqProof">fqProof</a></strong> = Graphics.fqProof;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsBold">fsBold</a></strong> = Graphics.fsBold;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsBorder">fsBorder</a></strong> = GraphType.fsBorder;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsItalic">fsItalic</a></strong> = Graphics.fsItalic;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsStrikeOut">fsStrikeOut</a></strong> = Graphics.fsStrikeOut;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsSurface">fsSurface</a></strong> = GraphType.fsSurface;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#fsUnderline">fsUnderline</a></strong> = Graphics.fsUnderline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#gdHorizontal">gdHorizontal</a></strong> = Graphics.gdHorizontal;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#gdVertical">gdVertical</a></strong> = Graphics.gdVertical;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pecFlat">pecFlat</a></strong> = Graphics.pecFlat;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pecRound">pecRound</a></strong> = Graphics.pecRound;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pecSquare">pecSquare</a></strong> = Graphics.pecSquare;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pjsBevel">pjsBevel</a></strong> = Graphics.pjsBevel;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pjsMiter">pjsMiter</a></strong> = Graphics.pjsMiter;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pjsRound">pjsRound</a></strong> = Graphics.pjsRound;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmBlack">pmBlack</a></strong> = Graphics.pmBlack;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmCopy">pmCopy</a></strong> = Graphics.pmCopy;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMask">pmMask</a></strong> = Graphics.pmMask;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMaskNotPen">pmMaskNotPen</a></strong> = Graphics.pmMaskNotPen;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMaskPenNot">pmMaskPenNot</a></strong> = Graphics.pmMaskPenNot;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMerge">pmMerge</a></strong> = Graphics.pmMerge;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMergeNotPen">pmMergeNotPen</a></strong> = Graphics.pmMergeNotPen;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmMergePenNot">pmMergePenNot</a></strong> = Graphics.pmMergePenNot;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNop">pmNop</a></strong> = Graphics.pmNop;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNot">pmNot</a></strong> = Graphics.pmNot;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNotCopy">pmNotCopy</a></strong> = Graphics.pmNotCopy;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNotMask">pmNotMask</a></strong> = Graphics.pmNotMask;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNotMerge">pmNotMerge</a></strong> = Graphics.pmNotMerge;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmNotXor">pmNotXor</a></strong> = Graphics.pmNotXor;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmWhite">pmWhite</a></strong> = Graphics.pmWhite;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#pmXor">pmXor</a></strong> = Graphics.pmXor;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psClear">psClear</a></strong> = Graphics.psClear;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psDash">psDash</a></strong> = Graphics.psDash;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psDashDot">psDashDot</a></strong> = Graphics.psDashDot;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psDashDotDot">psDashDotDot</a></strong> = Graphics.psDashDotDot;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psDot">psDot</a></strong> = Graphics.psDot;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psInsideframe">psInsideframe</a></strong> = Graphics.psInsideframe;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psPattern">psPattern</a></strong> = Graphics.psPattern;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#psSolid">psSolid</a></strong> = Graphics.psSolid;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#tlBottom">tlBottom</a></strong> = Graphics.tlBottom;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#tlCenter">tlCenter</a></strong> = Graphics.tlCenter;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#tlTop">tlTop</a></strong> = Graphics.tlTop;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#tmAuto">tmAuto</a></strong> = Graphics.tmAuto;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAGraphics.html#tmFixed">tmFixed</a></strong> = Graphics.tmFixed;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clRgbBtnHighlight"></span><code>function <strong>clRgbBtnHighlight</strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+does not work on system color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clRgbBtnShadow"></span><code>function <strong>clRgbBtnShadow</strong>: <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ColorToRGB"></span><code>function <strong>ColorToRGB</strong>(c: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FPColorToTColor"></span><code>function <strong>FPColorToTColor</strong>(const FPColor: TFPColor): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RedGreenBlue"></span><code>procedure <strong>RedGreenBlue</strong>(rgb: <a href="BGRAGraphics.html#TColor">TColor</a>; out Red, Green, Blue: Byte); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="RGBToColor"></span><code>function <strong>RGBToColor</strong>(R, G, B: Byte): <a href="BGRAGraphics.html#TColor">TColor</a>; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TColorToFPColor"></span><code>function <strong>TColorToFPColor</strong>(const c: <a href="BGRAGraphics.html#TColor">TColor</a>): TFPColor; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PColor"></span><code><strong>PColor</strong> = Graphics.PColor;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAntialiasingMode"></span><code><strong>TAntialiasingMode</strong> = Graphics.TAntialiasingMode;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBitmap"></span><code><strong>TBitmap</strong> = Graphics.TBitmap;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrush"></span><code><strong>TBrush</strong> = Graphics.TBrush;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrushStyle"></span><code><strong>TBrushStyle</strong> = Graphics.TBrushStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TCanvas"></span><code><strong>TCanvas</strong> = Graphics.TCanvas;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TColor"></span><code><strong>TColor</strong> = Graphics.TColor;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFillMode"></span><code><strong>TFillMode</strong> = Graphics.TFillMode;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFillStyle"></span><code><strong>TFillStyle</strong> = Graphics.TFillStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFont"></span><code><strong>TFont</strong> = Graphics.TFont;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFontQuality"></span><code><strong>TFontQuality</strong> = Graphics.TFontQuality;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFontStyle"></span><code><strong>TFontStyle</strong> = Graphics.TFontStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFontStyles"></span><code><strong>TFontStyles</strong> = Graphics.TFontStyles;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGradientDirection"></span><code><strong>TGradientDirection</strong> = Graphics.TGradientDirection;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TGraphic"></span><code><strong>TGraphic</strong> = Graphics.TGraphic;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPen"></span><code><strong>TPen</strong> = Graphics.TPen;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenEndCap"></span><code><strong>TPenEndCap</strong> = Graphics.TPenEndCap;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenJoinStyle"></span><code><strong>TPenJoinStyle</strong> = Graphics.TPenJoinStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenMode"></span><code><strong>TPenMode</strong> = Graphics.TPenMode;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenStyle"></span><code><strong>TPenStyle</strong> = Graphics.TPenStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRasterImage"></span><code><strong>TRasterImage</strong> = Graphics.TRasterImage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRawImage"></span><code><strong>TRawImage</strong> = GraphType.TRawImage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TTextLayout"></span><code><strong>TTextLayout</strong> = Graphics.TTextLayout;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TTextStyle"></span><code><strong>TTextStyle</strong> = Graphics.TTextStyle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="amDontCare"></span><code><strong>amDontCare</strong> = Graphics.amDontCare;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="amOff"></span><code><strong>amOff</strong> = Graphics.amOff;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="amOn"></span><code><strong>amOn</strong> = Graphics.amOn;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsBDiagonal"></span><code><strong>bsBDiagonal</strong> = Graphics.bsBDiagonal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsClear"></span><code><strong>bsClear</strong> = Graphics.bsClear;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsCross"></span><code><strong>bsCross</strong> = Graphics.bsCross;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsDiagCross"></span><code><strong>bsDiagCross</strong> = Graphics.bsDiagCross;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsFDiagonal"></span><code><strong>bsFDiagonal</strong> = Graphics.bsFDiagonal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsHorizontal"></span><code><strong>bsHorizontal</strong> = Graphics.bsHorizontal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsImage"></span><code><strong>bsImage</strong> = FPCanvas.bsImage;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsSolid"></span><code><strong>bsSolid</strong> = Graphics.bsSolid;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="bsVertical"></span><code><strong>bsVertical</strong> = Graphics.bsVertical;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clAqua"></span><code><strong>clAqua</strong>    = Graphics.clAqua;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clBlack"></span><code><strong>clBlack</strong>   = Graphics.clBlack;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clBlue"></span><code><strong>clBlue</strong>    = Graphics.clBlue;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clDkGray"></span><code><strong>clDkGray</strong>  = Graphics.clDkGray;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal" href="BGRAGraphics.html#clSilver">clSilver</a> alias</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clFuchsia"></span><code><strong>clFuchsia</strong> = Graphics.clFuchsia;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clGray"></span><code><strong>clGray</strong>    = Graphics.clGray;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clGreen"></span><code><strong>clGreen</strong>   = Graphics.clGreen;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clLime"></span><code><strong>clLime</strong>    = Graphics.clLime;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clLtGray"></span><code><strong>clLtGray</strong>  = Graphics.clLtGray;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clMaroon"></span><code><strong>clMaroon</strong>  = Graphics.clMaroon;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clNavy"></span><code><strong>clNavy</strong>    = Graphics.clNavy;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clNone"></span><code><strong>clNone</strong> = Graphics.clNone;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clOlive"></span><code><strong>clOlive</strong>   = Graphics.clOlive;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clPurple"></span><code><strong>clPurple</strong>  = Graphics.clPurple;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clRed"></span><code><strong>clRed</strong>     = Graphics.clRed;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clSilver"></span><code><strong>clSilver</strong>  = Graphics.clSilver;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clTeal"></span><code><strong>clTeal</strong>    = Graphics.clTeal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clWhite"></span><code><strong>clWhite</strong>   = Graphics.clWhite;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal" href="BGRAGraphics.html#clGray">clGray</a> alias</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="clYellow"></span><code><strong>clYellow</strong>  = Graphics.clYellow;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmAlternate"></span><code><strong>fmAlternate</strong> = Graphics.fmAlternate;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmWinding"></span><code><strong>fmWinding</strong> = Graphics.fmWinding;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqAntialiased"></span><code><strong>fqAntialiased</strong> = Graphics.fqAntialiased;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqCleartype"></span><code><strong>fqCleartype</strong> = Graphics.fqCleartype;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqCleartypeNatural"></span><code><strong>fqCleartypeNatural</strong> = Graphics.fqCleartypeNatural;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqDefault"></span><code><strong>fqDefault</strong> = Graphics.fqDefault;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqDraft"></span><code><strong>fqDraft</strong> = Graphics.fqDraft;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqNonAntialiased"></span><code><strong>fqNonAntialiased</strong> = Graphics.fqNonAntialiased;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fqProof"></span><code><strong>fqProof</strong> = Graphics.fqProof;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsBold"></span><code><strong>fsBold</strong> = Graphics.fsBold;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsBorder"></span><code><strong>fsBorder</strong> = GraphType.fsBorder;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsItalic"></span><code><strong>fsItalic</strong> = Graphics.fsItalic;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsStrikeOut"></span><code><strong>fsStrikeOut</strong> = Graphics.fsStrikeOut;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsSurface"></span><code><strong>fsSurface</strong> = GraphType.fsSurface;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fsUnderline"></span><code><strong>fsUnderline</strong> = Graphics.fsUnderline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="gdHorizontal"></span><code><strong>gdHorizontal</strong> = Graphics.gdHorizontal;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="gdVertical"></span><code><strong>gdVertical</strong> = Graphics.gdVertical;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pecFlat"></span><code><strong>pecFlat</strong> = Graphics.pecFlat;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pecRound"></span><code><strong>pecRound</strong> = Graphics.pecRound;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pecSquare"></span><code><strong>pecSquare</strong> = Graphics.pecSquare;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pjsBevel"></span><code><strong>pjsBevel</strong> = Graphics.pjsBevel;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pjsMiter"></span><code><strong>pjsMiter</strong> = Graphics.pjsMiter;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pjsRound"></span><code><strong>pjsRound</strong> = Graphics.pjsRound;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmBlack"></span><code><strong>pmBlack</strong> = Graphics.pmBlack;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmCopy"></span><code><strong>pmCopy</strong> = Graphics.pmCopy;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMask"></span><code><strong>pmMask</strong> = Graphics.pmMask;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMaskNotPen"></span><code><strong>pmMaskNotPen</strong> = Graphics.pmMaskNotPen;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMaskPenNot"></span><code><strong>pmMaskPenNot</strong> = Graphics.pmMaskPenNot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMerge"></span><code><strong>pmMerge</strong> = Graphics.pmMerge;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMergeNotPen"></span><code><strong>pmMergeNotPen</strong> = Graphics.pmMergeNotPen;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmMergePenNot"></span><code><strong>pmMergePenNot</strong> = Graphics.pmMergePenNot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNop"></span><code><strong>pmNop</strong> = Graphics.pmNop;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNot"></span><code><strong>pmNot</strong> = Graphics.pmNot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNotCopy"></span><code><strong>pmNotCopy</strong> = Graphics.pmNotCopy;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNotMask"></span><code><strong>pmNotMask</strong> = Graphics.pmNotMask;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNotMerge"></span><code><strong>pmNotMerge</strong> = Graphics.pmNotMerge;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmNotXor"></span><code><strong>pmNotXor</strong> = Graphics.pmNotXor;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmWhite"></span><code><strong>pmWhite</strong> = Graphics.pmWhite;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="pmXor"></span><code><strong>pmXor</strong> = Graphics.pmXor;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psClear"></span><code><strong>psClear</strong> = Graphics.psClear;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psDash"></span><code><strong>psDash</strong> = Graphics.psDash;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psDashDot"></span><code><strong>psDashDot</strong> = Graphics.psDashDot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psDashDotDot"></span><code><strong>psDashDotDot</strong> = Graphics.psDashDotDot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psDot"></span><code><strong>psDot</strong> = Graphics.psDot;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psInsideframe"></span><code><strong>psInsideframe</strong> = Graphics.psInsideframe;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psPattern"></span><code><strong>psPattern</strong> = Graphics.psPattern;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="psSolid"></span><code><strong>psSolid</strong> = Graphics.psSolid;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlBottom"></span><code><strong>tlBottom</strong> = Graphics.tlBottom;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlCenter"></span><code><strong>tlCenter</strong> = Graphics.tlCenter;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlTop"></span><code><strong>tlTop</strong> = Graphics.tlTop;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tmAuto"></span><code><strong>tmAuto</strong> = Graphics.tmAuto;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tmFixed"></span><code><strong>tmFixed</strong> = Graphics.tmFixed;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

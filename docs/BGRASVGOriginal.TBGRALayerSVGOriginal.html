@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGOriginal: Class TBGRALayerSVGOriginal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRALayerSVGOriginal"></span><h1 class="cio">Class TBGRALayerSVGOriginal</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGOriginal.html">BGRASVGOriginal</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRALayerSVGOriginal = class(<a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRALayerSVGOriginal</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a></li>
+<li class="thisitem">TBGRALayerSVGOriginal</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FContentVersion">FContentVersion</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FDiff">FDiff</a></strong>: <a href="BGRASVGOriginal.TBGRASVGOriginalDiff.html">TBGRASVGOriginalDiff</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FPresentationMatrix">FPresentationMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FSVG">FSVG</a></strong>: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#Create">Create</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#CanConvertToSVG">CanConvertToSVG</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#ConvertToSVG">ConvertToSVG</a></strong>(const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#GetRenderBounds">GetRenderBounds</a></strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#GetSVGCopy">GetSVGCopy</a></strong>: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#StorageClassName">StorageClassName</a></strong>: RawByteString; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#LoadFromStorage">LoadFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#LoadFromStream">LoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#LoadSVGFromStream">LoadSVGFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AContainerWidth: integer = 640; AContainerHeight: integer = 480; AScaleDPI: single = 1);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#Render">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#SaveSVGToStream">SaveSVGToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#SaveToStorage">SaveToStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#SetSVG">SetSVG</a></strong>(ASVG: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; AContainerWidth: integer = 640; AContainerHeight: integer = 480; AScaleDPI: single = 1);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#BeginUpdate">BeginUpdate</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#ComputePresentation">ComputePresentation</a></strong>(AContainerWidth, AContainerHeight: integer; AScaleDPI: single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#EndUpdate">EndUpdate</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#DPI">DPI</a></strong>: single read GetDPI write SetDPI;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#Height">Height</a></strong>: single read GetSvgHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#PresentationMatrix">PresentationMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FPresentationMatrix">FPresentationMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#Width">Width</a></strong>: single read GetSvgWidth;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FContentVersion"></span><code><strong>FContentVersion</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDiff"></span><code><strong>FDiff</strong>: <a href="BGRASVGOriginal.TBGRASVGOriginalDiff.html">TBGRASVGOriginalDiff</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPresentationMatrix"></span><code><strong>FPresentationMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FSVG"></span><code><strong>FSVG</strong>: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CanConvertToSVG"></span><code>class function <strong>CanConvertToSVG</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToSVG"></span><code>function <strong>ConvertToSVG</strong>(const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>): <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRenderBounds"></span><code>function <strong>GetRenderBounds</strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSVGCopy"></span><code>function <strong>GetSVGCopy</strong>: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StorageClassName"></span><code>class function <strong>StorageClassName</strong>: RawByteString; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStorage"></span><code>procedure <strong>LoadFromStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadSVGFromStream"></span><code>procedure <strong>LoadSVGFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AContainerWidth: integer = 640; AContainerHeight: integer = 480; AScaleDPI: single = 1);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <strong>Render</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; ADraft: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveSVGToStream"></span><code>procedure <strong>SaveSVGToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStorage"></span><code>procedure <strong>SaveToStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRACustomOriginalStorage.html">TBGRACustomOriginalStorage</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSVG"></span><code>procedure <strong>SetSVG</strong>(ASVG: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; AContainerWidth: integer = 640; AContainerHeight: integer = 480; AScaleDPI: single = 1);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BeginUpdate"></span><code>procedure <strong>BeginUpdate</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputePresentation"></span><code>procedure <strong>ComputePresentation</strong>(AContainerWidth, AContainerHeight: integer; AScaleDPI: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="EndUpdate"></span><code>procedure <strong>EndUpdate</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DPI"></span><code>property <strong>DPI</strong>: single read GetDPI write SetDPI;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: single read GetSvgHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PresentationMatrix"></span><code>property <strong>PresentationMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRASVGOriginal.TBGRALayerSVGOriginal.html#FPresentationMatrix">FPresentationMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong>: single read GetSvgWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

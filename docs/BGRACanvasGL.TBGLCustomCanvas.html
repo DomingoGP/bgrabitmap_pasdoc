@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRACanvasGL: Class TBGLCustomCanvas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGLCustomCanvas"></span><h1 class="cio">Class TBGLCustomCanvas</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRACanvasGL.html">BGRACanvasGL</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGLCustomCanvas = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGLCustomCanvas</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGLCustomCanvas</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#CreateFrameBuffer">CreateFrameBuffer</a></strong>(AWidth,AHeight: integer): <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetImage">GetImage</a></strong>(x,y,w,h: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ComputeEllipseC">ComputeEllipseC</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AHasBorder: boolean; out cx,cy,rx,ry: single): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetBlendMode">GetBlendMode</a></strong>: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetClipRect">GetClipRect</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetFaceCulling">GetFaceCulling</a></strong>: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetHeight">GetHeight</a></strong>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetLighting">GetLighting</a></strong>: <a href="BGRACanvasGL.TBGLCustomLighting.html">TBGLCustomLighting</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetMatrix">GetMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetProjectionMatrix">GetProjectionMatrix</a></strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#GetWidth">GetWidth</a></strong>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Arc">Arc</a></strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Arc">Arc</a></strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ArcInRect">ArcInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ArcLinearColor">ArcLinearColor</a></strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ArcLinearColor">ArcLinearColor</a></strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ArcLinearColorInRect">ArcLinearColorInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#DrawPath">DrawPath</a></strong>(APath: <a href="BGRACanvasGL.TBGLPath.html">TBGLPath</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Ellipse">Ellipse</a></strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Ellipse">Ellipse</a></strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EllipseInRect">EllipseInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EllipseInRect">EllipseInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EllipseLinearColor">EllipseLinearColor</a></strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EllipseLinearColorInRect">EllipseLinearColorInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EndZBuffer">EndZBuffer</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Fill">Fill</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillEllipse">FillEllipse</a></strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillEllipseInRect">FillEllipseInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillEllipseLinearColor">FillEllipseLinearColor</a></strong>(cx, cy, rx, ry: single; AOuterColor, AInnerColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillEllipseLinearColorInRect">FillEllipseLinearColorInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AOuterColor, AInnerColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillPathConvex">FillPathConvex</a></strong>(APath: <a href="BGRACanvasGL.TBGLPath.html">TBGLPath</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillPolyConvex">FillPolyConvex</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadLinearColor">FillQuadLinearColor</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3,c4: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadLinearColor">FillQuadLinearColor</a></strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3,c4: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuads">FillQuads</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuads">FillQuads</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillQuadsLinearColor">FillQuadsLinearColor</a></strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRect">FillRect</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRect">FillRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRect">FillRect</a></strong>(r: <a href="BGRAClasses.html#TRectF">TRectF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRect">FillRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRectLinearColor">FillRectLinearColor</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATopLeftColor, ATopRightColor, ABottomRightColor, ABottomLeftColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRectLinearColor">FillRectLinearColor</a></strong>(x1,y1,x2,y2: single; ATopLeftColor, ATopRightColor, ABottomRightColor, ABottomLeftColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillRoundRect">FillRoundRect</a></strong>(x,y,x2,y2,rx,ry: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTriangleLinearColor">FillTriangleLinearColor</a></strong>(pt1,pt2,pt3: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTriangleLinearColor">FillTriangleLinearColor</a></strong>(pt1,pt2,pt3: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTriangles">FillTriangles</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTriangles">FillTriangles</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesFan">FillTrianglesFan</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; ACenterColor, ABorderColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesFan">FillTrianglesFan</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; ACenterColor, ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FillTrianglesLinearColor">FillTrianglesLinearColor</a></strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Frame3D">Frame3D</a></strong>(var bounds: <a href="BGRAClasses.html#TRect">TRect</a>; width: integer; Style: <a href="BGRABitmapTypes.html#TGraphicsBevelCut">TGraphicsBevelCut</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Frame3D">Frame3D</a></strong>(var bounds: <a href="BGRAClasses.html#TRect">TRect</a>; width: integer; Style: <a href="BGRABitmapTypes.html#TGraphicsBevelCut">TGraphicsBevelCut</a>; LightColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ShadowColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Line">Line</a></strong>(p1,p2: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoint: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Line">Line</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoint: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#NoClip">NoClip</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Pie">Pie</a></strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Pie">Pie</a></strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PieInRect">PieInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PieLinearColor">PieLinearColor</a></strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PieLinearColor">PieLinearColor</a></strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PieLinearColorInRect">PieLinearColorInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Polygons">Polygons</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Polylines">Polylines</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoints: boolean = true); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImage">PutImage</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImage">PutImage</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAffine">PutImageAffine</a></strong>(const Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAffine">PutImageAffine</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAffine">PutImageAffine</a></strong>(const Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAffine">PutImageAffine</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAngle">PutImageAngle</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; angleDeg: single; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutImageAngle">PutImageAngle</a></strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; angleDeg: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutPixels">PutPixels</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#PutPixels">PutPixels</a></strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Rectangle">Rectangle</a></strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RectangleWithin">RectangleWithin</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RectangleWithin">RectangleWithin</a></strong>(x1,y1,x2,y2: single; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ResetTransform">ResetTransform</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RotateDeg">RotateDeg</a></strong>(angleCW: single); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RotateRad">RotateRad</a></strong>(angleCCW: single); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RoundRect">RoundRect</a></strong>(x1,y1,x2,y2,rx,ry: single; ABorderColor,AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#RoundRect">RoundRect</a></strong>(x1,y1,x2,y2,rx,ry: single; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Scale">Scale</a></strong>(sx,sy: single); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#StartZBuffer">StartZBuffer</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#StretchPutImage">StretchPutImage</a></strong>(x,y,w,h: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#StretchPutImage">StretchPutImage</a></strong>(x,y,w,h: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#StretchPutImage">StretchPutImage</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#StretchPutImage">StretchPutImage</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Translate">Translate</a></strong>(x,y: single); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#UseOrthoProjection">UseOrthoProjection</a></strong>(AMinX,AMinY,AMaxX,AMaxY: single); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#UseOrthoProjection">UseOrthoProjection</a></strong>; overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#WaitForGPU">WaitForGPU</a></strong>(AOption: <a href="BGRAOpenGLType.html#TWaitForGPUOption">TWaitForGPUOption</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#DisableScissor">DisableScissor</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#EnableScissor">EnableScissor</a></strong>(AValue: <a href="BGRAClasses.html#TRect">TRect</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalArc">InternalArc</a></strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalArc">InternalArc</a></strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalArcInRect">InternalArcInRect</a></strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalContinueShape">InternalContinueShape</a></strong>(const pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalContinueShape">InternalContinueShape</a></strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalContinueShape">InternalContinueShape</a></strong>(const pt, normal: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalContinueShape">InternalContinueShape</a></strong>(const pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalEndBlend">InternalEndBlend</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalEndBlendQuads">InternalEndBlendQuads</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalEndBlendTriangles">InternalEndBlendTriangles</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalEndShape">InternalEndShape</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalSetColor">InternalSetColor</a></strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalSetColorF">InternalSetColorF</a></strong>(const AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartBlend">InternalStartBlend</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartBlendQuads">InternalStartBlendQuads</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartBlendTriangles">InternalStartBlendTriangles</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartPolygon">InternalStartPolygon</a></strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartPolyline">InternalStartPolyline</a></strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartPutPixel">InternalStartPutPixel</a></strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#InternalStartTriangleFan">InternalStartTriangleFan</a></strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetActiveFrameBuffer">SetActiveFrameBuffer</a></strong>(AValue: <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetBlendMode">SetBlendMode</a></strong>(AValue: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetClipRect">SetClipRect</a></strong>(AValue: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetFaceCulling">SetFaceCulling</a></strong>(AValue: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetHeight">SetHeight</a></strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetMatrix">SetMatrix</a></strong>(const AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetProjectionMatrix">SetProjectionMatrix</a></strong>(const AValue: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SetWidth">SetWidth</a></strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SwapRect">SwapRect</a></strong>(var r: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#SwapRect">SwapRect</a></strong>(var x1,y1,x2,y2: single); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ActiveFrameBuffer">ActiveFrameBuffer</a></strong>: <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a> read FActiveFrameBuffer write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetActiveFrameBuffer">SetActiveFrameBuffer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#BlendMode">BlendMode</a></strong>: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetBlendMode">GetBlendMode</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetBlendMode">SetBlendMode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ClipRect">ClipRect</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetClipRect">GetClipRect</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetClipRect">SetClipRect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#FaceCulling">FaceCulling</a></strong>: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetFaceCulling">GetFaceCulling</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetFaceCulling">SetFaceCulling</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Height">Height</a></strong>: integer read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetHeight">GetHeight</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetHeight">SetHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Lighting">Lighting</a></strong>: <a href="BGRACanvasGL.TBGLCustomLighting.html">TBGLCustomLighting</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetLighting">GetLighting</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Matrix">Matrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetMatrix">GetMatrix</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#ProjectionMatrix">ProjectionMatrix</a></strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetProjectionMatrix">GetProjectionMatrix</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetProjectionMatrix">SetProjectionMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRACanvasGL.TBGLCustomCanvas.html#Width">Width</a></strong>: integer read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetWidth">GetWidth</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetWidth">SetWidth</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateFrameBuffer"></span><code>function <strong>CreateFrameBuffer</strong>(AWidth,AHeight: integer): <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImage"></span><code>function <strong>GetImage</strong>(x,y,w,h: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeEllipseC"></span><code>function <strong>ComputeEllipseC</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AHasBorder: boolean; out cx,cy,rx,ry: single): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetBlendMode"></span><code>function <strong>GetBlendMode</strong>: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetClipRect"></span><code>function <strong>GetClipRect</strong>: <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFaceCulling"></span><code>function <strong>GetFaceCulling</strong>: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHeight"></span><code>function <strong>GetHeight</strong>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLighting"></span><code>function <strong>GetLighting</strong>: <a href="BGRACanvasGL.TBGLCustomLighting.html">TBGLCustomLighting</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMatrix"></span><code>function <strong>GetMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetProjectionMatrix"></span><code>function <strong>GetProjectionMatrix</strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetWidth"></span><code>function <strong>GetWidth</strong>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Arc"></span><code>procedure <strong>Arc</strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Arc"></span><code>procedure <strong>Arc</strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArcInRect"></span><code>procedure <strong>ArcInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArcLinearColor"></span><code>procedure <strong>ArcLinearColor</strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArcLinearColor"></span><code>procedure <strong>ArcLinearColor</strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArcLinearColorInRect"></span><code>procedure <strong>ArcLinearColorInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawChord: boolean; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPath"></span><code>procedure <strong>DrawPath</strong>(APath: <a href="BGRACanvasGL.TBGLPath.html">TBGLPath</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>procedure <strong>Ellipse</strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>procedure <strong>Ellipse</strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseInRect"></span><code>procedure <strong>EllipseInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseInRect"></span><code>procedure <strong>EllipseInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseLinearColor"></span><code>procedure <strong>EllipseLinearColor</strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseLinearColorInRect"></span><code>procedure <strong>EllipseLinearColorInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EndZBuffer"></span><code>procedure <strong>EndZBuffer</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fill"></span><code>procedure <strong>Fill</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipse"></span><code>procedure <strong>FillEllipse</strong>(cx,cy,rx,ry: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseInRect"></span><code>procedure <strong>FillEllipseInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseLinearColor"></span><code>procedure <strong>FillEllipseLinearColor</strong>(cx, cy, rx, ry: single; AOuterColor, AInnerColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseLinearColorInRect"></span><code>procedure <strong>FillEllipseLinearColorInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AOuterColor, AInnerColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPathConvex"></span><code>procedure <strong>FillPathConvex</strong>(APath: <a href="BGRACanvasGL.TBGLPath.html">TBGLPath</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPolyConvex"></span><code>procedure <strong>FillPolyConvex</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadLinearColor"></span><code>procedure <strong>FillQuadLinearColor</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3,c4: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadLinearColor"></span><code>procedure <strong>FillQuadLinearColor</strong>(pt1,pt2,pt3,pt4: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3,c4: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuads"></span><code>procedure <strong>FillQuads</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuads"></span><code>procedure <strong>FillQuads</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillQuadsLinearColor"></span><code>procedure <strong>FillQuadsLinearColor</strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(r: <a href="BGRAClasses.html#TRectF">TRectF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRect"></span><code>procedure <strong>FillRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRectLinearColor"></span><code>procedure <strong>FillRectLinearColor</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATopLeftColor, ATopRightColor, ABottomRightColor, ABottomLeftColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRectLinearColor"></span><code>procedure <strong>FillRectLinearColor</strong>(x1,y1,x2,y2: single; ATopLeftColor, ATopRightColor, ABottomRightColor, ABottomLeftColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRoundRect"></span><code>procedure <strong>FillRoundRect</strong>(x,y,x2,y2,rx,ry: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTriangleLinearColor"></span><code>procedure <strong>FillTriangleLinearColor</strong>(pt1,pt2,pt3: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTriangleLinearColor"></span><code>procedure <strong>FillTriangleLinearColor</strong>(pt1,pt2,pt3: <a href="BGRAClasses.html#TPointF">TPointF</a>; c1,c2,c3: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTriangles"></span><code>procedure <strong>FillTriangles</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTriangles"></span><code>procedure <strong>FillTriangles</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesFan"></span><code>procedure <strong>FillTrianglesFan</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; ACenterColor, ABorderColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesFan"></span><code>procedure <strong>FillTrianglesFan</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; ACenterColor, ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>; APixelCenteredCoordinates: boolean = true); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints, ANormals: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillTrianglesLinearColor"></span><code>procedure <strong>FillTrianglesLinearColor</strong>(const APoints: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; const AColors: array of <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Frame3D"></span><code>procedure <strong>Frame3D</strong>(var bounds: <a href="BGRAClasses.html#TRect">TRect</a>; width: integer; Style: <a href="BGRABitmapTypes.html#TGraphicsBevelCut">TGraphicsBevelCut</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Frame3D"></span><code>procedure <strong>Frame3D</strong>(var bounds: <a href="BGRAClasses.html#TRect">TRect</a>; width: integer; Style: <a href="BGRABitmapTypes.html#TGraphicsBevelCut">TGraphicsBevelCut</a>; LightColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ShadowColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Line"></span><code>procedure <strong>Line</strong>(p1,p2: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoint: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Line"></span><code>procedure <strong>Line</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoint: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NoClip"></span><code>procedure <strong>NoClip</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Pie"></span><code>procedure <strong>Pie</strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Pie"></span><code>procedure <strong>Pie</strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PieInRect"></span><code>procedure <strong>PieInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PieLinearColor"></span><code>procedure <strong>PieLinearColor</strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PieLinearColor"></span><code>procedure <strong>PieLinearColor</strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PieLinearColorInRect"></span><code>procedure <strong>PieLinearColorInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOuterFillColor, AInnerFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Polygons"></span><code>procedure <strong>Polygons</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Polylines"></span><code>procedure <strong>Polylines</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ADrawLastPoints: boolean = true); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImage"></span><code>procedure <strong>PutImage</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImage"></span><code>procedure <strong>PutImage</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAffine"></span><code>procedure <strong>PutImageAffine</strong>(const Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAffine"></span><code>procedure <strong>PutImageAffine</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAffine"></span><code>procedure <strong>PutImageAffine</strong>(const Origin, HAxis, VAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAffine"></span><code>procedure <strong>PutImageAffine</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAngle"></span><code>procedure <strong>PutImageAngle</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; angleDeg: single; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutImageAngle"></span><code>procedure <strong>PutImageAngle</strong>(x,y: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; angleDeg: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutPixels"></span><code>procedure <strong>PutPixels</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const AColors: array of <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutPixels"></span><code>procedure <strong>PutPixels</strong>(const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>procedure <strong>Rectangle</strong>(x1,y1,x2,y2: single; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectangleWithin"></span><code>procedure <strong>RectangleWithin</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectangleWithin"></span><code>procedure <strong>RectangleWithin</strong>(x1,y1,x2,y2: single; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; w: single; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APixelCenteredCoordinates: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ResetTransform"></span><code>procedure <strong>ResetTransform</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateDeg"></span><code>procedure <strong>RotateDeg</strong>(angleCW: single); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateRad"></span><code>procedure <strong>RotateRad</strong>(angleCCW: single); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>procedure <strong>RoundRect</strong>(x1,y1,x2,y2,rx,ry: single; ABorderColor,AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>procedure <strong>RoundRect</strong>(x1,y1,x2,y2,rx,ry: single; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Scale"></span><code>procedure <strong>Scale</strong>(sx,sy: single); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartZBuffer"></span><code>procedure <strong>StartZBuffer</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StretchPutImage"></span><code>procedure <strong>StretchPutImage</strong>(x,y,w,h: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StretchPutImage"></span><code>procedure <strong>StretchPutImage</strong>(x,y,w,h: single; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StretchPutImage"></span><code>procedure <strong>StretchPutImage</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StretchPutImage"></span><code>procedure <strong>StretchPutImage</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; AAlpha: byte = 255); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Translate"></span><code>procedure <strong>Translate</strong>(x,y: single); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UseOrthoProjection"></span><code>procedure <strong>UseOrthoProjection</strong>(AMinX,AMinY,AMaxX,AMaxY: single); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UseOrthoProjection"></span><code>procedure <strong>UseOrthoProjection</strong>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WaitForGPU"></span><code>procedure <strong>WaitForGPU</strong>(AOption: <a href="BGRAOpenGLType.html#TWaitForGPUOption">TWaitForGPUOption</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DisableScissor"></span><code>procedure <strong>DisableScissor</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="EnableScissor"></span><code>procedure <strong>EnableScissor</strong>(AValue: <a href="BGRAClasses.html#TRect">TRect</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalArc"></span><code>procedure <strong>InternalArc</strong>(cx,cy,rx,ry: single; const StartPoint,EndPoint: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalArc"></span><code>procedure <strong>InternalArc</strong>(cx,cy,rx,ry: single; StartAngleRad,EndAngleRad: Single; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalArcInRect"></span><code>procedure <strong>InternalArcInRect</strong>(r: <a href="BGRAClasses.html#TRect">TRect</a>; StartAngleRad,EndAngleRad: Single; ABorderColor,AOuterFillColor,ACenterFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOptions: <a href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a>; ADrawChord: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalContinueShape"></span><code>procedure <strong>InternalContinueShape</strong>(const pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalContinueShape"></span><code>procedure <strong>InternalContinueShape</strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalContinueShape"></span><code>procedure <strong>InternalContinueShape</strong>(const pt, normal: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalContinueShape"></span><code>procedure <strong>InternalContinueShape</strong>(const pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalEndBlend"></span><code>procedure <strong>InternalEndBlend</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalEndBlendQuads"></span><code>procedure <strong>InternalEndBlendQuads</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalEndBlendTriangles"></span><code>procedure <strong>InternalEndBlendTriangles</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalEndShape"></span><code>procedure <strong>InternalEndShape</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSetColor"></span><code>procedure <strong>InternalSetColor</strong>(const AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSetColorF"></span><code>procedure <strong>InternalSetColorF</strong>(const AColor: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartBlend"></span><code>procedure <strong>InternalStartBlend</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartBlendQuads"></span><code>procedure <strong>InternalStartBlendQuads</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartBlendTriangles"></span><code>procedure <strong>InternalStartBlendTriangles</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartPolygon"></span><code>procedure <strong>InternalStartPolygon</strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartPolyline"></span><code>procedure <strong>InternalStartPolyline</strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartPutPixel"></span><code>procedure <strong>InternalStartPutPixel</strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalStartTriangleFan"></span><code>procedure <strong>InternalStartTriangleFan</strong>(const pt: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetActiveFrameBuffer"></span><code>procedure <strong>SetActiveFrameBuffer</strong>(AValue: <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetBlendMode"></span><code>procedure <strong>SetBlendMode</strong>(AValue: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetClipRect"></span><code>procedure <strong>SetClipRect</strong>(AValue: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFaceCulling"></span><code>procedure <strong>SetFaceCulling</strong>(AValue: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetHeight"></span><code>procedure <strong>SetHeight</strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMatrix"></span><code>procedure <strong>SetMatrix</strong>(const AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetProjectionMatrix"></span><code>procedure <strong>SetProjectionMatrix</strong>(const AValue: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetWidth"></span><code>procedure <strong>SetWidth</strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SwapRect"></span><code>procedure <strong>SwapRect</strong>(var r: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SwapRect"></span><code>procedure <strong>SwapRect</strong>(var x1,y1,x2,y2: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ActiveFrameBuffer"></span><code>property <strong>ActiveFrameBuffer</strong>: <a href="BGRAOpenGLType.TBGLCustomFrameBuffer.html">TBGLCustomFrameBuffer</a> read FActiveFrameBuffer write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetActiveFrameBuffer">SetActiveFrameBuffer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BlendMode"></span><code>property <strong>BlendMode</strong>: <a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetBlendMode">GetBlendMode</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetBlendMode">SetBlendMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClipRect"></span><code>property <strong>ClipRect</strong>: <a href="BGRAClasses.html#TRect">TRect</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetClipRect">GetClipRect</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetClipRect">SetClipRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FaceCulling"></span><code>property <strong>FaceCulling</strong>: <a href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetFaceCulling">GetFaceCulling</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetFaceCulling">SetFaceCulling</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: integer read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetHeight">GetHeight</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetHeight">SetHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Lighting"></span><code>property <strong>Lighting</strong>: <a href="BGRACanvasGL.TBGLCustomLighting.html">TBGLCustomLighting</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetLighting">GetLighting</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Matrix"></span><code>property <strong>Matrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetMatrix">GetMatrix</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ProjectionMatrix"></span><code>property <strong>ProjectionMatrix</strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a> read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetProjectionMatrix">GetProjectionMatrix</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetProjectionMatrix">SetProjectionMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong>: integer read <a href="BGRACanvasGL.TBGLCustomCanvas.html#GetWidth">GetWidth</a> write <a href="BGRACanvasGL.TBGLCustomCanvas.html#SetWidth">SetWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAPath: Class TBGRAPathCursor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAPathCursor"></span><h1 class="cio">Class TBGRAPathCursor</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAPath.html">BGRAPath</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAPathCursor = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAPathCursor</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a></li>
+<li class="thisitem">TBGRAPathCursor</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FAcceptedDeviation">FAcceptedDeviation</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FArcPos">FArcPos</a></strong>: Single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FBounds">FBounds</a></strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FBoundsComputed">FBoundsComputed</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElement">FCurrentElement</a></strong>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementArcPos">FCurrentElementArcPos</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementArcPosScale">FCurrentElementArcPosScale</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementEndCoord">FCurrentElementEndCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementLength">FCurrentElementLength</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementPoints">FCurrentElementPoints</a></strong>: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementStartCoord">FCurrentElementStartCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentElementType">FCurrentElementType</a></strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentSegment">FCurrentSegment</a></strong>: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FCurrentSegmentPos">FCurrentSegmentPos</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FDataPos">FDataPos</a></strong>: IntPtr;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FEndCoordinate">FEndCoordinate</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FLoopClosedShapes">FLoopClosedShapes</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FLoopPath">FLoopPath</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FPath">FPath</a></strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FPathLength">FPathLength</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FPathLengthComputed">FPathLengthComputed</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAPath.TBGRAPathCursor.html#FStartCoordinate">FStartCoordinate</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAPath.TBGRAPathCursor.html#Create">Create</a></strong>(APath: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAPath.TBGRAPathCursor.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#MoveBackward">MoveBackward</a></strong>(ADistance: single; ACanJump: boolean = true): single; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#MoveForward">MoveForward</a></strong>(ADistance: single; ACanJump: boolean = true): single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetArcPos">GetArcPos</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetBounds">GetBounds</a></strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetCurrentCoord">GetCurrentCoord</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetCurrentTangent">GetCurrentTangent</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetLoopClosedShapes">GetLoopClosedShapes</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetLoopPath">GetLoopPath</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetPath">GetPath</a></strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetPathLength">GetPathLength</a></strong>: single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GetStartCoordinate">GetStartCoordinate</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GoToNextElement">GoToNextElement</a></strong>(ACanJump: boolean): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#GoToPreviousElement">GoToPreviousElement</a></strong>(ACanJump: boolean): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAPath.TBGRAPathCursor.html#NeedPolygonalApprox">NeedPolygonalApprox</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#MoveBackwardInElement">MoveBackwardInElement</a></strong>(ADistance: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#MoveForwardInElement">MoveForwardInElement</a></strong>(ADistance: single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#MoveToEndOfElement">MoveToEndOfElement</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#OnPathFree">OnPathFree</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#PrepareCurrentElement">PrepareCurrentElement</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#SetArcPos">SetArcPos</a></strong>(AValue: single); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#SetLoopClosedShapes">SetLoopClosedShapes</a></strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAPath.TBGRAPathCursor.html#SetLoopPath">SetLoopPath</a></strong>(AValue: boolean); override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#AcceptedDeviation">AcceptedDeviation</a></strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#FAcceptedDeviation">FAcceptedDeviation</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#Bounds">Bounds</a></strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetBounds">GetBounds</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#CurrentCoordinate">CurrentCoordinate</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetCurrentCoord">GetCurrentCoord</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#CurrentTangent">CurrentTangent</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetCurrentTangent">GetCurrentTangent</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#LoopClosedShapes">LoopClosedShapes</a></strong>: boolean read <a href="BGRAPath.TBGRAPathCursor.html#GetLoopClosedShapes">GetLoopClosedShapes</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetLoopClosedShapes">SetLoopClosedShapes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#LoopPath">LoopPath</a></strong>: boolean read <a href="BGRAPath.TBGRAPathCursor.html#GetLoopPath">GetLoopPath</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetLoopPath">SetLoopPath</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#Path">Path</a></strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetPath">GetPath</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#PathLength">PathLength</a></strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#GetPathLength">GetPathLength</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#Position">Position</a></strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#GetArcPos">GetArcPos</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetArcPos">SetArcPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAPath.TBGRAPathCursor.html#StartCoordinate">StartCoordinate</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetStartCoordinate">GetStartCoordinate</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAcceptedDeviation"></span><code><strong>FAcceptedDeviation</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FArcPos"></span><code><strong>FArcPos</strong>: Single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBounds"></span><code><strong>FBounds</strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBoundsComputed"></span><code><strong>FBoundsComputed</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElement"></span><code><strong>FCurrentElement</strong>: Pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementArcPos"></span><code><strong>FCurrentElementArcPos</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementArcPosScale"></span><code><strong>FCurrentElementArcPosScale</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementEndCoord"></span><code><strong>FCurrentElementEndCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementLength"></span><code><strong>FCurrentElementLength</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementPoints"></span><code><strong>FCurrentElementPoints</strong>: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementStartCoord"></span><code><strong>FCurrentElementStartCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentElementType"></span><code><strong>FCurrentElementType</strong>: <a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentSegment"></span><code><strong>FCurrentSegment</strong>: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentSegmentPos"></span><code><strong>FCurrentSegmentPos</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDataPos"></span><code><strong>FDataPos</strong>: IntPtr;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEndCoordinate"></span><code><strong>FEndCoordinate</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLoopClosedShapes"></span><code><strong>FLoopClosedShapes</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLoopPath"></span><code><strong>FLoopPath</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPath"></span><code><strong>FPath</strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPathLength"></span><code><strong>FPathLength</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPathLengthComputed"></span><code><strong>FPathLengthComputed</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStartCoordinate"></span><code><strong>FStartCoordinate</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(APath: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MoveBackward"></span><code>function <strong>MoveBackward</strong>(ADistance: single; ACanJump: boolean = true): single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MoveForward"></span><code>function <strong>MoveForward</strong>(ADistance: single; ACanJump: boolean = true): single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArcPos"></span><code>function <strong>GetArcPos</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetBounds"></span><code>function <strong>GetBounds</strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetCurrentCoord"></span><code>function <strong>GetCurrentCoord</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetCurrentTangent"></span><code>function <strong>GetCurrentTangent</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLoopClosedShapes"></span><code>function <strong>GetLoopClosedShapes</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLoopPath"></span><code>function <strong>GetLoopPath</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPath"></span><code>function <strong>GetPath</strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPathLength"></span><code>function <strong>GetPathLength</strong>: single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStartCoordinate"></span><code>function <strong>GetStartCoordinate</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GoToNextElement"></span><code>function <strong>GoToNextElement</strong>(ACanJump: boolean): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GoToPreviousElement"></span><code>function <strong>GoToPreviousElement</strong>(ACanJump: boolean): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NeedPolygonalApprox"></span><code>function <strong>NeedPolygonalApprox</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MoveBackwardInElement"></span><code>procedure <strong>MoveBackwardInElement</strong>(ADistance: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MoveForwardInElement"></span><code>procedure <strong>MoveForwardInElement</strong>(ADistance: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MoveToEndOfElement"></span><code>procedure <strong>MoveToEndOfElement</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OnPathFree"></span><code>procedure <strong>OnPathFree</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="PrepareCurrentElement"></span><code>procedure <strong>PrepareCurrentElement</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArcPos"></span><code>procedure <strong>SetArcPos</strong>(AValue: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLoopClosedShapes"></span><code>procedure <strong>SetLoopClosedShapes</strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLoopPath"></span><code>procedure <strong>SetLoopPath</strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AcceptedDeviation"></span><code>property <strong>AcceptedDeviation</strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#FAcceptedDeviation">FAcceptedDeviation</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Bounds"></span><code>property <strong>Bounds</strong>: <a href="BGRABitmapTypes.html#TRectF">TRectF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetBounds">GetBounds</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurrentCoordinate"></span><code>property <strong>CurrentCoordinate</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetCurrentCoord">GetCurrentCoord</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurrentTangent"></span><code>property <strong>CurrentTangent</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetCurrentTangent">GetCurrentTangent</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoopClosedShapes"></span><code>property <strong>LoopClosedShapes</strong>: boolean read <a href="BGRAPath.TBGRAPathCursor.html#GetLoopClosedShapes">GetLoopClosedShapes</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetLoopClosedShapes">SetLoopClosedShapes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoopPath"></span><code>property <strong>LoopPath</strong>: boolean read <a href="BGRAPath.TBGRAPathCursor.html#GetLoopPath">GetLoopPath</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetLoopPath">SetLoopPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Path"></span><code>property <strong>Path</strong>: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetPath">GetPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathLength"></span><code>property <strong>PathLength</strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#GetPathLength">GetPathLength</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Position"></span><code>property <strong>Position</strong>: single read <a href="BGRAPath.TBGRAPathCursor.html#GetArcPos">GetArcPos</a> write <a href="BGRAPath.TBGRAPathCursor.html#SetArcPos">SetArcPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StartCoordinate"></span><code>property <strong>StartCoordinate</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRAPath.TBGRAPathCursor.html#GetStartCoordinate">GetStartCoordinate</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

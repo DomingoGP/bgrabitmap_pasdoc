@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: libwebp: Record VP8Io</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="VP8Io"></span><h1 class="cio">Record VP8Io</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section">Methods</div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="libwebp.html">libwebp</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type VP8Io = record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#width">width</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#height">height</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#mb_y">mb_y</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#mb_h">mb_h</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#y">y</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#u">u</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#v">v</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#y_stride">y_stride</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#uv_stride">uv_stride</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#opaque">opaque</a></strong>: Pointer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#put">put</a></strong>: function(const io: <a href="libwebp.html#PVP8Io">PVP8Io</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#setup">setup</a></strong>: function(io: <a href="libwebp.html#PVP8Io">PVP8Io</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#teardown">teardown</a></strong>: procedure(const io: <a href="libwebp.html#PVP8Io">PVP8Io</a>); cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#fancy_upscaling">fancy_upscaling</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#data_size">data_size</a></strong>: LongWord;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#data">data</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libwebp.VP8Io.html#bypass_filtering">bypass_filtering</a></strong>: Integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="width"></span><code><strong>width</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+set by VP8GetHeaders()</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="height"></span><code><strong>height</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+set by VP8GetHeaders()</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="mb_y"></span><code><strong>mb_y</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+picture dimensions, in pixels set before calling <a class="normal" href="libwebp.VP8Io.html#put">put</a>()</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="mb_h"></span><code><strong>mb_h</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+position of the current rows (in pixels)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="y"></span><code><strong>y</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+number of rows in the sample</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="u"></span><code><strong>u</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+number of rows in the sample</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="v"></span><code><strong>v</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+number of rows in the sample</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="y_stride"></span><code><strong>y_stride</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+rows to copy (in yuv420 format)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="uv_stride"></span><code><strong>uv_stride</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+row stride for luma</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="opaque"></span><code><strong>opaque</strong>: Pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+row stride for chroma</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="put"></span><code><strong>put</strong>: function(const io: <a href="libwebp.html#PVP8Io">PVP8Io</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+user <a class="normal" href="libwebp.VP8Io.html#data">data</a> called when fresh samples are available. Currently, samples are in YUV420 format, and can be up to <a class="normal" href="libwebp.VP8Io.html#width">width</a> x 24 in <a class="normal" href="BGRAClasses.html#Size">size</a> (depending on the in-loop filtering level, e.g.). Should return false in case of error or abort request.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="setup"></span><code><strong>setup</strong>: function(io: <a href="libwebp.html#PVP8Io">PVP8Io</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+called just before starting to decode the blocks. Should returns 0 in case of error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="teardown"></span><code><strong>teardown</strong>: procedure(const io: <a href="libwebp.html#PVP8Io">PVP8Io</a>); cdecl;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+called just after block decoding is finished (or when an error occurred).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fancy_upscaling"></span><code><strong>fancy_upscaling</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+this is a recommendation for the user-side yuv-&gt;rgb converter. This flag is set when calling <a class="normal" href="libwebp.VP8Io.html#setup">setup</a>() hook and can be overwritten by it. It then can be taken into consideration during the <a class="normal" href="libwebp.VP8Io.html#put">put</a>() method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="data_size"></span><code><strong>data_size</strong>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Input buffer.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="data"></span><code><strong>data</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bypass_filtering"></span><code><strong>bypass_filtering</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If true, in-loop filtering will not be performed even if present in the bitstream. Switching off filtering may speed up decoding at the expense of more visible blocking. Note that output will also be non-compliant with the VP8 specifications.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABlend</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRABlend</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#AddPixelInline">AddPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#AlphaFillInline">AlphaFillInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; alpha: byte; Count: integer); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRABlend.html#ApplyOpacity">ApplyOpacity</a></strong>(opacity1,opacity2: byte): byte; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAAlphaBrush">BGRAAlphaBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAEraseBrush">BGRAEraseBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAFillClearTypeMask">BGRAFillClearTypeMask</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; RGBOrder: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAFillClearTypeMaskPtr">BGRAFillClearTypeMaskPtr</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; maskData: PByte; maskPixelSize: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; maskRowSize: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; maskWidth,maskHeight: integer; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; RGBOrder: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAFillClearTypeRGBMask">BGRAFillClearTypeRGBMask</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; KeepRGBOrder: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAMaskBrush">BGRAMaskBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX: integer = 0; AOffsetY: integer = 0);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRAScannerBrush">BGRAScannerBrush</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AOffsetX: integer = 0; AOffsetY: integer = 0);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BGRASolidBrushIndirect">BGRASolidBrushIndirect</a></strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AColor: Pointer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BlendMaskPixelInline">BlendMaskPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BlendPixels">BlendPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; blendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Count: integer; excludeChannels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a> = []);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BlendPixelsOver">BlendPixelsOver</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; blendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Count: integer; opacity: byte; linearBlend: boolean = false; excludeChannels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a> = []);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#BlendXorPixelInline">BlendXorPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ClearTypeDrawPixel">ClearTypeDrawPixel</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; Cr, Cg, Cb: byte; Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ColorBurnPixelInline">ColorBurnPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ColorDodgePixelInline">ColorDodgePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#CopyPixelsWithOpacity">CopyPixelsWithOpacity</a></strong>(dest,src: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; opacity: byte; Count: integer); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#CorrectedColorInline">CorrectedColorInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#CorrectedHueInline">CorrectedHueInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#CorrectedLightnessInline">CorrectedLightnessInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#CorrectedSaturationInline">CorrectedSaturationInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DarkenPixelInline">DarkenPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DifferencePixelInline">DifferencePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DividePixelInline">DividePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawExpandedPixelInlineNoAlphaCheck">DrawExpandedPixelInlineNoAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; calpha: byte); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawExpandedPixelInlineWithAlphaCheck">DrawExpandedPixelInlineWithAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawExpandedPixelsInline">DrawExpandedPixelsInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelInlineDiff">DrawPixelInlineDiff</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c, compare: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; maxDiff: byte); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelInlineExpandedOrNotWithAlphaCheck">DrawPixelInlineExpandedOrNotWithAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelInlineNoAlphaCheck">DrawPixelInlineNoAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelInlineWithAlphaCheck">DrawPixelInlineWithAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; appliedOpacity: byte); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelInlineWithAlphaCheck">DrawPixelInlineWithAlphaCheck</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelsInline">DrawPixelsInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelsInlineDiff">DrawPixelsInlineDiff</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer; compare: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; maxDiff: byte); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#DrawPixelsInlineExpandedOrNot">DrawPixelsInlineExpandedOrNot</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ErasePixelInline">ErasePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; alpha: byte); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ExclusionPixelInline">ExclusionPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#FastBlendPixelInline">FastBlendPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#FastBlendPixelInline">FastBlendPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; appliedOpacity: byte); inline; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#FastBlendPixelsInline">FastBlendPixelsInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRABlend.html#FastRoundDiv255">FastRoundDiv255</a></strong>(value: LongWord): LongWord; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#FillInline">FillInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#GlowPixelInline">GlowPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#HardLightPixelInline">HardLightPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#InterpolateBilinear">InterpolateBilinear</a></strong>(pUpLeft,pUpRight,pDownLeft,pDownRight: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; iFactX,iFactY: Integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#InterpolateBilinearMask">InterpolateBilinearMask</a></strong>(pUpLeft,pUpRight,pDownLeft,pDownRight: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; iFactX,iFactY: Integer; ADest: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LightenPixelInline">LightenPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearAddPixelInline">LinearAddPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearColorInline">LinearColorInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearDifferencePixelInline">LinearDifferencePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearExclusionPixelInline">LinearExclusionPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearHueInline">LinearHueInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearLightnessInline">LinearLightnessInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearMultiplyPixelInline">LinearMultiplyPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearMultiplySaturationInline">LinearMultiplySaturationInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearNegationPixelInline">LinearNegationPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearOverlayPixelInline">LinearOverlayPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearSaturationInline">LinearSaturationInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearSubtractInversePixelInline">LinearSubtractInversePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#LinearSubtractPixelInline">LinearSubtractPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#NegationPixelInline">NegationPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#NiceGlowPixelInline">NiceGlowPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#NonLinearReflectPixelInline">NonLinearReflectPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#OverlayPixelInline">OverlayPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#PutPixels">PutPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psource: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; copycount: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AOpacity:byte);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ReflectPixelInline">ReflectPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ScannerPutPixels">ScannerPutPixels</a></strong>(scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#ScreenPixelInline">ScreenPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#SoftLightPixelInline">SoftLightPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#SubtractInversePixelInline">SubtractInversePixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#SubtractPixelInline">SubtractPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#SvgSoftLightPixelInline">SvgSoftLightPixelInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#XorInline">XorInline</a></strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRABlend.html#XorPixels">XorPixels</a></strong>(pdest, psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AddPixelInline"></span><code>procedure <strong>AddPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AlphaFillInline"></span><code>procedure <strong>AlphaFillInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; alpha: byte; Count: integer); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set alpha value for a series of pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ApplyOpacity"></span><code>function <strong>ApplyOpacity</strong>(opacity1,opacity2: byte): byte; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAAlphaBrush"></span><code>procedure <strong>BGRAAlphaBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAEraseBrush"></span><code>procedure <strong>BGRAEraseBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeMask"></span><code>procedure <strong>BGRAFillClearTypeMask</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; RGBOrder: boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeMaskPtr"></span><code>procedure <strong>BGRAFillClearTypeMaskPtr</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x,y: integer; xThird: integer; maskData: PByte; maskPixelSize: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; maskRowSize: <a href="BGRABitmapTypes.html#Int32or64">Int32or64</a>; maskWidth,maskHeight: integer; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; RGBOrder: boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAFillClearTypeRGBMask"></span><code>procedure <strong>BGRAFillClearTypeRGBMask</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: integer; mask: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; texture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; KeepRGBOrder: boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAMaskBrush"></span><code>procedure <strong>BGRAMaskBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AOffsetX: integer = 0; AOffsetY: integer = 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAScannerBrush"></span><code>procedure <strong>BGRAScannerBrush</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AScanner: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>; AOffsetX: integer = 0; AOffsetY: integer = 0);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRASolidBrushIndirect"></span><code>procedure <strong>BGRASolidBrushIndirect</strong>(out ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AColor: Pointer; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Brush providers</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BlendMaskPixelInline"></span><code>procedure <strong>BlendMaskPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BlendPixels"></span><code>procedure <strong>BlendPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; blendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Count: integer; excludeChannels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a> = []);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Perform advanced blending operation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BlendPixelsOver"></span><code>procedure <strong>BlendPixelsOver</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; blendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Count: integer; opacity: byte; linearBlend: boolean = false; excludeChannels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a> = []);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Perform blending operation and merge over destination</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BlendXorPixelInline"></span><code>procedure <strong>BlendXorPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearTypeDrawPixel"></span><code>procedure <strong>ClearTypeDrawPixel</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; Cr, Cg, Cb: byte; Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ColorBurnPixelInline"></span><code>procedure <strong>ColorBurnPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ColorDodgePixelInline"></span><code>procedure <strong>ColorDodgePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CopyPixelsWithOpacity"></span><code>procedure <strong>CopyPixelsWithOpacity</strong>(dest,src: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; opacity: byte; Count: integer); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CorrectedColorInline"></span><code>procedure <strong>CorrectedColorInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CorrectedHueInline"></span><code>procedure <strong>CorrectedHueInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CorrectedLightnessInline"></span><code>procedure <strong>CorrectedLightnessInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CorrectedSaturationInline"></span><code>procedure <strong>CorrectedSaturationInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DarkenPixelInline"></span><code>procedure <strong>DarkenPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DifferencePixelInline"></span><code>procedure <strong>DifferencePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DividePixelInline"></span><code>procedure <strong>DividePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawExpandedPixelInlineNoAlphaCheck"></span><code>procedure <strong>DrawExpandedPixelInlineNoAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; calpha: byte); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawExpandedPixelInlineWithAlphaCheck"></span><code>procedure <strong>DrawExpandedPixelInlineWithAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawExpandedPixelsInline"></span><code>procedure <strong>DrawExpandedPixelsInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelInlineDiff"></span><code>procedure <strong>DrawPixelInlineDiff</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c, compare: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; maxDiff: byte); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw a pixel to the extent the current pixel is close enough to compare value. It should not be called on pixels that have not been checked to be close enough</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelInlineExpandedOrNotWithAlphaCheck"></span><code>procedure <strong>DrawPixelInlineExpandedOrNotWithAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelInlineNoAlphaCheck"></span><code>procedure <strong>DrawPixelInlineNoAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+alpha in 'c' parameter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelInlineWithAlphaCheck"></span><code>procedure <strong>DrawPixelInlineWithAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; appliedOpacity: byte); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelInlineWithAlphaCheck"></span><code>procedure <strong>DrawPixelInlineWithAlphaCheck</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw one pixel with alpha blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelsInline"></span><code>procedure <strong>DrawPixelsInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelsInlineDiff"></span><code>procedure <strong>DrawPixelsInlineDiff</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer; compare: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; maxDiff: byte); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw a series of pixel to the extent the current pixel is close enough to compare value</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawPixelsInlineExpandedOrNot"></span><code>procedure <strong>DrawPixelsInlineExpandedOrNot</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; ec: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ErasePixelInline"></span><code>procedure <strong>ErasePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; alpha: byte); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Erase a series of pixels, i.e. decrease alpha value</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ExclusionPixelInline"></span><code>procedure <strong>ExclusionPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FastBlendPixelInline"></span><code>procedure <strong>FastBlendPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; const c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw one pixel with linear alpha blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FastBlendPixelInline"></span><code>procedure <strong>FastBlendPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; appliedOpacity: byte); inline; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FastBlendPixelsInline"></span><code>procedure <strong>FastBlendPixelsInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw a series of pixels with linear alpha blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FastRoundDiv255"></span><code>function <strong>FastRoundDiv255</strong>(value: LongWord): LongWord; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillInline"></span><code>procedure <strong>FillInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Replace a series of pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GlowPixelInline"></span><code>procedure <strong>GlowPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="HardLightPixelInline"></span><code>procedure <strong>HardLightPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpolateBilinear"></span><code>procedure <strong>InterpolateBilinear</strong>(pUpLeft,pUpRight,pDownLeft,pDownRight: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; iFactX,iFactY: Integer; ADest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="InterpolateBilinearMask"></span><code>procedure <strong>InterpolateBilinearMask</strong>(pUpLeft,pUpRight,pDownLeft,pDownRight: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; iFactX,iFactY: Integer; ADest: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LightenPixelInline"></span><code>procedure <strong>LightenPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearAddPixelInline"></span><code>procedure <strong>LinearAddPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearColorInline"></span><code>procedure <strong>LinearColorInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearDifferencePixelInline"></span><code>procedure <strong>LinearDifferencePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearExclusionPixelInline"></span><code>procedure <strong>LinearExclusionPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearHueInline"></span><code>procedure <strong>LinearHueInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearLightnessInline"></span><code>procedure <strong>LinearLightnessInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearMultiplyPixelInline"></span><code>procedure <strong>LinearMultiplyPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+layer blend modes - <a href="http://www.pegtop.net/delphi/articles/blendmodes/">http://www.pegtop.net/delphi/articles/blendmodes/</a> - <a href="http://www.w3.org/TR/2009/WD-SVGCompositing-20090430/#comp-op">http://www.w3.org/TR/2009/WD-SVGCompositing-20090430/#comp-op</a> - <a href="http://docs.gimp.org/en/gimp-concepts-layer-modes.html">http://docs.gimp.org/en/gimp-concepts-layer-modes.html</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearMultiplySaturationInline"></span><code>procedure <strong>LinearMultiplySaturationInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearNegationPixelInline"></span><code>procedure <strong>LinearNegationPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearOverlayPixelInline"></span><code>procedure <strong>LinearOverlayPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearSaturationInline"></span><code>procedure <strong>LinearSaturationInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearSubtractInversePixelInline"></span><code>procedure <strong>LinearSubtractInversePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LinearSubtractPixelInline"></span><code>procedure <strong>LinearSubtractPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NegationPixelInline"></span><code>procedure <strong>NegationPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NiceGlowPixelInline"></span><code>procedure <strong>NiceGlowPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="NonLinearReflectPixelInline"></span><code>procedure <strong>NonLinearReflectPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OverlayPixelInline"></span><code>procedure <strong>OverlayPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PutPixels"></span><code>procedure <strong>PutPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; psource: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; copycount: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AOpacity:byte);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Draw a series of pixels with alpha blending</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ReflectPixelInline"></span><code>procedure <strong>ReflectPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ScannerPutPixels"></span><code>procedure <strong>ScannerPutPixels</strong>(scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Blend pixels with scanner content</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ScreenPixelInline"></span><code>procedure <strong>ScreenPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SoftLightPixelInline"></span><code>procedure <strong>SoftLightPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SubtractInversePixelInline"></span><code>procedure <strong>SubtractInversePixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SubtractPixelInline"></span><code>procedure <strong>SubtractPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SvgSoftLightPixelInline"></span><code>procedure <strong>SvgSoftLightPixelInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="XorInline"></span><code>procedure <strong>XorInline</strong>(dest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; Count: integer); inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Xor a series of pixels</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="XorPixels"></span><code>procedure <strong>XorPixels</strong>(pdest, psrc: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

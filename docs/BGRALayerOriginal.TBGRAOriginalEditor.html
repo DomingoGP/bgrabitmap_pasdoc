@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRALayerOriginal: Class TBGRAOriginalEditor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAOriginalEditor"></span><h1 class="cio">Class TBGRAOriginalEditor</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRALayerOriginal.html">BGRALayerOriginal</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAOriginalEditor = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAOriginalEditor</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRAOriginalEditor</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FClickPointHandlers">FClickPointHandlers</a></strong>: <a href="BGRALayerOriginal.html#TClickPointHandlers">TClickPointHandlers</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FConsecutiveClickCount">FConsecutiveClickCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FCurHoverPoint">FCurHoverPoint</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FDoubleClickTime">FDoubleClickTime</a></strong>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridActive">FGridActive</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridMatrix">FGridMatrix</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridMatrixInverse">FGridMatrixInverse</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FHoverPointHandlers">FHoverPointHandlers</a></strong>: <a href="BGRALayerOriginal.html#THoverPointHandlers">THoverPointHandlers</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FLastClickPos">FLastClickPos</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FLastClickTime">FLastClickTime</a></strong>: TDateTime;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FMatrix">FMatrix</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FMatrixInverse">FMatrixInverse</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FMovingRightButton">FMovingRightButton</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointCoordDelta">FPointCoordDelta</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointMoving">FPointMoving</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPoints">FPoints</a></strong>: array of record
+      Origin, Coord: <a href="BGRAClasses.html#TPointF">TPointF</a>;
+      OnMove, OnAlternateMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>;
+      RightButton, Highlighted: boolean;
+      SnapToPoint: integer;
+      HitBox: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;
+    end;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointSize">FPointSize</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointWasMoved">FPointWasMoved</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPolylines">FPolylines</a></strong>: array of record
+      Coords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>;
+      Closed: boolean;
+      Style: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>;
+      BackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;
+    end;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPrevMousePos">FPrevMousePos</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FStartMoveHandlers">FStartMoveHandlers</a></strong>: <a href="BGRALayerOriginal.html#TStartMoveHandlers">TStartMoveHandlers</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddArrow">AddArrow</a></strong>(const AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AOnMoveEnd: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>; ARightButton: boolean = false): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddFixedPoint">AddFixedPoint</a></strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; ARightButton: boolean = false): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddPoint">AddPoint</a></strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AOnMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>; ARightButton: boolean = false; ASnapToPoint: integer = -1): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddPolyline">AddPolyline</a></strong>(const ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddPolyline">AddPolyline</a></strong>(const ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetPointAt">GetPointAt</a></strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; ARightButton: boolean): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetRenderBounds">GetRenderBounds</a></strong>(const ALayoutRect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#OriginalCoordToView">OriginalCoordToView</a></strong>(const AImageCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Render">Render</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; const ALayoutRect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SnapToGrid">SnapToGrid</a></strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AIsViewCoord: boolean): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#ViewCoordToOriginal">ViewCoordToOriginal</a></strong>(const AViewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetFixedShiftForButton">GetFixedShiftForButton</a></strong>(AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ARightDown: boolean): <a href="BGRAClasses.html#TShiftState">TShiftState</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetMoveCursor">GetMoveCursor</a></strong>(APointIndex: integer): <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetRenderArrowBounds">GetRenderArrowBounds</a></strong>(AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetRenderPointBounds">GetRenderPointBounds</a></strong>(ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AHighlighted: boolean): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GetRenderPolygonBounds">GetRenderPolygonBounds</a></strong>(ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#RenderArrow">RenderArrow</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#RenderPoint">RenderPoint</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlternateColor: boolean; AHighlighted: boolean): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#RenderPolygon">RenderPolygon</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddClickPointHandler">AddClickPointHandler</a></strong>(AOnClickPoint: <a href="BGRALayerOriginal.html#TOriginalClickPointEvent">TOriginalClickPointEvent</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddHoverPointHandler">AddHoverPointHandler</a></strong>(AOnHoverPoint: <a href="BGRALayerOriginal.html#TOriginalHoverPointEvent">TOriginalHoverPointEvent</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddPointAlternateMove">AddPointAlternateMove</a></strong>(AIndex: integer; AOnAlternateMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#AddStartMoveHandler">AddStartMoveHandler</a></strong>(AOnStartMove: <a href="BGRALayerOriginal.html#TOriginalStartMovePointEvent">TOriginalStartMovePointEvent</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Clear">Clear</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#KeyDown">KeyDown</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#KeyPress">KeyPress</a></strong>(UTF8Key: string; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#KeyUp">KeyUp</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#MouseDown">MouseDown</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#MouseMove">MouseMove</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#MouseUp">MouseUp</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetHitBox">SetHitBox</a></strong>(AIndex: integer; AHitBox: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridActive">SetGridActive</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridMatrix">SetGridMatrix</a></strong>(AValue: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetMatrix">SetMatrix</a></strong>(AValue: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#ConsecutiveClickCount">ConsecutiveClickCount</a></strong>: integer read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FConsecutiveClickCount">FConsecutiveClickCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Focused">Focused</a></strong>: boolean read FFocused write SetFocused;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GridActive">GridActive</a></strong>: boolean read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridActive">FGridActive</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridActive">SetGridActive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#GridMatrix">GridMatrix</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridMatrix">FGridMatrix</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridMatrix">SetGridMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#IsMovingPoint">IsMovingPoint</a></strong>: boolean read GetIsMovingPoint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#Matrix">Matrix</a></strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FMatrix">FMatrix</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#OnFocusChanged">OnFocusChanged</a></strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnFocusChanged write FOnFocusChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#PointCoord">PointCoord</a></strong>[AIndex:integer]: <a href="BGRAClasses.html#TPointF">TPointF</a> read GetPointCoord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#PointCount">PointCount</a></strong>: integer read GetPointCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#PointHighlighted">PointHighlighted</a></strong>[AIndex:integer]: boolean read GetPointHighlighted write SetPointHighlighted;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayerOriginal.TBGRAOriginalEditor.html#PointSize">PointSize</a></strong>: single read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointSize">FPointSize</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointSize">FPointSize</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FClickPointHandlers"></span><code><strong>FClickPointHandlers</strong>: <a href="BGRALayerOriginal.html#TClickPointHandlers">TClickPointHandlers</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FConsecutiveClickCount"></span><code><strong>FConsecutiveClickCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurHoverPoint"></span><code><strong>FCurHoverPoint</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDoubleClickTime"></span><code><strong>FDoubleClickTime</strong>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGridActive"></span><code><strong>FGridActive</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+grid <a class="normal" href="BGRALayerOriginal.TBGRAOriginalEditor.html#Matrix">matrix</a> in original coord</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGridMatrix"></span><code><strong>FGridMatrix</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+view <a class="normal" href="BGRALayerOriginal.TBGRAOriginalEditor.html#Matrix">matrix</a> from original coord</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FGridMatrixInverse"></span><code><strong>FGridMatrixInverse</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+view <a class="normal" href="BGRALayerOriginal.TBGRAOriginalEditor.html#Matrix">matrix</a> from original coord</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHoverPointHandlers"></span><code><strong>FHoverPointHandlers</strong>: <a href="BGRALayerOriginal.html#THoverPointHandlers">THoverPointHandlers</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastClickPos"></span><code><strong>FLastClickPos</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLastClickTime"></span><code><strong>FLastClickTime</strong>: TDateTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMatrix"></span><code><strong>FMatrix</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMatrixInverse"></span><code><strong>FMatrixInverse</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMovingRightButton"></span><code><strong>FMovingRightButton</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPointCoordDelta"></span><code><strong>FPointCoordDelta</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPointMoving"></span><code><strong>FPointMoving</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPoints"></span><code><strong>FPoints</strong>: array of record
+      Origin, Coord: <a href="BGRAClasses.html#TPointF">TPointF</a>;
+      OnMove, OnAlternateMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>;
+      RightButton, Highlighted: boolean;
+      SnapToPoint: integer;
+      HitBox: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;
+    end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPointSize"></span><code><strong>FPointSize</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPointWasMoved"></span><code><strong>FPointWasMoved</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPolylines"></span><code><strong>FPolylines</strong>: array of record
+      Coords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>;
+      Closed: boolean;
+      Style: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>;
+      BackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;
+    end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPrevMousePos"></span><code><strong>FPrevMousePos</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FStartMoveHandlers"></span><code><strong>FStartMoveHandlers</strong>: <a href="BGRALayerOriginal.html#TStartMoveHandlers">TStartMoveHandlers</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddArrow"></span><code>function <strong>AddArrow</strong>(const AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AOnMoveEnd: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>; ARightButton: boolean = false): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddFixedPoint"></span><code>function <strong>AddFixedPoint</strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; ARightButton: boolean = false): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddPoint"></span><code>function <strong>AddPoint</strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AOnMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>; ARightButton: boolean = false; ASnapToPoint: integer = -1): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddPolyline"></span><code>function <strong>AddPolyline</strong>(const ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddPolyline"></span><code>function <strong>AddPolyline</strong>(const ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPointAt"></span><code>function <strong>GetPointAt</strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; ARightButton: boolean): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRenderBounds"></span><code>function <strong>GetRenderBounds</strong>(const ALayoutRect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalCoordToView"></span><code>function <strong>OriginalCoordToView</strong>(const AImageCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>function <strong>Render</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; const ALayoutRect: <a href="BGRAClasses.html#TRect">TRect</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SnapToGrid"></span><code>function <strong>SnapToGrid</strong>(const ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AIsViewCoord: boolean): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewCoordToOriginal"></span><code>function <strong>ViewCoordToOriginal</strong>(const AViewCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFixedShiftForButton"></span><code>function <strong>GetFixedShiftForButton</strong>(AShift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ARightDown: boolean): <a href="BGRAClasses.html#TShiftState">TShiftState</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMoveCursor"></span><code>function <strong>GetMoveCursor</strong>(APointIndex: integer): <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetRenderArrowBounds"></span><code>function <strong>GetRenderArrowBounds</strong>(AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetRenderPointBounds"></span><code>function <strong>GetRenderPointBounds</strong>(ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AHighlighted: boolean): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetRenderPolygonBounds"></span><code>function <strong>GetRenderPolygonBounds</strong>(ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RenderArrow"></span><code>function <strong>RenderArrow</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AOrigin, AEndCoord: <a href="BGRAClasses.html#TPointF">TPointF</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RenderPoint"></span><code>function <strong>RenderPoint</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ACoord: <a href="BGRAClasses.html#TPointF">TPointF</a>; AAlternateColor: boolean; AHighlighted: boolean): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RenderPolygon"></span><code>function <strong>RenderPolygon</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ACoords: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AClosed: boolean; AStyle: <a href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a>; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAClasses.html#TRect">TRect</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddClickPointHandler"></span><code>procedure <strong>AddClickPointHandler</strong>(AOnClickPoint: <a href="BGRALayerOriginal.html#TOriginalClickPointEvent">TOriginalClickPointEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddHoverPointHandler"></span><code>procedure <strong>AddHoverPointHandler</strong>(AOnHoverPoint: <a href="BGRALayerOriginal.html#TOriginalHoverPointEvent">TOriginalHoverPointEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddPointAlternateMove"></span><code>procedure <strong>AddPointAlternateMove</strong>(AIndex: integer; AOnAlternateMove: <a href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddStartMoveHandler"></span><code>procedure <strong>AddStartMoveHandler</strong>(AOnStartMove: <a href="BGRALayerOriginal.html#TOriginalStartMovePointEvent">TOriginalStartMovePointEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyDown"></span><code>procedure <strong>KeyDown</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyPress"></span><code>procedure <strong>KeyPress</strong>(UTF8Key: string; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyUp"></span><code>procedure <strong>KeyUp</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseDown"></span><code>procedure <strong>MouseDown</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseMove"></span><code>procedure <strong>MouseMove</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseUp"></span><code>procedure <strong>MouseUp</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ViewX, ViewY: single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetHitBox"></span><code>procedure <strong>SetHitBox</strong>(AIndex: integer; AHitBox: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetGridActive"></span><code>procedure <strong>SetGridActive</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetGridMatrix"></span><code>procedure <strong>SetGridMatrix</strong>(AValue: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMatrix"></span><code>procedure <strong>SetMatrix</strong>(AValue: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConsecutiveClickCount"></span><code>property <strong>ConsecutiveClickCount</strong>: integer read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FConsecutiveClickCount">FConsecutiveClickCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Focused"></span><code>property <strong>Focused</strong>: boolean read FFocused write SetFocused;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GridActive"></span><code>property <strong>GridActive</strong>: boolean read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridActive">FGridActive</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridActive">SetGridActive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GridMatrix"></span><code>property <strong>GridMatrix</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FGridMatrix">FGridMatrix</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetGridMatrix">SetGridMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsMovingPoint"></span><code>property <strong>IsMovingPoint</strong>: boolean read GetIsMovingPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Matrix"></span><code>property <strong>Matrix</strong>: <a href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FMatrix">FMatrix</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnFocusChanged"></span><code>property <strong>OnFocusChanged</strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnFocusChanged write FOnFocusChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PointCoord"></span><code>property <strong>PointCoord</strong>[AIndex:integer]: <a href="BGRAClasses.html#TPointF">TPointF</a> read GetPointCoord;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PointCount"></span><code>property <strong>PointCount</strong>: integer read GetPointCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PointHighlighted"></span><code>property <strong>PointHighlighted</strong>[AIndex:integer]: boolean read GetPointHighlighted write SetPointHighlighted;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PointSize"></span><code>property <strong>PointSize</strong>: single read <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointSize">FPointSize</a> write <a href="BGRALayerOriginal.TBGRAOriginalEditor.html#FPointSize">FPointSize</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

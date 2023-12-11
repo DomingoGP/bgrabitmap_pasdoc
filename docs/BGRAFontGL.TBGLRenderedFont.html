@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAFontGL: Class TBGLRenderedFont</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGLRenderedFont"></span><h1 class="cio">Class TBGLRenderedFont</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAFontGL.html">BGRAFontGL</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGLRenderedFont = class(<a class="normal" href="BGRAOpenGLType.TBGLCustomFont.html">TBGLCustomFont</a>, <a class="normal" href="BGRAFontGL.IBGLRenderedFont.html">IBGLRenderedFont</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGLRenderedFont</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="ancestor"><a class="normal" href="BGRAOpenGLType.TBGLCustomFont.html">TBGLCustomFont</a></li>
+<li class="thisitem">TBGLRenderedFont</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAFontGL.TBGLRenderedFont.html#FRenderer">FRenderer</a></strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAFontGL.TBGLRenderedFont.html#FRendererOwned">FRendererOwned</a></strong>: boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Create">Create</a></strong>(ARenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; ARendererOwned: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#TextHeight">TextHeight</a></strong>(const Text: UTF8String; AWidth: single): single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#TextHeight">TextHeight</a></strong>(const Text: UTF8String): single; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#TextWidth">TextWidth</a></strong>(const Text: UTF8String): single; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#CreateGlyph">CreateGlyph</a></strong>(AIdentifier: string): <a href="BGRAFontGL.TRenderedGlyph.html">TRenderedGlyph</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#GetClipped">GetClipped</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#GetUseGradientColors">GetUseGradientColors</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#GetWrappedLines">GetWrappedLines</a></strong>(ATextUTF8: string; AWidth: single): <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFontGL.TBGLRenderedFont.html#LoadFromFile">LoadFromFile</a></strong>(AFilename: UTF8String): boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#FreeMemory">FreeMemory</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#SetGradientColors">SetGradientColors</a></strong>(ATopLeft, ATopRight, ABottomRight, ABottomLeft: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#CopyFontToRenderer">CopyFontToRenderer</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#DefaultWordBreakHandler">DefaultWordBreakHandler</a></strong>(var ABefore, AAfter: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#DiscardGlyphs">DiscardGlyphs</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#DoTextOut">DoTextOut</a></strong>(X, Y: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#DoTextOut">DoTextOut</a></strong>(X, Y: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AHorizontalAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AVerticalAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#DoTextRect">DoTextRect</a></strong>(X, Y, Width, Height: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#FreeMemoryOnDestroy">FreeMemoryOnDestroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#SetClipped">SetClipped</a></strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#SetUseGradientColors">SetUseGradientColors</a></strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFontGL.TBGLRenderedFont.html#SplitText">SplitText</a></strong>(var ATextUTF8: string; AMaxWidth: single; out ARemainsUTF8: string);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#BackgroundColor">BackgroundColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetBackgroundColor write SetBackgroundColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Color">Color</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetColor write SetColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#EmHeight">EmHeight</a></strong>: integer read GetFontEmHeight write SetFontEmHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#FullHeight">FullHeight</a></strong>: integer read GetFontFullHeight write SetFontFullHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Glyph">Glyph</a></strong>[AIdentifier:string]: <a href="BGRAFontGL.TRenderedGlyph.html">TRenderedGlyph</a> read GetGlyph;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#HorizontalOverflow">HorizontalOverflow</a></strong>: single read GetHorizontalOverflow write SetHorizontalOverflow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Name">Name</a></strong>: string read GetName write SetName;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Quality">Quality</a></strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a> read GetQuality write SetQuality;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#Style">Style</a></strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> read GetStyle write SetStyle;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#VerticalOverflow">VerticalOverflow</a></strong>: single read GetVerticalOverflow write SetVerticalOverflow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAFontGL.TBGLRenderedFont.html#WordBreakHandler">WordBreakHandler</a></strong>: <a href="BGRABitmapTypes.html#TWordBreakHandler">TWordBreakHandler</a> read FWordBreakHandler write FWordBreakHandler;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRenderer"></span><code><strong>FRenderer</strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRendererOwned"></span><code><strong>FRendererOwned</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ARenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; ARendererOwned: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextHeight"></span><code>function <strong>TextHeight</strong>(const Text: UTF8String; AWidth: single): single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextHeight"></span><code>function <strong>TextHeight</strong>(const Text: UTF8String): single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextWidth"></span><code>function <strong>TextWidth</strong>(const Text: UTF8String): single; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreateGlyph"></span><code>function <strong>CreateGlyph</strong>(AIdentifier: string): <a href="BGRAFontGL.TRenderedGlyph.html">TRenderedGlyph</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetClipped"></span><code>function <strong>GetClipped</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUseGradientColors"></span><code>function <strong>GetUseGradientColors</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetWrappedLines"></span><code>function <strong>GetWrappedLines</strong>(ATextUTF8: string; AWidth: single): <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>function <strong>LoadFromFile</strong>(AFilename: UTF8String): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FreeMemory"></span><code>procedure <strong>FreeMemory</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetGradientColors"></span><code>procedure <strong>SetGradientColors</strong>(ATopLeft, ATopRight, ABottomRight, ABottomLeft: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CopyFontToRenderer"></span><code>procedure <strong>CopyFontToRenderer</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DefaultWordBreakHandler"></span><code>procedure <strong>DefaultWordBreakHandler</strong>(var ABefore, AAfter: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DiscardGlyphs"></span><code>procedure <strong>DiscardGlyphs</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoTextOut"></span><code>procedure <strong>DoTextOut</strong>(X, Y: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoTextOut"></span><code>procedure <strong>DoTextOut</strong>(X, Y: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AHorizontalAlign: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; AVerticalAlign: <a href="BGRAGraphics.html#TTextLayout">TTextLayout</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoTextRect"></span><code>procedure <strong>DoTextRect</strong>(X, Y, Width, Height: Single; const Text : UTF8String; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FreeMemoryOnDestroy"></span><code>procedure <strong>FreeMemoryOnDestroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetClipped"></span><code>procedure <strong>SetClipped</strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetUseGradientColors"></span><code>procedure <strong>SetUseGradientColors</strong>(AValue: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SplitText"></span><code>procedure <strong>SplitText</strong>(var ATextUTF8: string; AMaxWidth: single; out ARemainsUTF8: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BackgroundColor"></span><code>property <strong>BackgroundColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetBackgroundColor write SetBackgroundColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Color"></span><code>property <strong>Color</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read GetColor write SetColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EmHeight"></span><code>property <strong>EmHeight</strong>: integer read GetFontEmHeight write SetFontEmHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FullHeight"></span><code>property <strong>FullHeight</strong>: integer read GetFontFullHeight write SetFontFullHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Glyph"></span><code>property <strong>Glyph</strong>[AIdentifier:string]: <a href="BGRAFontGL.TRenderedGlyph.html">TRenderedGlyph</a> read GetGlyph;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizontalOverflow"></span><code>property <strong>HorizontalOverflow</strong>: single read GetHorizontalOverflow write SetHorizontalOverflow;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Name"></span><code>property <strong>Name</strong>: string read GetName write SetName;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Quality"></span><code>property <strong>Quality</strong>: <a href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a> read GetQuality write SetQuality;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Style"></span><code>property <strong>Style</strong>: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> read GetStyle write SetStyle;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalOverflow"></span><code>property <strong>VerticalOverflow</strong>: single read GetVerticalOverflow write SetVerticalOverflow;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WordBreakHandler"></span><code>property <strong>WordBreakHandler</strong>: <a href="BGRABitmapTypes.html#TWordBreakHandler">TWordBreakHandler</a> read FWordBreakHandler write FWordBreakHandler;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAMatrix3D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAMatrix3D</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRASSE.html">BGRASSE</a></li><li><a href="BGRATransform.html">BGRATransform</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAMatrix3D.TProjection3D.html"><code>TProjection3D</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>operator *(const A, B: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>operator *(A,B: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>operator *(const A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; const M: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>operator *(constref A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; var M: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#AffineMatrixToMatrix4D">AffineMatrixToMatrix4D</a></strong>(AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#Matrix3D">Matrix3D</a></strong>(vx,vy,vz,ofs: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#Matrix3D">Matrix3D</a></strong>(m11,m12,m13,m14, m21,m22,m23,m24, m31,m32,m33,m34: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#Matrix3D">Matrix3D</a></strong>(vx,vy,vz,ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixIdentity3D">MatrixIdentity3D</a></strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixIdentity4D">MatrixIdentity4D</a></strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixInverse3D">MatrixInverse3D</a></strong>(A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixRotateX">MatrixRotateX</a></strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixRotateY">MatrixRotateY</a></strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixRotateZ">MatrixRotateZ</a></strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixScale3D">MatrixScale3D</a></strong>(size: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MatrixTranslation3D">MatrixTranslation3D</a></strong>(ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAMatrix3D.html#MultiplyVect3DWithoutTranslation">MultiplyVect3DWithoutTranslation</a></strong>(constref A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; constref M: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAMatrix3D.html#TComputeProjectionFunc">TComputeProjectionFunc</a></strong> = function(AViewCoord: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a> of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a></strong> = packed array[1..3,1..4] of single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a></strong> = packed array[1..4,1..4] of single;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="*"></span><code>operator *(const A, B: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="*"></span><code>operator *(A,B: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="*"></span><code>operator *(const A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; const M: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="*"></span><code>operator *(constref A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; var M: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AffineMatrixToMatrix4D"></span><code>function <strong>AffineMatrixToMatrix4D</strong>(AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Matrix3D"></span><code>function <strong>Matrix3D</strong>(vx,vy,vz,ofs: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Matrix3D"></span><code>function <strong>Matrix3D</strong>(m11,m12,m13,m14, m21,m22,m23,m24, m31,m32,m33,m34: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Matrix3D"></span><code>function <strong>Matrix3D</strong>(vx,vy,vz,ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixIdentity3D"></span><code>function <strong>MatrixIdentity3D</strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixIdentity4D"></span><code>function <strong>MatrixIdentity4D</strong>: <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixInverse3D"></span><code>function <strong>MatrixInverse3D</strong>(A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixRotateX"></span><code>function <strong>MatrixRotateX</strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixRotateY"></span><code>function <strong>MatrixRotateY</strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixRotateZ"></span><code>function <strong>MatrixRotateZ</strong>(angle: single): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixScale3D"></span><code>function <strong>MatrixScale3D</strong>(size: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MatrixTranslation3D"></span><code>function <strong>MatrixTranslation3D</strong>(ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="MultiplyVect3DWithoutTranslation"></span><code>function <strong>MultiplyVect3DWithoutTranslation</strong>(constref A: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; constref M: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TComputeProjectionFunc"></span><code><strong>TComputeProjectionFunc</strong> = function(AViewCoord: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a> of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMatrix3D"></span><code><strong>TMatrix3D</strong> = packed array[1..3,1..4] of single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMatrix4D"></span><code><strong>TMatrix4D</strong> = packed array[1..4,1..4] of single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

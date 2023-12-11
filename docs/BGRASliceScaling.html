@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASliceScaling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRASliceScaling</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmap.html">BGRABitmap</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li>IniFiles</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRASliceScaling.TBGRAMultiSliceScaling.html"><code>TBGRAMultiSliceScaling</code></a></td>
+<td class="itemdesc"><code>TBGRAMultiSliceScaling</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRASliceScaling.TBGRASliceScaling.html"><code>TBGRASliceScaling</code></a></td>
+<td class="itemdesc"><code>TBGRASliceScaling</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRASliceScaling.TMargins.html"><code>TMargins</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRASliceScaling.html#Margins">Margins</a></strong>(ATop, ARight, ABottom, ALeft: integer): <a href="BGRASliceScaling.TMargins.html">TMargins</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TBGRABitmapArray">TBGRABitmapArray</a></strong> = array of <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceBitmapArray">TSliceBitmapArray</a></strong> = array[<a href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a>] of <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceRectArray">TSliceRectArray</a></strong> = array[<a href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a>] of <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceRepeatArray">TSliceRepeatArray</a></strong> = array[<a href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a>] of boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceScalingArray">TSliceScalingArray</a></strong> = array of <a href="BGRASliceScaling.TBGRASliceScaling.html">TBGRASliceScaling</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#TSliceScalingDirection">TSliceScalingDirection</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRASliceScaling.html#SliceRepeatPositionStr">SliceRepeatPositionStr</a></strong> : array[<a href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a>] of string =
+      ('Top','Left','MiddleHorizontal','MiddleVertical','Right','Bottom');</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Margins"></span><code>function <strong>Margins</strong>(ATop, ARight, ABottom, ALeft: integer): <a href="BGRASliceScaling.TMargins.html">TMargins</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRABitmapArray"></span><code><strong>TBGRABitmapArray</strong> = array of <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceBitmapArray"></span><code><strong>TSliceBitmapArray</strong> = array[<a href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a>] of <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSlicePosition"></span><code><strong>TSlicePosition</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="spTopLeft">spTopLeft</span></li>
+<li>
+<span id="spTop">spTop</span></li>
+<li>
+<span id="spTopRight">spTopRight</span></li>
+<li>
+<span id="spLeft">spLeft</span></li>
+<li>
+<span id="spMiddle">spMiddle</span></li>
+<li>
+<span id="spRight">spRight</span></li>
+<li>
+<span id="spBottomLeft">spBottomLeft</span></li>
+<li>
+<span id="spBottom">spBottom</span></li>
+<li>
+<span id="spBottomRight">spBottomRight</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceRectArray"></span><code><strong>TSliceRectArray</strong> = array[<a href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a>] of <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceRepeatArray"></span><code><strong>TSliceRepeatArray</strong> = array[<a href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a>] of boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceRepeatPosition"></span><code><strong>TSliceRepeatPosition</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="srpTop">srpTop</span></li>
+<li>
+<span id="srpLeft">srpLeft</span></li>
+<li>
+<span id="srpMiddleHorizontal">srpMiddleHorizontal</span></li>
+<li>
+<span id="srpMiddleVertical">srpMiddleVertical</span></li>
+<li>
+<span id="srpRight">srpRight</span></li>
+<li>
+<span id="srpBottom">srpBottom</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceScalingArray"></span><code><strong>TSliceScalingArray</strong> = array of <a href="BGRASliceScaling.TBGRASliceScaling.html">TBGRASliceScaling</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSliceScalingDirection"></span><code><strong>TSliceScalingDirection</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="sdHorizontal">sdHorizontal</span></li>
+<li>
+<span id="sdVertical">sdVertical</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SliceRepeatPositionStr"></span><code><strong>SliceRepeatPositionStr</strong> : array[<a href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a>] of string =
+      ('Top','Left','MiddleHorizontal','MiddleVertical','Right','Bottom');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

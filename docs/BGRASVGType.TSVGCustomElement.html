@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGType: Class TSVGCustomElement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TSVGCustomElement"></span><h1 class="cio">Class TSVGCustomElement</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGType.html">BGRASVGType</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSVGCustomElement = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TSVGCustomElement</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TSVGCustomElement</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGType.TSVGCustomElement.html#FDomElem">FDomElem</a></strong>: TDOMElement;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGType.TSVGCustomElement.html#FUnits">FUnits</a></strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#EnterFontSize">EnterFontSize</a></strong>(AIsRoot: boolean = false): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#HasAttribute">HasAttribute</a></strong>(AName: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#HasInlineStyle">HasInlineStyle</a></strong>(AName: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#MatrixToTransform">MatrixToTransform</a></strong>(m: <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a>; AFromUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#NeedNamespace">NeedNamespace</a></strong>(APrefix: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#TransformToMatrix">TransformToMatrix</a></strong>(ATransform: string; AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a></strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeNumber">GetArrayOfAttributeNumber</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeOrStyleWithUnit">GetArrayOfAttributeOrStyleWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a></strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfAttributeWithUnit">GetArrayOfAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeOrStyleWithUnit">GetArrayOfHorizAttributeOrStyleWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfHorizAttributeWithUnit">GetArrayOfHorizAttributeWithUnit</a></strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeOrStyleWithUnit">GetArrayOfOrthoAttributeOrStyleWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeWithUnit">GetArrayOfOrthoAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfOrthoAttributeWithUnit">GetArrayOfOrthoAttributeWithUnit</a></strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeOrStyleWithUnit">GetArrayOfVerticalAttributeOrStyleWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetArrayOfVerticalAttributeWithUnit">GetArrayOfVerticalAttributeWithUnit</a></strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a></strong>(AName: string; ADefault: string; ACanInherit: boolean): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a></strong>(AName: string): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttribute">GetAttribute</a></strong>(AName: string; ADefault: string): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeFromElement">GetAttributeFromElement</a></strong>(ANode: TDOMElement; AName: string; ACanInherit: boolean): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeNumber">GetAttributeNumber</a></strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a></strong>(AName,ADefault: string; ACanInherit: boolean): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a></strong>(AName: string): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyle">GetAttributeOrStyle</a></strong>(AName,ADefault: string): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyleWithUnit">GetAttributeOrStyleWithUnit</a></strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyleWithUnit">GetAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeOrStyleWithUnit">GetAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; ACanInherit: boolean): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetAttributeWithUnit">GetAttributeWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetDOMElement">GetDOMElement</a></strong>: TDOMElement; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a></strong>(AName: string): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttribute">GetHorizAttribute</a></strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeOrStyleWithUnit">GetHorizAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetHorizAttributeWithUnit">GetHorizAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetInlineStyle">GetInlineStyle</a></strong>(const AName,ADefault: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetInlineStyleWithUnit">GetInlineStyleWithUnit</a></strong>(const AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetInlineStyleWithUnit">GetInlineStyleWithUnit</a></strong>(const AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceCount">GetNamespaceCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetNamespacePrefix">GetNamespacePrefix</a></strong>(AIndex: integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceURI">GetNamespaceURI</a></strong>(APrefix: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeOrStyleWithUnit">GetOrthoAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetOrthoAttributeWithUnit">GetOrthoAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetPropertyFromStyleDeclarationBlock">GetPropertyFromStyleDeclarationBlock</a></strong>(ABlock: string; AProperty: string; ADefault: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a></strong>(const AName,ADefault: string): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a></strong>(const AName: string): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetStyleFromStyleSheet">GetStyleFromStyleSheet</a></strong>(const AName,ADefault: string): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a></strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttribute">GetVerticalAttribute</a></strong>(AName: string): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeOrStyleWithUnit">GetVerticalAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; ACanInherit: boolean): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeOrStyleWithUnit">GetVerticalAttributeOrStyleWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a></strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGType.TSVGCustomElement.html#GetVerticalAttributeWithUnit">GetVerticalAttributeWithUnit</a></strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGType.TSVGCustomElement.html#RemovePropertyFromDeclarationBlock">RemovePropertyFromDeclarationBlock</a></strong>(var ABlock: string; AProperty: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#ConvertToUnit">ConvertToUnit</a></strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#ExitFontSize">ExitFontSize</a></strong>(APrevFontSize: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#IterateElements">IterateElements</a></strong>(ACallback: <a href="BGRASVGType.html#TIterateElementCallback">TIterateElementCallback</a>; AData: pointer; ARecursive: boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#RemoveNamespace">RemoveNamespace</a></strong>(APrefix: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#RemoveStyle">RemoveStyle</a></strong>(const AName: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#LocateStyleDeclaration">LocateStyleDeclaration</a></strong>(AText: string; AProperty: string; out AStartPos, AColonPos, AValueLength: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeNumber">SetArrayOfAttributeNumber</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfAttributeWithUnit">SetArrayOfAttributeWithUnit</a></strong>(AName: string; const AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfHorizAttributeWithUnit">SetArrayOfHorizAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfOrthoAttributeWithUnit">SetArrayOfOrthoAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetArrayOfVerticalAttributeWithUnit">SetArrayOfVerticalAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetAttribute">SetAttribute</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>); virtual; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetAttribute">SetAttribute</a></strong>(AName: string; AValue: string); virtual; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetAttributeWithUnit">SetAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttribute">SetHorizAttribute</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetHorizAttributeWithUnit">SetHorizAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetInlineStyle">SetInlineStyle</a></strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetInlineStyle">SetInlineStyle</a></strong>(AName: string; AValue: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetNamespaceURI">SetNamespaceURI</a></strong>(APrefix: string; AValue: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetOrthoAttributeWithUnit">SetOrthoAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttribute">SetVerticalAttribute</a></strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#SetVerticalAttributeWithUnit">SetVerticalAttributeWithUnit</a></strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="BGRASVGType.TSVGCustomElement.html#UpdateStyleDeclarationBlock">UpdateStyleDeclarationBlock</a></strong>(var ABlock: string; AProperty: string; AValue: string);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGCustomElement.html#NamespaceCount">NamespaceCount</a></strong>: integer read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceCount">GetNamespaceCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGCustomElement.html#NamespacePrefix">NamespacePrefix</a></strong>[AIndex:integer]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespacePrefix">GetNamespacePrefix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGCustomElement.html#NamespaceURI">NamespaceURI</a></strong>[APrefix:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceURI">GetNamespaceURI</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetNamespaceURI">SetNamespaceURI</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGCustomElement.html#Style">Style</a></strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetInlineStyle">SetInlineStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGType.TSVGCustomElement.html#StyleDef">StyleDef</a></strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDomElem"></span><code><strong>FDomElem</strong>: TDOMElement;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUnits"></span><code><strong>FUnits</strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EnterFontSize"></span><code>function <strong>EnterFontSize</strong>(AIsRoot: boolean = false): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HasAttribute"></span><code>function <strong>HasAttribute</strong>(AName: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HasInlineStyle"></span><code>function <strong>HasInlineStyle</strong>(AName: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MatrixToTransform"></span><code>function <strong>MatrixToTransform</strong>(m: <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a>; AFromUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NeedNamespace"></span><code>function <strong>NeedNamespace</strong>(APrefix: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TransformToMatrix"></span><code>function <strong>TransformToMatrix</strong>(ATransform: string; AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfAttributeNumber"></span><code>function <strong>GetArrayOfAttributeNumber</strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfAttributeNumber"></span><code>function <strong>GetArrayOfAttributeNumber</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfAttributeOrStyleWithUnit"></span><code>function <strong>GetArrayOfAttributeOrStyleWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfAttributeWithUnit"></span><code>function <strong>GetArrayOfAttributeWithUnit</strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfAttributeWithUnit"></span><code>function <strong>GetArrayOfAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfHorizAttributeOrStyleWithUnit"></span><code>function <strong>GetArrayOfHorizAttributeOrStyleWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfHorizAttributeWithUnit"></span><code>function <strong>GetArrayOfHorizAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfHorizAttributeWithUnit"></span><code>function <strong>GetArrayOfHorizAttributeWithUnit</strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfOrthoAttributeOrStyleWithUnit"></span><code>function <strong>GetArrayOfOrthoAttributeOrStyleWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfOrthoAttributeWithUnit"></span><code>function <strong>GetArrayOfOrthoAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfOrthoAttributeWithUnit"></span><code>function <strong>GetArrayOfOrthoAttributeWithUnit</strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfVerticalAttributeOrStyleWithUnit"></span><code>function <strong>GetArrayOfVerticalAttributeOrStyleWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfVerticalAttributeWithUnit"></span><code>function <strong>GetArrayOfVerticalAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrayOfVerticalAttributeWithUnit"></span><code>function <strong>GetArrayOfVerticalAttributeWithUnit</strong>(AName: string; ACanInherit: boolean): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttribute"></span><code>function <strong>GetAttribute</strong>(AName: string; ADefault: string; ACanInherit: boolean): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttribute"></span><code>function <strong>GetAttribute</strong>(AName: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttribute"></span><code>function <strong>GetAttribute</strong>(AName: string; ADefault: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeFromElement"></span><code>function <strong>GetAttributeFromElement</strong>(ANode: TDOMElement; AName: string; ACanInherit: boolean): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeNumber"></span><code>function <strong>GetAttributeNumber</strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyle"></span><code>function <strong>GetAttributeOrStyle</strong>(AName,ADefault: string; ACanInherit: boolean): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyle"></span><code>function <strong>GetAttributeOrStyle</strong>(AName: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyle"></span><code>function <strong>GetAttributeOrStyle</strong>(AName,ADefault: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyleWithUnit"></span><code>function <strong>GetAttributeOrStyleWithUnit</strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyleWithUnit"></span><code>function <strong>GetAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeOrStyleWithUnit"></span><code>function <strong>GetAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; ACanInherit: boolean): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeWithUnit"></span><code>function <strong>GetAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAttributeWithUnit"></span><code>function <strong>GetAttributeWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDOMElement"></span><code>function <strong>GetDOMElement</strong>: TDOMElement; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizAttribute"></span><code>function <strong>GetHorizAttribute</strong>(AName: string): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizAttribute"></span><code>function <strong>GetHorizAttribute</strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizAttributeOrStyleWithUnit"></span><code>function <strong>GetHorizAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizAttributeWithUnit"></span><code>function <strong>GetHorizAttributeWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizAttributeWithUnit"></span><code>function <strong>GetHorizAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetInlineStyle"></span><code>function <strong>GetInlineStyle</strong>(const AName,ADefault: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetInlineStyleWithUnit"></span><code>function <strong>GetInlineStyleWithUnit</strong>(const AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetInlineStyleWithUnit"></span><code>function <strong>GetInlineStyleWithUnit</strong>(const AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetNamespaceCount"></span><code>function <strong>GetNamespaceCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetNamespacePrefix"></span><code>function <strong>GetNamespacePrefix</strong>(AIndex: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetNamespaceURI"></span><code>function <strong>GetNamespaceURI</strong>(APrefix: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOrthoAttributeOrStyleWithUnit"></span><code>function <strong>GetOrthoAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOrthoAttributeWithUnit"></span><code>function <strong>GetOrthoAttributeWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOrthoAttributeWithUnit"></span><code>function <strong>GetOrthoAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPropertyFromStyleDeclarationBlock"></span><code>class function <strong>GetPropertyFromStyleDeclarationBlock</strong>(ABlock: string; AProperty: string; ADefault: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStyle"></span><code>function <strong>GetStyle</strong>(const AName,ADefault: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStyle"></span><code>function <strong>GetStyle</strong>(const AName: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStyleFromStyleSheet"></span><code>function <strong>GetStyleFromStyleSheet</strong>(const AName,ADefault: string): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttribute"></span><code>function <strong>GetVerticalAttribute</strong>(AName: string; ADefault: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttribute"></span><code>function <strong>GetVerticalAttribute</strong>(AName: string): <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttributeOrStyleWithUnit"></span><code>function <strong>GetVerticalAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; ACanInherit: boolean): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttributeOrStyleWithUnit"></span><code>function <strong>GetVerticalAttributeOrStyleWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttributeWithUnit"></span><code>function <strong>GetVerticalAttributeWithUnit</strong>(AName: string): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAttributeWithUnit"></span><code>function <strong>GetVerticalAttributeWithUnit</strong>(AName: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RemovePropertyFromDeclarationBlock"></span><code>class function <strong>RemovePropertyFromDeclarationBlock</strong>(var ABlock: string; AProperty: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToUnit"></span><code>procedure <strong>ConvertToUnit</strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ExitFontSize"></span><code>procedure <strong>ExitFontSize</strong>(APrevFontSize: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IterateElements"></span><code>procedure <strong>IterateElements</strong>(ACallback: <a href="BGRASVGType.html#TIterateElementCallback">TIterateElementCallback</a>; AData: pointer; ARecursive: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveNamespace"></span><code>procedure <strong>RemoveNamespace</strong>(APrefix: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveStyle"></span><code>procedure <strong>RemoveStyle</strong>(const AName: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LocateStyleDeclaration"></span><code>class procedure <strong>LocateStyleDeclaration</strong>(AText: string; AProperty: string; out AStartPos, AColonPos, AValueLength: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrayOfAttributeNumber"></span><code>procedure <strong>SetArrayOfAttributeNumber</strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrayOfAttributeWithUnit"></span><code>procedure <strong>SetArrayOfAttributeWithUnit</strong>(AName: string; const AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrayOfHorizAttributeWithUnit"></span><code>procedure <strong>SetArrayOfHorizAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrayOfOrthoAttributeWithUnit"></span><code>procedure <strong>SetArrayOfOrthoAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrayOfVerticalAttributeWithUnit"></span><code>procedure <strong>SetArrayOfVerticalAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetAttribute"></span><code>procedure <strong>SetAttribute</strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>); virtual; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetAttribute"></span><code>procedure <strong>SetAttribute</strong>(AName: string; AValue: string); virtual; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetAttributeWithUnit"></span><code>procedure <strong>SetAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetHorizAttribute"></span><code>procedure <strong>SetHorizAttribute</strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetHorizAttributeWithUnit"></span><code>procedure <strong>SetHorizAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetInlineStyle"></span><code>procedure <strong>SetInlineStyle</strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetInlineStyle"></span><code>procedure <strong>SetInlineStyle</strong>(AName: string; AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetNamespaceURI"></span><code>procedure <strong>SetNamespaceURI</strong>(APrefix: string; AValue: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetOrthoAttributeWithUnit"></span><code>procedure <strong>SetOrthoAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetVerticalAttribute"></span><code>procedure <strong>SetVerticalAttribute</strong>(AName: string; AValue: <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetVerticalAttributeWithUnit"></span><code>procedure <strong>SetVerticalAttributeWithUnit</strong>(AName: string; AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UpdateStyleDeclarationBlock"></span><code>class procedure <strong>UpdateStyleDeclarationBlock</strong>(var ABlock: string; AProperty: string; AValue: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NamespaceCount"></span><code>property <strong>NamespaceCount</strong>: integer read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceCount">GetNamespaceCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NamespacePrefix"></span><code>property <strong>NamespacePrefix</strong>[AIndex:integer]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespacePrefix">GetNamespacePrefix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NamespaceURI"></span><code>property <strong>NamespaceURI</strong>[APrefix:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetNamespaceURI">GetNamespaceURI</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetNamespaceURI">SetNamespaceURI</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Style"></span><code>property <strong>Style</strong>[AName:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a> write <a href="BGRASVGType.TSVGCustomElement.html#SetInlineStyle">SetInlineStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StyleDef"></span><code>property <strong>StyleDef</strong>[AName,ADefault:string]: string read <a href="BGRASVGType.TSVGCustomElement.html#GetStyle">GetStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

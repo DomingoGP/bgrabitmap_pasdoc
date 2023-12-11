@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Class TBGRACustomPenStroker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRACustomPenStroker"></span><h1 class="cio">Class TBGRACustomPenStroker</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRACustomPenStroker = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRACustomPenStroker</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRACustomPenStroker</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#ComputePolygon">ComputePolygon</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#ComputePolyline">ComputePolyline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single; APenColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AClosedCap: boolean = true): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#ComputePolyline">ComputePolyline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single; AClosedCap: boolean = true): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#ComputePolylineAutoCycle">ComputePolylineAutoCycle</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrow">GetArrow</a></strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrowOwned">GetArrowOwned</a></strong>: boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetCustomPenStyle">GetCustomPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetJoinStyle">GetJoinStyle</a></strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetLineCap">GetLineCap</a></strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetMiterLimit">GetMiterLimit</a></strong>: single; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetPenStyle">GetPenStyle</a></strong>: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetStrokeMatrix">GetStrokeMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrow">SetArrow</a></strong>(AValue: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrowOwned">SetArrowOwned</a></strong>(AValue: boolean); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetCustomPenStyle">SetCustomPenStyle</a></strong>(AValue: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetJoinStyle">SetJoinStyle</a></strong>(AValue: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetLineCap">SetLineCap</a></strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetMiterLimit">SetMiterLimit</a></strong>(AValue: single); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetPenStyle">SetPenStyle</a></strong>(AValue: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetStrokeMatrix">SetStrokeMatrix</a></strong>(const AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); virtual; abstract;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#Arrow">Arrow</a></strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrow">GetArrow</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrow">SetArrow</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#ArrowOwned">ArrowOwned</a></strong>: boolean read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrowOwned">GetArrowOwned</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrowOwned">SetArrowOwned</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#CustomPenStyle">CustomPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetCustomPenStyle">GetCustomPenStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetCustomPenStyle">SetCustomPenStyle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#JoinStyle">JoinStyle</a></strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetJoinStyle">GetJoinStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetJoinStyle">SetJoinStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#LineCap">LineCap</a></strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetLineCap">GetLineCap</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetLineCap">SetLineCap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#MiterLimit">MiterLimit</a></strong>: single read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetMiterLimit">GetMiterLimit</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetMiterLimit">SetMiterLimit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#StrokeMatrix">StrokeMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetStrokeMatrix">GetStrokeMatrix</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetStrokeMatrix">SetStrokeMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TBGRACustomPenStroker.html#Style">Style</a></strong>: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetPenStyle">GetPenStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetPenStyle">SetPenStyle</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputePolygon"></span><code>function <strong>ComputePolygon</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputePolyline"></span><code>function <strong>ComputePolyline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single; APenColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AClosedCap: boolean = true): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputePolyline"></span><code>function <strong>ComputePolyline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single; AClosedCap: boolean = true): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputePolylineAutoCycle"></span><code>function <strong>ComputePolylineAutoCycle</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AWidth: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrow"></span><code>function <strong>GetArrow</strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetArrowOwned"></span><code>function <strong>GetArrowOwned</strong>: boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetCustomPenStyle"></span><code>function <strong>GetCustomPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetJoinStyle"></span><code>function <strong>GetJoinStyle</strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLineCap"></span><code>function <strong>GetLineCap</strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMiterLimit"></span><code>function <strong>GetMiterLimit</strong>: single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPenStyle"></span><code>function <strong>GetPenStyle</strong>: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStrokeMatrix"></span><code>function <strong>GetStrokeMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrow"></span><code>procedure <strong>SetArrow</strong>(AValue: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetArrowOwned"></span><code>procedure <strong>SetArrowOwned</strong>(AValue: boolean); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetCustomPenStyle"></span><code>procedure <strong>SetCustomPenStyle</strong>(AValue: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetJoinStyle"></span><code>procedure <strong>SetJoinStyle</strong>(AValue: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLineCap"></span><code>procedure <strong>SetLineCap</strong>(AValue: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMiterLimit"></span><code>procedure <strong>SetMiterLimit</strong>(AValue: single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetPenStyle"></span><code>procedure <strong>SetPenStyle</strong>(AValue: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetStrokeMatrix"></span><code>procedure <strong>SetStrokeMatrix</strong>(const AValue: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Arrow"></span><code>property <strong>Arrow</strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrow">GetArrow</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrow">SetArrow</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ArrowOwned"></span><code>property <strong>ArrowOwned</strong>: boolean read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetArrowOwned">GetArrowOwned</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetArrowOwned">SetArrowOwned</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CustomPenStyle"></span><code>property <strong>CustomPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetCustomPenStyle">GetCustomPenStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetCustomPenStyle">SetCustomPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="JoinStyle"></span><code>property <strong>JoinStyle</strong>: <a href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetJoinStyle">GetJoinStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetJoinStyle">SetJoinStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineCap"></span><code>property <strong>LineCap</strong>: <a href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetLineCap">GetLineCap</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetLineCap">SetLineCap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MiterLimit"></span><code>property <strong>MiterLimit</strong>: single read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetMiterLimit">GetMiterLimit</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetMiterLimit">SetMiterLimit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StrokeMatrix"></span><code>property <strong>StrokeMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetStrokeMatrix">GetStrokeMatrix</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetStrokeMatrix">SetStrokeMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Style"></span><code>property <strong>Style</strong>: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a> read <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#GetPenStyle">GetPenStyle</a> write <a href="BGRABitmapTypes.TBGRACustomPenStroker.html#SetPenStyle">SetPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

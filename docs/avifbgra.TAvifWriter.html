@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: avifbgra: Class TAvifWriter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TAvifWriter"></span><h1 class="cio">Class TAvifWriter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="avifbgra.html">avifbgra</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TAvifWriter = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TAvifWriter</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TAvifWriter</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FAvifOutput">FAvifOutput</a></strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FEncoder">FEncoder</a></strong>: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FEncoderWrap">FEncoderWrap</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FIgnoreAlpha">FIgnoreAlpha</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FImagesCount">FImagesCount</a></strong>: uint32;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FLossless">FLossless</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FOnlyOneImage">FOnlyOneImage</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FPixelFormat">FPixelFormat</a></strong>: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FQuality0to100">FQuality0to100</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="avifbgra.TAvifWriter.html#FQualityAlpha0to100">FQualityAlpha0to100</a></strong>: integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="avifbgra.TAvifWriter.html#Create">Create</a></strong>( AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; ASpeed0to10: integer = <a href="libavif.html#AVIF_SPEED_DEFAULT">AVIF_SPEED_DEFAULT</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="libavif.html#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>; AIgnoreAlpha: boolean = False); virtual; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="avifbgra.TAvifWriter.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="avifbgra.TAvifWriter.html#CreateEncoder">CreateEncoder</a></strong>: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetOutputSize">GetOutputSize</a></strong>: NativeUInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#SaveToFile">SaveToFile</a></strong>(AFileName: string): NativeUInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#SaveToMemory">SaveToMemory</a></strong>(AData: Pointer; ASize: NativeUInt): NativeUInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#SaveToStream">SaveToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): NativeUInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetEncoder">GetEncoder</a></strong>: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetLossless">GetLossless</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetMaxThreads">GetMaxThreads</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetSpeed">GetSpeed</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="avifbgra.TAvifWriter.html#GetTimescale">GetTimescale</a></strong>: uint64;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#AddImage">AddImage</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ADurationMs: cardinal=0);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#Close">Close</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="avifbgra.TAvifWriter.html#DestroyEncoder">DestroyEncoder</a></strong>(var AEncoder: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#ApplyQuality">ApplyQuality</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#EncoderFinish">EncoderFinish</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetEncoder">SetEncoder</a></strong>(ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetIgnoreAlpha">SetIgnoreAlpha</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetLossless">SetLossless</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetMaxThreads">SetMaxThreads</a></strong>(AMT: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetQuality">SetQuality</a></strong>(AValue: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetQualityAlpha">SetQualityAlpha</a></strong>(AValue: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetSpeed">SetSpeed</a></strong>(ASpeed: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="avifbgra.TAvifWriter.html#SetTimescale">SetTimescale</a></strong>(ATimescale: uint64);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#Encoder">Encoder</a></strong>: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> read <a href="avifbgra.TAvifWriter.html#GetEncoder">GetEncoder</a> write <a href="avifbgra.TAvifWriter.html#SetEncoder">SetEncoder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#IgnoreAlpha">IgnoreAlpha</a></strong>: boolean read <a href="avifbgra.TAvifWriter.html#FIgnoreAlpha">FIgnoreAlpha</a> write <a href="avifbgra.TAvifWriter.html#SetIgnoreAlpha">SetIgnoreAlpha</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#Lossless">Lossless</a></strong>: boolean read <a href="avifbgra.TAvifWriter.html#GetLossless">GetLossless</a> write <a href="avifbgra.TAvifWriter.html#SetLossless">SetLossless</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#MaxThreads">MaxThreads</a></strong>: integer read <a href="avifbgra.TAvifWriter.html#GetMaxThreads">GetMaxThreads</a> write <a href="avifbgra.TAvifWriter.html#SetMaxThreads">SetMaxThreads</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#OnlyOneImage">OnlyOneImage</a></strong>: boolean read <a href="avifbgra.TAvifWriter.html#FOnlyOneImage">FOnlyOneImage</a> write <a href="avifbgra.TAvifWriter.html#FOnlyOneImage">FOnlyOneImage</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#PixelFormat">PixelFormat</a></strong>: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> read <a href="avifbgra.TAvifWriter.html#FPixelFormat">FPixelFormat</a> write <a href="avifbgra.TAvifWriter.html#FPixelFormat">FPixelFormat</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#Quality">Quality</a></strong>: integer read <a href="avifbgra.TAvifWriter.html#FQuality0to100">FQuality0to100</a> write <a href="avifbgra.TAvifWriter.html#SetQuality">SetQuality</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#QualityAlpha">QualityAlpha</a></strong>: integer read <a href="avifbgra.TAvifWriter.html#FQualityAlpha0to100">FQualityAlpha0to100</a> write <a href="avifbgra.TAvifWriter.html#SetQualityAlpha">SetQualityAlpha</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#Speed">Speed</a></strong>: integer read <a href="avifbgra.TAvifWriter.html#GetSpeed">GetSpeed</a> write <a href="avifbgra.TAvifWriter.html#SetSpeed">SetSpeed</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="avifbgra.TAvifWriter.html#Timescale">Timescale</a></strong>: uint64 read <a href="avifbgra.TAvifWriter.html#GetTimescale">GetTimescale</a> write <a href="avifbgra.TAvifWriter.html#SetTimescale">SetTimescale</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAvifOutput"></span><code><strong>FAvifOutput</strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEncoder"></span><code><strong>FEncoder</strong>: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FEncoderWrap"></span><code><strong>FEncoderWrap</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FIgnoreAlpha"></span><code><strong>FIgnoreAlpha</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FImagesCount"></span><code><strong>FImagesCount</strong>: uint32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLossless"></span><code><strong>FLossless</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOnlyOneImage"></span><code><strong>FOnlyOneImage</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPixelFormat"></span><code><strong>FPixelFormat</strong>: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FQuality0to100"></span><code><strong>FQuality0to100</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+TEncoderBase;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FQualityAlpha0to100"></span><code><strong>FQualityAlpha0to100</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>( AQuality0to100: integer = <a href="avifbgra.html#AVIF_BGRA_DEFAULT_QUALITY">AVIF_BGRA_DEFAULT_QUALITY</a>; ASpeed0to10: integer = <a href="libavif.html#AVIF_SPEED_DEFAULT">AVIF_SPEED_DEFAULT</a>; APixelFormat: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> = <a href="libavif.html#AVIF_PIXEL_FORMAT_YUV420">AVIF_PIXEL_FORMAT_YUV420</a>; AIgnoreAlpha: boolean = False); virtual; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateEncoder"></span><code>class function <strong>CreateEncoder</strong>: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetOutputSize"></span><code>function <strong>GetOutputSize</strong>: NativeUInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>function <strong>SaveToFile</strong>(AFileName: string): NativeUInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToMemory"></span><code>function <strong>SaveToMemory</strong>(AData: Pointer; ASize: NativeUInt): NativeUInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>function <strong>SaveToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): NativeUInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEncoder"></span><code>function <strong>GetEncoder</strong>: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLossless"></span><code>function <strong>GetLossless</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMaxThreads"></span><code>function <strong>GetMaxThreads</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetSpeed"></span><code>function <strong>GetSpeed</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTimescale"></span><code>function <strong>GetTimescale</strong>: uint64;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddImage"></span><code>procedure <strong>AddImage</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ADurationMs: cardinal=0);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Close"></span><code>procedure <strong>Close</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DestroyEncoder"></span><code>class procedure <strong>DestroyEncoder</strong>(var AEncoder: <a href="libavif.html#PavifEncoder">PAvifEncoder</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ApplyQuality"></span><code>procedure <strong>ApplyQuality</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="EncoderFinish"></span><code>procedure <strong>EncoderFinish</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetEncoder"></span><code>procedure <strong>SetEncoder</strong>(ACodec: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetIgnoreAlpha"></span><code>procedure <strong>SetIgnoreAlpha</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLossless"></span><code>procedure <strong>SetLossless</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMaxThreads"></span><code>procedure <strong>SetMaxThreads</strong>(AMT: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetQuality"></span><code>procedure <strong>SetQuality</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetQualityAlpha"></span><code>procedure <strong>SetQualityAlpha</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetSpeed"></span><code>procedure <strong>SetSpeed</strong>(ASpeed: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetTimescale"></span><code>procedure <strong>SetTimescale</strong>(ATimescale: uint64);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Encoder"></span><code>property <strong>Encoder</strong>: <a href="avifbgra.html#avifCodecChoice">avifCodecChoice</a> read <a href="avifbgra.TAvifWriter.html#GetEncoder">GetEncoder</a> write <a href="avifbgra.TAvifWriter.html#SetEncoder">SetEncoder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IgnoreAlpha"></span><code>property <strong>IgnoreAlpha</strong>: boolean read <a href="avifbgra.TAvifWriter.html#FIgnoreAlpha">FIgnoreAlpha</a> write <a href="avifbgra.TAvifWriter.html#SetIgnoreAlpha">SetIgnoreAlpha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+frequency in Hertz</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Lossless"></span><code>property <strong>Lossless</strong>: boolean read <a href="avifbgra.TAvifWriter.html#GetLossless">GetLossless</a> write <a href="avifbgra.TAvifWriter.html#SetLossless">SetLossless</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaxThreads"></span><code>property <strong>MaxThreads</strong>: integer read <a href="avifbgra.TAvifWriter.html#GetMaxThreads">GetMaxThreads</a> write <a href="avifbgra.TAvifWriter.html#SetMaxThreads">SetMaxThreads</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnlyOneImage"></span><code>property <strong>OnlyOneImage</strong>: boolean read <a href="avifbgra.TAvifWriter.html#FOnlyOneImage">FOnlyOneImage</a> write <a href="avifbgra.TAvifWriter.html#FOnlyOneImage">FOnlyOneImage</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PixelFormat"></span><code>property <strong>PixelFormat</strong>: <a href="avifbgra.html#avifPixelFormat">avifPixelFormat</a> read <a href="avifbgra.TAvifWriter.html#FPixelFormat">FPixelFormat</a> write <a href="avifbgra.TAvifWriter.html#FPixelFormat">FPixelFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Quality"></span><code>property <strong>Quality</strong>: integer read <a href="avifbgra.TAvifWriter.html#FQuality0to100">FQuality0to100</a> write <a href="avifbgra.TAvifWriter.html#SetQuality">SetQuality</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="QualityAlpha"></span><code>property <strong>QualityAlpha</strong>: integer read <a href="avifbgra.TAvifWriter.html#FQualityAlpha0to100">FQualityAlpha0to100</a> write <a href="avifbgra.TAvifWriter.html#SetQualityAlpha">SetQualityAlpha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Speed"></span><code>property <strong>Speed</strong>: integer read <a href="avifbgra.TAvifWriter.html#GetSpeed">GetSpeed</a> write <a href="avifbgra.TAvifWriter.html#SetSpeed">SetSpeed</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Timescale"></span><code>property <strong>Timescale</strong>: uint64 read <a href="avifbgra.TAvifWriter.html#GetTimescale">GetTimescale</a> write <a href="avifbgra.TAvifWriter.html#SetTimescale">SetTimescale</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

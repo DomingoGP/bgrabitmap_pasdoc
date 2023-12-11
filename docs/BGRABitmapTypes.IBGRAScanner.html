@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Interface IBGRAScanner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IBGRAScanner"></span><h1 class="cio">Interface IBGRAScanner</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IBGRAScanner = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+* Interface for a scanner. A scanner is like an image, but its content has no limit and it can be calculated on the fly. It is like a infinite readonly image. * * Note: it must not implement reference counting even if it is an interface * * ''<a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>'' implements this interface and the content is repeated horizontally and vertically. There are also various classes in ''<a class="normal" href="BGRAGradientScanner.html">BGRAGradientScanner</a>'' unit that generate gradients on the fly and in ''<a class="normal" href="BGRATransform.html">BGRATransform</a>'' unit that provide geometrical transformations of images</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IBGRAScanner</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#GetImageBoundsWithin">GetImageBoundsWithin</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#GetImageBoundsWithin">GetImageBoundsWithin</a></strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a> = <a href="BGRABitmapTypes.html#cAlpha">cAlpha</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#GetScanCustomColorspace">GetScanCustomColorspace</a></strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#GetScanlineAt">GetScanlineAt</a></strong>(X,Y: integer): <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#GetTextureGL">GetTextureGL</a></strong>: IUnknown;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#IsScanPutPixelsDefined">IsScanPutPixelsDefined</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ProvidesScanline">ProvidesScanline</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAt">ScanAt</a></strong>(X,Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAtExpanded">ScanAtExpanded</a></strong>(X,Y: Single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAtInteger">ScanAtInteger</a></strong>(X,Y: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAtIntegerExpanded">ScanAtIntegerExpanded</a></strong>(X,Y: integer): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAtIntegerMask">ScanAtIntegerMask</a></strong>(X,Y: integer): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanAtMask">ScanAtMask</a></strong>(X,Y: Single): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanNextExpandedPixel">ScanNextExpandedPixel</a></strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanNextPixel">ScanNextPixel</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanMoveTo">ScanMoveTo</a></strong>(X,Y: Integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanNextCustomChunk">ScanNextCustomChunk</a></strong>(var ACount: integer; out APixels: Pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanNextMaskChunk">ScanNextMaskChunk</a></strong>(var ACount: integer; out AMask: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; out AStride: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanPutPixels">ScanPutPixels</a></strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAScanner.html#ScanSkipPixels">ScanSkipPixels</a></strong>(ACount: integer);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageBoundsWithin"></span><code>function <strong>GetImageBoundsWithin</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channels: <a href="BGRABitmapTypes.html#TChannels">TChannels</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageBoundsWithin"></span><code>function <strong>GetImageBoundsWithin</strong>(const ARect: <a href="BGRAClasses.html#TRect">TRect</a>; Channel: <a href="BGRABitmapTypes.html#TChannel">TChannel</a> = <a href="BGRABitmapTypes.html#cAlpha">cAlpha</a>; ANothingValue: Byte = 0): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetScanCustomColorspace"></span><code>function <strong>GetScanCustomColorspace</strong>: <a href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetScanlineAt"></span><code>function <strong>GetScanlineAt</strong>(X,Y: integer): <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextureGL"></span><code>function <strong>GetTextureGL</strong>: IUnknown;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the corresponding OpenGL texture. The value is ''nil'' if no texture is associated. **</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsScanPutPixelsDefined"></span><code>function <strong>IsScanPutPixelsDefined</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns True if the function ''<a class="normal" href="BGRABitmapTypes.IBGRAScanner.html#ScanPutPixels">ScanPutPixels</a>'' is available. Otherwise you need to call ''<a class="normal" href="BGRABitmapTypes.IBGRAScanner.html#ScanNextPixel">ScanNextPixel</a>'' and combine pixels for example with ''SetPixel''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ProvidesScanline"></span><code>function <strong>ProvidesScanline</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAt"></span><code>function <strong>ScanAt</strong>(X,Y: Single): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Scan at any location using floating <a class="normal" href="BGRAClasses.html#Point">point</a> coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtExpanded"></span><code>function <strong>ScanAtExpanded</strong>(X,Y: Single): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtInteger"></span><code>function <strong>ScanAtInteger</strong>(X,Y: integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Scan at any location using integer coordinates</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtIntegerExpanded"></span><code>function <strong>ScanAtIntegerExpanded</strong>(X,Y: integer): <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtIntegerMask"></span><code>function <strong>ScanAtIntegerMask</strong>(X,Y: integer): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanAtMask"></span><code>function <strong>ScanAtMask</strong>(X,Y: Single): <a href="BGRABitmapTypes.TByteMask.html">TByteMask</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextExpandedPixel"></span><code>function <strong>ScanNextExpandedPixel</strong>: <a href="BGRABitmapTypes.TExpandedPixel.html">TExpandedPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextPixel"></span><code>function <strong>ScanNextPixel</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Scan the pixel at the current location and increments ''X''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanMoveTo"></span><code>procedure <strong>ScanMoveTo</strong>(X,Y: Integer);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Move to the position (''X'',''Y'') for the next call to ''<a class="normal" href="BGRABitmapTypes.IBGRAScanner.html#ScanNextPixel">ScanNextPixel</a>''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextCustomChunk"></span><code>procedure <strong>ScanNextCustomChunk</strong>(var ACount: integer; out APixels: Pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanNextMaskChunk"></span><code>procedure <strong>ScanNextMaskChunk</strong>(var ACount: integer; out AMask: <a href="BGRABitmapTypes.html#PByteMask">PByteMask</a>; out AStride: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanPutPixels"></span><code>procedure <strong>ScanPutPixels</strong>(pdest: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; count: integer; mode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy a row of pixels from ''X'' to ''X''+''count''-1 to a specified destination ''pdest''. ''mode'' indicates how to combine with existing data</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ScanSkipPixels"></span><code>procedure <strong>ScanSkipPixels</strong>(ACount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAClasses</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAClasses</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>Types</li><li>Classes</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#Dec64">Dec64</a></strong>(var AValue: int64; const ADelta: int64); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#Dec64">Dec64</a></strong>(var AValue: uint64; const ADelta: uint64); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#DecF">DecF</a></strong>(var ADest: single; ADelta: single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#DecF">DecF</a></strong>(var ADest: double; ADelta: double); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#Inc64">Inc64</a></strong>(var AValue: int64; const ADelta: int64); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#Inc64">Inc64</a></strong>(var AValue: uint64; const ADelta: uint64); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#IncF">IncF</a></strong>(var ADest: single; ADelta: single); overload; inline;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAClasses.html#IncF">IncF</a></strong>(var ADest: double; ADelta: double); overload; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAClasses.html#Point">Point</a></strong>(AX, AY: Integer): <a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAClasses.html#Rect">Rect</a></strong>(ALeft, ATop, ARight, ABottom: Integer): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAClasses.html#Size">Size</a></strong>(AWidth, AHeight: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#EFCreateError">EFCreateError</a></strong> = Classes.EFCreateError;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#EFOpenError">EFOpenError</a></strong> = Classes.EFOpenError;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#EInvalidOperation">EInvalidOperation</a></strong> = Classes.EInvalidOperation;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#Int32or64">Int32or64</a></strong> = LongInt;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#PPoint">PPoint</a></strong> = &circ;<a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#PRect">PRect</a></strong> = &circ;<a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#PSize">PSize</a></strong> = &circ;<a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TAlignment">TAlignment</a></strong> = Classes.TAlignment;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TComponent">TComponent</a></strong> = Classes.TComponent;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TFPList">TFPList</a></strong> = Classes.TFPList;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#THandleStream">THandleStream</a></strong> = Classes.THandleStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TList">TList</a></strong> = Classes.TList;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a></strong> = Classes.TMemoryStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a></strong> = Classes.TNotifyEvent;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TPersistent">TPersistent</a></strong> = Classes.TPersistent;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TPoint">TPoint</a></strong> = Types.TPoint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TPointF">TPointF</a></strong> = Types.TPointF;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TRect">TRect</a></strong> = Types.TRect;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TRectF">TRectF</a></strong> = Types.TRectF;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TResourceStream">TResourceStream</a></strong> = Classes.TResourceStream;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TSeekOrigin">TSeekOrigin</a></strong> = Classes.TSeekOrigin;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TShiftState">TShiftState</a></strong> = Classes.TShiftState;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TSize">TSize</a></strong> = Types.TSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TStream">TStream</a></strong> = Classes.TStream;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TStringList">TStringList</a></strong> = Classes.TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TStrings">TStrings</a></strong> = Classes.TStrings;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#TStringStream">TStringStream</a></strong> = Classes.TStringStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#UInt32or64">UInt32or64</a></strong> = LongWord;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#fmCreate">fmCreate</a></strong> = Classes.fmCreate;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#fmOpenRead">fmOpenRead</a></strong> = Classes.fmOpenRead;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#fmOpenReadWrite">fmOpenReadWrite</a></strong> = Classes.fmOpenReadWrite;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#fmOpenWrite">fmOpenWrite</a></strong> = Classes.fmOpenWrite;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soBeginning">soBeginning</a></strong> = Classes.soBeginning;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soCurrent">soCurrent</a></strong> = Classes.soCurrent;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soEnd">soEnd</a></strong> = Classes.soEnd;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soFromBeginning">soFromBeginning</a></strong> = Classes.soFromBeginning;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soFromCurrent">soFromCurrent</a></strong> = Classes.soFromCurrent;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#soFromEnd">soFromEnd</a></strong> = Classes.soFromEnd;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssAlt">ssAlt</a></strong> = Classes.ssAlt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssCtrl">ssCtrl</a></strong> = Classes.ssCtrl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssDouble">ssDouble</a></strong> = Classes.ssDouble;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssLeft">ssLeft</a></strong> = Classes.ssLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssMiddle">ssMiddle</a></strong> = Classes.ssMiddle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssRight">ssRight</a></strong> = Classes.ssRight;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssShift">ssShift</a></strong> = Classes.ssShift;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#ssTriple">ssTriple</a></strong> = Classes.ssTriple;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#taCenter">taCenter</a></strong> = Classes.taCenter;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#taLeftJustify">taLeftJustify</a></strong> = Classes.taLeftJustify;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAClasses.html#taRightJustify">taRightJustify</a></strong> = Classes.taRightJustify;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Dec64"></span><code>procedure <strong>Dec64</strong>(var AValue: int64; const ADelta: int64); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Dec64"></span><code>procedure <strong>Dec64</strong>(var AValue: uint64; const ADelta: uint64); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DecF"></span><code>procedure <strong>DecF</strong>(var ADest: single; ADelta: single); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DecF"></span><code>procedure <strong>DecF</strong>(var ADest: double; ADelta: double); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Inc64"></span><code>procedure <strong>Inc64</strong>(var AValue: int64; const ADelta: int64); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Inc64"></span><code>procedure <strong>Inc64</strong>(var AValue: uint64; const ADelta: uint64); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IncF"></span><code>procedure <strong>IncF</strong>(var ADest: single; ADelta: single); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IncF"></span><code>procedure <strong>IncF</strong>(var ADest: double; ADelta: double); overload; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Point"></span><code>function <strong>Point</strong>(AX, AY: Integer): <a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Rect"></span><code>function <strong>Rect</strong>(ALeft, ATop, ARight, ABottom: Integer): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Size"></span><code>function <strong>Size</strong>(AWidth, AHeight: Integer): <a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EFCreateError"></span><code><strong>EFCreateError</strong> = Classes.EFCreateError;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EFOpenError"></span><code><strong>EFOpenError</strong> = Classes.EFOpenError;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="EInvalidOperation"></span><code><strong>EInvalidOperation</strong> = Classes.EInvalidOperation;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Int32or64"></span><code><strong>Int32or64</strong> = LongInt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PPoint"></span><code><strong>PPoint</strong> = &circ;<a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PRect"></span><code><strong>PRect</strong> = &circ;<a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PSize"></span><code><strong>PSize</strong> = &circ;<a href="BGRAClasses.html#TSize">TSize</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TAlignment"></span><code><strong>TAlignment</strong> = Classes.TAlignment;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TComponent"></span><code><strong>TComponent</strong> = Classes.TComponent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFPList"></span><code><strong>TFPList</strong> = Classes.TFPList;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+types always imported from Classes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="THandleStream"></span><code><strong>THandleStream</strong> = Classes.THandleStream;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TList"></span><code><strong>TList</strong> = Classes.TList;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TMemoryStream"></span><code><strong>TMemoryStream</strong> = Classes.TMemoryStream;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TNotifyEvent"></span><code><strong>TNotifyEvent</strong> = Classes.TNotifyEvent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPersistent"></span><code><strong>TPersistent</strong> = Classes.TPersistent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPoint"></span><code><strong>TPoint</strong> = Types.TPoint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPointF"></span><code><strong>TPointF</strong> = Types.TPointF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRect"></span><code><strong>TRect</strong> = Types.TRect;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TRectF"></span><code><strong>TRectF</strong> = Types.TRectF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TResourceStream"></span><code><strong>TResourceStream</strong> = Classes.TResourceStream;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSeekOrigin"></span><code><strong>TSeekOrigin</strong> = Classes.TSeekOrigin;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TShiftState"></span><code><strong>TShiftState</strong> = Classes.TShiftState;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSize"></span><code><strong>TSize</strong> = Types.TSize;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStream"></span><code><strong>TStream</strong> = Classes.TStream;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringList"></span><code><strong>TStringList</strong> = Classes.TStringList;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStrings"></span><code><strong>TStrings</strong> = Classes.TStrings;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringStream"></span><code><strong>TStringStream</strong> = Classes.TStringStream;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UInt32or64"></span><code><strong>UInt32or64</strong> = LongWord;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmCreate"></span><code><strong>fmCreate</strong> = Classes.fmCreate;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmOpenRead"></span><code><strong>fmOpenRead</strong> = Classes.fmOpenRead;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmOpenReadWrite"></span><code><strong>fmOpenReadWrite</strong> = Classes.fmOpenReadWrite;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fmOpenWrite"></span><code><strong>fmOpenWrite</strong> = Classes.fmOpenWrite;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soBeginning"></span><code><strong>soBeginning</strong> = Classes.soBeginning;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soCurrent"></span><code><strong>soCurrent</strong> = Classes.soCurrent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soEnd"></span><code><strong>soEnd</strong> = Classes.soEnd;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soFromBeginning"></span><code><strong>soFromBeginning</strong> = Classes.soFromBeginning;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soFromCurrent"></span><code><strong>soFromCurrent</strong> = Classes.soFromCurrent;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="soFromEnd"></span><code><strong>soFromEnd</strong> = Classes.soFromEnd;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssAlt"></span><code><strong>ssAlt</strong> = Classes.ssAlt;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssCtrl"></span><code><strong>ssCtrl</strong> = Classes.ssCtrl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssDouble"></span><code><strong>ssDouble</strong> = Classes.ssDouble;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssLeft"></span><code><strong>ssLeft</strong> = Classes.ssLeft;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssMiddle"></span><code><strong>ssMiddle</strong> = Classes.ssMiddle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssRight"></span><code><strong>ssRight</strong> = Classes.ssRight;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssShift"></span><code><strong>ssShift</strong> = Classes.ssShift;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ssTriple"></span><code><strong>ssTriple</strong> = Classes.ssTriple;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="taCenter"></span><code><strong>taCenter</strong> = Classes.taCenter;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="taLeftJustify"></span><code><strong>taLeftJustify</strong> = Classes.taLeftJustify;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+types always imported from Classes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="taRightJustify"></span><code><strong>taRightJustify</strong> = Classes.taRightJustify;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

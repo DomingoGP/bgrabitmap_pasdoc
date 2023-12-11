@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGShapes: Class TSVGImage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TSVGImage"></span><h1 class="cio">Class TSVGImage</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGShapes.html">BGRASVGShapes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSVGImage = class(<a class="normal" href="BGRASVGType.TSVGElement.html">TSVGElement</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TSVGImage</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRASVGType.TSVGCustomElement.html">TSVGCustomElement</a></li>
+<li class="ancestor"><a class="normal" href="BGRASVGType.TSVGElement.html">TSVGElement</a></li>
+<li class="thisitem">TSVGImage</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGImage.html#FBitmap">FBitmap</a></strong>: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGShapes.TSVGImage.html#Create">Create</a></strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGShapes.TSVGImage.html#Create">Create</a></strong>(ADocument: TDOMDocument; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRASVGShapes.TSVGImage.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRASVGShapes.TSVGImage.html#GetDOMTag">GetDOMTag</a></strong>: string; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGImage.html#ConvertToUnit">ConvertToUnit</a></strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGImage.html#SetBitmap">SetBitmap</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGImage.html#SetBitmap">SetBitmap</a></strong>(AValue: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOwned: boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGImage.html#InternalDraw">InternalDraw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#Bitmap">Bitmap</a></strong>: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a> read GetBitmap;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#externalResourcesRequired">externalResourcesRequired</a></strong>: boolean
+       read GetExternalResourcesRequired write SetExternalResourcesRequired;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#height">height</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetHeight write SetHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#imageRendering">imageRendering</a></strong>: <a href="BGRASVGType.html#TSVGImageRendering">TSVGImageRendering</a> read GetImageRendering write SetImageRendering;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#preserveAspectRatio">preserveAspectRatio</a></strong>: <a href="BGRASVGType.TSVGPreserveAspectRatio.html">TSVGPreserveAspectRatio</a>
+       read GetPreserveAspectRatio write SetPreserveAspectRatio;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#width">width</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetWidth write SetWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#x">x</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetX write SetX;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#xlinkHref">xlinkHref</a></strong>: string read GetXlinkHref write SetXlinkHref;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGImage.html#y">y</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetY write SetY;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBitmap"></span><code><strong>FBitmap</strong>: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ADocument: TDOMDocument; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetDOMTag"></span><code>class function <strong>GetDOMTag</strong>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToUnit"></span><code>procedure <strong>ConvertToUnit</strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBitmap"></span><code>procedure <strong>SetBitmap</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBitmap"></span><code>procedure <strong>SetBitmap</strong>(AValue: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AOwned: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDraw"></span><code>procedure <strong>InternalDraw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Bitmap"></span><code>property <strong>Bitmap</strong>: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a> read GetBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="externalResourcesRequired"></span><code>property <strong>externalResourcesRequired</strong>: boolean
+       read GetExternalResourcesRequired write SetExternalResourcesRequired;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="height"></span><code>property <strong>height</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetHeight write SetHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="imageRendering"></span><code>property <strong>imageRendering</strong>: <a href="BGRASVGType.html#TSVGImageRendering">TSVGImageRendering</a> read GetImageRendering write SetImageRendering;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="preserveAspectRatio"></span><code>property <strong>preserveAspectRatio</strong>: <a href="BGRASVGType.TSVGPreserveAspectRatio.html">TSVGPreserveAspectRatio</a>
+       read GetPreserveAspectRatio write SetPreserveAspectRatio;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="width"></span><code>property <strong>width</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetWidth write SetWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="x"></span><code>property <strong>x</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetX write SetX;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="xlinkHref"></span><code>property <strong>xlinkHref</strong>: string read GetXlinkHref write SetXlinkHref;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="y"></span><code>property <strong>y</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read GetY write SetY;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

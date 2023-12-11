@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASpriteGL: Class TBGLCustomSprite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGLCustomSprite"></span><h1 class="cio">Class TBGLCustomSprite</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASpriteGL.html">BGRASpriteGL</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGLCustomSprite = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGLCustomSprite</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGLCustomSprite</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopEnd">FFrameLoopEnd</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopStart">FFrameLoopStart</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FHandle">FHandle</a></strong>: Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FTexture">FTexture</a></strong>: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Create">Create</a></strong>(ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; ALayer: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetActualFrame">GetActualFrame</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetAlpha">GetAlpha</a></strong>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetAngle">GetAngle</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetColor">GetColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetFrame">GetFrame</a></strong>: Single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetH">GetH</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetHandle">GetHandle</a></strong>: Pointer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetHorizontalAlign">GetHorizontalAlign</a></strong>: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetLayer">GetLayer</a></strong>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetLocation">GetLocation</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetTexture">GetTexture</a></strong>: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetVerticalAlign">GetVerticalAlign</a></strong>: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetVisible">GetVisible</a></strong>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetW">GetW</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetX">GetX</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#GetY">GetY</a></strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#OnDraw">OnDraw</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#OnElapse">OnElapse</a></strong>(AElapsedMs: integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#OnTimer">OnTimer</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#QueryDestroy">QueryDestroy</a></strong>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#CreateHandle">CreateHandle</a></strong>(ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; ALayer: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#OnInit">OnInit</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetActualFrame">SetActualFrame</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetAlpha">SetAlpha</a></strong>(AValue: Integer); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetAngle">SetAngle</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetColor">SetColor</a></strong>(AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrame">SetFrame</a></strong>(AValue: Single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopEnd">SetFrameLoopEnd</a></strong>(AValue: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopStart">SetFrameLoopStart</a></strong>(AValue: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetH">SetH</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetHorizontalAlign">SetHorizontalAlign</a></strong>(AValue: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetLayer">SetLayer</a></strong>(AValue: Integer); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetLocation">SetLocation</a></strong>(AValue: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetVerticalAlign">SetVerticalAlign</a></strong>(AValue: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a>); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetVisible">SetVisible</a></strong>(AValue: boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetW">SetW</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetX">SetX</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#SetY">SetY</a></strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Alpha">Alpha</a></strong>   : Integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetAlpha">GetAlpha</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetAlpha">SetAlpha</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Angle">Angle</a></strong>   : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetAngle">GetAngle</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Color">Color</a></strong>   : <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetColor">GetColor</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetColor">SetColor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Frame">Frame</a></strong>   : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetFrame">GetFrame</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrame">SetFrame</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FrameLoopEnd">FrameLoopEnd</a></strong> : integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopEnd">FFrameLoopEnd</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopEnd">SetFrameLoopEnd</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#FrameLoopStart">FrameLoopStart</a></strong> : integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopStart">FFrameLoopStart</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopStart">SetFrameLoopStart</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#H">H</a></strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetH">GetH</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetH">SetH</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Handle">Handle</a></strong>  : Pointer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetHandle">GetHandle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#HorizontalAlign">HorizontalAlign</a></strong>: <a href="BGRAClasses.html#TAlignment">TAlignment</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetHorizontalAlign">GetHorizontalAlign</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetHorizontalAlign">SetHorizontalAlign</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Layer">Layer</a></strong>   : Integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetLayer">GetLayer</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetLayer">SetLayer</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Location">Location</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetLocation">GetLocation</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetLocation">SetLocation</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Texture">Texture</a></strong> : <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetTexture">GetTexture</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#VerticalAlign">VerticalAlign</a></strong>: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetVerticalAlign">GetVerticalAlign</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetVerticalAlign">SetVerticalAlign</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Visible">Visible</a></strong> : Boolean read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetVisible">GetVisible</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetVisible">SetVisible</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#W">W</a></strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetW">GetW</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetW">SetW</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#X">X</a></strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetX">GetX</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetX">SetX</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASpriteGL.TBGLCustomSprite.html#Y">Y</a></strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetY">GetY</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetY">SetY</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFrameLoopEnd"></span><code><strong>FFrameLoopEnd</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FFrameLoopStart"></span><code><strong>FFrameLoopStart</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHandle"></span><code><strong>FHandle</strong>: Pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTexture"></span><code><strong>FTexture</strong>: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; ALayer: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetActualFrame"></span><code>function <strong>GetActualFrame</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAlpha"></span><code>function <strong>GetAlpha</strong>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetAngle"></span><code>function <strong>GetAngle</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetColor"></span><code>function <strong>GetColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFrame"></span><code>function <strong>GetFrame</strong>: Single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetH"></span><code>function <strong>GetH</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHandle"></span><code>function <strong>GetHandle</strong>: Pointer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHorizontalAlign"></span><code>function <strong>GetHorizontalAlign</strong>: <a href="BGRAClasses.html#TAlignment">TAlignment</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayer"></span><code>function <strong>GetLayer</strong>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLocation"></span><code>function <strong>GetLocation</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTexture"></span><code>function <strong>GetTexture</strong>: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVerticalAlign"></span><code>function <strong>GetVerticalAlign</strong>: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetVisible"></span><code>function <strong>GetVisible</strong>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetW"></span><code>function <strong>GetW</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetX"></span><code>function <strong>GetX</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetY"></span><code>function <strong>GetY</strong>: Single; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnDraw"></span><code>procedure <strong>OnDraw</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnElapse"></span><code>procedure <strong>OnElapse</strong>(AElapsedMs: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnTimer"></span><code>procedure <strong>OnTimer</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="QueryDestroy"></span><code>procedure <strong>QueryDestroy</strong>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreateHandle"></span><code>procedure <strong>CreateHandle</strong>(ATexture: <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a>; ALayer: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OnInit"></span><code>procedure <strong>OnInit</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetActualFrame"></span><code>procedure <strong>SetActualFrame</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetAlpha"></span><code>procedure <strong>SetAlpha</strong>(AValue: Integer); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetAngle"></span><code>procedure <strong>SetAngle</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetColor"></span><code>procedure <strong>SetColor</strong>(AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFrame"></span><code>procedure <strong>SetFrame</strong>(AValue: Single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFrameLoopEnd"></span><code>procedure <strong>SetFrameLoopEnd</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFrameLoopStart"></span><code>procedure <strong>SetFrameLoopStart</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetH"></span><code>procedure <strong>SetH</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetHorizontalAlign"></span><code>procedure <strong>SetHorizontalAlign</strong>(AValue: <a href="BGRAClasses.html#TAlignment">TAlignment</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayer"></span><code>procedure <strong>SetLayer</strong>(AValue: Integer); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLocation"></span><code>procedure <strong>SetLocation</strong>(AValue: <a href="BGRAClasses.html#TPointF">TPointF</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetVerticalAlign"></span><code>procedure <strong>SetVerticalAlign</strong>(AValue: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a>); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetVisible"></span><code>procedure <strong>SetVisible</strong>(AValue: boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetW"></span><code>procedure <strong>SetW</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetX"></span><code>procedure <strong>SetX</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetY"></span><code>procedure <strong>SetY</strong>(AValue: Single); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Alpha"></span><code>property <strong>Alpha</strong>   : Integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetAlpha">GetAlpha</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetAlpha">SetAlpha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Angle"></span><code>property <strong>Angle</strong>   : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetAngle">GetAngle</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetAngle">SetAngle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Color"></span><code>property <strong>Color</strong>   : <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetColor">GetColor</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetColor">SetColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Frame"></span><code>property <strong>Frame</strong>   : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetFrame">GetFrame</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrame">SetFrame</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameLoopEnd"></span><code>property <strong>FrameLoopEnd</strong> : integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopEnd">FFrameLoopEnd</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopEnd">SetFrameLoopEnd</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameLoopStart"></span><code>property <strong>FrameLoopStart</strong> : integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#FFrameLoopStart">FFrameLoopStart</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetFrameLoopStart">SetFrameLoopStart</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="H"></span><code>property <strong>H</strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetH">GetH</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetH">SetH</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Handle"></span><code>property <strong>Handle</strong>  : Pointer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetHandle">GetHandle</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizontalAlign"></span><code>property <strong>HorizontalAlign</strong>: <a href="BGRAClasses.html#TAlignment">TAlignment</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetHorizontalAlign">GetHorizontalAlign</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetHorizontalAlign">SetHorizontalAlign</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Layer"></span><code>property <strong>Layer</strong>   : Integer read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetLayer">GetLayer</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetLayer">SetLayer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Location"></span><code>property <strong>Location</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetLocation">GetLocation</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetLocation">SetLocation</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Texture"></span><code>property <strong>Texture</strong> : <a href="BGRAOpenGLType.IBGLTexture.html">IBGLTexture</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetTexture">GetTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalAlign"></span><code>property <strong>VerticalAlign</strong>: <a href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a> read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetVerticalAlign">GetVerticalAlign</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetVerticalAlign">SetVerticalAlign</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Visible"></span><code>property <strong>Visible</strong> : Boolean read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetVisible">GetVisible</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetVisible">SetVisible</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="W"></span><code>property <strong>W</strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetW">GetW</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetW">SetW</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="X"></span><code>property <strong>X</strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetX">GetX</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetX">SetX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Y"></span><code>property <strong>Y</strong>       : Single read <a href="BGRASpriteGL.TBGLCustomSprite.html#GetY">GetY</a> write <a href="BGRASpriteGL.TBGLCustomSprite.html#SetY">SetY</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

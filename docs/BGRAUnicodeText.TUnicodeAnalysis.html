@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAUnicodeText: Class TUnicodeAnalysis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TUnicodeAnalysis"></span><h1 class="cio">Class TUnicodeAnalysis</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAUnicodeText.html">BGRAUnicodeText</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TUnicodeAnalysis = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TUnicodeAnalysis</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TUnicodeAnalysis</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FBidi">FBidi</a></strong>: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FBidiMode">FBidiMode</a></strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FCharCount">FCharCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FParagraph">FParagraph</a></strong>: array of record
+      firstUnbrokenLineIndex: integer;
+    end;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FParagraphCount">FParagraphCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FText">FText</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FUnbrokenLine">FUnbrokenLine</a></strong>: array of record
+      startIndex: integer;
+      paragraphIndex: integer;
+    end;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#FUnbrokenLineCount">FUnbrokenLineCount</a></strong>: integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#Create">Create</a></strong>(ATextUTF8: string; ABidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CopyTextUTF8">CopyTextUTF8</a></strong>(AStartIndex, ACount: integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CopyTextUTF8DiscardChars">CopyTextUTF8DiscardChars</a></strong>(AStartIndex,AEndIndex: integer; out ANonDiscardedCount: integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CreateBidiTree">CreateBidiTree</a></strong>(ABidiTreeFactory: <a href="BGRAUnicodeText.html#TBidiTreeAny">TBidiTreeAny</a>; AData: pointer; AStartIndex, AEndIndex: integer; AEmbeddingBidiLevel: integer): <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#DeleteText">DeleteText</a></strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#DeleteTextBefore">DeleteTextBefore</a></strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphAt">GetParagraphAt</a></strong>(ACharIndex: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#IncludeNonSpacingChars">IncludeNonSpacingChars</a></strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#IncludeNonSpacingCharsBefore">IncludeNonSpacingCharsBefore</a></strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InsertText">InsertText</a></strong>(ATextUTF8: string; APosition: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetBidiInfo">GetBidiInfo</a></strong>(APosition0: integer): <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndex">GetParagraphEndIndex</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndexBeforeParagraphSeparator">GetParagraphEndIndexBeforeParagraphSeparator</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphFirstUnbrokenLine">GetParagraphFirstUnbrokenLine</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphLastUnbrokenLinePlusOne">GetParagraphLastUnbrokenLinePlusOne</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphStartIndex">GetParagraphStartIndex</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineEndIndex">GetUnbrokenLineEndIndex</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineParagraphIndex">GetUnbrokenLineParagraphIndex</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineStartIndex">GetUnbrokenLineStartIndex</a></strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnicodeChar">GetUnicodeChar</a></strong>(APosition0: integer): LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUTF8Char">GetUTF8Char</a></strong>(APosition0: integer): <a href="BGRAUTF8.html#string4">string4</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalInsertText">InternalInsertText</a></strong>(APosition: integer; const ANewBidi: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; ANewTextUTF8: string): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#Analyze">Analyze</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CheckCharRange">CheckCharRange</a></strong>(AStartIndex, AEndIndex: integer; AMinIndex, AMaxIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CheckTextAnalysis">CheckTextAnalysis</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CreateBidiTreeRec">CreateBidiTreeRec</a></strong>(ABidiTreeFactory: <a href="BGRAUnicodeText.html#TBidiTreeAny">TBidiTreeAny</a>; AData: pointer; ABidiTree: <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalDeleteBidiAndUTF8">InternalDeleteBidiAndUTF8</a></strong>(ABidiStart, ABidiCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalDeleteParagraph">InternalDeleteParagraph</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalDeleteText">InternalDeleteText</a></strong>(APosition, ACount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalDeleteWithinParagraph">InternalDeleteWithinParagraph</a></strong>(AParagraphIndex: integer; APosition, ACount: integer; AUpdateBidi: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalMergeParagraphWithNext">InternalMergeParagraphWithNext</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalSplitParagraph">InternalSplitParagraph</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalUpdateBidiIsolate">InternalUpdateBidiIsolate</a></strong>(AParagraphIndex: integer; ABidiStart, ABidiCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#InternalUpdateUnbrokenLines">InternalUpdateUnbrokenLines</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#SetBidiMode">SetBidiMode</a></strong>(AValue: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#BidiInfo">BidiInfo</a></strong>[APosition0:integer]: <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetBidiInfo">GetBidiInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#BidiMode">BidiMode</a></strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FBidiMode">FBidiMode</a> write <a href="BGRAUnicodeText.TUnicodeAnalysis.html#SetBidiMode">SetBidiMode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#CharCount">CharCount</a></strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FCharCount">FCharCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnAnalysisChanged">OnAnalysisChanged</a></strong>: <a href="BGRAUnicodeText.html#TAnalysisChangedEvent">TAnalysisChangedEvent</a> read FOnAnalysisChanged write FOnAnalysisChanged;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnBidiModeChanged">OnBidiModeChanged</a></strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnBidiModeChanged write FOnBidiModeChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnCharDeleted">OnCharDeleted</a></strong>: <a href="BGRAUnicodeText.html#TDeleteCharEvent">TDeleteCharEvent</a> read FOnCharDeleted write FOnCharDeleted;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnCharInserted">OnCharInserted</a></strong>: <a href="BGRAUnicodeText.html#TInsertCharEvent">TInsertCharEvent</a> read FOnCharInserted write FOnCharInserted;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnParagraphDeleted">OnParagraphDeleted</a></strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphDeleted write FOnParagraphDeleted;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnParagraphMergedWithNext">OnParagraphMergedWithNext</a></strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphMergedWithNext write FOnParagraphMergedWithNext;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#OnParagraphSplit">OnParagraphSplit</a></strong>: <a href="BGRAUnicodeText.html#TParagraphSplitEvent">TParagraphSplitEvent</a> read FOnParagraphSplit write FOnParagraphSplit;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphCount">ParagraphCount</a></strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FParagraphCount">FParagraphCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphEndIndex">ParagraphEndIndex</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndex">GetParagraphEndIndex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphEndIndexBeforeParagraphSeparator">ParagraphEndIndexBeforeParagraphSeparator</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndexBeforeParagraphSeparator">GetParagraphEndIndexBeforeParagraphSeparator</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphFirstUnbrokenLine">ParagraphFirstUnbrokenLine</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphFirstUnbrokenLine">GetParagraphFirstUnbrokenLine</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphLastUnbrokenLinePlusOne">ParagraphLastUnbrokenLinePlusOne</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphLastUnbrokenLinePlusOne">GetParagraphLastUnbrokenLinePlusOne</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphRightToLeft">ParagraphRightToLeft</a></strong>[AIndex:integer]: boolean read GetParagraphRightToLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#ParagraphStartIndex">ParagraphStartIndex</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphStartIndex">GetParagraphStartIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#TextUTF8">TextUTF8</a></strong>: string read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FText">FText</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UnbrokenLineCount">UnbrokenLineCount</a></strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FUnbrokenLineCount">FUnbrokenLineCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UnbrokenLineEndIndex">UnbrokenLineEndIndex</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineEndIndex">GetUnbrokenLineEndIndex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UnbrokenLineParagraphIndex">UnbrokenLineParagraphIndex</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineParagraphIndex">GetUnbrokenLineParagraphIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UnbrokenLineStartIndex">UnbrokenLineStartIndex</a></strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineStartIndex">GetUnbrokenLineStartIndex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UnicodeChar">UnicodeChar</a></strong>[APosition0:integer]: LongWord read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnicodeChar">GetUnicodeChar</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnicodeText.TUnicodeAnalysis.html#UTF8Char">UTF8Char</a></strong>[APosition0:integer]: <a href="BGRAUTF8.html#string4">string4</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUTF8Char">GetUTF8Char</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBidi"></span><code><strong>FBidi</strong>: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBidiMode"></span><code><strong>FBidiMode</strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCharCount"></span><code><strong>FCharCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FParagraph"></span><code><strong>FParagraph</strong>: array of record
+      firstUnbrokenLineIndex: integer;
+    end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FParagraphCount"></span><code><strong>FParagraphCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FText"></span><code><strong>FText</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUnbrokenLine"></span><code><strong>FUnbrokenLine</strong>: array of record
+      startIndex: integer;
+      paragraphIndex: integer;
+    end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUnbrokenLineCount"></span><code><strong>FUnbrokenLineCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ATextUTF8: string; ABidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextUTF8"></span><code>function <strong>CopyTextUTF8</strong>(AStartIndex, ACount: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextUTF8DiscardChars"></span><code>function <strong>CopyTextUTF8DiscardChars</strong>(AStartIndex,AEndIndex: integer; out ANonDiscardedCount: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateBidiTree"></span><code>function <strong>CreateBidiTree</strong>(ABidiTreeFactory: <a href="BGRAUnicodeText.html#TBidiTreeAny">TBidiTreeAny</a>; AData: pointer; AStartIndex, AEndIndex: integer; AEmbeddingBidiLevel: integer): <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteText"></span><code>function <strong>DeleteText</strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteTextBefore"></span><code>function <strong>DeleteTextBefore</strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetParagraphAt"></span><code>function <strong>GetParagraphAt</strong>(ACharIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IncludeNonSpacingChars"></span><code>function <strong>IncludeNonSpacingChars</strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IncludeNonSpacingCharsBefore"></span><code>function <strong>IncludeNonSpacingCharsBefore</strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertText"></span><code>function <strong>InsertText</strong>(ATextUTF8: string; APosition: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetBidiInfo"></span><code>function <strong>GetBidiInfo</strong>(APosition0: integer): <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetParagraphEndIndex"></span><code>function <strong>GetParagraphEndIndex</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetParagraphEndIndexBeforeParagraphSeparator"></span><code>function <strong>GetParagraphEndIndexBeforeParagraphSeparator</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetParagraphFirstUnbrokenLine"></span><code>function <strong>GetParagraphFirstUnbrokenLine</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetParagraphLastUnbrokenLinePlusOne"></span><code>function <strong>GetParagraphLastUnbrokenLinePlusOne</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetParagraphStartIndex"></span><code>function <strong>GetParagraphStartIndex</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUnbrokenLineEndIndex"></span><code>function <strong>GetUnbrokenLineEndIndex</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUnbrokenLineParagraphIndex"></span><code>function <strong>GetUnbrokenLineParagraphIndex</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUnbrokenLineStartIndex"></span><code>function <strong>GetUnbrokenLineStartIndex</strong>(AIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUnicodeChar"></span><code>function <strong>GetUnicodeChar</strong>(APosition0: integer): LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUTF8Char"></span><code>function <strong>GetUTF8Char</strong>(APosition0: integer): <a href="BGRAUTF8.html#string4">string4</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalInsertText"></span><code>function <strong>InternalInsertText</strong>(APosition: integer; const ANewBidi: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; ANewTextUTF8: string): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Analyze"></span><code>procedure <strong>Analyze</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckCharRange"></span><code>procedure <strong>CheckCharRange</strong>(AStartIndex, AEndIndex: integer; AMinIndex, AMaxIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckTextAnalysis"></span><code>procedure <strong>CheckTextAnalysis</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreateBidiTreeRec"></span><code>procedure <strong>CreateBidiTreeRec</strong>(ABidiTreeFactory: <a href="BGRAUnicodeText.html#TBidiTreeAny">TBidiTreeAny</a>; AData: pointer; ABidiTree: <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDeleteBidiAndUTF8"></span><code>procedure <strong>InternalDeleteBidiAndUTF8</strong>(ABidiStart, ABidiCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDeleteParagraph"></span><code>procedure <strong>InternalDeleteParagraph</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDeleteText"></span><code>procedure <strong>InternalDeleteText</strong>(APosition, ACount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDeleteWithinParagraph"></span><code>procedure <strong>InternalDeleteWithinParagraph</strong>(AParagraphIndex: integer; APosition, ACount: integer; AUpdateBidi: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalMergeParagraphWithNext"></span><code>procedure <strong>InternalMergeParagraphWithNext</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSplitParagraph"></span><code>procedure <strong>InternalSplitParagraph</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalUpdateBidiIsolate"></span><code>procedure <strong>InternalUpdateBidiIsolate</strong>(AParagraphIndex: integer; ABidiStart, ABidiCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalUpdateUnbrokenLines"></span><code>procedure <strong>InternalUpdateUnbrokenLines</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetBidiMode"></span><code>procedure <strong>SetBidiMode</strong>(AValue: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BidiInfo"></span><code>property <strong>BidiInfo</strong>[APosition0:integer]: <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetBidiInfo">GetBidiInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BidiMode"></span><code>property <strong>BidiMode</strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FBidiMode">FBidiMode</a> write <a href="BGRAUnicodeText.TUnicodeAnalysis.html#SetBidiMode">SetBidiMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CharCount"></span><code>property <strong>CharCount</strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FCharCount">FCharCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnAnalysisChanged"></span><code>property <strong>OnAnalysisChanged</strong>: <a href="BGRAUnicodeText.html#TAnalysisChangedEvent">TAnalysisChangedEvent</a> read FOnAnalysisChanged write FOnAnalysisChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnBidiModeChanged"></span><code>property <strong>OnBidiModeChanged</strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnBidiModeChanged write FOnBidiModeChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnCharDeleted"></span><code>property <strong>OnCharDeleted</strong>: <a href="BGRAUnicodeText.html#TDeleteCharEvent">TDeleteCharEvent</a> read FOnCharDeleted write FOnCharDeleted;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnCharInserted"></span><code>property <strong>OnCharInserted</strong>: <a href="BGRAUnicodeText.html#TInsertCharEvent">TInsertCharEvent</a> read FOnCharInserted write FOnCharInserted;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphDeleted"></span><code>property <strong>OnParagraphDeleted</strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphDeleted write FOnParagraphDeleted;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphMergedWithNext"></span><code>property <strong>OnParagraphMergedWithNext</strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphMergedWithNext write FOnParagraphMergedWithNext;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphSplit"></span><code>property <strong>OnParagraphSplit</strong>: <a href="BGRAUnicodeText.html#TParagraphSplitEvent">TParagraphSplitEvent</a> read FOnParagraphSplit write FOnParagraphSplit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphCount"></span><code>property <strong>ParagraphCount</strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FParagraphCount">FParagraphCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndIndex"></span><code>property <strong>ParagraphEndIndex</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndex">GetParagraphEndIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndIndexBeforeParagraphSeparator"></span><code>property <strong>ParagraphEndIndexBeforeParagraphSeparator</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphEndIndexBeforeParagraphSeparator">GetParagraphEndIndexBeforeParagraphSeparator</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphFirstUnbrokenLine"></span><code>property <strong>ParagraphFirstUnbrokenLine</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphFirstUnbrokenLine">GetParagraphFirstUnbrokenLine</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphLastUnbrokenLinePlusOne"></span><code>property <strong>ParagraphLastUnbrokenLinePlusOne</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphLastUnbrokenLinePlusOne">GetParagraphLastUnbrokenLinePlusOne</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphRightToLeft"></span><code>property <strong>ParagraphRightToLeft</strong>[AIndex:integer]: boolean read GetParagraphRightToLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphStartIndex"></span><code>property <strong>ParagraphStartIndex</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetParagraphStartIndex">GetParagraphStartIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextUTF8"></span><code>property <strong>TextUTF8</strong>: string read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FText">FText</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnbrokenLineCount"></span><code>property <strong>UnbrokenLineCount</strong>: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#FUnbrokenLineCount">FUnbrokenLineCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnbrokenLineEndIndex"></span><code>property <strong>UnbrokenLineEndIndex</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineEndIndex">GetUnbrokenLineEndIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnbrokenLineParagraphIndex"></span><code>property <strong>UnbrokenLineParagraphIndex</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineParagraphIndex">GetUnbrokenLineParagraphIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnbrokenLineStartIndex"></span><code>property <strong>UnbrokenLineStartIndex</strong>[AIndex:integer]: integer read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnbrokenLineStartIndex">GetUnbrokenLineStartIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnicodeChar"></span><code>property <strong>UnicodeChar</strong>[APosition0:integer]: LongWord read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUnicodeChar">GetUnicodeChar</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UTF8Char"></span><code>property <strong>UTF8Char</strong>[APosition0:integer]: <a href="BGRAUTF8.html#string4">string4</a> read <a href="BGRAUnicodeText.TUnicodeAnalysis.html#GetUTF8Char">GetUTF8Char</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

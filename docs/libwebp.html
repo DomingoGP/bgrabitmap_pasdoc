@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: libwebp</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit libwebp</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>dynlibs</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.TWebPAuxStats.html"><code>TWebPAuxStats</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.TWebPConfig.html"><code>TWebPConfig</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.TWebPDecParams.html"><code>TWebPDecParams</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.TWebPIDecoder.html"><code>TWebPIDecoder</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.TWebPPicture.html"><code>TWebPPicture</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.VP8Decoder.html"><code>VP8Decoder</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="libwebp.VP8Io.html"><code>VP8Io</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>Function <strong><a href="libwebp.html#LibWebPLoad">LibWebPLoad</a></strong>(const libfilename:string = ''): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="libwebp.html#LibWebPLoaded">LibWebPLoaded</a></strong>: boolean; inline;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>Procedure <strong><a href="libwebp.html#LibWebPUnload">LibWebPUnload</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="libwebp.html#WebPConfigInit">WebPConfigInit</a></strong>(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="libwebp.html#WebPConfigPreset">WebPConfigPreset</a></strong>(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; preset: <a href="libwebp.html#TWebPPreset">TWebPPreset</a>; quality: Single): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="libwebp.html#WebPPictureInit">WebPPictureInit</a></strong>(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#PVP8Decoder">PVP8Decoder</a></strong> = &circ;<a href="libwebp.VP8Decoder.html">VP8Decoder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#PVP8Io">PVP8Io</a></strong> = &circ;<a href="libwebp.VP8Io.html">VP8Io</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#PWebPAuxStats">PWebPAuxStats</a></strong> = &circ;<a href="libwebp.TWebPAuxStats.html">TWebPAuxStats</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#PWebPConfig">PWebPConfig</a></strong> = &circ;<a href="libwebp.TWebPConfig.html">TWebPConfig</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#PWebPDecParams">PWebPDecParams</a></strong> = &circ;<a href="libwebp.TWebPDecParams.html">TWebPDecParams</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a></strong> = &circ;<a href="libwebp.TWebPIDecoder.html">TWebPIDecoder</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#PWebPPicture">PWebPPicture</a></strong> = &circ;<a href="libwebp.TWebPPicture.html">TWebPPicture</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#TDecState">TDecState</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#TWebPPreset">TWebPPreset</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#TWebPWriterFunction">TWebPWriterFunction</a></strong> = function(const data: PByte; data_size: LongWord; const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#AlternateLibWebPFilename">AlternateLibWebPFilename</a></strong>: string = 'libwebp.dll';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#LibWebPFilename">LibWebPFilename</a></strong>: string =
+  
+    ''
+  ;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#LibWebPHandle">LibWebPHandle</a></strong>: TLibHandle = dynlibs.NilHandle;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#LibWebPRefCount">LibWebPRefCount</a></strong>: LongWord = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPConfigInitInternal">WebPConfigInitInternal</a></strong>: function(const conf: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; preset: <a href="libwebp.html#TWebPPreset">TWebPPreset</a>; quality: single; version: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeBGR">WebPDecodeBGR</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeBGRA">WebPDecodeBGRA</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeBGRAInto">WebPDecodeBGRAInto</a></strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeBGRInto">WebPDecodeBGRInto</a></strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeRGB">WebPDecodeRGB</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeRGBA">WebPDecodeRGBA</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeRGBAInto">WebPDecodeRGBAInto</a></strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeRGBInto">WebPDecodeRGBInto</a></strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeYUV">WebPDecodeYUV</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger; var u, v: PByte; stride, uv_stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPDecodeYUVInto">WebPDecodeYUVInto</a></strong>: function(const data: PByte; data_size: LongWord; luma: PByte; luma_size, luma_stride: Integer; u: PByte; u_size, u_stride: Integer; v: PByte; v_size, v_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncode">WebPEncode</a></strong>: function(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeBGR">WebPEncodeBGR</a></strong>: function(const bgr: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeBGRA">WebPEncodeBGRA</a></strong>: function(const <a href="BGRABitmapTypes.html#BGRA">bgra</a>: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeLosslessBGR">WebPEncodeLosslessBGR</a></strong>: function(const bgr: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeLosslessBGRA">WebPEncodeLosslessBGRA</a></strong>: function(const <a href="BGRABitmapTypes.html#BGRA">bgra</a>: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeLosslessRGB">WebPEncodeLosslessRGB</a></strong>: function(const rgb: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeLosslessRGBA">WebPEncodeLosslessRGBA</a></strong>: function(const rgba: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeRGB">WebPEncodeRGB</a></strong>: function(const rgb: PByte; width, height, stride: Integer; quality_factor: single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPEncodeRGBA">WebPEncodeRGBA</a></strong>: function(const rgba: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPFree">WebPFree</a></strong>: procedure(const data: PByte); cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPGetDecoderVersion">WebPGetDecoderVersion</a></strong>: function(): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPGetEncoderVersion">WebPGetEncoderVersion</a></strong>: function(): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPGetInfo">WebPGetInfo</a></strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPIAppend">WebPIAppend</a></strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; const data: PByte; data_size: LongWord): <a href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a>; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPIDecGetRGB">WebPIDecGetRGB</a></strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; last_y, width, height, stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPIDecGetYUV">WebPIDecGetYUV</a></strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; last_y: PInteger; var u, v: PByte; width, height, stride, uv_stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPIDelete">WebPIDelete</a></strong>: procedure(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>); cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPINew">WebPINew</a></strong>: function(mode: <a href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a>): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPINewRGB">WebPINewRGB</a></strong>: function(mode: <a href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a>; output_buffer: PByte; output_buffer_size, output_stride: Integer): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPINewYUV">WebPINewYUV</a></strong>: function(luma: PByte; luma_size, luma_stride: Integer; u: PByte; u_size, u_stride: Integer; v: PByte; v_size, v_stride: Integer): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPIUpdate">WebPIUpdate</a></strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; const data: PByte; data_size: LongWord): <a href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a>; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureAlloc">WebPPictureAlloc</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureCopy">WebPPictureCopy</a></strong>: function(const src, dst: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureCrop">WebPPictureCrop</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; left, top, width, height: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureFree">WebPPictureFree</a></strong>: procedure(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>); cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureImportBGR">WebPPictureImportBGR</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const bgr: PByte; bgr_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureImportBGRA">WebPPictureImportBGRA</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const bgra: PByte; bgra_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureImportRGB">WebPPictureImportRGB</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const rgb: PByte; rgb_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureImportRGBA">WebPPictureImportRGBA</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const rgba: PByte; rgba_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPPictureInitInternal">WebPPictureInitInternal</a></strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; version: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="libwebp.html#WebPValidateConfig">WebPValidateConfig</a></strong>: function(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>): Integer; cdecl;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPLoad"></span><code>Function <strong>LibWebPLoad</strong>(const libfilename:string = ''): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPLoaded"></span><code>function <strong>LibWebPLoaded</strong>: boolean; inline;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reference counter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPUnload"></span><code>Procedure <strong>LibWebPUnload</strong>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+load the lib</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPConfigInit"></span><code>function <strong>WebPConfigInit</strong>(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Should always be called, to initialize a fresh WebPConfig structure before modification. Returns 0 in case of version mismatch. <code>WebPConfigInit</code>() must have succeeded before using the 'config' object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPConfigPreset"></span><code>function <strong>WebPConfigPreset</strong>(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; preset: <a href="libwebp.html#TWebPPreset">TWebPPreset</a>; quality: Single): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This function will initialize the configuration according to a predefined set of parameters (referred to by 'preset') and a given quality factor. This function can be called as a replacement to <a class="normal" href="libwebp.html#WebPConfigInit">WebPConfigInit</a>(). Will return 0 in case of error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureInit"></span><code>function <strong>WebPPictureInit</strong>(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Should always be called, to initialize the structure. Returns 0 in case of version mismatch. <code>WebPPictureInit</code>() must have succeeded before using the 'picture' object.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PVP8Decoder"></span><code><strong>PVP8Decoder</strong> = &circ;<a href="libwebp.VP8Decoder.html">VP8Decoder</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Main decoding object. This is an opaque structure.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PVP8Io"></span><code><strong>PVP8Io</strong> = &circ;<a href="libwebp.VP8Io.html">VP8Io</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Input / Output</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PWebPAuxStats"></span><code><strong>PWebPAuxStats</strong> = &circ;<a href="libwebp.TWebPAuxStats.html">TWebPAuxStats</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal" href="libwebp.TWebPPicture.html">TWebPPicture</a> = record end; // main structure for I/O non-essential structure for storing auxilliary statistics</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PWebPConfig"></span><code><strong>PWebPConfig</strong> = &circ;<a href="libwebp.TWebPConfig.html">TWebPConfig</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Coding parameters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PWebPDecParams"></span><code><strong>PWebPDecParams</strong> = &circ;<a href="libwebp.TWebPDecParams.html">TWebPDecParams</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Decoding output parameters.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PWebPIDecoder"></span><code><strong>PWebPIDecoder</strong> = &circ;<a href="libwebp.TWebPIDecoder.html">TWebPIDecoder</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PWebPPicture"></span><code><strong>PWebPPicture</strong> = &circ;<a href="libwebp.TWebPPicture.html">TWebPPicture</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+text-like</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TDecState"></span><code><strong>TDecState</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="STATE_HEADER">STATE_HEADER = 0</span></li>
+<li>
+<span id="STATE_PARTS0">STATE_PARTS0 = 1</span></li>
+<li>
+<span id="STATE_DATA">STATE_DATA = 2</span></li>
+<li>
+<span id="STATE_DONE">STATE_DONE = 3</span></li>
+<li>
+<span id="STATE_ERROR">STATE_ERROR = 4</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TVP8StatusCode"></span><code><strong>TVP8StatusCode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration of the status codes</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="VP8_STATUS_OK">VP8_STATUS_OK = 0</span></li>
+<li>
+<span id="VP8_STATUS_OUT_OF_MEMORY">VP8_STATUS_OUT_OF_MEMORY</span></li>
+<li>
+<span id="VP8_STATUS_INVALID_PARAM">VP8_STATUS_INVALID_PARAM</span></li>
+<li>
+<span id="VP8_STATUS_BITSTREAM_ERROR">VP8_STATUS_BITSTREAM_ERROR</span></li>
+<li>
+<span id="VP8_STATUS_UNSUPPORTED_FEATURE">VP8_STATUS_UNSUPPORTED_FEATURE</span></li>
+<li>
+<span id="VP8_STATUS_SUSPENDED">VP8_STATUS_SUSPENDED</span></li>
+<li>
+<span id="VP8_STATUS_USER_ABORT">VP8_STATUS_USER_ABORT</span></li>
+<li>
+<span id="VP8_STATUS_NOT_ENOUGH_DATA">VP8_STATUS_NOT_ENOUGH_DATA</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWebPPreset"></span><code><strong>TWebPPreset</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumerate some predefined settings for WebPConfig, depending on the type of source picture. These presets are used when calling <a class="normal" href="libwebp.html#WebPConfigPreset">WebPConfigPreset</a>().</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="WEBP_PRESET_DEFAULT">WEBP_PRESET_DEFAULT = 0</span></li>
+<li>
+<span id="WEBP_PRESET_PICTURE">WEBP_PRESET_PICTURE</span>: default preset.</li>
+<li>
+<span id="WEBP_PRESET_PHOTO">WEBP_PRESET_PHOTO</span>: digital picture, like portrait, inner shot</li>
+<li>
+<span id="WEBP_PRESET_DRAWING">WEBP_PRESET_DRAWING</span>: outdoor photograph, with natural lighting</li>
+<li>
+<span id="WEBP_PRESET_ICON">WEBP_PRESET_ICON</span>: hand or line drawing, with high-contrast details</li>
+<li>
+<span id="WEBP_PRESET_TEXT">WEBP_PRESET_TEXT</span>: small-sized colorful images</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWebPWriterFunction"></span><code><strong>TWebPWriterFunction</strong> = function(const data: PByte; data_size: LongWord; const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Signature for output function. Should return 1 if writing was successful. data/data_size is the segment of data to write, and 'picture' is for reference (and so one can make use of picture-&gt;custom_ptr).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WEBP_CSP_MODE"></span><code><strong>WEBP_CSP_MODE</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Output colorspaces</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="MODE_RGB">MODE_RGB = 0</span></li>
+<li>
+<span id="MODE_RGBA">MODE_RGBA = 1</span></li>
+<li>
+<span id="MODE_BGR">MODE_BGR = 2</span></li>
+<li>
+<span id="MODE_BGRA">MODE_BGRA = 3</span></li>
+<li>
+<span id="MODE_YUV">MODE_YUV = 4</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AlternateLibWebPFilename"></span><code><strong>AlternateLibWebPFilename</strong>: string = 'libwebp.dll';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPFilename"></span><code><strong>LibWebPFilename</strong>: string =
+  
+    ''
+  ;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPHandle"></span><code><strong>LibWebPHandle</strong>: TLibHandle = dynlibs.NilHandle;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Special methods for dynamic loading of lib ...</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LibWebPRefCount"></span><code><strong>LibWebPRefCount</strong>: LongWord = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+this will hold our handle for the lib; it functions nicely as a mutli-lib prevention unit as well...</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPConfigInitInternal"></span><code><strong>WebPConfigInitInternal</strong>: function(const conf: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; preset: <a href="libwebp.html#TWebPPreset">TWebPPreset</a>; quality: single; version: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeBGR"></span><code><strong>WebPDecodeBGR</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This variant decode to BGR instead of RGB.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeBGRA"></span><code><strong>WebPDecodeBGRA</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This variant decodes to <a class="normal" href="BGRABitmapTypes.html#BGRA">BGRA</a> instead of RGBA.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeBGRAInto"></span><code><strong>WebPDecodeBGRAInto</strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeBGRInto"></span><code><strong>WebPDecodeBGRInto</strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+BGR variants</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeRGB"></span><code><strong>WebPDecodeRGB</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Decodes WEBP images pointed to by *data and returns RGB samples, along with the dimensions in *width and *height. The returned pointer should be deleted calling free(). Returns NULL in case of error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeRGBA"></span><code><strong>WebPDecodeRGBA</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Same as <a class="normal" href="libwebp.html#WebPDecodeRGB">WebPDecodeRGB</a>, but returning RGBA data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeRGBAInto"></span><code><strong>WebPDecodeRGBAInto</strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeRGBInto"></span><code><strong>WebPDecodeRGBInto</strong>: function(const data: PByte; data_size: LongWord; output_buffer: PByte; output_buffer_size, output_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+These three functions are variants of the above ones, that decode the image directly into a pre-allocated buffer 'output_buffer'. The maximum storage available in this buffer is indicated by 'output_buffer_size'. If this storage is not sufficient (or an error occurred), NULL is returned. Otherwise, output_buffer is returned, for convenience. The parameter 'output_stride' specifies the distance (in bytes) between scanlines. Hence, output_buffer_size is expected to be at least output_stride x picture-height.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeYUV"></span><code><strong>WebPDecodeYUV</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger; var u, v: PByte; stride, uv_stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Decode WEBP images stored in *data in Y'UV format(*). The pointer returned is the Y samples buffer. Upon return, *u and *v will <a class="normal" href="BGRAClasses.html#Point">point</a> to the U and V chroma data. These U and V buffers need NOT be free()'d, unlike the returned Y luma one. The dimension of the U and V planes are both (*width + 1) / 2 and (*height + 1)/ 2. Upon return, the Y buffer has a stride returned as '*stride', while U and V have a common stride returned as '*uv_stride'. Return NULL in case of error. (*) Also named Y'CbCr. See: <a href="http://en.wikipedia.org/wiki/YCbCr">http://en.wikipedia.org/wiki/YCbCr</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPDecodeYUVInto"></span><code><strong>WebPDecodeYUVInto</strong>: function(const data: PByte; data_size: LongWord; luma: PByte; luma_size, luma_stride: Integer; u: PByte; u_size, u_stride: Integer; v: PByte; v_size, v_stride: Integer): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<code>WebPDecodeYUVInto</code>() is a variant of <a class="normal" href="libwebp.html#WebPDecodeYUV">WebPDecodeYUV</a>() that operates directly into pre-allocated luma/chroma plane buffers. This function requires the strides to be passed: one for the luma plane and one for each of the chroma ones. The <a class="normal" href="BGRAClasses.html#Size">size</a> of each plane buffer is passed as 'luma_size', 'u_size' and 'v_size' respectively. Pointer to the luma plane ('*luma') is returned or NULL if an error occurred during decoding (or because some buffers were found to be too small).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncode"></span><code><strong>WebPEncode</strong>: function(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>; const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Main call Main encoding call, after config and picture have been initialiazed. 'picture' must be less than 16384x16384 in dimension, and the 'config' object must be a valid one. Returns false in case of error, true otherwise.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeBGR"></span><code><strong>WebPEncodeBGR</strong>: function(const bgr: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeBGRA"></span><code><strong>WebPEncodeBGRA</strong>: function(const <a href="BGRABitmapTypes.html#BGRA">bgra</a>: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeLosslessBGR"></span><code><strong>WebPEncodeLosslessBGR</strong>: function(const bgr: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeLosslessBGRA"></span><code><strong>WebPEncodeLosslessBGRA</strong>: function(const <a href="BGRABitmapTypes.html#BGRA">bgra</a>: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeLosslessRGB"></span><code><strong>WebPEncodeLosslessRGB</strong>: function(const rgb: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+These functions are the equivalent of the above, but compressing in a lossless manner. Files are usually larger than lossy format, but will not suffer any compression loss. Note these functions, like the lossy versions, use the library's default settings. For lossless this means 'exact' is disabled. RGB values in transparent areas will be modified to improve compression. To avoid this, use <a class="normal" href="libwebp.html#WebPEncode">WebPEncode</a>() and set WebPConfig::exact to 1.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeLosslessRGBA"></span><code><strong>WebPEncodeLosslessRGBA</strong>: function(const rgba: PByte; width, height, stride: Integer; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeRGB"></span><code><strong>WebPEncodeRGB</strong>: function(const rgb: PByte; width, height, stride: Integer; quality_factor: single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; One-stop-shop call! No questions asked: Returns the <a class="normal" href="BGRAClasses.html#Size">size</a> of the compressed data (pointed to by *output), or 0 if an error occurred. The compressed data must be released by the caller using the call '<a class="normal" href="libwebp.html#WebPFree">WebPFree</a>(*output)'. These functions compress using the lossy format, and the quality_factor can go from 0 (smaller output, lower quality) to 100 (best quality, larger output).</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPEncodeRGBA"></span><code><strong>WebPEncodeRGBA</strong>: function(const rgba: PByte; width, height, stride: Integer; quality_factor: Single; var output: PByte): LongWord; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPFree"></span><code><strong>WebPFree</strong>: procedure(const data: PByte); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Releases memory returned by the WebPDecode*() functions above.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPGetDecoderVersion"></span><code><strong>WebPGetDecoderVersion</strong>: function(): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Dynamic load : Vars that will hold our dynamically loaded functions... *************************** functions ******************************* Return the decoder's version number, packed in hexadecimal using 8bits for each of major/minor/revision. E.g: v2.5.7 is 0x020507.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPGetEncoderVersion"></span><code><strong>WebPGetEncoderVersion</strong>: function(): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Return the encoder's version number, packed in hexadecimal using 8bits for each of major/minor/revision. E.g: v2.5.7 is 0x020507.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPGetInfo"></span><code><strong>WebPGetInfo</strong>: function(const data: PByte; data_size: LongWord; width, height: PInteger): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Retrieve basic header information: width, height. This function will also validate the header and return 0 in case of formatting error. Pointers *width/*height can be passed NULL if deemed irrelevant.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPIAppend"></span><code><strong>WebPIAppend</strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; const data: PByte; data_size: LongWord): <a href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies and decodes the next available data. Returns <a class="normal" href="libwebp.html#VP8_STATUS_OK">VP8_STATUS_OK</a> when the image is successfully decoded. Returns <a class="normal" href="libwebp.html#VP8_STATUS_SUSPENDED">VP8_STATUS_SUSPENDED</a> when more data is expected. Returns error in other cases.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPIDecGetRGB"></span><code><strong>WebPIDecGetRGB</strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; last_y, width, height, stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the RGB image decoded so far. Returns NULL if output params are not initialized yet. *last_y is the index of last decoded row in raster scan order. Some pointers (*last_y, *width etc.) can be NULL if corresponding information is not needed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPIDecGetYUV"></span><code><strong>WebPIDecGetYUV</strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; last_y: PInteger; var u, v: PByte; width, height, stride, uv_stride: PInteger): PByte; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Same as above function to get YUV image. Returns pointer to the luma plane or NULL in case of error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPIDelete"></span><code><strong>WebPIDelete</strong>: procedure(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Deletes the WebpBuffer object and associated memory. Must always be called if <a class="normal" href="libwebp.html#WebPINew">WebPINew</a>, <a class="normal" href="libwebp.html#WebPINewRGB">WebPINewRGB</a> or <a class="normal" href="libwebp.html#WebPINewYUV">WebPINewYUV</a> succeeded.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPINew"></span><code><strong>WebPINew</strong>: function(mode: <a href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a>): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Incremental decoding
+
+<p>This API allows streamlined decoding of partial data. Picture can be incrementally decoded as data become available thanks to the WebPIDecoder object. This object can be left in a SUSPENDED state if the picture is only partially decoded, pending additional input. Code example:
+
+<p>WebPIDecoder* const idec = <code>WebPINew</code>(mode); while (has_more_data) { // ... (get additional data) status = <a class="normal" href="libwebp.html#WebPIAppend">WebPIAppend</a>(idec, new_data, new_data_size); if (status != <a class="normal" href="libwebp.html#VP8_STATUS_SUSPENDED">VP8_STATUS_SUSPENDED</a> || break; }
+
+<p>// The above call decodes the current available buffer. // Part of the image can now be refreshed by calling to // <a class="normal" href="libwebp.html#WebPIDecGetRGB">WebPIDecGetRGB</a>()/<a class="normal" href="libwebp.html#WebPIDecGetYUV">WebPIDecGetYUV</a>() etc. } <a class="normal" href="libwebp.html#WebPIDelete">WebPIDelete</a>(idec); Creates a WebPIDecoder object. Returns NULL in case of failure.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPINewRGB"></span><code><strong>WebPINewRGB</strong>: function(mode: <a href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a>; output_buffer: PByte; output_buffer_size, output_stride: Integer): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This function allocates and initializes an incremental-decoder object, which will output the r/g/b(/a) samples specified by 'mode' into a preallocated buffer 'output_buffer'. The <a class="normal" href="BGRAClasses.html#Size">size</a> of this buffer is at least 'output_buffer_size' and the stride (distance in bytes between two scanlines) is specified by 'output_stride'. Returns NULL if the allocation failed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPINewYUV"></span><code><strong>WebPINewYUV</strong>: function(luma: PByte; luma_size, luma_stride: Integer; u: PByte; u_size, u_stride: Integer; v: PByte; v_size, v_stride: Integer): <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This function allocates and initializes an incremental-decoder object, which will output the raw luma/chroma samples into a preallocated planes. The luma plane is specified by its pointer 'luma', its <a class="normal" href="BGRAClasses.html#Size">size</a> 'luma_size' and its stride 'luma_stride'. Similarly, the chroma-u plane is specified by the 'u', 'u_size' and 'u_stride' parameters, and the chroma-v plane by 'v', 'v_size' and 'v_size'. Returns NULL if the allocation failed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPIUpdate"></span><code><strong>WebPIUpdate</strong>: function(const idec: <a href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a>; const data: PByte; data_size: LongWord): <a href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a>; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+A variant of the above function to be used when data buffer contains partial data from the beginning. In this case data buffer is not copied to the internal memory. Note that the value of the 'data' pointer can change between calls to <code>WebPIUpdate</code>, for instance when the data buffer is resized to fit larger data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureAlloc"></span><code><strong>WebPPictureAlloc</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; WebPPicture utils Convenience allocation / deallocation based on picture-&gt;width/height: Allocate y/u/v buffers as per width/height specification. Note! This function will free the previous buffer if needed. Returns 0 in case of memory error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureCopy"></span><code><strong>WebPPictureCopy</strong>: function(const src, dst: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copy the pixels of *src into *dst, using <a class="normal" href="libwebp.html#WebPPictureAlloc">WebPPictureAlloc</a>. Returns 0 in case of memory allocation error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureCrop"></span><code><strong>WebPPictureCrop</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; left, top, width, height: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+self-crops a picture to the rectangle defined by top/left/width/height. Returns 0 in case of memory allocation error, or if the rectangle is outside of the source picture.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureFree"></span><code><strong>WebPPictureFree</strong>: procedure(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>); cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Release memory allocated by <a class="normal" href="libwebp.html#WebPPictureAlloc">WebPPictureAlloc</a>() or WebPPictureImport*() Note that this function does _not_ free the memory pointed to by 'picture'.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureImportBGR"></span><code><strong>WebPPictureImportBGR</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const bgr: PByte; bgr_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Variant of the above, but taking BGR input:</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureImportBGRA"></span><code><strong>WebPPictureImportBGRA</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const bgra: PByte; bgra_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureImportRGB"></span><code><strong>WebPPictureImportRGB</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const rgb: PByte; rgb_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Colorspace conversion function. Previous buffer will be free'd, if any. *rgb buffer should have a <a class="normal" href="BGRAClasses.html#Size">size</a> of at least height * rgb_stride. Returns 0 in case of memory error.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureImportRGBA"></span><code><strong>WebPPictureImportRGBA</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; const rgba: PByte; rgba_stride: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Same, but for RGBA buffer. Alpha information is ignored.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPPictureInitInternal"></span><code><strong>WebPPictureInitInternal</strong>: function(const picture: <a href="libwebp.html#PWebPPicture">PWebPPicture</a>; version: Integer): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Internal, version-checked, entry <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="WebPValidateConfig"></span><code><strong>WebPValidateConfig</strong>: function(const config: <a href="libwebp.html#PWebPConfig">PWebPConfig</a>): Integer; cdecl;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns 1 if all parameters are in valid range and the configuration is OK.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

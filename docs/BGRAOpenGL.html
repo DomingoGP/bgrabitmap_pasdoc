@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAOpenGL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAOpenGL</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li>FPimage</li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRAOpenGLType.html">BGRAOpenGLType</a></li><li><a href="BGRASpriteGL.html">BGRASpriteGL</a></li><li><a href="BGRACanvasGL.html">BGRACanvasGL</a></li><li>GL</li><li>GLext</li><li>GLU</li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRAFontGL.html">BGRAFontGL</a></li><li><a href="BGRASSE.html">BGRASSE</a></li><li><a href="BGRAMatrix3D.html">BGRAMatrix3D</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGL.TBGLArray.html"><code>TBGLArray</code></a></td>
+<td class="itemdesc"><code>TBGLArray</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGL.TBGLBitmap.html"><code>TBGLBitmap</code></a></td>
+<td class="itemdesc"><code>TBGLBitmap</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Object&nbsp;<a class="bold" href="BGRAOpenGL.TBGLContext.html"><code>TBGLContext</code></a></td>
+<td class="itemdesc"><code>TBGLContext</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGL.TBGLElementArray.html"><code>TBGLElementArray</code></a></td>
+<td class="itemdesc"><code>TBGLElementArray</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGL.TBGLFrameBuffer.html"><code>TBGLFrameBuffer</code></a></td>
+<td class="itemdesc"><code>TBGLFrameBuffer</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLCanvas">BGLCanvas</a></strong>: <a href="BGRAOpenGL.html#TBGLCustomCanvas">TBGLCustomCanvas</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLFont">BGLFont</a></strong>(AName: string; AEmHeight: integer; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLFont">BGLFont</a></strong>(AName: string; AEmHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLFont">BGLFont</a></strong>(AName: string; AEmHeight: integer; ARenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; ARendererOwned: boolean = true): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLFont">BGLFont</a></strong>(AName: string; AEmHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOutlineColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLSpriteEngine">BGLSpriteEngine</a></strong>: <a href="BGRASpriteGL.TBGLCustomSpriteEngine.html">TBGLCustomSpriteEngine</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AFPImage: TFPCustomImage): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AWidth, AHeight: integer; Color: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(ARGBAData: PLongWord; AllocatedWidth,AllocatedHeight, ActualWidth,ActualHeight: integer): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AFilenameUTF8: string; AWidth, AHeight: integer; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfBox">rfBox</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AFilenameUTF8: string): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGL.html#BGLTexture">BGLTexture</a></strong>(AWidth, AHeight: integer; Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenGL.html#BGLViewPort">BGLViewPort</a></strong>(AWidth,AHeight: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenGL.html#BGLViewPort">BGLViewPort</a></strong>(AWidth,AHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#IBGLFont">IBGLFont</a></strong> = <a href="BGRAOpenGLType.IBGLFont.html">BGRAOpenGLType.IBGLFont</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a></strong> = <a href="BGRAFontGL.IBGLRenderedFont.html">BGRAFontGL.IBGLRenderedFont</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a></strong> = <a href="BGRAOpenGLType.IBGLTexture.html">BGRAOpenGLType.IBGLTexture</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TBGLCustomArray">TBGLCustomArray</a></strong> = <a href="BGRACanvasGL.TBGLCustomArray.html">BGRACanvasGL.TBGLCustomArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TBGLCustomCanvas">TBGLCustomCanvas</a></strong> = <a href="BGRACanvasGL.TBGLCustomCanvas.html">BGRACanvasGL.TBGLCustomCanvas</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TBGLCustomElementArray">TBGLCustomElementArray</a></strong> = <a href="BGRACanvasGL.TBGLCustomElementArray.html">BGRACanvasGL.TBGLCustomElementArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TBGLPath">TBGLPath</a></strong> = <a href="BGRACanvasGL.TBGLPath.html">BGRACanvasGL.TBGLPath</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TBGLSprite">TBGLSprite</a></strong> = <a href="BGRASpriteGL.TBGLDefaultSprite.html">TBGLDefaultSprite</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TOpenGLBlendMode">TOpenGLBlendMode</a></strong> = <a href="BGRAOpenGLType.html#TOpenGLBlendMode">BGRAOpenGLType.TOpenGLBlendMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TOpenGLPrimitive">TOpenGLPrimitive</a></strong> = <a href="BGRAOpenGLType.html#TOpenGLPrimitive">BGRAOpenGLType.TOpenGLPrimitive</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TOpenGLResampleFilter">TOpenGLResampleFilter</a></strong> = <a href="BGRAOpenGLType.html#TOpenGLResampleFilter">BGRAOpenGLType.TOpenGLResampleFilter</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TTextLayout">TTextLayout</a></strong> = <a href="BGRAGraphics.html#TTextLayout">BGRAGraphics.TTextLayout</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#TWaitForGPUOption">TWaitForGPUOption</a></strong> = <a href="BGRAOpenGLType.html#TWaitForGPUOption">BGRAOpenGLType.TWaitForGPUOption</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#obmAdd">obmAdd</a></strong> = <a href="BGRAOpenGLType.html#obmAdd">BGRAOpenGLType.obmAdd</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#obmMultiply">obmMultiply</a></strong> = <a href="BGRAOpenGLType.html#obmMultiply">BGRAOpenGLType.obmMultiply</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#obmNormal">obmNormal</a></strong> = <a href="BGRAOpenGLType.html#obmNormal">BGRAOpenGLType.obmNormal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opLineLoop">opLineLoop</a></strong> = <a href="BGRAOpenGLType.html#opLineLoop">BGRAOpenGLType.opLineLoop</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opLines">opLines</a></strong> = <a href="BGRAOpenGLType.html#opLines">BGRAOpenGLType.opLines</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opLineStrip">opLineStrip</a></strong> = <a href="BGRAOpenGLType.html#opLineStrip">BGRAOpenGLType.opLineStrip</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opPoints">opPoints</a></strong> = <a href="BGRAOpenGLType.html#opPoints">BGRAOpenGLType.opPoints</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opTriangleFan">opTriangleFan</a></strong> = <a href="BGRAOpenGLType.html#opTriangleFan">BGRAOpenGLType.opTriangleFan</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opTriangles">opTriangles</a></strong> = <a href="BGRAOpenGLType.html#opTriangles">BGRAOpenGLType.opTriangles</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#opTriangleStrip">opTriangleStrip</a></strong> = <a href="BGRAOpenGLType.html#opTriangleStrip">BGRAOpenGLType.opTriangleStrip</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#orfBox">orfBox</a></strong> = <a href="BGRAOpenGLType.html#orfBox">BGRAOpenGLType.orfBox</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#orfLinear">orfLinear</a></strong> = <a href="BGRAOpenGLType.html#orfLinear">BGRAOpenGLType.orfLinear</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#tlBottom">tlBottom</a></strong> = <a href="BGRAGraphics.html#tlBottom">BGRAGraphics.tlBottom</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#tlCenter">tlCenter</a></strong> = <a href="BGRAGraphics.html#tlCenter">BGRAGraphics.tlCenter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#tlTop">tlTop</a></strong> = <a href="BGRAGraphics.html#tlTop">BGRAGraphics.tlTop</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#wfgFinishAllCommands">wfgFinishAllCommands</a></strong> = <a href="BGRAOpenGLType.html#wfgFinishAllCommands">BGRAOpenGLType.wfgFinishAllCommands</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGL.html#wfgQueueAllCommands">wfgQueueAllCommands</a></strong> = <a href="BGRAOpenGLType.html#wfgQueueAllCommands">BGRAOpenGLType.wfgQueueAllCommands</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLCanvas"></span><code>function <strong>BGLCanvas</strong>: <a href="BGRAOpenGL.html#TBGLCustomCanvas">TBGLCustomCanvas</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLFont"></span><code>function <strong>BGLFont</strong>(AName: string; AEmHeight: integer; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLFont"></span><code>function <strong>BGLFont</strong>(AName: string; AEmHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLFont"></span><code>function <strong>BGLFont</strong>(AName: string; AEmHeight: integer; ARenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; ARendererOwned: boolean = true): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLFont"></span><code>function <strong>BGLFont</strong>(AName: string; AEmHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOutlineColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AStyle: <a href="BGRAGraphics.html#TFontStyles">TFontStyles</a> = []): <a href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLSpriteEngine"></span><code>function <strong>BGLSpriteEngine</strong>: <a href="BGRASpriteGL.TBGLCustomSpriteEngine.html">TBGLCustomSpriteEngine</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AFPImage: TFPCustomImage): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AWidth, AHeight: integer; Color: <a href="BGRAGraphics.html#TColor">TColor</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(ABitmap: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(ARGBAData: PLongWord; AllocatedWidth,AllocatedHeight, ActualWidth,ActualHeight: integer): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AFilenameUTF8: string; AWidth, AHeight: integer; AResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfBox">rfBox</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AFilenameUTF8: string): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTexture"></span><code>function <strong>BGLTexture</strong>(AWidth, AHeight: integer; Color: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLViewPort"></span><code>procedure <strong>BGLViewPort</strong>(AWidth,AHeight: integer); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLViewPort"></span><code>procedure <strong>BGLViewPort</strong>(AWidth,AHeight: integer; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IBGLFont"></span><code><strong>IBGLFont</strong> = <a href="BGRAOpenGLType.IBGLFont.html">BGRAOpenGLType.IBGLFont</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IBGLRenderedFont"></span><code><strong>IBGLRenderedFont</strong> = <a href="BGRAFontGL.IBGLRenderedFont.html">BGRAFontGL.IBGLRenderedFont</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IBGLTexture"></span><code><strong>IBGLTexture</strong> = <a href="BGRAOpenGLType.IBGLTexture.html">BGRAOpenGLType.IBGLTexture</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLCustomArray"></span><code><strong>TBGLCustomArray</strong> = <a href="BGRACanvasGL.TBGLCustomArray.html">BGRACanvasGL.TBGLCustomArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLCustomCanvas"></span><code><strong>TBGLCustomCanvas</strong> = <a href="BGRACanvasGL.TBGLCustomCanvas.html">BGRACanvasGL.TBGLCustomCanvas</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLCustomElementArray"></span><code><strong>TBGLCustomElementArray</strong> = <a href="BGRACanvasGL.TBGLCustomElementArray.html">BGRACanvasGL.TBGLCustomElementArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLPath"></span><code><strong>TBGLPath</strong> = <a href="BGRACanvasGL.TBGLPath.html">BGRACanvasGL.TBGLPath</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLSprite"></span><code><strong>TBGLSprite</strong> = <a href="BGRASpriteGL.TBGLDefaultSprite.html">TBGLDefaultSprite</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLBlendMode"></span><code><strong>TOpenGLBlendMode</strong> = <a href="BGRAOpenGLType.html#TOpenGLBlendMode">BGRAOpenGLType.TOpenGLBlendMode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLPrimitive"></span><code><strong>TOpenGLPrimitive</strong> = <a href="BGRAOpenGLType.html#TOpenGLPrimitive">BGRAOpenGLType.TOpenGLPrimitive</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLResampleFilter"></span><code><strong>TOpenGLResampleFilter</strong> = <a href="BGRAOpenGLType.html#TOpenGLResampleFilter">BGRAOpenGLType.TOpenGLResampleFilter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TTextLayout"></span><code><strong>TTextLayout</strong> = <a href="BGRAGraphics.html#TTextLayout">BGRAGraphics.TTextLayout</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWaitForGPUOption"></span><code><strong>TWaitForGPUOption</strong> = <a href="BGRAOpenGLType.html#TWaitForGPUOption">BGRAOpenGLType.TWaitForGPUOption</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="obmAdd"></span><code><strong>obmAdd</strong> = <a href="BGRAOpenGLType.html#obmAdd">BGRAOpenGLType.obmAdd</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="obmMultiply"></span><code><strong>obmMultiply</strong> = <a href="BGRAOpenGLType.html#obmMultiply">BGRAOpenGLType.obmMultiply</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="obmNormal"></span><code><strong>obmNormal</strong> = <a href="BGRAOpenGLType.html#obmNormal">BGRAOpenGLType.obmNormal</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opLineLoop"></span><code><strong>opLineLoop</strong> = <a href="BGRAOpenGLType.html#opLineLoop">BGRAOpenGLType.opLineLoop</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opLines"></span><code><strong>opLines</strong> = <a href="BGRAOpenGLType.html#opLines">BGRAOpenGLType.opLines</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opLineStrip"></span><code><strong>opLineStrip</strong> = <a href="BGRAOpenGLType.html#opLineStrip">BGRAOpenGLType.opLineStrip</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opPoints"></span><code><strong>opPoints</strong> = <a href="BGRAOpenGLType.html#opPoints">BGRAOpenGLType.opPoints</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opTriangleFan"></span><code><strong>opTriangleFan</strong> = <a href="BGRAOpenGLType.html#opTriangleFan">BGRAOpenGLType.opTriangleFan</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opTriangles"></span><code><strong>opTriangles</strong> = <a href="BGRAOpenGLType.html#opTriangles">BGRAOpenGLType.opTriangles</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="opTriangleStrip"></span><code><strong>opTriangleStrip</strong> = <a href="BGRAOpenGLType.html#opTriangleStrip">BGRAOpenGLType.opTriangleStrip</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="orfBox"></span><code><strong>orfBox</strong> = <a href="BGRAOpenGLType.html#orfBox">BGRAOpenGLType.orfBox</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="orfLinear"></span><code><strong>orfLinear</strong> = <a href="BGRAOpenGLType.html#orfLinear">BGRAOpenGLType.orfLinear</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlBottom"></span><code><strong>tlBottom</strong> = <a href="BGRAGraphics.html#tlBottom">BGRAGraphics.tlBottom</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlCenter"></span><code><strong>tlCenter</strong> = <a href="BGRAGraphics.html#tlCenter">BGRAGraphics.tlCenter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="tlTop"></span><code><strong>tlTop</strong> = <a href="BGRAGraphics.html#tlTop">BGRAGraphics.tlTop</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="wfgFinishAllCommands"></span><code><strong>wfgFinishAllCommands</strong> = <a href="BGRAOpenGLType.html#wfgFinishAllCommands">BGRAOpenGLType.wfgFinishAllCommands</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="wfgQueueAllCommands"></span><code><strong>wfgQueueAllCommands</strong> = <a href="BGRAOpenGLType.html#wfgQueueAllCommands">BGRAOpenGLType.wfgQueueAllCommands</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

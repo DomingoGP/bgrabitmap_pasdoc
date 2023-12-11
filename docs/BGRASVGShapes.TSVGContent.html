@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASVGShapes: Class TSVGContent</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TSVGContent"></span><h1 class="cio">Class TSVGContent</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASVGShapes.html">BGRASVGShapes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TSVGContent = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TSVGContent</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TSVGContent</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGContent.html#FDataLink">FDataLink</a></strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGContent.html#FDoc">FDoc</a></strong>: TDOMDocument;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGContent.html#FDomElem">FDomElem</a></strong>: TDOMElement;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGContent.html#FElements">FElements</a></strong>: <a href="BGRAClasses.html#TFPList">TFPList</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRASVGShapes.TSVGContent.html#FUnits">FUnits</a></strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRASVGShapes.TSVGContent.html#Create">Create</a></strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRASVGShapes.TSVGContent.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendCircle">AppendCircle</a></strong>(c: <a href="BGRAClasses.html#TPointF">TPointF</a>; r: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGCircle.html">TSVGCircle</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendCircle">AppendCircle</a></strong>(cx,cy,r: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGCircle.html">TSVGCircle</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendDefine">AppendDefine</a></strong>: <a href="BGRASVGShapes.TSVGDefine.html">TSVGDefine</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendDOMText">AppendDOMText</a></strong>(AText: string): TDOMText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendElement">AppendElement</a></strong>(ASVGType: <a href="BGRASVGType.html#TSVGFactory">TSVGFactory</a>): <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendEllipse">AppendEllipse</a></strong>(c,r: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGEllipse.html">TSVGEllipse</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendEllipse">AppendEllipse</a></strong>(cx,cy,rx,ry: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGEllipse.html">TSVGEllipse</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendGroup">AppendGroup</a></strong>: <a href="BGRASVGShapes.TSVGGroup.html">TSVGGroup</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendImage">AppendImage</a></strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABitmapStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendImage">AppendImage</a></strong>(x,y,width,height: single; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABitmapOwned: boolean; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendImage">AppendImage</a></strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABitmapOwned: boolean; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendImage">AppendImage</a></strong>(x,y,width,height: single; ABitmapStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendLine">AppendLine</a></strong>(x1,y1,x2,y2: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGLine.html">TSVGLine</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendLine">AppendLine</a></strong>(p1,p2: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGLine.html">TSVGLine</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendLinearGradient">AppendLinearGradient</a></strong>(x1,y1,x2,y2: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGLinearGradient.html">TSVGLinearGradient</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendLinearGradient">AppendLinearGradient</a></strong>(x1,y1,x2,y2: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRASVGShapes.TSVGLinearGradient.html">TSVGLinearGradient</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendPath">AppendPath</a></strong>(path: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPath.html">TSVGPath</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendPath">AppendPath</a></strong>(data: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPath.html">TSVGPath</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendPolygon">AppendPolygon</a></strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPolypoints.html">TSVGPolypoints</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendPolygon">AppendPolygon</a></strong>(const points: array of single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPolypoints.html">TSVGPolypoints</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRadialGradient">AppendRadialGradient</a></strong>(cx,cy,r,fx,fy,fr: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGRadialGradient.html">TSVGRadialGradient</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRadialGradient">AppendRadialGradient</a></strong>(cx,cy,r,fx,fy,fr: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRASVGShapes.TSVGRadialGradient.html">TSVGRadialGradient</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRect">AppendRect</a></strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRect">AppendRect</a></strong>(x,y,width,height: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRoundRect">AppendRoundRect</a></strong>(x,y,width,height,rx,ry: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendRoundRect">AppendRoundRect</a></strong>(origin,size,radius: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendStop">AppendStop</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOffset: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGStopGradient.html">TSVGStopGradient</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendText">AppendText</a></strong>(x,y: single; AText: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGText.html">TSVGText</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendText">AppendText</a></strong>(origin: <a href="BGRAClasses.html#TPointF">TPointF</a>; AText: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGText.html">TSVGText</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#AppendTextSpan">AppendTextSpan</a></strong>(AText: string): <a href="BGRASVGShapes.TSVGTSpan.html">TSVGTSpan</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#IndexOfElement">IndexOfElement</a></strong>(AElement: TObject): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#ExtractElementAt">ExtractElementAt</a></strong>(AIndex: integer): TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetDOMNode">GetDOMNode</a></strong>(AElement: TObject): TDOMNode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetElement">GetElement</a></strong>(AIndex: integer): <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetElementCount">GetElementCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetElementDOMNode">GetElementDOMNode</a></strong>(AIndex: integer): TDOMNode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetElementObject">GetElementObject</a></strong>(AIndex: integer): TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetIsSVGElement">GetIsSVGElement</a></strong>(AIndex: integer): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#GetUnits">GetUnits</a></strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASVGShapes.TSVGContent.html#TryCreateElementFromNode">TryCreateElementFromNode</a></strong>(ANode: TDOMNode): TObject; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#BringElement">BringElement</a></strong>(AElement: TObject; AFromContent: <a href="BGRASVGShapes.TSVGContent.html">TSVGContent</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#Clear">Clear</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#ConvertToUnit">ConvertToUnit</a></strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#CopyElement">CopyElement</a></strong>(AElement: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#CopyPathTo">CopyPathTo</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; x,y: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#CopyPathTo">CopyPathTo</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#Draw">Draw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#Draw">Draw</a></strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; x,y: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#IterateElements">IterateElements</a></strong>(ACallback: <a href="BGRASVGType.html#TIterateElementCallback">TIterateElementCallback</a>; AData: pointer; ARecursive: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#Recompute">Recompute</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#RemoveElement">RemoveElement</a></strong>(AElement: TObject);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#AppendElement">AppendElement</a></strong>(AElement: TObject); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASVGShapes.TSVGContent.html#InsertElementBefore">InsertElementBefore</a></strong>(AElement: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>; ASuccessor: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#Element">Element</a></strong>[AIndex:integer]: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a> read <a href="BGRASVGShapes.TSVGContent.html#GetElement">GetElement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#ElementCount">ElementCount</a></strong>: integer read <a href="BGRASVGShapes.TSVGContent.html#GetElementCount">GetElementCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#ElementDOMNode">ElementDOMNode</a></strong>[AIndex:integer]: TDOMNode read <a href="BGRASVGShapes.TSVGContent.html#GetElementDOMNode">GetElementDOMNode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#ElementObject">ElementObject</a></strong>[AIndex:integer]: TObject read <a href="BGRASVGShapes.TSVGContent.html#GetElementObject">GetElementObject</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#IsSVGElement">IsSVGElement</a></strong>[AIndex:integer]: boolean read <a href="BGRASVGShapes.TSVGContent.html#GetIsSVGElement">GetIsSVGElement</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASVGShapes.TSVGContent.html#Units">Units</a></strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a> read <a href="BGRASVGShapes.TSVGContent.html#GetUnits">GetUnits</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDataLink"></span><code><strong>FDataLink</strong>: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDoc"></span><code><strong>FDoc</strong>: TDOMDocument;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDomElem"></span><code><strong>FDomElem</strong>: TDOMElement;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FElements"></span><code><strong>FElements</strong>: <a href="BGRAClasses.html#TFPList">TFPList</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FUnits"></span><code><strong>FUnits</strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AElement: TDOMElement; AUnits: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>; ADataLink: <a href="BGRASVGType.TSVGDataLink.html">TSVGDataLink</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendCircle"></span><code>function <strong>AppendCircle</strong>(c: <a href="BGRAClasses.html#TPointF">TPointF</a>; r: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGCircle.html">TSVGCircle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendCircle"></span><code>function <strong>AppendCircle</strong>(cx,cy,r: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGCircle.html">TSVGCircle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendDefine"></span><code>function <strong>AppendDefine</strong>: <a href="BGRASVGShapes.TSVGDefine.html">TSVGDefine</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendDOMText"></span><code>function <strong>AppendDOMText</strong>(AText: string): TDOMText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendElement"></span><code>function <strong>AppendElement</strong>(ASVGType: <a href="BGRASVGType.html#TSVGFactory">TSVGFactory</a>): <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendEllipse"></span><code>function <strong>AppendEllipse</strong>(c,r: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGEllipse.html">TSVGEllipse</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendEllipse"></span><code>function <strong>AppendEllipse</strong>(cx,cy,rx,ry: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGEllipse.html">TSVGEllipse</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendGroup"></span><code>function <strong>AppendGroup</strong>: <a href="BGRASVGShapes.TSVGGroup.html">TSVGGroup</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendImage"></span><code>function <strong>AppendImage</strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABitmapStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendImage"></span><code>function <strong>AppendImage</strong>(x,y,width,height: single; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABitmapOwned: boolean; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendImage"></span><code>function <strong>AppendImage</strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ABitmapOwned: boolean; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendImage"></span><code>function <strong>AppendImage</strong>(x,y,width,height: single; ABitmapStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMimeType: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGImage.html">TSVGImage</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendLine"></span><code>function <strong>AppendLine</strong>(x1,y1,x2,y2: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGLine.html">TSVGLine</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendLine"></span><code>function <strong>AppendLine</strong>(p1,p2: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGLine.html">TSVGLine</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendLinearGradient"></span><code>function <strong>AppendLinearGradient</strong>(x1,y1,x2,y2: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGLinearGradient.html">TSVGLinearGradient</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendLinearGradient"></span><code>function <strong>AppendLinearGradient</strong>(x1,y1,x2,y2: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRASVGShapes.TSVGLinearGradient.html">TSVGLinearGradient</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendPath"></span><code>function <strong>AppendPath</strong>(path: <a href="BGRAPath.TBGRAPath.html">TBGRAPath</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPath.html">TSVGPath</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendPath"></span><code>function <strong>AppendPath</strong>(data: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPath.html">TSVGPath</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendPolygon"></span><code>function <strong>AppendPolygon</strong>(const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPolypoints.html">TSVGPolypoints</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendPolygon"></span><code>function <strong>AppendPolygon</strong>(const points: array of single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGPolypoints.html">TSVGPolypoints</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRadialGradient"></span><code>function <strong>AppendRadialGradient</strong>(cx,cy,r,fx,fy,fr: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGRadialGradient.html">TSVGRadialGradient</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRadialGradient"></span><code>function <strong>AppendRadialGradient</strong>(cx,cy,r,fx,fy,fr: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRASVGShapes.TSVGRadialGradient.html">TSVGRadialGradient</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRect"></span><code>function <strong>AppendRect</strong>(origin,size: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRect"></span><code>function <strong>AppendRect</strong>(x,y,width,height: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRoundRect"></span><code>function <strong>AppendRoundRect</strong>(x,y,width,height,rx,ry: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendRoundRect"></span><code>function <strong>AppendRoundRect</strong>(origin,size,radius: <a href="BGRAClasses.html#TPointF">TPointF</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGRectangle.html">TSVGRectangle</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendStop"></span><code>function <strong>AppendStop</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AOffset: single; AIsPercent: boolean): <a href="BGRASVGShapes.TSVGStopGradient.html">TSVGStopGradient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendText"></span><code>function <strong>AppendText</strong>(x,y: single; AText: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGText.html">TSVGText</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendText"></span><code>function <strong>AppendText</strong>(origin: <a href="BGRAClasses.html#TPointF">TPointF</a>; AText: string; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a> = <a href="BGRAUnits.html#cuCustom">cuCustom</a>): <a href="BGRASVGShapes.TSVGText.html">TSVGText</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AppendTextSpan"></span><code>function <strong>AppendTextSpan</strong>(AText: string): <a href="BGRASVGShapes.TSVGTSpan.html">TSVGTSpan</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOfElement"></span><code>function <strong>IndexOfElement</strong>(AElement: TObject): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExtractElementAt"></span><code>function <strong>ExtractElementAt</strong>(AIndex: integer): TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDOMNode"></span><code>function <strong>GetDOMNode</strong>(AElement: TObject): TDOMNode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElement"></span><code>function <strong>GetElement</strong>(AIndex: integer): <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementCount"></span><code>function <strong>GetElementCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementDOMNode"></span><code>function <strong>GetElementDOMNode</strong>(AIndex: integer): TDOMNode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetElementObject"></span><code>function <strong>GetElementObject</strong>(AIndex: integer): TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetIsSVGElement"></span><code>function <strong>GetIsSVGElement</strong>(AIndex: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUnits"></span><code>function <strong>GetUnits</strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TryCreateElementFromNode"></span><code>function <strong>TryCreateElementFromNode</strong>(ANode: TDOMNode): TObject; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BringElement"></span><code>procedure <strong>BringElement</strong>(AElement: TObject; AFromContent: <a href="BGRASVGShapes.TSVGContent.html">TSVGContent</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertToUnit"></span><code>procedure <strong>ConvertToUnit</strong>(AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyElement"></span><code>procedure <strong>CopyElement</strong>(AElement: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyPathTo"></span><code>procedure <strong>CopyPathTo</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; x,y: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyPathTo"></span><code>procedure <strong>CopyPathTo</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Draw"></span><code>procedure <strong>Draw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Draw"></span><code>procedure <strong>Draw</strong>(ACanvas2d: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; x,y: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IterateElements"></span><code>procedure <strong>IterateElements</strong>(ACallback: <a href="BGRASVGType.html#TIterateElementCallback">TIterateElementCallback</a>; AData: pointer; ARecursive: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Recompute"></span><code>procedure <strong>Recompute</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveElement"></span><code>procedure <strong>RemoveElement</strong>(AElement: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AppendElement"></span><code>procedure <strong>AppendElement</strong>(AElement: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InsertElementBefore"></span><code>procedure <strong>InsertElementBefore</strong>(AElement: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>; ASuccessor: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Element"></span><code>property <strong>Element</strong>[AIndex:integer]: <a href="BGRASVGType.TSVGElement.html">TSVGElement</a> read <a href="BGRASVGShapes.TSVGContent.html#GetElement">GetElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ElementCount"></span><code>property <strong>ElementCount</strong>: integer read <a href="BGRASVGShapes.TSVGContent.html#GetElementCount">GetElementCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ElementDOMNode"></span><code>property <strong>ElementDOMNode</strong>[AIndex:integer]: TDOMNode read <a href="BGRASVGShapes.TSVGContent.html#GetElementDOMNode">GetElementDOMNode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ElementObject"></span><code>property <strong>ElementObject</strong>[AIndex:integer]: TObject read <a href="BGRASVGShapes.TSVGContent.html#GetElementObject">GetElementObject</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsSVGElement"></span><code>property <strong>IsSVGElement</strong>[AIndex:integer]: boolean read <a href="BGRASVGShapes.TSVGContent.html#GetIsSVGElement">GetIsSVGElement</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Units"></span><code>property <strong>Units</strong>: <a href="BGRAUnits.TCSSUnitConverter.html">TCSSUnitConverter</a> read <a href="BGRASVGShapes.TSVGContent.html#GetUnits">GetUnits</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

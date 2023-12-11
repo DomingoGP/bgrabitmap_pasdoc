@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAUnits: Class TCSSUnitConverter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TCSSUnitConverter"></span><h1 class="cio">Class TCSSUnitConverter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAUnits.html">BGRAUnits</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TCSSUnitConverter = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TCSSUnitConverter</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TCSSUnitConverter</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnits.TCSSUnitConverter.html#FCurrentFontEmHeight">FCurrentFontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxHeight">FViewBoxHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxHeightInUnit">FViewBoxHeightInUnit</a></strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxWidth">FViewBoxWidth</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxWidthInUnit">FViewBoxWidthInUnit</a></strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of single;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAUnits.TCSSUnitConverter.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#Convert">Convert</a></strong>(xy: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; dpi: single; containerSize: single = 0): single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertCoord">ConvertCoord</a></strong>(pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertCoord">ConvertCoord</a></strong>(pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(y: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(y: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertHeight">ConvertHeight</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertOrtho">ConvertOrtho</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertOrtho">ConvertOrtho</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertOrtho">ConvertOrtho</a></strong>(xy: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(x: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(x: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#ConvertWidth">ConvertWidth</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#formatValue">formatValue</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#formatValue">formatValue</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#formatValue">formatValue</a></strong>(AValue: single; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#formatValue">formatValue</a></strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetConversionMatrix">GetConversionMatrix</a></strong>(AFromUnit, AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetConversionMatrix">GetConversionMatrix</a></strong>(AFromUnit, AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#parseArrayOfNumbers">parseArrayOfNumbers</a></strong>(AValue: string): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>; overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#parseArrayOfValuesWithUnit">parseArrayOfValuesWithUnit</a></strong>(AValue: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#parseValue">parseValue</a></strong>(AValue: string; ADefault: single): single; overload; static;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAUnits.TCSSUnitConverter.html#parseValue">parseValue</a></strong>(AValue: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitHeight">GetDefaultUnitHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitWidth">GetDefaultUnitWidth</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetDpiX">GetDpiX</a></strong>: single; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetDpiY">GetDpiY</a></strong>: single; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetFontEmHeight">GetFontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetFontXHeight">GetFontXHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.TCSSUnitConverter.html#GetRootFontEmHeight">GetRootFontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxHeight">SetViewBoxHeight</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxWidth">SetViewBoxWidth</a></strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#CurrentFontEmHeight">CurrentFontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FCurrentFontEmHeight">FCurrentFontEmHeight</a> write <a href="BGRAUnits.TCSSUnitConverter.html#FCurrentFontEmHeight">FCurrentFontEmHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#DefaultUnitHeight">DefaultUnitHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitHeight">GetDefaultUnitHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#DefaultUnitWidth">DefaultUnitWidth</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitWidth">GetDefaultUnitWidth</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#DpiX">DpiX</a></strong>: single read <a href="BGRAUnits.TCSSUnitConverter.html#GetDpiX">GetDpiX</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#DpiY">DpiY</a></strong>: single read <a href="BGRAUnits.TCSSUnitConverter.html#GetDpiY">GetDpiY</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#FontEmHeight">FontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetFontEmHeight">GetFontEmHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#FontXHeight">FontXHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetFontXHeight">GetFontXHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#RootFontEmHeight">RootFontEmHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetRootFontEmHeight">GetRootFontEmHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#ViewBoxHeight">ViewBoxHeight</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxHeight">FViewBoxHeight</a> write <a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxHeight">SetViewBoxHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAUnits.TCSSUnitConverter.html#ViewBoxWidth">ViewBoxWidth</a></strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxWidth">FViewBoxWidth</a> write <a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxWidth">SetViewBoxWidth</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentFontEmHeight"></span><code><strong>FCurrentFontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FViewBoxHeight"></span><code><strong>FViewBoxHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FViewBoxHeightInUnit"></span><code><strong>FViewBoxHeightInUnit</strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FViewBoxWidth"></span><code><strong>FViewBoxWidth</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FViewBoxWidthInUnit"></span><code><strong>FViewBoxWidthInUnit</strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Convert"></span><code>function <strong>Convert</strong>(xy: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; dpi: single; containerSize: single = 0): single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertCoord"></span><code>function <strong>ConvertCoord</strong>(pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertCoord"></span><code>function <strong>ConvertCoord</strong>(pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(y: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): single; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(y: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertHeight"></span><code>function <strong>ConvertHeight</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerHeight: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertOrtho"></span><code>function <strong>ConvertOrtho</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertOrtho"></span><code>function <strong>ConvertOrtho</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertOrtho"></span><code>function <strong>ConvertOrtho</strong>(xy: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(x: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single): single; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(x: single; sourceUnit, destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): single; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ConvertWidth"></span><code>function <strong>ConvertWidth</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; destUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="formatValue"></span><code>class function <strong>formatValue</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="formatValue"></span><code>class function <strong>formatValue</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="formatValue"></span><code>class function <strong>formatValue</strong>(AValue: single; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="formatValue"></span><code>class function <strong>formatValue</strong>(AValue: <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; APrecision: integer = 7): string; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetConversionMatrix"></span><code>function <strong>GetConversionMatrix</strong>(AFromUnit, AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>; containerWidth: single; containerHeight: single): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetConversionMatrix"></span><code>function <strong>GetConversionMatrix</strong>(AFromUnit, AToUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="parseArrayOfNumbers"></span><code>class function <strong>parseArrayOfNumbers</strong>(AValue: string): <a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a>; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="parseArrayOfValuesWithUnit"></span><code>class function <strong>parseArrayOfValuesWithUnit</strong>(AValue: string): <a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a>; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="parseValue"></span><code>class function <strong>parseValue</strong>(AValue: string; ADefault: single): single; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="parseValue"></span><code>class function <strong>parseValue</strong>(AValue: string; ADefault: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; overload; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDefaultUnitHeight"></span><code>function <strong>GetDefaultUnitHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDefaultUnitWidth"></span><code>function <strong>GetDefaultUnitWidth</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDpiX"></span><code>function <strong>GetDpiX</strong>: single; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDpiY"></span><code>function <strong>GetDpiY</strong>: single; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontEmHeight"></span><code>function <strong>GetFontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontXHeight"></span><code>function <strong>GetFontXHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetRootFontEmHeight"></span><code>function <strong>GetRootFontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetViewBoxHeight"></span><code>procedure <strong>SetViewBoxHeight</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetViewBoxWidth"></span><code>procedure <strong>SetViewBoxWidth</strong>(AValue: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurrentFontEmHeight"></span><code>property <strong>CurrentFontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FCurrentFontEmHeight">FCurrentFontEmHeight</a> write <a href="BGRAUnits.TCSSUnitConverter.html#FCurrentFontEmHeight">FCurrentFontEmHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DefaultUnitHeight"></span><code>property <strong>DefaultUnitHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitHeight">GetDefaultUnitHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DefaultUnitWidth"></span><code>property <strong>DefaultUnitWidth</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetDefaultUnitWidth">GetDefaultUnitWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DpiX"></span><code>property <strong>DpiX</strong>: single read <a href="BGRAUnits.TCSSUnitConverter.html#GetDpiX">GetDpiX</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DpiY"></span><code>property <strong>DpiY</strong>: single read <a href="BGRAUnits.TCSSUnitConverter.html#GetDpiY">GetDpiY</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FontEmHeight"></span><code>property <strong>FontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetFontEmHeight">GetFontEmHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FontXHeight"></span><code>property <strong>FontXHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetFontXHeight">GetFontXHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RootFontEmHeight"></span><code>property <strong>RootFontEmHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#GetRootFontEmHeight">GetRootFontEmHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewBoxHeight"></span><code>property <strong>ViewBoxHeight</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxHeight">FViewBoxHeight</a> write <a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxHeight">SetViewBoxHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewBoxWidth"></span><code>property <strong>ViewBoxWidth</strong>: <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a> read <a href="BGRAUnits.TCSSUnitConverter.html#FViewBoxWidth">FViewBoxWidth</a> write <a href="BGRAUnits.TCSSUnitConverter.html#SetViewBoxWidth">SetViewBoxWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

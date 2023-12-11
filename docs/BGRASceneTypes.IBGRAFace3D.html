@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASceneTypes: Interface IBGRAFace3D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IBGRAFace3D"></span><h1 class="cio">Interface IBGRAFace3D</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASceneTypes.html">BGRASceneTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IBGRAFace3D = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>IBGRAFace3D</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IBGRAFace3D</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#AddVertex">AddVertex</a></strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetAsObject">GetAsObject</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetBiface">GetBiface</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetCustomFlags">GetCustomFlags</a></strong>: LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactor">GetLightThroughFactor</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactorOverride">GetLightThroughFactorOverride</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterial">GetMaterial</a></strong>: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterialName">GetMaterialName</a></strong>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetNormal">GetNormal</a></strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetObject3D">GetObject3D</a></strong>: <a href="BGRASceneTypes.IBGRAObject3D.html">IBGRAObject3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetParentTexture">GetParentTexture</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoord">GetTexCoord</a></strong>(AIndex: Integer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoordOverride">GetTexCoordOverride</a></strong>(AIndex: Integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetTexture">GetTexture</a></strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetVertex">GetVertex</a></strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColor">GetVertexColor</a></strong>(AIndex: Integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColorOverride">GetVertexColorOverride</a></strong>(AIndex: Integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexCount">GetVertexCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter">GetViewCenter</a></strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenterZ">GetViewCenterZ</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter_128">GetViewCenter_128</a></strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal">GetViewNormal</a></strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal_128">GetViewNormal_128</a></strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ComputeVertexColors">ComputeVertexColors</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ComputeViewNormalAndCenter">ComputeViewNormalAndCenter</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#FlipFace">FlipFace</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetBiface">SetBiface</a></strong>(const AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetColor">SetColor</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetCustomFlags">SetCustomFlags</a></strong>(AValue: LongWord);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactor">SetLightThroughFactor</a></strong>(const AValue: single);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactorOverride">SetLightThroughFactorOverride</a></strong>(const AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterial">SetMaterial</a></strong>(const AValue: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterialName">SetMaterialName</a></strong>(const AValue: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetNormal">SetNormal</a></strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetParentTexture">SetParentTexture</a></strong>(const AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoord">SetTexCoord</a></strong>(AIndex: Integer; const AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoordOverride">SetTexCoordOverride</a></strong>(AIndex: Integer; const AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetTexture">SetTexture</a></strong>(const AValue: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetVertex">SetVertex</a></strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColor">SetVertexColor</a></strong>(AIndex: Integer; const AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColorOverride">SetVertexColorOverride</a></strong>(AIndex: Integer; const AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAFace3D.html#UpdateMaterial">UpdateMaterial</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#Biface">Biface</a></strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetBiface">GetBiface</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetBiface">SetBiface</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#CustomFlags">CustomFlags</a></strong>: LongWord read <a href="BGRASceneTypes.IBGRAFace3D.html#GetCustomFlags">GetCustomFlags</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetCustomFlags">SetCustomFlags</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#LightThroughFactor">LightThroughFactor</a></strong>: single read <a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactor">GetLightThroughFactor</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactor">SetLightThroughFactor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#LightThroughFactorOverride">LightThroughFactorOverride</a></strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactorOverride">GetLightThroughFactorOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactorOverride">SetLightThroughFactorOverride</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#Material">Material</a></strong>: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterial">GetMaterial</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterial">SetMaterial</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#MaterialName">MaterialName</a></strong>: string read <a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterialName">GetMaterialName</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterialName">SetMaterialName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#Object3D">Object3D</a></strong>: <a href="BGRASceneTypes.IBGRAObject3D.html">IBGRAObject3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetObject3D">GetObject3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ParentTexture">ParentTexture</a></strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetParentTexture">GetParentTexture</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetParentTexture">SetParentTexture</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#TexCoord">TexCoord</a></strong>[AIndex:Integer]: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoord">GetTexCoord</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoord">SetTexCoord</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#TexCoordOverride">TexCoordOverride</a></strong>[AIndex:Integer]: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoordOverride">GetTexCoordOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoordOverride">SetTexCoordOverride</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#Texture">Texture</a></strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexture">GetTexture</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexture">SetTexture</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#Vertex">Vertex</a></strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertex">GetVertex</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertex">SetVertex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#VertexColor">VertexColor</a></strong>[AIndex:Integer]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColor">GetVertexColor</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColor">SetVertexColor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#VertexColorOverride">VertexColorOverride</a></strong>[AIndex:Integer]: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColorOverride">GetVertexColorOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColorOverride">SetVertexColorOverride</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#VertexCount">VertexCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexCount">GetVertexCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ViewCenter">ViewCenter</a></strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter">GetViewCenter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ViewCenterZ">ViewCenterZ</a></strong>: single read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenterZ">GetViewCenterZ</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ViewCenter_128">ViewCenter_128</a></strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter_128">GetViewCenter_128</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ViewNormal">ViewNormal</a></strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal">GetViewNormal</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAFace3D.html#ViewNormal_128">ViewNormal_128</a></strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal_128">GetViewNormal_128</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddVertex"></span><code>function <strong>AddVertex</strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAsObject"></span><code>function <strong>GetAsObject</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBiface"></span><code>function <strong>GetBiface</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCustomFlags"></span><code>function <strong>GetCustomFlags</strong>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLightThroughFactor"></span><code>function <strong>GetLightThroughFactor</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLightThroughFactorOverride"></span><code>function <strong>GetLightThroughFactorOverride</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaterial"></span><code>function <strong>GetMaterial</strong>: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaterialName"></span><code>function <strong>GetMaterialName</strong>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetNormal"></span><code>function <strong>GetNormal</strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetObject3D"></span><code>function <strong>GetObject3D</strong>: <a href="BGRASceneTypes.IBGRAObject3D.html">IBGRAObject3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetParentTexture"></span><code>function <strong>GetParentTexture</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTexCoord"></span><code>function <strong>GetTexCoord</strong>(AIndex: Integer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTexCoordOverride"></span><code>function <strong>GetTexCoordOverride</strong>(AIndex: Integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTexture"></span><code>function <strong>GetTexture</strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertex"></span><code>function <strong>GetVertex</strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertexColor"></span><code>function <strong>GetVertexColor</strong>(AIndex: Integer): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertexColorOverride"></span><code>function <strong>GetVertexColorOverride</strong>(AIndex: Integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertexCount"></span><code>function <strong>GetVertexCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetViewCenter"></span><code>function <strong>GetViewCenter</strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetViewCenterZ"></span><code>function <strong>GetViewCenterZ</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetViewCenter_128"></span><code>function <strong>GetViewCenter_128</strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetViewNormal"></span><code>function <strong>GetViewNormal</strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetViewNormal_128"></span><code>function <strong>GetViewNormal_128</strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeVertexColors"></span><code>procedure <strong>ComputeVertexColors</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeViewNormalAndCenter"></span><code>procedure <strong>ComputeViewNormalAndCenter</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FlipFace"></span><code>procedure <strong>FlipFace</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetBiface"></span><code>procedure <strong>SetBiface</strong>(const AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColor"></span><code>procedure <strong>SetColor</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCustomFlags"></span><code>procedure <strong>SetCustomFlags</strong>(AValue: LongWord);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLightThroughFactor"></span><code>procedure <strong>SetLightThroughFactor</strong>(const AValue: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLightThroughFactorOverride"></span><code>procedure <strong>SetLightThroughFactorOverride</strong>(const AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaterial"></span><code>procedure <strong>SetMaterial</strong>(const AValue: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMaterialName"></span><code>procedure <strong>SetMaterialName</strong>(const AValue: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetNormal"></span><code>procedure <strong>SetNormal</strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetParentTexture"></span><code>procedure <strong>SetParentTexture</strong>(const AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTexCoord"></span><code>procedure <strong>SetTexCoord</strong>(AIndex: Integer; const AValue: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTexCoordOverride"></span><code>procedure <strong>SetTexCoordOverride</strong>(AIndex: Integer; const AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetTexture"></span><code>procedure <strong>SetTexture</strong>(const AValue: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVertex"></span><code>procedure <strong>SetVertex</strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVertexColor"></span><code>procedure <strong>SetVertexColor</strong>(AIndex: Integer; const AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVertexColorOverride"></span><code>procedure <strong>SetVertexColorOverride</strong>(AIndex: Integer; const AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UpdateMaterial"></span><code>procedure <strong>UpdateMaterial</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Biface"></span><code>property <strong>Biface</strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetBiface">GetBiface</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetBiface">SetBiface</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CustomFlags"></span><code>property <strong>CustomFlags</strong>: LongWord read <a href="BGRASceneTypes.IBGRAFace3D.html#GetCustomFlags">GetCustomFlags</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetCustomFlags">SetCustomFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LightThroughFactor"></span><code>property <strong>LightThroughFactor</strong>: single read <a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactor">GetLightThroughFactor</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactor">SetLightThroughFactor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LightThroughFactorOverride"></span><code>property <strong>LightThroughFactorOverride</strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetLightThroughFactorOverride">GetLightThroughFactorOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetLightThroughFactorOverride">SetLightThroughFactorOverride</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Material"></span><code>property <strong>Material</strong>: <a href="BGRASceneTypes.IBGRAMaterial3D.html">IBGRAMaterial3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterial">GetMaterial</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterial">SetMaterial</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MaterialName"></span><code>property <strong>MaterialName</strong>: string read <a href="BGRASceneTypes.IBGRAFace3D.html#GetMaterialName">GetMaterialName</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetMaterialName">SetMaterialName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Object3D"></span><code>property <strong>Object3D</strong>: <a href="BGRASceneTypes.IBGRAObject3D.html">IBGRAObject3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetObject3D">GetObject3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParentTexture"></span><code>property <strong>ParentTexture</strong>: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetParentTexture">GetParentTexture</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetParentTexture">SetParentTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TexCoord"></span><code>property <strong>TexCoord</strong>[AIndex:Integer]: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoord">GetTexCoord</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoord">SetTexCoord</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TexCoordOverride"></span><code>property <strong>TexCoordOverride</strong>[AIndex:Integer]: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexCoordOverride">GetTexCoordOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexCoordOverride">SetTexCoordOverride</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Texture"></span><code>property <strong>Texture</strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetTexture">GetTexture</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetTexture">SetTexture</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Vertex"></span><code>property <strong>Vertex</strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertex">GetVertex</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertex">SetVertex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VertexColor"></span><code>property <strong>VertexColor</strong>[AIndex:Integer]: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColor">GetVertexColor</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColor">SetVertexColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VertexColorOverride"></span><code>property <strong>VertexColorOverride</strong>[AIndex:Integer]: boolean read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexColorOverride">GetVertexColorOverride</a> write <a href="BGRASceneTypes.IBGRAFace3D.html#SetVertexColorOverride">SetVertexColorOverride</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VertexCount"></span><code>property <strong>VertexCount</strong>: integer read <a href="BGRASceneTypes.IBGRAFace3D.html#GetVertexCount">GetVertexCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewCenter"></span><code>property <strong>ViewCenter</strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter">GetViewCenter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewCenterZ"></span><code>property <strong>ViewCenterZ</strong>: single read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenterZ">GetViewCenterZ</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewCenter_128"></span><code>property <strong>ViewCenter_128</strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewCenter_128">GetViewCenter_128</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewNormal"></span><code>property <strong>ViewNormal</strong>: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal">GetViewNormal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ViewNormal_128"></span><code>property <strong>ViewNormal_128</strong>: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a> read <a href="BGRASceneTypes.IBGRAFace3D.html#GetViewNormal_128">GetViewNormal_128</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

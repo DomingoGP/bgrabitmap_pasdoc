@@ -1,0 +1,759 @@
+digraph Classes {
+  "IBGLFont" -> "IInterface"
+  "IBGLRenderedFont" -> "IBGLFont"
+  "IBGLRenderedFont" [href="BGRAFontGL.IBGLRenderedFont.html"]
+  "IBGLTexture" -> "IInterface"
+  "IBGLTexture" [href="BGRAOpenGLType.IBGLTexture.html"]
+  "IBGRACanvasTextureProvider2D" -> "IInterface"
+  "IBGRACanvasTextureProvider2D" [href="BGRACanvas2D.IBGRACanvasTextureProvider2D.html"]
+  "IBGRACanvasGradient2D" -> "IBGRACanvasTextureProvider2D"
+  "IBGRACanvasGradient2D" [href="BGRACanvas2D.IBGRACanvasGradient2D.html"]
+  "IBGRAFace3D" -> "IInterface"
+  "IBGRAFace3D" [href="BGRASceneTypes.IBGRAFace3D.html"]
+  "IBGRALight3D" -> "IInterface"
+  "IBGRADirectionalLight3D" -> "IBGRALight3D"
+  "IBGRADirectionalLight3D" [href="BGRASceneTypes.IBGRADirectionalLight3D.html"]
+  "IBGRAPointLight3D" -> "IBGRALight3D"
+  "IBGRAPointLight3D" [href="BGRASceneTypes.IBGRAPointLight3D.html"]
+  "IBGRAMaterial3D" -> "IInterface"
+  "IBGRAMaterial3D" [href="BGRASceneTypes.IBGRAMaterial3D.html"]
+  "IBGRANormal3D" -> "IInterface"
+  "IBGRANormal3D" [href="BGRASceneTypes.IBGRANormal3D.html"]
+  "IBGRAObject3D" -> "IInterface"
+  "IBGRAObject3D" [href="BGRASceneTypes.IBGRAObject3D.html"]
+  "IBGRAPart3D" -> "IInterface"
+  "IBGRAPart3D" [href="BGRASceneTypes.IBGRAPart3D.html"]
+  "IBGRAPath" -> "IInterface"
+  "IBGRAPath" [href="BGRABitmapTypes.IBGRAPath.html"]
+  "TBGRACanvas2D" -> "IBGRAPath"
+  "TBGRACanvas2D" [href="BGRACanvas2D.TBGRACanvas2D.html"]
+  "TBGRACustomPath" -> "IBGRAPath"
+  "TBGRACustomPath" [href="BGRABitmapTypes.TBGRACustomPath.html"]
+  "TBGRAPath" -> "TBGRACustomPath"
+  "TBGRAPath" [href="BGRAPath.TBGRAPath.html"]
+  "TBGLPath" -> "TBGRAPath"
+  "TBGLPath" [href="BGRACanvasGL.TBGLPath.html"]
+  "IBGRAScanner" -> "IInterface"
+  "IBGRAScanner" [href="BGRABitmapTypes.IBGRAScanner.html"]
+  "TBGRACustomScanner" -> "IBGRAScanner"
+  "TBGRACustomScanner" [href="BGRABitmapTypes.TBGRACustomScanner.html"]
+  "TBGRAAffineScannerTransform" -> "TBGRACustomScanner"
+  "TBGRAAffineScannerTransform" [href="BGRATransform.TBGRAAffineScannerTransform.html"]
+  "TBGRAAffineBitmapTransform" -> "TBGRAAffineScannerTransform"
+  "TBGRAAffineBitmapTransform" [href="BGRATransform.TBGRAAffineBitmapTransform.html"]
+  "TBGRABitmapScanner" -> "TBGRACustomScanner"
+  "TBGRABitmapScanner" [href="BGRATransform.TBGRABitmapScanner.html"]
+  "TBGRAExtendedBorderScanner" -> "TBGRACustomScanner"
+  "TBGRAExtendedBorderScanner" [href="BGRATransform.TBGRAExtendedBorderScanner.html"]
+  "TBGRAFilterScanner" -> "TBGRACustomScanner"
+  "TBGRAFilterScanner" [href="BGRAFilterType.TBGRAFilterScanner.html"]
+  "TBGRAFilterScannerMultipixel" -> "TBGRAFilterScanner"
+  "TBGRAFilterScannerMultipixel" [href="BGRAFilterType.TBGRAFilterScannerMultipixel.html"]
+  "TBGRA3X3FilterScanner" -> "TBGRAFilterScannerMultipixel"
+  "TBGRA3X3FilterScanner" [href="BGRAFilterScanner.TBGRA3X3FilterScanner.html"]
+  "TBGRAContourScanner" -> "TBGRA3X3FilterScanner"
+  "TBGRAContourScanner" [href="BGRAFilterScanner.TBGRAContourScanner.html"]
+  "TBGRAEmbossHightlightScanner" -> "TBGRA3X3FilterScanner"
+  "TBGRAEmbossHightlightScanner" [href="BGRAFilterScanner.TBGRAEmbossHightlightScanner.html"]
+  "TBGRASharpenScanner" -> "TBGRA3X3FilterScanner"
+  "TBGRASharpenScanner" [href="BGRAFilterScanner.TBGRASharpenScanner.html"]
+  "TBGRAFilterScannerPixelwise" -> "TBGRAFilterScanner"
+  "TBGRAFilterScannerPixelwise" [href="BGRAFilterType.TBGRAFilterScannerPixelwise.html"]
+  "TBGRAFilterScannerGrayscale" -> "TBGRAFilterScannerPixelwise"
+  "TBGRAFilterScannerGrayscale" [href="BGRAFilterScanner.TBGRAFilterScannerGrayscale.html"]
+  "TBGRAFilterScannerNegative" -> "TBGRAFilterScannerPixelwise"
+  "TBGRAFilterScannerNegative" [href="BGRAFilterScanner.TBGRAFilterScannerNegative.html"]
+  "TBGRAFilterScannerNormalize" -> "TBGRAFilterScannerPixelwise"
+  "TBGRAFilterScannerNormalize" [href="BGRAFilterScanner.TBGRAFilterScannerNormalize.html"]
+  "TBGRAFilterScannerSwapRedBlue" -> "TBGRAFilterScannerPixelwise"
+  "TBGRAFilterScannerSwapRedBlue" [href="BGRAFilterScanner.TBGRAFilterScannerSwapRedBlue.html"]
+  "TBGRAGradientScanner" -> "TBGRACustomScanner"
+  "TBGRAGradientScanner" [href="BGRAGradientScanner.TBGRAGradientScanner.html"]
+  "TBGRAConstantScanner" -> "TBGRAGradientScanner"
+  "TBGRAConstantScanner" [href="BGRAGradientScanner.TBGRAConstantScanner.html"]
+  "TBGRAGradientTriangleScanner" -> "TBGRACustomScanner"
+  "TBGRAGradientTriangleScanner" [href="BGRAGradientScanner.TBGRAGradientTriangleScanner.html"]
+  "TBGRAOpacityScanner" -> "TBGRACustomScanner"
+  "TBGRAOpacityScanner" [href="BGRAGradientScanner.TBGRAOpacityScanner.html"]
+  "TBGRAPerspectiveScannerTransform" -> "TBGRACustomScanner"
+  "TBGRAPerspectiveScannerTransform" [href="BGRATransform.TBGRAPerspectiveScannerTransform.html"]
+  "TBGRAQuadLinearScanner" -> "TBGRACustomScanner"
+  "TBGRAQuadLinearScanner" [href="BGRATransform.TBGRAQuadLinearScanner.html"]
+  "TBGRARandomScanner" -> "TBGRACustomScanner"
+  "TBGRARandomScanner" [href="BGRAGradientScanner.TBGRARandomScanner.html"]
+  "TBGRAScannerOffset" -> "TBGRACustomScanner"
+  "TBGRAScannerOffset" [href="BGRATransform.TBGRAScannerOffset.html"]
+  "TBGRASolidColorMaskScanner" -> "TBGRACustomScanner"
+  "TBGRASolidColorMaskScanner" [href="BGRAGradientScanner.TBGRASolidColorMaskScanner.html"]
+  "TBGRASphereDeformationScanner" -> "TBGRACustomScanner"
+  "TBGRASphereDeformationScanner" [href="BGRATransform.TBGRASphereDeformationScanner.html"]
+  "TBGRATextureMaskScanner" -> "TBGRACustomScanner"
+  "TBGRATextureMaskScanner" [href="BGRAGradientScanner.TBGRATextureMaskScanner.html"]
+  "TBGRATriangleLinearMapping" -> "TBGRACustomScanner"
+  "TBGRATriangleLinearMapping" [href="BGRATransform.TBGRATriangleLinearMapping.html"]
+  "TBGRATwirlScanner" -> "TBGRACustomScanner"
+  "TBGRATwirlScanner" [href="BGRATransform.TBGRATwirlScanner.html"]
+  "TBGRAVerticalCylinderDeformationScanner" -> "TBGRACustomScanner"
+  "TBGRAVerticalCylinderDeformationScanner" [href="BGRATransform.TBGRAVerticalCylinderDeformationScanner.html"]
+  "IBGRAVertex3D" -> "IInterface"
+  "IBGRAVertex3D" [href="BGRASceneTypes.IBGRAVertex3D.html"]
+  "TForm1" -> "TForm"
+  "TForm1" [href="TestUniversalBrushUnit1.TForm1.html"]
+  "TCustomUniversalBitmap" -> "TFPCustomImage"
+  "TCustomUniversalBitmap" [href="BGRABitmapTypes.TCustomUniversalBitmap.html"]
+  "TGenericUniversalBitmap" -> "TCustomUniversalBitmap"
+  "TGenericUniversalBitmap" [href="BGRABitmapTypes.TGenericUniversalBitmap.html"]
+  "TBGRACustomBitmap" -> "TGenericUniversalBitmap"
+  "TBGRACustomBitmap" [href="BGRABitmapTypes.TBGRACustomBitmap.html"]
+  "TBGRADefaultBitmap" -> "TBGRACustomBitmap"
+  "TBGRADefaultBitmap" [href="BGRADefaultBitmap.TBGRADefaultBitmap.html"]
+  "TBGRAfpGUIBitmap" -> "TBGRADefaultBitmap"
+  "TBGRAfpGUIBitmap" [href="BGRAfpGUIBitmap.TBGRAfpGUIBitmap.html"]
+  "TBGRALCLBitmap" -> "TBGRADefaultBitmap"
+  "TBGRALCLBitmap" [href="BGRALCLBitmap.TBGRALCLBitmap.html"]
+  "TBGRABitmap" -> "TBGRALCLBitmap"
+  "TBGRABitmap" [href="BGRABitmap.TBGRABitmap.html"]
+  "TBGLCustomBitmap" -> "TBGRABitmap"
+  "TBGLCustomBitmap" [href="BGRAOpenGLType.TBGLCustomBitmap.html"]
+  "TBGLBitmap" -> "TBGLCustomBitmap"
+  "TBGLBitmap" [href="BGRAOpenGL.TBGLBitmap.html"]
+  "TBGRAGtkBitmap" -> "TBGRALCLBitmap"
+  "TBGRAGtkBitmap" [href="BGRAGtkBitmap.TBGRAGtkBitmap.html"]
+  "TBGRAMacBitmap" -> "TBGRALCLBitmap"
+  "TBGRAMacBitmap" [href="BGRAMacBitmap.TBGRAMacBitmap.html"]
+  "TBGRAQtBitmap" -> "TBGRALCLBitmap"
+  "TBGRAQtBitmap" [href="BGRAQtBitmap.TBGRAQtBitmap.html"]
+  "TBGRAWinBitmap" -> "TBGRALCLBitmap"
+  "TBGRAWinBitmap" [href="BGRAWinBitmap.TBGRAWinBitmap.html"]
+  "TBGRAMSEguiBitmap" -> "TBGRADefaultBitmap"
+  "TBGRAMSEguiBitmap" [href="BGRAMSEguiBitmap.TBGRAMSEguiBitmap.html"]
+  "TBGRANoGUIBitmap" -> "TBGRADefaultBitmap"
+  "TBGRANoGUIBitmap" [href="BGRANoGUIBitmap.TBGRANoGUIBitmap.html"]
+  "TBGRAPtrBitmap" -> "TBGRADefaultBitmap"
+  "TBGRAPtrBitmap" [href="BGRADefaultBitmap.TBGRAPtrBitmap.html"]
+  "TBGRALCLPtrBitmap" -> "TBGRAPtrBitmap"
+  "TBGRALCLPtrBitmap" [href="BGRALCLBitmap.TBGRALCLPtrBitmap.html"]
+  "TBGRAMemoryStreamBitmap" -> "TBGRAPtrBitmap"
+  "TBGRAMemoryStreamBitmap" [href="BGRADefaultBitmap.TBGRAMemoryStreamBitmap.html"]
+  "TExpandedBitmap" -> "TGenericUniversalBitmap"
+  "TExpandedBitmap" [href="ExpandedBitmap.TExpandedBitmap.html"]
+  "TGrayscaleMask" -> "TGenericUniversalBitmap"
+  "TGrayscaleMask" [href="BGRAGrayscaleMask.TGrayscaleMask.html"]
+  "TLinearRGBABitmap" -> "TGenericUniversalBitmap"
+  "TLinearRGBABitmap" [href="LinearRGBABitmap.TLinearRGBABitmap.html"]
+  "TWordXYZABitmap" -> "TGenericUniversalBitmap"
+  "TWordXYZABitmap" [href="WordXYZABitmap.TWordXYZABitmap.html"]
+  "TXYZABitmap" -> "TGenericUniversalBitmap"
+  "TXYZABitmap" [href="XYZABitmap.TXYZABitmap.html"]
+  "TBGRAImageReader" -> "TFPCustomImageReader"
+  "TBGRAImageReader" [href="BGRABitmapTypes.TBGRAImageReader.html"]
+  "TBGRAReaderBMP" -> "TBGRAImageReader"
+  "TBGRAReaderBMP" [href="BGRAReadBMP.TBGRAReaderBMP.html"]
+  "TBGRAReaderPNG" -> "TBGRAImageReader"
+  "TBGRAReaderPNG" [href="BGRAReadPng.TBGRAReaderPNG.html"]
+  "TFPReaderSVG" -> "TBGRAImageReader"
+  "TFPReaderSVG" [href="BGRASVG.TFPReaderSVG.html"]
+  "TBGRAReaderAvif" -> "TFPCustomImageReader"
+  "TBGRAReaderAvif" [href="BGRAReadAvif.TBGRAReaderAvif.html"]
+  "TBGRAReaderBmpMioMap" -> "TFPCustomImageReader"
+  "TBGRAReaderBmpMioMap" [href="BGRAReadBmpMioMap.TBGRAReaderBmpMioMap.html"]
+  "TBGRAReaderIcoOrCur" -> "TFPCustomImageReader"
+  "TBGRAReaderIcoOrCur" [href="BGRAReadIco.TBGRAReaderIcoOrCur.html"]
+  "TBGRAReaderCur" -> "TBGRAReaderIcoOrCur"
+  "TBGRAReaderCur" [href="BGRAReadIco.TBGRAReaderCur.html"]
+  "TBGRAReaderIco" -> "TBGRAReaderIcoOrCur"
+  "TBGRAReaderIco" [href="BGRAReadIco.TBGRAReaderIco.html"]
+  "TBGRAReaderLazPaint" -> "TFPCustomImageReader"
+  "TBGRAReaderLazPaint" [href="BGRAReadLzp.TBGRAReaderLazPaint.html"]
+  "TBGRAReaderLazPaintWithLayers" -> "TBGRAReaderLazPaint"
+  "TBGRAReaderLazPaintWithLayers" [href="BGRALazPaint.TBGRAReaderLazPaintWithLayers.html"]
+  "TBGRAReaderOXO" -> "TFPCustomImageReader"
+  "TBGRAReaderOXO" [href="BGRAPhoxo.TBGRAReaderOXO.html"]
+  "TBGRAReaderTiff" -> "TFPCustomImageReader"
+  "TBGRAReaderTiff" [href="BGRAReadTiff.TBGRAReaderTiff.html"]
+  "TBGRAReaderWebP" -> "TFPCustomImageReader"
+  "TBGRAReaderWebP" [href="BGRAReadWebP.TBGRAReaderWebP.html"]
+  "TFPReaderOpenRaster" -> "TFPCustomImageReader"
+  "TFPReaderOpenRaster" [href="BGRAOpenRaster.TFPReaderOpenRaster.html"]
+  "TFPReaderPaintDotNet" -> "TFPCustomImageReader"
+  "TFPReaderPaintDotNet" [href="BGRAPaintNet.TFPReaderPaintDotNet.html"]
+  "TBGRACustomWriterPNG" -> "TFPCustomImageWriter"
+  "TBGRACustomWriterPNG" [href="BGRABitmapTypes.TBGRACustomWriterPNG.html"]
+  "TBGRAWriterPNG" -> "TBGRACustomWriterPNG"
+  "TBGRAWriterPNG" [href="BGRAWritePNG.TBGRAWriterPNG.html"]
+  "TBGRAWriterAvif" -> "TFPCustomImageWriter"
+  "TBGRAWriterAvif" [href="BGRAWriteAvif.TBGRAWriterAvif.html"]
+  "TBGRAWriterBmpMioMap" -> "TFPCustomImageWriter"
+  "TBGRAWriterBmpMioMap" [href="BGRAWriteBmpMioMap.TBGRAWriterBmpMioMap.html"]
+  "TBGRAWriterGIF" -> "TFPCustomImageWriter"
+  "TBGRAWriterGIF" [href="BGRAAnimatedGif.TBGRAWriterGIF.html"]
+  "TBGRAWriterLazPaint" -> "TFPCustomImageWriter"
+  "TBGRAWriterLazPaint" [href="BGRAWriteLzp.TBGRAWriterLazPaint.html"]
+  "TBGRAWriterLazPaintWithLayers" -> "TBGRAWriterLazPaint"
+  "TBGRAWriterLazPaintWithLayers" [href="BGRALazPaint.TBGRAWriterLazPaintWithLayers.html"]
+  "TBGRAWriterOXO" -> "TFPCustomImageWriter"
+  "TBGRAWriterOXO" [href="BGRAPhoxo.TBGRAWriterOXO.html"]
+  "TBGRAWriterTiff" -> "TFPCustomImageWriter"
+  "TBGRAWriterTiff" [href="BGRAWriteTiff.TBGRAWriterTiff.html"]
+  "TBGRAWriterWebP" -> "TFPCustomImageWriter"
+  "TBGRAWriterWebP" [href="BGRAWriteWebP.TBGRAWriterWebP.html"]
+  "TFPWriterOpenRaster" -> "TFPCustomImageWriter"
+  "TFPWriterOpenRaster" [href="BGRAOpenRaster.TFPWriterOpenRaster.html"]
+  "TBGRAReaderGIF" -> "TFPReaderGif"
+  "TBGRAReaderGIF" [href="BGRAAnimatedGif.TBGRAReaderGIF.html"]
+  "TBGRAReaderJpeg" -> "TFPReaderJPEG"
+  "TBGRAReaderJpeg" [href="BGRAReadJpeg.TBGRAReaderJpeg.html"]
+  "TBGRAReaderPCX" -> "TFPReaderPCX"
+  "TBGRAReaderPCX" [href="BGRAReadPCX.TBGRAReaderPCX.html"]
+  "TBGRAReaderPSD" -> "TFPReaderPSD"
+  "TBGRAReaderPSD" [href="BGRAReadPSD.TBGRAReaderPSD.html"]
+  "TBGRAReaderTarga" -> "TFPReaderTarga"
+  "TBGRAReaderTarga" [href="BGRAReadTGA.TBGRAReaderTarga.html"]
+  "TBGRAReaderXPM" -> "TFPReaderXPM"
+  "TBGRAReaderXPM" [href="BGRAReadXPM.TBGRAReaderXPM.html"]
+  "TBGRAWriterBMP" -> "TFPWriterBMP"
+  "TBGRAWriterBMP" [href="BGRAWriteBMP.TBGRAWriterBMP.html"]
+  "TBGRAWriterJPEG" -> "TFPWriterJPEG"
+  "TBGRAWriterJPEG" [href="BGRAWriteJpeg.TBGRAWriterJPEG.html"]
+  "TBGRAWriterPCX" -> "TFPWriterPCX"
+  "TBGRAWriterPCX" [href="BGRAWritePCX.TBGRAWriterPCX.html"]
+  "TBGRAFreeTypeDrawer" -> "TFreeTypeDrawer"
+  "TBGRAFreeTypeDrawer" [href="BGRAFreeType.TBGRAFreeTypeDrawer.html"]
+  "TBGRAAnimatedGif" -> "TGraphic"
+  "TBGRAAnimatedGif" [href="BGRAAnimatedGif.TBGRAAnimatedGif.html"]
+  "TBGRAAnimatedPng" -> "TBGRAAnimatedGif"
+  "TBGRAAnimatedPng" [href="BGRAAnimatedGif.TBGRAAnimatedPng.html"]
+  "TBGRACustomLayeredBitmap" -> "TGraphic"
+  "TBGRACustomLayeredBitmap" [href="BGRALayers.TBGRACustomLayeredBitmap.html"]
+  "TBGRALayeredBitmap" -> "TBGRACustomLayeredBitmap"
+  "TBGRALayeredBitmap" [href="BGRALayers.TBGRALayeredBitmap.html"]
+  "TBGRALayeredSVG" -> "TBGRALayeredBitmap"
+  "TBGRALayeredSVG" [href="BGRASVGOriginal.TBGRALayeredSVG.html"]
+  "TBGRALazPaintImage" -> "TBGRALayeredBitmap"
+  "TBGRALazPaintImage" [href="BGRALazPaint.TBGRALazPaintImage.html"]
+  "TBGRAOpenRasterDocument" -> "TBGRALayeredBitmap"
+  "TBGRAOpenRasterDocument" [href="BGRAOpenRaster.TBGRAOpenRasterDocument.html"]
+  "TBGRAPhoxoDocument" -> "TBGRALayeredBitmap"
+  "TBGRAPhoxoDocument" [href="BGRAPhoxo.TBGRAPhoxoDocument.html"]
+  "TPaintDotNetFile" -> "TBGRACustomLayeredBitmap"
+  "TPaintDotNetFile" [href="BGRAPaintNet.TPaintDotNetFile.html"]
+  "TBGLCustomFont" -> "TInterfacedObject"
+  "TBGLCustomFont" [href="BGRAOpenGLType.TBGLCustomFont.html"]
+  "TBGLRenderedFont" -> "TBGLCustomFont"
+  "TBGLRenderedFont" [href="BGRAFontGL.TBGLRenderedFont.html"]
+  "TBGLCustomTexture" -> "TInterfacedObject"
+  "TBGLCustomTexture" [href="BGRAOpenGLType.TBGLCustomTexture.html"]
+  "TBGRACanvasTextureProvider2D" -> "TInterfacedObject"
+  "TBGRACanvasTextureProvider2D" [href="BGRACanvas2D.TBGRACanvasTextureProvider2D.html"]
+  "TBGRALight3D" -> "TInterfacedObject"
+  "TBGRALight3D" [href="BGRASceneTypes.TBGRALight3D.html"]
+  "TBGRAMaterial3D" -> "TInterfacedObject"
+  "TBGRAMaterial3D" [href="BGRASceneTypes.TBGRAMaterial3D.html"]
+  "TBitmapTracker" -> "TMaskedBitmap"
+  "TBitmapTracker" [href="BGRALCLBitmap.TBitmapTracker.html"]
+  "ColorspaceCollection" -> "TObject"
+  "ColorspaceCollection" [href="BGRABitmapTypes.ColorspaceCollection.html"]
+  "Exception" -> "TObject"
+  "EAvifException" -> "Exception"
+  "EAvifException" [href="avifbgra.EAvifException.html"]
+  "EColorQuantizerMissing" -> "Exception"
+  "EColorQuantizerMissing" [href="BGRAGifFormat.EColorQuantizerMissing.html"]
+  "TAffineBox" -> "TObject"
+  "TAffineBox" [href="BGRABitmapTypes.TAffineBox.html"]
+  "TAttributeVariable" -> "TObject"
+  "TAttributeVariable" [href="BGRACanvasGL.TAttributeVariable.html"]
+  "TAttributeVariableInteger" -> "TAttributeVariable"
+  "TAttributeVariableInteger" [href="BGRAOpenGL3D.TAttributeVariableInteger.html"]
+  "TAttributeVariablePoint" -> "TAttributeVariable"
+  "TAttributeVariablePoint" [href="BGRAOpenGL3D.TAttributeVariablePoint.html"]
+  "TAttributeVariablePoint3D" -> "TAttributeVariable"
+  "TAttributeVariablePoint3D" [href="BGRAOpenGL3D.TAttributeVariablePoint3D.html"]
+  "TAttributeVariablePointF" -> "TAttributeVariable"
+  "TAttributeVariablePointF" [href="BGRAOpenGL3D.TAttributeVariablePointF.html"]
+  "TAttributeVariableSingle" -> "TAttributeVariable"
+  "TAttributeVariableSingle" [href="BGRAOpenGL3D.TAttributeVariableSingle.html"]
+  "TAvifReader" -> "TObject"
+  "TAvifReader" [href="avifbgra.TAvifReader.html"]
+  "TAvifWriter" -> "TObject"
+  "TAvifWriter" [href="avifbgra.TAvifWriter.html"]
+  "TBGLContext" -> "TObject"
+  "TBGLContext" [href="BGRAOpenGL.TBGLContext.html"]
+  "TBGLCustomArray" -> "TObject"
+  "TBGLCustomArray" [href="BGRACanvasGL.TBGLCustomArray.html"]
+  "TBGLArray" -> "TBGLCustomArray"
+  "TBGLArray" [href="BGRAOpenGL.TBGLArray.html"]
+  "TBGLCustomCanvas" -> "TObject"
+  "TBGLCustomCanvas" [href="BGRACanvasGL.TBGLCustomCanvas.html"]
+  "TBGLCustomElementArray" -> "TObject"
+  "TBGLCustomElementArray" [href="BGRACanvasGL.TBGLCustomElementArray.html"]
+  "TBGLElementArray" -> "TBGLCustomElementArray"
+  "TBGLElementArray" [href="BGRAOpenGL.TBGLElementArray.html"]
+  "TBGLCustomFrameBuffer" -> "TObject"
+  "TBGLCustomFrameBuffer" [href="BGRAOpenGLType.TBGLCustomFrameBuffer.html"]
+  "TBGLFrameBuffer" -> "TBGLCustomFrameBuffer"
+  "TBGLFrameBuffer" [href="BGRAOpenGL.TBGLFrameBuffer.html"]
+  "TBGLCustomLighting" -> "TObject"
+  "TBGLCustomLighting" [href="BGRACanvasGL.TBGLCustomLighting.html"]
+  "TBGLCustomShader" -> "TObject"
+  "TBGLCustomShader" [href="BGRACanvasGL.TBGLCustomShader.html"]
+  "TBGLShader3D" -> "TBGLCustomShader"
+  "TBGLShader3D" [href="BGRAOpenGL3D.TBGLShader3D.html"]
+  "TBGLBlurShader" -> "TBGLShader3D"
+  "TBGLBlurShader" [href="BGRABlurGL.TBGLBlurShader.html"]
+  "TBGLCustomSprite" -> "TObject"
+  "TBGLCustomSprite" [href="BGRASpriteGL.TBGLCustomSprite.html"]
+  "TBGLDefaultSprite" -> "TBGLCustomSprite"
+  "TBGLDefaultSprite" [href="BGRASpriteGL.TBGLDefaultSprite.html"]
+  "TBGLCustomSpriteEngine" -> "TObject"
+  "TBGLCustomSpriteEngine" [href="BGRASpriteGL.TBGLCustomSpriteEngine.html"]
+  "TBGLDefaultSpriteEngine" -> "TBGLCustomSpriteEngine"
+  "TBGLDefaultSpriteEngine" [href="BGRASpriteGL.TBGLDefaultSpriteEngine.html"]
+  "TBGLLighting3D" -> "TObject"
+  "TBGLLighting3D" [href="BGRAOpenGL3D.TBGLLighting3D.html"]
+  "TBGRACanvas" -> "TObject"
+  "TBGRACanvas" [href="BGRACanvas.TBGRACanvas.html"]
+  "TBGRACanvasState2D" -> "TObject"
+  "TBGRACanvasState2D" [href="BGRACanvas2D.TBGRACanvasState2D.html"]
+  "TBGRAColorBox" -> "TObject"
+  "TBGRAColorBox" [href="BGRAColorQuantization.TBGRAColorBox.html"]
+  "TBGRAColoredObject" -> "TObject"
+  "TBGRAColoredObject" [href="BGRACanvas.TBGRAColoredObject.html"]
+  "TBGRABrush" -> "TBGRAColoredObject"
+  "TBGRABrush" [href="BGRACanvas.TBGRABrush.html"]
+  "TBGRAFont" -> "TBGRAColoredObject"
+  "TBGRAFont" [href="BGRACanvas.TBGRAFont.html"]
+  "TBGRAPen" -> "TBGRAColoredObject"
+  "TBGRAPen" [href="BGRACanvas.TBGRAPen.html"]
+  "TBGRAColorList" -> "TObject"
+  "TBGRAColorList" [href="BGRABitmapTypes.TBGRAColorList.html"]
+  "TBGRAColorTree" -> "TObject"
+  "TBGRAColorTree" [href="BGRAColorQuantization.TBGRAColorTree.html"]
+  "TBGRACompressableBitmap" -> "TObject"
+  "TBGRACompressableBitmap" [href="BGRACompressableBitmap.TBGRACompressableBitmap.html"]
+  "TBGRACustomArrow" -> "TObject"
+  "TBGRACustomArrow" [href="BGRABitmapTypes.TBGRACustomArrow.html"]
+  "TBGRAArrow" -> "TBGRACustomArrow"
+  "TBGRAArrow" [href="BGRAArrow.TBGRAArrow.html"]
+  "TBGRACustomColorQuantizer" -> "TObject"
+  "TBGRACustomColorQuantizer" [href="BGRAPalette.TBGRACustomColorQuantizer.html"]
+  "TBGRAColorQuantizer" -> "TBGRACustomColorQuantizer"
+  "TBGRAColorQuantizer" [href="BGRAColorQuantization.TBGRAColorQuantizer.html"]
+  "TBGRACustomFillInfo" -> "TObject"
+  "TBGRACustomFillInfo" [href="BGRABitmapTypes.TBGRACustomFillInfo.html"]
+  "TFillShapeInfo" -> "TBGRACustomFillInfo"
+  "TFillShapeInfo" [href="BGRAFillInfo.TFillShapeInfo.html"]
+  "TCustomFillPolyInfo" -> "TFillShapeInfo"
+  "TCustomFillPolyInfo" [href="BGRAFillInfo.TCustomFillPolyInfo.html"]
+  "TFillPolyInfo" -> "TCustomFillPolyInfo"
+  "TFillPolyInfo" [href="BGRAFillInfo.TFillPolyInfo.html"]
+  "TOnePassFillPolyInfo" -> "TCustomFillPolyInfo"
+  "TOnePassFillPolyInfo" [href="BGRAFillInfo.TOnePassFillPolyInfo.html"]
+  "TPolygonLinearColorGradientInfo" -> "TOnePassFillPolyInfo"
+  "TPolygonLinearColorGradientInfo" [href="BGRAPolygonAliased.TPolygonLinearColorGradientInfo.html"]
+  "TPolygonLinearTextureMappingInfo" -> "TOnePassFillPolyInfo"
+  "TPolygonLinearTextureMappingInfo" [href="BGRAPolygonAliased.TPolygonLinearTextureMappingInfo.html"]
+  "TPolygonPerspectiveColorGradientInfo" -> "TOnePassFillPolyInfo"
+  "TPolygonPerspectiveColorGradientInfo" [href="BGRAPolygonAliased.TPolygonPerspectiveColorGradientInfo.html"]
+  "TPolygonPerspectiveMappingShaderInfo" -> "TOnePassFillPolyInfo"
+  "TPolygonPerspectiveMappingShaderInfo" [href="BGRAPolygonAliased.TPolygonPerspectiveMappingShaderInfo.html"]
+  "TPolygonPerspectiveTextureMappingInfo" -> "TOnePassFillPolyInfo"
+  "TPolygonPerspectiveTextureMappingInfo" [href="BGRAPolygonAliased.TPolygonPerspectiveTextureMappingInfo.html"]
+  "TSimpleFillPolyInfo" -> "TCustomFillPolyInfo"
+  "TSimpleFillPolyInfo" [href="BGRAFillInfo.TSimpleFillPolyInfo.html"]
+  "TFillBorderEllipseInfo" -> "TFillShapeInfo"
+  "TFillBorderEllipseInfo" [href="BGRAFillInfo.TFillBorderEllipseInfo.html"]
+  "TFillBorderRoundRectInfo" -> "TFillShapeInfo"
+  "TFillBorderRoundRectInfo" [href="BGRAFillInfo.TFillBorderRoundRectInfo.html"]
+  "TFillEllipseInfo" -> "TFillShapeInfo"
+  "TFillEllipseInfo" [href="BGRAFillInfo.TFillEllipseInfo.html"]
+  "TFillRectangleInfo" -> "TFillShapeInfo"
+  "TFillRectangleInfo" [href="BGRAFillInfo.TFillRectangleInfo.html"]
+  "TFillRoundRectangleInfo" -> "TFillShapeInfo"
+  "TFillRoundRectangleInfo" [href="BGRAFillInfo.TFillRoundRectangleInfo.html"]
+  "TBGRACustomFontRenderer" -> "TObject"
+  "TBGRACustomFontRenderer" [href="BGRABitmapTypes.TBGRACustomFontRenderer.html"]
+  "TBGRAFreeTypeFontRenderer" -> "TBGRACustomFontRenderer"
+  "TBGRAFreeTypeFontRenderer" [href="BGRAFreeType.TBGRAFreeTypeFontRenderer.html"]
+  "TBGRASystemFontRenderer" -> "TBGRACustomFontRenderer"
+  "TBGRASystemFontRenderer" [href="BGRAText.TBGRASystemFontRenderer.html"]
+  "TBGRATextEffectFontRenderer" -> "TBGRASystemFontRenderer"
+  "TBGRATextEffectFontRenderer" [href="BGRATextFX.TBGRATextEffectFontRenderer.html"]
+  "TLCLFontRenderer" -> "TBGRASystemFontRenderer"
+  "TLCLFontRenderer" [href="BGRAText.TLCLFontRenderer.html"]
+  "TBGRAVectorizedFontRenderer" -> "TBGRACustomFontRenderer"
+  "TBGRAVectorizedFontRenderer" [href="BGRAVectorize.TBGRAVectorizedFontRenderer.html"]
+  "TBGRACustomGradient" -> "TObject"
+  "TBGRACustomGradient" [href="BGRABitmapTypes.TBGRACustomGradient.html"]
+  "TBGRABufferedGradient" -> "TBGRACustomGradient"
+  "TBGRABufferedGradient" [href="BGRAGradientScanner.TBGRABufferedGradient.html"]
+  "TBGRAMultiGradient" -> "TBGRACustomGradient"
+  "TBGRAMultiGradient" [href="BGRAGradientScanner.TBGRAMultiGradient.html"]
+  "TBGRASimpleGradient" -> "TBGRACustomGradient"
+  "TBGRASimpleGradient" [href="BGRAGradientScanner.TBGRASimpleGradient.html"]
+  "TBGRAHueGradient" -> "TBGRASimpleGradient"
+  "TBGRAHueGradient" [href="BGRAGradientScanner.TBGRAHueGradient.html"]
+  "TBGRASimpleGradientWithGammaCorrection" -> "TBGRASimpleGradient"
+  "TBGRASimpleGradientWithGammaCorrection" [href="BGRAGradientScanner.TBGRASimpleGradientWithGammaCorrection.html"]
+  "TBGRASimpleGradientWithoutGammaCorrection" -> "TBGRASimpleGradient"
+  "TBGRASimpleGradientWithoutGammaCorrection" [href="BGRAGradientScanner.TBGRASimpleGradientWithoutGammaCorrection.html"]
+  "TBGRACustomOriginalStorage" -> "TObject"
+  "TBGRACustomOriginalStorage" [href="BGRALayerOriginal.TBGRACustomOriginalStorage.html"]
+  "TBGRAMemOriginalStorage" -> "TBGRACustomOriginalStorage"
+  "TBGRAMemOriginalStorage" [href="BGRALayerOriginal.TBGRAMemOriginalStorage.html"]
+  "TBGRACustomPalette" -> "TObject"
+  "TBGRACustomPalette" [href="BGRAPalette.TBGRACustomPalette.html"]
+  "TBGRAAvgLvlPalette" -> "TBGRACustomPalette"
+  "TBGRAAvgLvlPalette" [href="BGRAPalette.TBGRAAvgLvlPalette.html"]
+  "TBGRAPalette" -> "TBGRAAvgLvlPalette"
+  "TBGRAPalette" [href="BGRAPalette.TBGRAPalette.html"]
+  "TBGRAIndexedPalette" -> "TBGRAPalette"
+  "TBGRAIndexedPalette" [href="BGRAPalette.TBGRAIndexedPalette.html"]
+  "TBGRAWeightedPalette" -> "TBGRAPalette"
+  "TBGRAWeightedPalette" [href="BGRAPalette.TBGRAWeightedPalette.html"]
+  "TBGRAReferencePalette" -> "TBGRAAvgLvlPalette"
+  "TBGRAReferencePalette" [href="BGRAPalette.TBGRAReferencePalette.html"]
+  "TBGRACustomApproxPalette" -> "TBGRACustomPalette"
+  "TBGRACustomApproxPalette" [href="BGRAPalette.TBGRACustomApproxPalette.html"]
+  "TBGRA16BitPalette" -> "TBGRACustomApproxPalette"
+  "TBGRA16BitPalette" [href="BGRAPalette.TBGRA16BitPalette.html"]
+  "TBGRAApproxPalette" -> "TBGRACustomApproxPalette"
+  "TBGRAApproxPalette" [href="BGRAColorQuantization.TBGRAApproxPalette.html"]
+  "TBGRAApproxPaletteViaLargerPalette" -> "TBGRAApproxPalette"
+  "TBGRAApproxPaletteViaLargerPalette" [href="BGRAColorQuantization.TBGRAApproxPaletteViaLargerPalette.html"]
+  "TBGRACustomPathCursor" -> "TObject"
+  "TBGRACustomPathCursor" [href="BGRABitmapTypes.TBGRACustomPathCursor.html"]
+  "TBGRAPathCursor" -> "TBGRACustomPathCursor"
+  "TBGRAPathCursor" [href="BGRAPath.TBGRAPathCursor.html"]
+  "TBGRACustomPenStroker" -> "TObject"
+  "TBGRACustomPenStroker" [href="BGRABitmapTypes.TBGRACustomPenStroker.html"]
+  "TBGRAPenStroker" -> "TBGRACustomPenStroker"
+  "TBGRAPenStroker" [href="BGRAPen.TBGRAPenStroker.html"]
+  "TBGRACustomTextEffect" -> "TObject"
+  "TBGRACustomTextEffect" [href="BGRACustomTextFX.TBGRACustomTextEffect.html"]
+  "TBGRATextEffect" -> "TBGRACustomTextEffect"
+  "TBGRATextEffect" [href="BGRATextFX.TBGRATextEffect.html"]
+  "TBGRACustomTypeWriter" -> "TObject"
+  "TBGRACustomTypeWriter" [href="BGRATypewriter.TBGRACustomTypeWriter.html"]
+  "TBGRAVectorizedFont" -> "TBGRACustomTypeWriter"
+  "TBGRAVectorizedFont" [href="BGRAVectorize.TBGRAVectorizedFont.html"]
+  "TBGRAGenericPool" -> "TObject"
+  "TBGRAGenericPool" [href="BGRACoordPool3D.TBGRAGenericPool.html"]
+  "TBGRACoordPool3D" -> "TBGRAGenericPool"
+  "TBGRACoordPool3D" [href="BGRACoordPool3D.TBGRACoordPool3D.html"]
+  "TBGRANormalPool3D" -> "TBGRAGenericPool"
+  "TBGRANormalPool3D" [href="BGRACoordPool3D.TBGRANormalPool3D.html"]
+  "TBGRAGlyph" -> "TObject"
+  "TBGRAGlyph" [href="BGRATypewriter.TBGRAGlyph.html"]
+  "TBGRAPolygonalGlyph" -> "TBGRAGlyph"
+  "TBGRAPolygonalGlyph" [href="BGRATypewriter.TBGRAPolygonalGlyph.html"]
+  "TBGRALayerCustomOriginal" -> "TObject"
+  "TBGRALayerCustomOriginal" [href="BGRALayerOriginal.TBGRALayerCustomOriginal.html"]
+  "TBGRALayerGradientOriginal" -> "TBGRALayerCustomOriginal"
+  "TBGRALayerGradientOriginal" [href="BGRAGradientOriginal.TBGRALayerGradientOriginal.html"]
+  "TBGRALayerImageOriginal" -> "TBGRALayerCustomOriginal"
+  "TBGRALayerImageOriginal" [href="BGRALayerOriginal.TBGRALayerImageOriginal.html"]
+  "TBGRALayerSVGOriginal" -> "TBGRALayerCustomOriginal"
+  "TBGRALayerSVGOriginal" [href="BGRASVGOriginal.TBGRALayerSVGOriginal.html"]
+  "TBGRAMultishapeFiller" -> "TObject"
+  "TBGRAMultishapeFiller" [href="BGRAPolygon.TBGRAMultishapeFiller.html"]
+  "TBGRAMultiSliceScaling" -> "TObject"
+  "TBGRAMultiSliceScaling" [href="BGRASliceScaling.TBGRAMultiSliceScaling.html"]
+  "TBGRAOriginalDiff" -> "TObject"
+  "TBGRAOriginalDiff" [href="BGRALayerOriginal.TBGRAOriginalDiff.html"]
+  "TBGRAGradientOriginalDiff" -> "TBGRAOriginalDiff"
+  "TBGRAGradientOriginalDiff" [href="BGRAGradientOriginal.TBGRAGradientOriginalDiff.html"]
+  "TBGRAImageOriginalDiff" -> "TBGRAOriginalDiff"
+  "TBGRAImageOriginalDiff" [href="BGRALayerOriginal.TBGRAImageOriginalDiff.html"]
+  "TBGRASVGOriginalDiff" -> "TBGRAOriginalDiff"
+  "TBGRASVGOriginalDiff" [href="BGRASVGOriginal.TBGRASVGOriginalDiff.html"]
+  "TBGRAOriginalEditor" -> "TObject"
+  "TBGRAOriginalEditor" [href="BGRALayerOriginal.TBGRAOriginalEditor.html"]
+  "TBGRAResourceManager" -> "TObject"
+  "TBGRAResourceManager" [href="BGRABitmapTypes.TBGRAResourceManager.html"]
+  "TBGRAScene3D" -> "TObject"
+  "TBGRAScene3D" [href="BGRAScene3D.TBGRAScene3D.html"]
+  "TBGLScene3D" -> "TBGRAScene3D"
+  "TBGLScene3D" [href="BGRAOpenGL3D.TBGLScene3D.html"]
+  "TBGRAShader3D" -> "TObject"
+  "TBGRAShader3D" [href="BGRARenderer3D.TBGRAShader3D.html"]
+  "TBGRASliceScaling" -> "TObject"
+  "TBGRASliceScaling" [href="BGRASliceScaling.TBGRASliceScaling.html"]
+  "TBidiTextLayout" -> "TObject"
+  "TBidiTextLayout" [href="BGRATextBidi.TBidiTextLayout.html"]
+  "TBidiTree" -> "TObject"
+  "TBidiTree" [href="BGRAUnicodeText.TBidiTree.html"]
+  "TBidiLayoutTree" -> "TBidiTree"
+  "TBidiLayoutTree" [href="BGRATextBidi.TBidiLayoutTree.html"]
+  "TCamera3D" -> "TObject"
+  "TCamera3D" [href="BGRAScene3D.TCamera3D.html"]
+  "TColorHelper" -> "TObject"
+  "TColorHelper" [href="BGRABitmapTypes.TColorHelper.html"]
+  "TCSSUnitConverter" -> "TObject"
+  "TCSSUnitConverter" [href="BGRAUnits.TCSSUnitConverter.html"]
+  "TSVGUnits" -> "TCSSUnitConverter"
+  "TSVGUnits" [href="BGRASVG.TSVGUnits.html"]
+  "TCubicBezierCurve" -> "TObject"
+  "TCubicBezierCurve" [href="BGRABitmapTypes.TCubicBezierCurve.html"]
+  "TCustomColorspace" -> "TObject"
+  "TCustomColorspace" [href="BGRABitmapTypes.TCustomColorspace.html"]
+  "TAdobeRGBAColorspace" -> "TCustomColorspace"
+  "TAdobeRGBAColorspace" [href="BGRABitmapTypes.TAdobeRGBAColorspace.html"]
+  "TBGRAPixelColorspace" -> "TCustomColorspace"
+  "TBGRAPixelColorspace" [href="BGRABitmapTypes.TBGRAPixelColorspace.html"]
+  "TByteMaskColorspace" -> "TCustomColorspace"
+  "TByteMaskColorspace" [href="BGRABitmapTypes.TByteMaskColorspace.html"]
+  "TColorColorspace" -> "TCustomColorspace"
+  "TColorColorspace" [href="BGRABitmapTypes.TColorColorspace.html"]
+  "TExpandedPixelColorspace" -> "TCustomColorspace"
+  "TExpandedPixelColorspace" [href="BGRABitmapTypes.TExpandedPixelColorspace.html"]
+  "TFPColorColorspace" -> "TCustomColorspace"
+  "TFPColorColorspace" [href="BGRABitmapTypes.TFPColorColorspace.html"]
+  "TGSBAPixelColorspace" -> "TCustomColorspace"
+  "TGSBAPixelColorspace" [href="BGRABitmapTypes.TGSBAPixelColorspace.html"]
+  "THSLAPixelColorspace" -> "TCustomColorspace"
+  "THSLAPixelColorspace" [href="BGRABitmapTypes.THSLAPixelColorspace.html"]
+  "TLabAColorspace" -> "TCustomColorspace"
+  "TLabAColorspace" [href="BGRABitmapTypes.TLabAColorspace.html"]
+  "TLChAColorspace" -> "TCustomColorspace"
+  "TLChAColorspace" [href="BGRABitmapTypes.TLChAColorspace.html"]
+  "TLinearRGBAColorspace" -> "TCustomColorspace"
+  "TLinearRGBAColorspace" [href="BGRABitmapTypes.TLinearRGBAColorspace.html"]
+  "TStdCMYKColorspace" -> "TCustomColorspace"
+  "TStdCMYKColorspace" [href="BGRABitmapTypes.TStdCMYKColorspace.html"]
+  "TStdHSLAColorspace" -> "TCustomColorspace"
+  "TStdHSLAColorspace" [href="BGRABitmapTypes.TStdHSLAColorspace.html"]
+  "TStdHSVAColorspace" -> "TCustomColorspace"
+  "TStdHSVAColorspace" [href="BGRABitmapTypes.TStdHSVAColorspace.html"]
+  "TStdRGBAColorspace" -> "TCustomColorspace"
+  "TStdRGBAColorspace" [href="BGRABitmapTypes.TStdRGBAColorspace.html"]
+  "TWordXYZAColorspace" -> "TCustomColorspace"
+  "TWordXYZAColorspace" [href="BGRABitmapTypes.TWordXYZAColorspace.html"]
+  "TXYZAColorspace" -> "TCustomColorspace"
+  "TXYZAColorspace" [href="BGRABitmapTypes.TXYZAColorspace.html"]
+  "TYCbCr601Colorspace" -> "TCustomColorspace"
+  "TYCbCr601Colorspace" [href="BGRABitmapTypes.TYCbCr601Colorspace.html"]
+  "TYCbCr601JPEGColorspace" -> "TCustomColorspace"
+  "TYCbCr601JPEGColorspace" [href="BGRABitmapTypes.TYCbCr601JPEGColorspace.html"]
+  "TYCbCr709Colorspace" -> "TCustomColorspace"
+  "TYCbCr709Colorspace" [href="BGRABitmapTypes.TYCbCr709Colorspace.html"]
+  "TYCbCr709JPEGColorspace" -> "TCustomColorspace"
+  "TYCbCr709JPEGColorspace" [href="BGRABitmapTypes.TYCbCr709JPEGColorspace.html"]
+  "TCustomPhongShading" -> "TObject"
+  "TCustomPhongShading" [href="BGRAPhongTypes.TCustomPhongShading.html"]
+  "TPhongShading" -> "TCustomPhongShading"
+  "TPhongShading" [href="BGRAGradients.TPhongShading.html"]
+  "TCustomRenderer3D" -> "TObject"
+  "TCustomRenderer3D" [href="BGRASceneTypes.TCustomRenderer3D.html"]
+  "TBGLRenderer3D" -> "TCustomRenderer3D"
+  "TBGLRenderer3D" [href="BGRAOpenGL3D.TBGLRenderer3D.html"]
+  "TBGRARenderer3D" -> "TCustomRenderer3D"
+  "TBGRARenderer3D" [href="BGRARenderer3D.TBGRARenderer3D.html"]
+  "TCustomSerializedObject" -> "TObject"
+  "TCustomSerializedObject" [href="BGRADNetDeserial.TCustomSerializedObject.html"]
+  "TSerializedArray" -> "TCustomSerializedObject"
+  "TSerializedArray" [href="BGRADNetDeserial.TSerializedArray.html"]
+  "TSerializedValue" -> "TSerializedArray"
+  "TSerializedValue" [href="BGRADNetDeserial.TSerializedValue.html"]
+  "TSerializedClass" -> "TCustomSerializedObject"
+  "TSerializedClass" [href="BGRADNetDeserial.TSerializedClass.html"]
+  "TCustomUniversalDrawer" -> "TObject"
+  "TCustomUniversalDrawer" [href="BGRABitmapTypes.TCustomUniversalDrawer.html"]
+  "TUniversalDrawer" -> "TCustomUniversalDrawer"
+  "TUniversalDrawer" [href="UniversalDrawer.TUniversalDrawer.html"]
+  "TDimensionMinMax" -> "TObject"
+  "TDimensionMinMax" [href="BGRAColorQuantization.TDimensionMinMax.html"]
+  "TDitheringToIndexedImage" -> "TObject"
+  "TDitheringToIndexedImage" [href="BGRADithering.TDitheringToIndexedImage.html"]
+  "TDotNetDeserialization" -> "TObject"
+  "TDotNetDeserialization" [href="BGRADNetDeserial.TDotNetDeserialization.html"]
+  "TEasyBezierCurve" -> "TObject"
+  "TEasyBezierCurve" [href="BGRABitmapTypes.TEasyBezierCurve.html"]
+  "TFilterTask" -> "TObject"
+  "TCustomBlurTask" -> "TFilterTask"
+  "TCustomBlurTask" [href="BGRAFilterBlur.TCustomBlurTask.html"]
+  "TDitheringTask" -> "TFilterTask"
+  "TDitheringTask" [href="BGRADithering.TDitheringTask.html"]
+  "TFloydSteinbergDitheringTask" -> "TDitheringTask"
+  "TFloydSteinbergDitheringTask" [href="BGRADithering.TFloydSteinbergDitheringTask.html"]
+  "TNearestColorTask" -> "TDitheringTask"
+  "TNearestColorTask" [href="BGRADithering.TNearestColorTask.html"]
+  "TGrayscaleTask" -> "TFilterTask"
+  "TGrayscaleTask" [href="BGRAFilters.TGrayscaleTask.html"]
+  "TMotionBlurTask" -> "TFilterTask"
+  "TMotionBlurTask" [href="BGRAFilterBlur.TMotionBlurTask.html"]
+  "TRadialBlurTask" -> "TFilterTask"
+  "TRadialBlurTask" [href="BGRAFilterBlur.TRadialBlurTask.html"]
+  "TFPSList" -> "TObject"
+  "TFPGList" -> "TFPSList"
+  "TSVGLinkListeners" -> "TFPGList"
+  "TSVGLinkListeners" [href="BGRASVGType.TSVGLinkListeners.html"]
+  "TGroupIconHeader" -> "TObject"
+  "TGroupIconHeader" [href="BGRAWinResource.TGroupIconHeader.html"]
+  "TIntersectionInfo" -> "TObject"
+  "TIntersectionInfo" [href="BGRABitmapTypes.TIntersectionInfo.html"]
+  "TLinearColorGradientIntersectionInfo" -> "TIntersectionInfo"
+  "TLinearColorGradientIntersectionInfo" [href="BGRAPolygonAliased.TLinearColorGradientIntersectionInfo.html"]
+  "TLinearTextureMappingIntersectionInfo" -> "TIntersectionInfo"
+  "TLinearTextureMappingIntersectionInfo" [href="BGRAPolygonAliased.TLinearTextureMappingIntersectionInfo.html"]
+  "TPerspectiveColorGradientIntersectionInfo" -> "TIntersectionInfo"
+  "TPerspectiveColorGradientIntersectionInfo" [href="BGRAPolygonAliased.TPerspectiveColorGradientIntersectionInfo.html"]
+  "TPerspectiveTextureMappingIntersectionInfo" -> "TIntersectionInfo"
+  "TPerspectiveTextureMappingIntersectionInfo" [href="BGRAPolygonAliased.TPerspectiveTextureMappingIntersectionInfo.html"]
+  "TKerningInfo" -> "TObject"
+  "TKerningInfo" [href="BGRATypewriter.TKerningInfo.html"]
+  "TMemoryBlockAlign128" -> "TObject"
+  "TMemoryBlockAlign128" [href="BGRASSE.TMemoryBlockAlign128.html"]
+  "TMultiFileEntry" -> "TObject"
+  "TMultiFileEntry" [href="BGRAMultiFileType.TMultiFileEntry.html"]
+  "TBGRAIconCursorEntry" -> "TMultiFileEntry"
+  "TBGRAIconCursorEntry" [href="BGRAIconCursor.TBGRAIconCursorEntry.html"]
+  "TCustomResourceEntry" -> "TMultiFileEntry"
+  "TCustomResourceEntry" [href="BGRAWinResource.TCustomResourceEntry.html"]
+  "TGroupIconOrCursorEntry" -> "TCustomResourceEntry"
+  "TGroupIconOrCursorEntry" [href="BGRAWinResource.TGroupIconOrCursorEntry.html"]
+  "TGroupCursorEntry" -> "TGroupIconOrCursorEntry"
+  "TGroupCursorEntry" [href="BGRAWinResource.TGroupCursorEntry.html"]
+  "TGroupIconEntry" -> "TGroupIconOrCursorEntry"
+  "TGroupIconEntry" [href="BGRAWinResource.TGroupIconEntry.html"]
+  "TUnformattedResourceEntry" -> "TCustomResourceEntry"
+  "TUnformattedResourceEntry" [href="BGRAWinResource.TUnformattedResourceEntry.html"]
+  "TBitmapResourceEntry" -> "TUnformattedResourceEntry"
+  "TBitmapResourceEntry" [href="BGRAWinResource.TBitmapResourceEntry.html"]
+  "TLazResourceEntry" -> "TMultiFileEntry"
+  "TLazResourceEntry" [href="BGRALazResource.TLazResourceEntry.html"]
+  "TFormDataEntry" -> "TLazResourceEntry"
+  "TFormDataEntry" [href="BGRALazResource.TFormDataEntry.html"]
+  "TMemDirectoryEntry" -> "TMultiFileEntry"
+  "TMemDirectoryEntry" [href="BGRAMemDirectory.TMemDirectoryEntry.html"]
+  "TPerspectiveTransform" -> "TObject"
+  "TPerspectiveTransform" [href="BGRATransform.TPerspectiveTransform.html"]
+  "TPNGFrame" -> "TObject"
+  "TPNGFrame" [href="BGRAReadPng.TPNGFrame.html"]
+  "TQuadraticBezierCurve" -> "TObject"
+  "TQuadraticBezierCurve" [href="BGRABitmapTypes.TQuadraticBezierCurve.html"]
+  "TRationalQuadraticBezierCurve" -> "TObject"
+  "TRationalQuadraticBezierCurve" [href="BGRABitmapTypes.TRationalQuadraticBezierCurve.html"]
+  "TRenderedGlyph" -> "TObject"
+  "TRenderedGlyph" [href="BGRAFontGL.TRenderedGlyph.html"]
+  "TResourceInfo" -> "TObject"
+  "TResourceInfo" [href="BGRAWinResource.TResourceInfo.html"]
+  "TSVGContent" -> "TObject"
+  "TSVGContent" [href="BGRASVGShapes.TSVGContent.html"]
+  "TSVGCustomElement" -> "TObject"
+  "TSVGCustomElement" [href="BGRASVGType.TSVGCustomElement.html"]
+  "TBGRASVG" -> "TSVGCustomElement"
+  "TBGRASVG" [href="BGRASVG.TBGRASVG.html"]
+  "TSVGElement" -> "TSVGCustomElement"
+  "TSVGElement" [href="BGRASVGType.TSVGElement.html"]
+  "TSVGColorProfile" -> "TSVGElement"
+  "TSVGColorProfile" [href="BGRASVGShapes.TSVGColorProfile.html"]
+  "TSVGElementWithContent" -> "TSVGElement"
+  "TSVGElementWithContent" [href="BGRASVGShapes.TSVGElementWithContent.html"]
+  "TSVGClipPath" -> "TSVGElementWithContent"
+  "TSVGClipPath" [href="BGRASVGShapes.TSVGClipPath.html"]
+  "TSVGDefine" -> "TSVGElementWithContent"
+  "TSVGDefine" [href="BGRASVGShapes.TSVGDefine.html"]
+  "TSVGGradient" -> "TSVGElementWithContent"
+  "TSVGGradient" [href="BGRASVGShapes.TSVGGradient.html"]
+  "TSVGLinearGradient" -> "TSVGGradient"
+  "TSVGLinearGradient" [href="BGRASVGShapes.TSVGLinearGradient.html"]
+  "TSVGRadialGradient" -> "TSVGGradient"
+  "TSVGRadialGradient" [href="BGRASVGShapes.TSVGRadialGradient.html"]
+  "TSVGGroup" -> "TSVGElementWithContent"
+  "TSVGGroup" [href="BGRASVGShapes.TSVGGroup.html"]
+  "TSVGLink" -> "TSVGGroup"
+  "TSVGLink" [href="BGRASVGShapes.TSVGLink.html"]
+  "TSVGElementWithGradient" -> "TSVGElement"
+  "TSVGElementWithGradient" [href="BGRASVGShapes.TSVGElementWithGradient.html"]
+  "TSVGCircle" -> "TSVGElementWithGradient"
+  "TSVGCircle" [href="BGRASVGShapes.TSVGCircle.html"]
+  "TSVGEllipse" -> "TSVGElementWithGradient"
+  "TSVGEllipse" [href="BGRASVGShapes.TSVGEllipse.html"]
+  "TSVGPath" -> "TSVGElementWithGradient"
+  "TSVGPath" [href="BGRASVGShapes.TSVGPath.html"]
+  "TSVGPolypoints" -> "TSVGElementWithGradient"
+  "TSVGPolypoints" [href="BGRASVGShapes.TSVGPolypoints.html"]
+  "TSVGRectangle" -> "TSVGElementWithGradient"
+  "TSVGRectangle" [href="BGRASVGShapes.TSVGRectangle.html"]
+  "TSVGTextElement" -> "TSVGElementWithGradient"
+  "TSVGTextElement" [href="BGRASVGShapes.TSVGTextElement.html"]
+  "TSVGGlyphRef" -> "TSVGTextElement"
+  "TSVGGlyphRef" [href="BGRASVGShapes.TSVGGlyphRef.html"]
+  "TSVGTextElementWithContent" -> "TSVGTextElement"
+  "TSVGTextElementWithContent" [href="BGRASVGShapes.TSVGTextElementWithContent.html"]
+  "TSVGAltGlyph" -> "TSVGTextElementWithContent"
+  "TSVGAltGlyph" [href="BGRASVGShapes.TSVGAltGlyph.html"]
+  "TSVGAltGlyphDef" -> "TSVGTextElementWithContent"
+  "TSVGAltGlyphDef" [href="BGRASVGShapes.TSVGAltGlyphDef.html"]
+  "TSVGAltGlyphItem" -> "TSVGTextElementWithContent"
+  "TSVGAltGlyphItem" [href="BGRASVGShapes.TSVGAltGlyphItem.html"]
+  "TSVGTextPath" -> "TSVGTextElementWithContent"
+  "TSVGTextPath" [href="BGRASVGShapes.TSVGTextPath.html"]
+  "TSVGTextPositioning" -> "TSVGTextElementWithContent"
+  "TSVGTextPositioning" [href="BGRASVGShapes.TSVGTextPositioning.html"]
+  "TSVGText" -> "TSVGTextPositioning"
+  "TSVGText" [href="BGRASVGShapes.TSVGText.html"]
+  "TSVGTSpan" -> "TSVGText"
+  "TSVGTSpan" [href="BGRASVGShapes.TSVGTSpan.html"]
+  "TSVGTRef" -> "TSVGTextElement"
+  "TSVGTRef" [href="BGRASVGShapes.TSVGTRef.html"]
+  "TSVGImage" -> "TSVGElement"
+  "TSVGImage" [href="BGRASVGShapes.TSVGImage.html"]
+  "TSVGPattern" -> "TSVGImage"
+  "TSVGPattern" [href="BGRASVGShapes.TSVGPattern.html"]
+  "TSVGLine" -> "TSVGElement"
+  "TSVGLine" [href="BGRASVGShapes.TSVGLine.html"]
+  "TSVGMarker" -> "TSVGElement"
+  "TSVGMarker" [href="BGRASVGShapes.TSVGMarker.html"]
+  "TSVGMask" -> "TSVGElement"
+  "TSVGMask" [href="BGRASVGShapes.TSVGMask.html"]
+  "TSVGStopGradient" -> "TSVGElement"
+  "TSVGStopGradient" [href="BGRASVGShapes.TSVGStopGradient.html"]
+  "TSVGStyle" -> "TSVGElement"
+  "TSVGStyle" [href="BGRASVGShapes.TSVGStyle.html"]
+  "TSVGDataLink" -> "TObject"
+  "TSVGDataLink" [href="BGRASVGType.TSVGDataLink.html"]
+  "TSVGParser" -> "TObject"
+  "TSVGParser" [href="BGRASVGType.TSVGParser.html"]
+  "TTiffWriterEntry" -> "TObject"
+  "TTiffWriterEntry" [href="BGRAWriteTiff.TTiffWriterEntry.html"]
+  "TTiffWriterChunkOffsets" -> "TTiffWriterEntry"
+  "TTiffWriterChunkOffsets" [href="BGRAWriteTiff.TTiffWriterChunkOffsets.html"]
+  "TUnicodeAnalysis" -> "TObject"
+  "TUnicodeAnalysis" [href="BGRAUnicodeText.TUnicodeAnalysis.html"]
+  "TUniformVariable" -> "TObject"
+  "TUniformVariable" [href="BGRAOpenGL3D.TUniformVariable.html"]
+  "TUniformVariableInteger" -> "TUniformVariable"
+  "TUniformVariableInteger" [href="BGRAOpenGL3D.TUniformVariableInteger.html"]
+  "TUniformVariableMatrix4D" -> "TUniformVariable"
+  "TUniformVariableMatrix4D" [href="BGRAOpenGL3D.TUniformVariableMatrix4D.html"]
+  "TUniformVariablePoint" -> "TUniformVariable"
+  "TUniformVariablePoint" [href="BGRAOpenGL3D.TUniformVariablePoint.html"]
+  "TUniformVariablePoint3D" -> "TUniformVariable"
+  "TUniformVariablePoint3D" [href="BGRAOpenGL3D.TUniformVariablePoint3D.html"]
+  "TUniformVariablePointF" -> "TUniformVariable"
+  "TUniformVariablePointF" [href="BGRAOpenGL3D.TUniformVariablePointF.html"]
+  "TUniformVariableSingle" -> "TUniformVariable"
+  "TUniformVariableSingle" [href="BGRAOpenGL3D.TUniformVariableSingle.html"]
+  "TWideKernelFilter" -> "TObject"
+  "TWideKernelFilter" [href="BGRAResample.TWideKernelFilter.html"]
+  "TCubicKernel" -> "TWideKernelFilter"
+  "TCubicKernel" [href="BGRAResample.TCubicKernel.html"]
+  "TLanczosKernel" -> "TWideKernelFilter"
+  "TLanczosKernel" [href="BGRAResample.TLanczosKernel.html"]
+  "TMitchellKernel" -> "TWideKernelFilter"
+  "TMitchellKernel" [href="BGRAResample.TMitchellKernel.html"]
+  "TSplineKernel" -> "TWideKernelFilter"
+  "TSplineKernel" [href="BGRAResample.TSplineKernel.html"]
+  "TMultiFileContainer" -> "TPersistent"
+  "TBGRAIconCursor" -> "TMultiFileContainer"
+  "TBGRAIconCursor" [href="BGRAIconCursor.TBGRAIconCursor.html"]
+  "TLazResourceContainer" -> "TMultiFileContainer"
+  "TLazResourceContainer" [href="BGRALazResource.TLazResourceContainer.html"]
+  "TMemDirectory" -> "TMultiFileContainer"
+  "TMemDirectory" [href="BGRAMemDirectory.TMemDirectory.html"]
+  "TWinResourceContainer" -> "TMultiFileContainer"
+  "TWinResourceContainer" [href="BGRAWinResource.TWinResourceContainer.html"]
+  "TUnzipperStreamUtf8" -> "TUnZipper"
+  "TUnzipperStreamUtf8" [href="UnzipperExt.TUnzipperStreamUtf8.html"]
+}

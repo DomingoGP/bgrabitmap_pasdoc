@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAAnimatedGif: Class TBGRAAnimatedGif</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAAnimatedGif"></span><h1 class="cio">Class TBGRAAnimatedGif</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAAnimatedGif.html">BGRAAnimatedGif</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAAnimatedGif = class(<a class="normal" href="BGRAGraphics.html#TGraphic">TGraphic</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAAnimatedGif</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="thisitem">TBGRAAnimatedGif</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#BackgroundMode">BackgroundMode</a></strong>: <a href="BGRAAnimatedGif.html#TGifBackgroundMode">TGifBackgroundMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#EraseColor">EraseColor</a></strong>:     <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FDestroying">FDestroying</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FImages">FImages</a></strong>: <a href="BGRAAnimatedGif.html#TGifSubImageArray">TGifSubImageArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoopCount">LoopCount</a></strong>:      Word;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoopDone">LoopDone</a></strong>:       Integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Create">Create</a></strong>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Create">Create</a></strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Create">Create</a></strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Create">Create</a></strong>(filenameUTF8: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AddFrame">AddFrame</a></strong>(AImage: TFPCustomImage; X,Y: integer; ADelayMs: integer; ADisposeMode: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> = <a href="BGRAGifFormat.html#dmErase">dmErase</a>; AHasLocalPalette: boolean = false; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false) : integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AddFullFrame">AddFullFrame</a></strong>(AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Duplicate">Duplicate</a></strong>: <a href="BGRAAnimatedGif.TBGRAAnimatedGif.html">TBGRAAnimatedGif</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#GetFileExtensions">GetFileExtensions</a></strong>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#MakeBitmapCopy">MakeBitmapCopy</a></strong>(ABackground: <a href="BGRAGraphics.html#TColor">TColor</a> = <a href="BGRAGraphics.html#clNone">clNone</a>): <a href="BGRAGraphics.html#TBitmap">TBitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#GetEmpty">GetEmpty</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#GetHeight">GetHeight</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#GetTransparent">GetTransparent</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#GetWidth">GetWidth</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Assign">Assign</a></strong>(ASource: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Clear">Clear</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#DeleteFrame">DeleteFrame</a></strong>(AIndex: integer; AEnsureNextFrameDoesNotChange: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Hide">Hide</a></strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#InsertFrame">InsertFrame</a></strong>(AIndex: integer; AImage: TFPCustomImage; X,Y: integer; ADelayMs: integer; ADisposeMode: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> = <a href="BGRAGifFormat.html#dmErase">dmErase</a>; AHasLocalPalette: boolean = false; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#InsertFullFrame">InsertFullFrame</a></strong>(AIndex: integer; AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromFile">LoadFromFile</a></strong>(const AFilenameUTF8: string); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromResource">LoadFromResource</a></strong>(AFilename: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromStream">LoadFromStream</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromStream">LoadFromStream</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#OptimizeFrames">OptimizeFrames</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Pause">Pause</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#ReplaceFullFrame">ReplaceFullFrame</a></strong>(AIndex: integer; AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Resume">Resume</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToFile">SaveToFile</a></strong>(const AFilenameUTF8: string); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStream">SaveToStream</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a> = <a href="BGRABitmapTypes.html#ifGif">ifGif</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStream">SaveToStream</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStream">SaveToStream</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>); override; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SetSize">SetSize</a></strong>(AWidth,AHeight: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Show">Show</a></strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Update">Update</a></strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AssignImage">AssignImage</a></strong>(AImage: TFPCustomImage; AOwned: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AssignTo">AssignTo</a></strong>(Dest: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Changed">Changed</a></strong>(Sender: TObject); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#CheckAnyFrame">CheckAnyFrame</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#CheckSavable">CheckSavable</a></strong>(AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#ClearViewer">ClearViewer</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Draw">Draw</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; const Rect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#EnsureNextFrameRec">EnsureNextFrameRec</a></strong>(AIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromStreamAsGif">LoadFromStreamAsGif</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromStreamAsPng">LoadFromStreamAsPng</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#LoadFromStreamAsStatic">LoadFromStreamAsStatic</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStreamAsGif">SaveToStreamAsGif</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStreamAsPng">SaveToStreamAsPng</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SaveToStreamAsPng">SaveToStreamAsPng</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SetHeight">SetHeight</a></strong>(Value: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SetTransparent">SetTransparent</a></strong>(Value: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#SetWidth">SetWidth</a></strong>(Value: integer); override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AspectRatio">AspectRatio</a></strong>: single read FAspectRatio write SetAspectRatio;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#AverageDelayMs">AverageDelayMs</a></strong>: integer read GetAverageDelayMs;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#BackgroundColor">BackgroundColor</a></strong>: <a href="BGRAGraphics.html#TColor">TColor</a> Read FBackgroundColor write SetBackgroundColor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Bitmap">Bitmap</a></strong>: <a href="BGRAGraphics.html#TBitmap">TBitmap</a> Read GetBitmap;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Count">Count</a></strong>: integer Read GetCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#CurrentImage">CurrentImage</a></strong>: integer Read FCurrentImage Write SetCurrentImage;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameDelayMs">FrameDelayMs</a></strong>[AIndex:integer]: integer read GetFrameDelayMs write SetFrameDelayMs;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameDisposeMode">FrameDisposeMode</a></strong>[AIndex:integer]: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> read GetFrameDisposeMode write SetFrameDisposeMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameDrawMode">FrameDrawMode</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> read GetFrameDrawMode write SetFrameDrawMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameHasLocalPalette">FrameHasLocalPalette</a></strong>[AIndex:integer]: boolean read GetFrameHasLocalPalette write SetFrameHasLocalPalette;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameImage">FrameImage</a></strong>[AIndex:integer]: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> read GetFrameImage write SetFrameImage;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#FrameImagePos">FrameImagePos</a></strong>[AIndex:integer]: <a href="BGRAClasses.html#TPoint">TPoint</a> read GetFrameImagePos write SetFrameImagePos;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Height">Height</a></strong>: integer Read FHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#MemBitmap">MemBitmap</a></strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> Read GetMemBitmap;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Paused">Paused</a></strong>: boolean Read FPaused;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#TimeUntilNextImageMs">TimeUntilNextImageMs</a></strong>: integer read GetTimeUntilNextImage;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#TotalAnimationTimeMs">TotalAnimationTimeMs</a></strong>: Int64 read FTotalAnimationTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAAnimatedGif.TBGRAAnimatedGif.html#Width">Width</a></strong>: integer Read FWidth;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BackgroundMode"></span><code><strong>BackgroundMode</strong>: <a href="BGRAAnimatedGif.html#TGifBackgroundMode">TGifBackgroundMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EraseColor"></span><code><strong>EraseColor</strong>:     <a href="BGRAGraphics.html#TColor">TColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FDestroying"></span><code><strong>FDestroying</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FImages"></span><code><strong>FImages</strong>: <a href="BGRAAnimatedGif.html#TGifSubImageArray">TGifSubImageArray</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoopCount"></span><code><strong>LoopCount</strong>:      Word;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoopDone"></span><code><strong>LoopDone</strong>:       Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(filenameUTF8: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddFrame"></span><code>function <strong>AddFrame</strong>(AImage: TFPCustomImage; X,Y: integer; ADelayMs: integer; ADisposeMode: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> = <a href="BGRAGifFormat.html#dmErase">dmErase</a>; AHasLocalPalette: boolean = false; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false) : integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddFullFrame"></span><code>function <strong>AddFullFrame</strong>(AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+add a frame that replaces completely the previous one</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Duplicate"></span><code>function <strong>Duplicate</strong>: <a href="BGRAAnimatedGif.TBGRAAnimatedGif.html">TBGRAAnimatedGif</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFileExtensions"></span><code>class function <strong>GetFileExtensions</strong>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeBitmapCopy"></span><code>function <strong>MakeBitmapCopy</strong>(ABackground: <a href="BGRAGraphics.html#TColor">TColor</a> = <a href="BGRAGraphics.html#clNone">clNone</a>): <a href="BGRAGraphics.html#TBitmap">TBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetEmpty"></span><code>function <strong>GetEmpty</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHeight"></span><code>function <strong>GetHeight</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTransparent"></span><code>function <strong>GetTransparent</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetWidth"></span><code>function <strong>GetWidth</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Assign"></span><code>procedure <strong>Assign</strong>(ASource: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteFrame"></span><code>procedure <strong>DeleteFrame</strong>(AIndex: integer; AEnsureNextFrameDoesNotChange: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Hide"></span><code>procedure <strong>Hide</strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertFrame"></span><code>procedure <strong>InsertFrame</strong>(AIndex: integer; AImage: TFPCustomImage; X,Y: integer; ADelayMs: integer; ADisposeMode: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> = <a href="BGRAGifFormat.html#dmErase">dmErase</a>; AHasLocalPalette: boolean = false; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertFullFrame"></span><code>procedure <strong>InsertFullFrame</strong>(AIndex: integer; AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>procedure <strong>LoadFromFile</strong>(const AFilenameUTF8: string); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>procedure <strong>LoadFromResource</strong>(AFilename: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="BGRAGraphics.html#TGraphic">TGraphic</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OptimizeFrames"></span><code>procedure <strong>OptimizeFrames</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Pause"></span><code>procedure <strong>Pause</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReplaceFullFrame"></span><code>procedure <strong>ReplaceFullFrame</strong>(AIndex: integer; AImage: TFPCustomImage; ADelayMs: integer; AHasLocalPalette: boolean = true; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmSetExceptTransparent">dmSetExceptTransparent</a>; AOwned: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Resume"></span><code>procedure <strong>Resume</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>procedure <strong>SaveToFile</strong>(const AFilenameUTF8: string); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a> = <a href="BGRABitmapTypes.html#ifGif">ifGif</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+GIF format by default</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>); override; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSize"></span><code>procedure <strong>SetSize</strong>(AWidth,AHeight: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Show"></span><code>procedure <strong>Show</strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Update"></span><code>procedure <strong>Update</strong>(Canvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AssignImage"></span><code>procedure <strong>AssignImage</strong>(AImage: TFPCustomImage; AOwned: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AssignTo"></span><code>procedure <strong>AssignTo</strong>(Dest: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Changed"></span><code>procedure <strong>Changed</strong>(Sender: TObject); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckAnyFrame"></span><code>procedure <strong>CheckAnyFrame</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckSavable"></span><code>procedure <strong>CheckSavable</strong>(AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ClearViewer"></span><code>procedure <strong>ClearViewer</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Draw"></span><code>procedure <strong>Draw</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; const Rect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="BGRAGraphics.html#TGraphic">TGraphic</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="EnsureNextFrameRec"></span><code>procedure <strong>EnsureNextFrameRec</strong>(AIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadFromStreamAsGif"></span><code>procedure <strong>LoadFromStreamAsGif</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadFromStreamAsPng"></span><code>procedure <strong>LoadFromStreamAsPng</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxImageCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadFromStreamAsStatic"></span><code>procedure <strong>LoadFromStreamAsStatic</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SaveToStreamAsGif"></span><code>procedure <strong>SaveToStreamAsGif</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SaveToStreamAsPng"></span><code>procedure <strong>SaveToStreamAsPng</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AQuantizer: <a href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a>; ADitheringAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SaveToStreamAsPng"></span><code>procedure <strong>SaveToStreamAsPng</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetHeight"></span><code>procedure <strong>SetHeight</strong>(Value: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetTransparent"></span><code>procedure <strong>SetTransparent</strong>(Value: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetWidth"></span><code>procedure <strong>SetWidth</strong>(Value: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AspectRatio"></span><code>property <strong>AspectRatio</strong>: single read FAspectRatio write SetAspectRatio;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+linear blend only in PNG</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AverageDelayMs"></span><code>property <strong>AverageDelayMs</strong>: integer read GetAverageDelayMs;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BackgroundColor"></span><code>property <strong>BackgroundColor</strong>: <a href="BGRAGraphics.html#TColor">TColor</a> Read FBackgroundColor write SetBackgroundColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Bitmap"></span><code>property <strong>Bitmap</strong>: <a href="BGRAGraphics.html#TBitmap">TBitmap</a> Read GetBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Count"></span><code>property <strong>Count</strong>: integer Read GetCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurrentImage"></span><code>property <strong>CurrentImage</strong>: integer Read FCurrentImage Write SetCurrentImage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameDelayMs"></span><code>property <strong>FrameDelayMs</strong>[AIndex:integer]: integer read GetFrameDelayMs write SetFrameDelayMs;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameDisposeMode"></span><code>property <strong>FrameDisposeMode</strong>[AIndex:integer]: <a href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a> read GetFrameDisposeMode write SetFrameDisposeMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameDrawMode"></span><code>property <strong>FrameDrawMode</strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> read GetFrameDrawMode write SetFrameDrawMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameHasLocalPalette"></span><code>property <strong>FrameHasLocalPalette</strong>[AIndex:integer]: boolean read GetFrameHasLocalPalette write SetFrameHasLocalPalette;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameImage"></span><code>property <strong>FrameImage</strong>[AIndex:integer]: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> read GetFrameImage write SetFrameImage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FrameImagePos"></span><code>property <strong>FrameImagePos</strong>[AIndex:integer]: <a href="BGRAClasses.html#TPoint">TPoint</a> read GetFrameImagePos write SetFrameImagePos;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: integer Read FHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MemBitmap"></span><code>property <strong>MemBitmap</strong>: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> Read GetMemBitmap;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Paused"></span><code>property <strong>Paused</strong>: boolean Read FPaused;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TimeUntilNextImageMs"></span><code>property <strong>TimeUntilNextImageMs</strong>: integer read GetTimeUntilNextImage;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TotalAnimationTimeMs"></span><code>property <strong>TotalAnimationTimeMs</strong>: Int64 read FTotalAnimationTime;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong>: integer Read FWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

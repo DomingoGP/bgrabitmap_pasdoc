@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAThumbnail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAThumbnail</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRABitmap.html">BGRABitmap</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li>FPimage</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAThumbnail.html#DrawThumbnailCheckers">DrawThumbnailCheckers</a></strong>(bmp: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AIconCheckers: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAThumbnail.html#DrawThumbnailCheckers">DrawThumbnailCheckers</a></strong>(bmp: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AIconCheckers: boolean; AScale: single);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetBitmapThumbnail">GetBitmapThumbnail</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil; AVerticalShrink: single = 1; AHorizShrink: single = 1): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetBitmapThumbnail">GetBitmapThumbnail</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil; AVerticalShrink: single = 1; AHorizShrink: single = 1): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetBmpMioMapThumbnail">GetBmpMioMapThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetBmpThumbnail">GetBmpThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetCurThumbnail">GetCurThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetFileThumbnail">GetFileThumbnail</a></strong>(AFilenameUTF8: string; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetGifThumbnail">GetGifThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetIcoThumbnail">GetIcoThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetJpegThumbnail">GetJpegThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetLazPaintThumbnail">GetLazPaintThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetOpenRasterThumbnail">GetOpenRasterThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetPaintDotNetThumbnail">GetPaintDotNetThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetPcxThumbnail">GetPcxThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetPhoxoThumbnail">GetPhoxoThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetPngThumbnail">GetPngThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetPsdThumbnail">GetPsdThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetStreamThumbnail">GetStreamThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AReader: TFPCustomImageReader; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetStreamThumbnail">GetStreamThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ASuggestedExtensionUTF8: string = ''; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetTargaThumbnail">GetTargaThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetTiffThumbnail">GetTiffThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetXPixMapThumbnail">GetXPixMapThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAThumbnail.html#GetXwdThumbnail">GetXwdThumbnail</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAThumbnail.html#CheckersScale">CheckersScale</a></strong>: single = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAThumbnail.html#IconCheckersColor1">IconCheckersColor1</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAThumbnail.html#IconCheckersColor2">IconCheckersColor2</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAThumbnail.html#ImageCheckersColor1">ImageCheckersColor1</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAThumbnail.html#ImageCheckersColor2">ImageCheckersColor2</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawThumbnailCheckers"></span><code>procedure <strong>DrawThumbnailCheckers</strong>(bmp: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AIconCheckers: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DrawThumbnailCheckers"></span><code>procedure <strong>DrawThumbnailCheckers</strong>(bmp: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AIconCheckers: boolean; AScale: single);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetBitmapThumbnail"></span><code>function <strong>GetBitmapThumbnail</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil; AVerticalShrink: single = 1; AHorizShrink: single = 1): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetBitmapThumbnail"></span><code>function <strong>GetBitmapThumbnail</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil; AVerticalShrink: single = 1; AHorizShrink: single = 1): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetBmpMioMapThumbnail"></span><code>function <strong>GetBmpMioMapThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetBmpThumbnail"></span><code>function <strong>GetBmpThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetCurThumbnail"></span><code>function <strong>GetCurThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetFileThumbnail"></span><code>function <strong>GetFileThumbnail</strong>(AFilenameUTF8: string; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetGifThumbnail"></span><code>function <strong>GetGifThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetIcoThumbnail"></span><code>function <strong>GetIcoThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetJpegThumbnail"></span><code>function <strong>GetJpegThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetLazPaintThumbnail"></span><code>function <strong>GetLazPaintThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetOpenRasterThumbnail"></span><code>function <strong>GetOpenRasterThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPaintDotNetThumbnail"></span><code>function <strong>GetPaintDotNetThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPcxThumbnail"></span><code>function <strong>GetPcxThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPhoxoThumbnail"></span><code>function <strong>GetPhoxoThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPngThumbnail"></span><code>function <strong>GetPngThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPsdThumbnail"></span><code>function <strong>GetPsdThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetStreamThumbnail"></span><code>function <strong>GetStreamThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AReader: TFPCustomImageReader; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetStreamThumbnail"></span><code>function <strong>GetStreamThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth,AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ASuggestedExtensionUTF8: string = ''; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetTargaThumbnail"></span><code>function <strong>GetTargaThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetTiffThumbnail"></span><code>function <strong>GetTiffThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetXPixMapThumbnail"></span><code>function <strong>GetXPixMapThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetXwdThumbnail"></span><code>function <strong>GetXwdThumbnail</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AWidth, AHeight: integer; ABackColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ACheckers: boolean; ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>= nil): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CheckersScale"></span><code><strong>CheckersScale</strong>: single = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IconCheckersColor1"></span><code><strong>IconCheckersColor1</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IconCheckersColor2"></span><code><strong>IconCheckersColor2</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ImageCheckersColor1"></span><code><strong>ImageCheckersColor1</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ImageCheckersColor2"></span><code><strong>ImageCheckersColor2</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

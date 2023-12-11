@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRALayers: Class TBGRALayeredBitmap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRALayeredBitmap"></span><h1 class="cio">Class TBGRALayeredBitmap</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRALayers.html">BGRALayers</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRALayeredBitmap = class(<a class="normal" href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRALayeredBitmap</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor"><a class="normal" href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a></li>
+<li class="thisitem">TBGRALayeredBitmap</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Create">Create</a></strong>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Create">Create</a></strong>(AWidth, AHeight: integer); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255; Shared: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255; Shared: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayer">AddLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromFile">AddLayerFromFile</a></strong>(AFileName: string; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromFile">AddLayerFromFile</a></strong>(AFileName: string; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromFile">AddLayerFromFile</a></strong>(AFileName: string; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromFile">AddLayerFromFile</a></strong>(AFileName: string; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOriginal">AddLayerFromOriginal</a></strong>(const AGuid: TGuid; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOriginal">AddLayerFromOriginal</a></strong>(const AGuid: TGuid; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOriginal">AddLayerFromOriginal</a></strong>(const AGuid: TGuid; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOriginal">AddLayerFromOriginal</a></strong>(const AGuid: TGuid; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOwnedOriginal">AddLayerFromOwnedOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOwnedOriginal">AddLayerFromOwnedOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOwnedOriginal">AddLayerFromOwnedOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddLayerFromOwnedOriginal">AddLayerFromOwnedOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOriginal">AddOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; AOwned: boolean = true): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOriginalFromStorage">AddOriginalFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRAMemOriginalStorage.html">TBGRAMemOriginalStorage</a>; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOriginalFromStorage">AddOriginalFromStorage</a></strong>(AStorage: <a href="BGRALayerOriginal.TBGRAMemOriginalStorage.html">TBGRAMemOriginalStorage</a>; const AGuid: TGuid; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOriginalFromStream">AddOriginalFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOriginalFromStream">AddOriginalFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; const AGuid: TGuid; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOwnedLayer">AddOwnedLayer</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOwnedLayer">AddOwnedLayer</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOwnedLayer">AddOwnedLayer</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddOwnedLayer">AddOwnedLayer</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddSharedLayer">AddSharedLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddSharedLayer">AddSharedLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddSharedLayer">AddSharedLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#AddSharedLayer">AddSharedLayer</a></strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#DrawEditor">DrawEditor</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#DrawEditor">DrawEditor</a></strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Duplicate">Duplicate</a></strong>(ASharedLayerIds: boolean = false): <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetEditorBounds">GetEditorBounds</a></strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetEditorBounds">GetEditorBounds</a></strong>(ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetEditorBounds">GetEditorBounds</a></strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetEditorBounds">GetEditorBounds</a></strong>(ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetGlobalRegistry">GetGlobalRegistry</a></strong>(ARegistryIdentifier: string): RawByteString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerBitmapCopy">GetLayerBitmapCopy</a></strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerBitmapDirectly">GetLayerBitmapDirectly</a></strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerIndexFromId">GetLayerIndexFromId</a></strong>(AIdentifier: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerRegistry">GetLayerRegistry</a></strong>(ALayerIndex: integer; ARegistryIdentifier: string): RawByteString;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#IndexOfOriginal">IndexOfOriginal</a></strong>(const AGuid: TGuid): integer; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#IndexOfOriginal">IndexOfOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): integer; overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#IsValidRegistryIndentifier">IsValidRegistryIndentifier</a></strong>(AIdentifier: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MoveLayerDown">MoveLayerDown</a></strong>(index: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MoveLayerUp">MoveLayerUp</a></strong>(index: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#ProduceLayerUniqueId">ProduceLayerUniqueId</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RemoveOriginal">RemoveOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderOriginalIfNecessary">RenderOriginalIfNecessary</a></strong>(const AGuid: TGuid; ADraft: boolean = false): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderOriginalsIfNecessary">RenderOriginalsIfNecessary</a></strong>(ADraft: boolean = false): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#TakeLayerBitmap">TakeLayerBitmap</a></strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetBlendOperation">GetBlendOperation</a></strong>(Layer: integer): <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetHeight">GetHeight</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerDirectory">GetLayerDirectory</a></strong>(ALayerIndex: integer; ACanCreate: boolean): <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerFrozen">GetLayerFrozen</a></strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerName">GetLayerName</a></strong>(layer: integer): string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOffset">GetLayerOffset</a></strong>(layer: integer): <a href="BGRAClasses.html#TPoint">TPoint</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOpacity">GetLayerOpacity</a></strong>(layer: integer): byte; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginal">GetLayerOriginal</a></strong>(layer: integer): <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalGuid">GetLayerOriginalGuid</a></strong>(layer: integer): TGuid; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalKnown">GetLayerOriginalKnown</a></strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalMatrix">GetLayerOriginalMatrix</a></strong>(layer: integer): <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalRenderStatus">GetLayerOriginalRenderStatus</a></strong>(layer: integer): <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerUniqueId">GetLayerUniqueId</a></strong>(layer: integer): integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerVisible">GetLayerVisible</a></strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetNbLayers">GetNbLayers</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndex">GetOriginalByIndex</a></strong>(AIndex: integer): <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexClass">GetOriginalByIndexClass</a></strong>(AIndex: integer): <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexKnown">GetOriginalByIndexKnown</a></strong>(AIndex: integer): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexLoaded">GetOriginalByIndexLoaded</a></strong>(AIndex: integer): boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalCount">GetOriginalCount</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALayers.TBGRALayeredBitmap.html#GetWidth">GetWidth</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#ApplyLayerOffset">ApplyLayerOffset</a></strong>(ALayerIndex: integer; APadWithTranparentPixels: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Assign">Assign</a></strong>(ASource: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>; ASharedLayerIds: boolean = false; ACopyAdditionalMemData: boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Clear">Clear</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#ClearEditor">ClearEditor</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#ClearOriginals">ClearOriginals</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#DeleteOriginal">DeleteOriginal</a></strong>(AIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#HorizontalFlip">HorizontalFlip</a></strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#HorizontalFlip">HorizontalFlip</a></strong>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#InsertLayer">InsertLayer</a></strong>(index: integer; fromIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#KeyDown">KeyDown</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#KeyPress">KeyPress</a></strong>(UTF8Key: string; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#KeyUp">KeyUp</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LoadFromFile">LoadFromFile</a></strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LoadFromResource">LoadFromResource</a></strong>(AFilename: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LoadFromStream">LoadFromStream</a></strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LoadLayerRegistryFromStream">LoadLayerRegistryFromStream</a></strong>(ALayerIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseDown">MouseDown</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseDown">MouseDown</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseMove">MouseMove</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseMove">MouseMove</a></strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseUp">MouseUp</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#MouseUp">MouseUp</a></strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#NotifyLoaded">NotifyLoaded</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#NotifySaving">NotifySaving</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RemoveLayer">RemoveLayer</a></strong>(index: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RemoveUnusedOriginals">RemoveUnusedOriginals</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderLayerFromOriginal">RenderLayerFromOriginal</a></strong>(layer: integer; ADraft: boolean; ARenderBoundsF: <a href="BGRAClasses.html#TRectF">TRectF</a>; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderLayerFromOriginal">RenderLayerFromOriginal</a></strong>(layer: integer; ADraft: boolean; ARenderBounds: <a href="BGRAClasses.html#TRect">TRect</a>; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderLayerFromOriginal">RenderLayerFromOriginal</a></strong>(layer: integer; ADraft: boolean = false; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RenderLayerFromOriginalIfNecessary">RenderLayerFromOriginalIfNecessary</a></strong>(layer: integer; ADraft: boolean; var ABounds: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Resample">Resample</a></strong>(AWidth, AHeight: integer; AResampleMode: <a href="BGRABitmapTypes.html#TResampleMode">TResampleMode</a>; AFineResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RotateCCW">RotateCCW</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RotateCW">RotateCW</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RotateUD">RotateUD</a></strong>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#RotateUD">RotateUD</a></strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SaveLayerRegistryToStream">SaveLayerRegistryToStream</a></strong>(ALayerIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SaveOriginalToStream">SaveOriginalToStream</a></strong>(AIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SaveOriginalToStream">SaveOriginalToStream</a></strong>(const AGuid: TGuid; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetGlobalRegistry">SetGlobalRegistry</a></strong>(ARegistryIdentifier: string; AValue: RawByteString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerBitmap">SetLayerBitmap</a></strong>(layer: integer; ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AOwned: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerRegistry">SetLayerRegistry</a></strong>(ALayerIndex: integer; ARegistryIdentifier: string; AValue: RawByteString);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetSize">SetSize</a></strong>(AWidth, AHeight: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#UnloadOriginal">UnloadOriginal</a></strong>(AIndex: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#UnloadOriginal">UnloadOriginal</a></strong>(const AGuid: TGuid); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#UnloadOriginals">UnloadOriginals</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#VerticalFlip">VerticalFlip</a></strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#VerticalFlip">VerticalFlip</a></strong>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#FindOriginal">FindOriginal</a></strong>(AGuid: TGuid; out ADir: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>; out AClass: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalChange">OriginalChange</a></strong>(ASender: TObject; ABounds: <a href="BGRABitmapTypes.html#PRectF">PRectF</a>; var ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalEditingChange">OriginalEditingChange</a></strong>(ASender: TObject);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetBlendOperation">SetBlendOperation</a></strong>(Layer: integer; op: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerFrozen">SetLayerFrozen</a></strong>(layer: integer; AValue: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerName">SetLayerName</a></strong>(layer: integer; AValue: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOffset">SetLayerOffset</a></strong>(layer: integer; AValue: <a href="BGRAClasses.html#TPoint">TPoint</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOpacity">SetLayerOpacity</a></strong>(layer: integer; AValue: byte);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalGuid">SetLayerOriginalGuid</a></strong>(layer: integer; const AValue: TGuid);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalMatrix">SetLayerOriginalMatrix</a></strong>(layer: integer; AValue: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalRenderStatus">SetLayerOriginalRenderStatus</a></strong>(layer: integer; AValue: <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerUniqueId">SetLayerUniqueId</a></strong>(layer: integer; AValue: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerVisible">SetLayerVisible</a></strong>(layer: integer; AValue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#StoreOriginal">StoreOriginal</a></strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALayers.TBGRALayeredBitmap.html#UpdateOriginalEditor">UpdateOriginalEditor</a></strong>(ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#BlendOperation">BlendOperation</a></strong>[layer:integer]: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetBlendOperation">GetBlendOperation</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetBlendOperation">SetBlendOperation</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#EditorFocused">EditorFocused</a></strong>: boolean read FEditorFocused write SetEditorFocused;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Height">Height</a></strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetHeight">GetHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerBitmap">LayerBitmap</a></strong>[layer:integer]: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerBitmapDirectly">GetLayerBitmapDirectly</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerName">LayerName</a></strong>[layer:integer]: string read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerName">GetLayerName</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerName">SetLayerName</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOffset">LayerOffset</a></strong>[layer:integer]: <a href="BGRAClasses.html#TPoint">TPoint</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOffset">GetLayerOffset</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOffset">SetLayerOffset</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOpacity">LayerOpacity</a></strong>[layer:integer]: byte read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOpacity">GetLayerOpacity</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOpacity">SetLayerOpacity</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginal">LayerOriginal</a></strong>[layer:integer]: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginal">GetLayerOriginal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginalClass">LayerOriginalClass</a></strong>[layer:integer]: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a> read GetLayerOriginalClass;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginalGuid">LayerOriginalGuid</a></strong>[layer:integer]: TGuid read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalGuid">GetLayerOriginalGuid</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalGuid">SetLayerOriginalGuid</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginalKnown">LayerOriginalKnown</a></strong>[layer:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalKnown">GetLayerOriginalKnown</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginalMatrix">LayerOriginalMatrix</a></strong>[layer:integer]: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalMatrix">GetLayerOriginalMatrix</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalMatrix">SetLayerOriginalMatrix</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerOriginalRenderStatus">LayerOriginalRenderStatus</a></strong>[layer:integer]: <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalRenderStatus">GetLayerOriginalRenderStatus</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalRenderStatus">SetLayerOriginalRenderStatus</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerUniqueId">LayerUniqueId</a></strong>[layer:integer]: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerUniqueId">GetLayerUniqueId</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerUniqueId">SetLayerUniqueId</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#LayerVisible">LayerVisible</a></strong>[layer:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerVisible">GetLayerVisible</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerVisible">SetLayerVisible</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#NbLayers">NbLayers</a></strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetNbLayers">GetNbLayers</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnActionDone">OnActionDone</a></strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnActionDone write SetOnActionDone;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnActionProgress">OnActionProgress</a></strong>: <a href="BGRALayers.html#TLayeredActionProgressEvent">TLayeredActionProgressEvent</a> read FOnActionProgress write SetOnActionProgress;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnEditorFocusChanged">OnEditorFocusChanged</a></strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnEditorFocusChanged write FOnEditorFocusChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnOriginalChange">OnOriginalChange</a></strong>: <a href="BGRALayers.html#TEmbeddedOriginalChangeEvent">TEmbeddedOriginalChangeEvent</a> read FOriginalChange write FOriginalChange;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnOriginalEditingChange">OnOriginalEditingChange</a></strong>: <a href="BGRALayers.html#TEmbeddedOriginalEditingChangeEvent">TEmbeddedOriginalEditingChangeEvent</a> read FOriginalEditingChange write FOriginalEditingChange;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OnOriginalLoadError">OnOriginalLoadError</a></strong>: <a href="BGRALayers.html#TEmbeddedOriginalLoadErrorEvent">TEmbeddedOriginalLoadErrorEvent</a> read FOnOriginalLoadError write FOnOriginalLoadError;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Original">Original</a></strong>[AIndex:integer]: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndex">GetOriginalByIndex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalClass">OriginalClass</a></strong>[AIndex:integer]: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexClass">GetOriginalByIndexClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalCount">OriginalCount</a></strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalCount">GetOriginalCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalEditor">OriginalEditor</a></strong>: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a> read GetOriginalEditor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalGuid">OriginalGuid</a></strong>[AIndex:integer]: TGUID read GetOriginalGuid;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#OriginalKnown">OriginalKnown</a></strong>[AIndex:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexKnown">GetOriginalByIndexKnown</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRALayers.TBGRALayeredBitmap.html#Width">Width</a></strong> : integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetWidth">GetWidth</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AWidth, AHeight: integer); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255; Shared: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(AName: string; Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255; Shared: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayer"></span><code>function <strong>AddLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromFile"></span><code>function <strong>AddLayerFromFile</strong>(AFileName: string; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromFile"></span><code>function <strong>AddLayerFromFile</strong>(AFileName: string; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromFile"></span><code>function <strong>AddLayerFromFile</strong>(AFileName: string; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromFile"></span><code>function <strong>AddLayerFromFile</strong>(AFileName: string; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOriginal"></span><code>function <strong>AddLayerFromOriginal</strong>(const AGuid: TGuid; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOriginal"></span><code>function <strong>AddLayerFromOriginal</strong>(const AGuid: TGuid; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOriginal"></span><code>function <strong>AddLayerFromOriginal</strong>(const AGuid: TGuid; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOriginal"></span><code>function <strong>AddLayerFromOriginal</strong>(const AGuid: TGuid; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOwnedOriginal"></span><code>function <strong>AddLayerFromOwnedOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOwnedOriginal"></span><code>function <strong>AddLayerFromOwnedOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Matrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOwnedOriginal"></span><code>function <strong>AddLayerFromOwnedOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddLayerFromOwnedOriginal"></span><code>function <strong>AddLayerFromOwnedOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOriginal"></span><code>function <strong>AddOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; AOwned: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOriginalFromStorage"></span><code>function <strong>AddOriginalFromStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRAMemOriginalStorage.html">TBGRAMemOriginalStorage</a>; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOriginalFromStorage"></span><code>function <strong>AddOriginalFromStorage</strong>(AStorage: <a href="BGRALayerOriginal.TBGRAMemOriginalStorage.html">TBGRAMemOriginalStorage</a>; const AGuid: TGuid; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOriginalFromStream"></span><code>function <strong>AddOriginalFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOriginalFromStream"></span><code>function <strong>AddOriginalFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; const AGuid: TGuid; ALateLoad: boolean = false): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOwnedLayer"></span><code>function <strong>AddOwnedLayer</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOwnedLayer"></span><code>function <strong>AddOwnedLayer</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOwnedLayer"></span><code>function <strong>AddOwnedLayer</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOwnedLayer"></span><code>function <strong>AddOwnedLayer</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddSharedLayer"></span><code>function <strong>AddSharedLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddSharedLayer"></span><code>function <strong>AddSharedLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddSharedLayer"></span><code>function <strong>AddSharedLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; BlendOp: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddSharedLayer"></span><code>function <strong>AddSharedLayer</strong>(Source: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; Position: <a href="BGRAClasses.html#TPoint">TPoint</a>; Opacity: byte = 255): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawEditor"></span><code>function <strong>DrawEditor</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawEditor"></span><code>function <strong>DrawEditor</strong>(ADest: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Duplicate"></span><code>function <strong>Duplicate</strong>(ASharedLayerIds: boolean = false): <a href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEditorBounds"></span><code>function <strong>GetEditorBounds</strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEditorBounds"></span><code>function <strong>GetEditorBounds</strong>(ALayerIndex: integer; X, Y: Integer; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEditorBounds"></span><code>function <strong>GetEditorBounds</strong>(ADestRect: <a href="BGRAClasses.html#TRect">TRect</a>; ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetEditorBounds"></span><code>function <strong>GetEditorBounds</strong>(ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single): <a href="BGRAClasses.html#TRect">TRect</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetGlobalRegistry"></span><code>function <strong>GetGlobalRegistry</strong>(ARegistryIdentifier: string): RawByteString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLayerBitmapCopy"></span><code>function <strong>GetLayerBitmapCopy</strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLayerBitmapDirectly"></span><code>function <strong>GetLayerBitmapDirectly</strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLayerIndexFromId"></span><code>function <strong>GetLayerIndexFromId</strong>(AIdentifier: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLayerRegistry"></span><code>function <strong>GetLayerRegistry</strong>(ALayerIndex: integer; ARegistryIdentifier: string): RawByteString;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOfOriginal"></span><code>function <strong>IndexOfOriginal</strong>(const AGuid: TGuid): integer; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOfOriginal"></span><code>function <strong>IndexOfOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): integer; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsValidRegistryIndentifier"></span><code>class function <strong>IsValidRegistryIndentifier</strong>(AIdentifier: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MoveLayerDown"></span><code>function <strong>MoveLayerDown</strong>(index: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MoveLayerUp"></span><code>function <strong>MoveLayerUp</strong>(index: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ProduceLayerUniqueId"></span><code>function <strong>ProduceLayerUniqueId</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveOriginal"></span><code>function <strong>RemoveOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderOriginalIfNecessary"></span><code>function <strong>RenderOriginalIfNecessary</strong>(const AGuid: TGuid; ADraft: boolean = false): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderOriginalsIfNecessary"></span><code>function <strong>RenderOriginalsIfNecessary</strong>(ADraft: boolean = false): <a href="BGRAClasses.html#TRect">TRect</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TakeLayerBitmap"></span><code>function <strong>TakeLayerBitmap</strong>(layer: integer): <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetBlendOperation"></span><code>function <strong>GetBlendOperation</strong>(Layer: integer): <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHeight"></span><code>function <strong>GetHeight</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerDirectory"></span><code>function <strong>GetLayerDirectory</strong>(ALayerIndex: integer; ACanCreate: boolean): <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerFrozen"></span><code>function <strong>GetLayerFrozen</strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerName"></span><code>function <strong>GetLayerName</strong>(layer: integer): string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOffset"></span><code>function <strong>GetLayerOffset</strong>(layer: integer): <a href="BGRAClasses.html#TPoint">TPoint</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOpacity"></span><code>function <strong>GetLayerOpacity</strong>(layer: integer): byte; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOriginal"></span><code>function <strong>GetLayerOriginal</strong>(layer: integer): <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOriginalGuid"></span><code>function <strong>GetLayerOriginalGuid</strong>(layer: integer): TGuid; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOriginalKnown"></span><code>function <strong>GetLayerOriginalKnown</strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOriginalMatrix"></span><code>function <strong>GetLayerOriginalMatrix</strong>(layer: integer): <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerOriginalRenderStatus"></span><code>function <strong>GetLayerOriginalRenderStatus</strong>(layer: integer): <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerUniqueId"></span><code>function <strong>GetLayerUniqueId</strong>(layer: integer): integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetLayerVisible"></span><code>function <strong>GetLayerVisible</strong>(layer: integer): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetNbLayers"></span><code>function <strong>GetNbLayers</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOriginalByIndex"></span><code>function <strong>GetOriginalByIndex</strong>(AIndex: integer): <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOriginalByIndexClass"></span><code>function <strong>GetOriginalByIndexClass</strong>(AIndex: integer): <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOriginalByIndexKnown"></span><code>function <strong>GetOriginalByIndexKnown</strong>(AIndex: integer): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOriginalByIndexLoaded"></span><code>function <strong>GetOriginalByIndexLoaded</strong>(AIndex: integer): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOriginalCount"></span><code>function <strong>GetOriginalCount</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetWidth"></span><code>function <strong>GetWidth</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ApplyLayerOffset"></span><code>procedure <strong>ApplyLayerOffset</strong>(ALayerIndex: integer; APadWithTranparentPixels: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Assign"></span><code>procedure <strong>Assign</strong>(ASource: <a href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a>; ASharedLayerIds: boolean = false; ACopyAdditionalMemData: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClearEditor"></span><code>procedure <strong>ClearEditor</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClearOriginals"></span><code>procedure <strong>ClearOriginals</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteOriginal"></span><code>procedure <strong>DeleteOriginal</strong>(AIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizontalFlip"></span><code>procedure <strong>HorizontalFlip</strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HorizontalFlip"></span><code>procedure <strong>HorizontalFlip</strong>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertLayer"></span><code>procedure <strong>InsertLayer</strong>(index: integer; fromIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyDown"></span><code>procedure <strong>KeyDown</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyPress"></span><code>procedure <strong>KeyPress</strong>(UTF8Key: string; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="KeyUp"></span><code>procedure <strong>KeyUp</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; Key: <a href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>procedure <strong>LoadFromFile</strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>procedure <strong>LoadFromResource</strong>(AFilename: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(stream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadLayerRegistryFromStream"></span><code>procedure <strong>LoadLayerRegistryFromStream</strong>(ALayerIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseDown"></span><code>procedure <strong>MouseDown</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseDown"></span><code>procedure <strong>MouseDown</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseMove"></span><code>procedure <strong>MouseMove</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseMove"></span><code>procedure <strong>MouseMove</strong>(Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseUp"></span><code>procedure <strong>MouseUp</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>; out AHandled: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MouseUp"></span><code>procedure <strong>MouseUp</strong>(RightButton: boolean; Shift: <a href="BGRAClasses.html#TShiftState">TShiftState</a>; ImageX, ImageY: Single; out ACursor: <a href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NotifyLoaded"></span><code>procedure <strong>NotifyLoaded</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NotifySaving"></span><code>procedure <strong>NotifySaving</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveLayer"></span><code>procedure <strong>RemoveLayer</strong>(index: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveUnusedOriginals"></span><code>procedure <strong>RemoveUnusedOriginals</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderLayerFromOriginal"></span><code>procedure <strong>RenderLayerFromOriginal</strong>(layer: integer; ADraft: boolean; ARenderBoundsF: <a href="BGRAClasses.html#TRectF">TRectF</a>; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderLayerFromOriginal"></span><code>procedure <strong>RenderLayerFromOriginal</strong>(layer: integer; ADraft: boolean; ARenderBounds: <a href="BGRAClasses.html#TRect">TRect</a>; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderLayerFromOriginal"></span><code>procedure <strong>RenderLayerFromOriginal</strong>(layer: integer; ADraft: boolean = false; AFullSizeLayer: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RenderLayerFromOriginalIfNecessary"></span><code>procedure <strong>RenderLayerFromOriginalIfNecessary</strong>(layer: integer; ADraft: boolean; var ABounds: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Resample"></span><code>procedure <strong>Resample</strong>(AWidth, AHeight: integer; AResampleMode: <a href="BGRABitmapTypes.html#TResampleMode">TResampleMode</a>; AFineResampleFilter: <a href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a> = <a href="BGRABitmapTypes.html#rfLinear">rfLinear</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateCCW"></span><code>procedure <strong>RotateCCW</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateCW"></span><code>procedure <strong>RotateCW</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateUD"></span><code>procedure <strong>RotateUD</strong>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateUD"></span><code>procedure <strong>RotateUD</strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveLayerRegistryToStream"></span><code>procedure <strong>SaveLayerRegistryToStream</strong>(ALayerIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveOriginalToStream"></span><code>procedure <strong>SaveOriginalToStream</strong>(AIndex: integer; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveOriginalToStream"></span><code>procedure <strong>SaveOriginalToStream</strong>(const AGuid: TGuid; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetGlobalRegistry"></span><code>procedure <strong>SetGlobalRegistry</strong>(ARegistryIdentifier: string; AValue: RawByteString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLayerBitmap"></span><code>procedure <strong>SetLayerBitmap</strong>(layer: integer; ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AOwned: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLayerRegistry"></span><code>procedure <strong>SetLayerRegistry</strong>(ALayerIndex: integer; ARegistryIdentifier: string; AValue: RawByteString);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetSize"></span><code>procedure <strong>SetSize</strong>(AWidth, AHeight: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnloadOriginal"></span><code>procedure <strong>UnloadOriginal</strong>(AIndex: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnloadOriginal"></span><code>procedure <strong>UnloadOriginal</strong>(const AGuid: TGuid); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnloadOriginals"></span><code>procedure <strong>UnloadOriginals</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalFlip"></span><code>procedure <strong>VerticalFlip</strong>(ALayerIndex: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VerticalFlip"></span><code>procedure <strong>VerticalFlip</strong>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FindOriginal"></span><code>procedure <strong>FindOriginal</strong>(AGuid: TGuid; out ADir: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>; out AClass: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OriginalChange"></span><code>procedure <strong>OriginalChange</strong>(ASender: TObject; ABounds: <a href="BGRABitmapTypes.html#PRectF">PRectF</a>; var ADiff: <a href="BGRALayerOriginal.TBGRAOriginalDiff.html">TBGRAOriginalDiff</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OriginalEditingChange"></span><code>procedure <strong>OriginalEditingChange</strong>(ASender: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetBlendOperation"></span><code>procedure <strong>SetBlendOperation</strong>(Layer: integer; op: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerFrozen"></span><code>procedure <strong>SetLayerFrozen</strong>(layer: integer; AValue: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerName"></span><code>procedure <strong>SetLayerName</strong>(layer: integer; AValue: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerOffset"></span><code>procedure <strong>SetLayerOffset</strong>(layer: integer; AValue: <a href="BGRAClasses.html#TPoint">TPoint</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerOpacity"></span><code>procedure <strong>SetLayerOpacity</strong>(layer: integer; AValue: byte);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerOriginalGuid"></span><code>procedure <strong>SetLayerOriginalGuid</strong>(layer: integer; const AValue: TGuid);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerOriginalMatrix"></span><code>procedure <strong>SetLayerOriginalMatrix</strong>(layer: integer; AValue: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerOriginalRenderStatus"></span><code>procedure <strong>SetLayerOriginalRenderStatus</strong>(layer: integer; AValue: <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerUniqueId"></span><code>procedure <strong>SetLayerUniqueId</strong>(layer: integer; AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLayerVisible"></span><code>procedure <strong>SetLayerVisible</strong>(layer: integer; AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="StoreOriginal"></span><code>procedure <strong>StoreOriginal</strong>(AOriginal: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UpdateOriginalEditor"></span><code>procedure <strong>UpdateOriginalEditor</strong>(ALayerIndex: integer; AMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; APointSize: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BlendOperation"></span><code>property <strong>BlendOperation</strong>[layer:integer]: <a href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetBlendOperation">GetBlendOperation</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetBlendOperation">SetBlendOperation</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EditorFocused"></span><code>property <strong>EditorFocused</strong>: boolean read FEditorFocused write SetEditorFocused;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Height"></span><code>property <strong>Height</strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetHeight">GetHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerBitmap"></span><code>property <strong>LayerBitmap</strong>[layer:integer]: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerBitmapDirectly">GetLayerBitmapDirectly</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerName"></span><code>property <strong>LayerName</strong>[layer:integer]: string read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerName">GetLayerName</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerName">SetLayerName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOffset"></span><code>property <strong>LayerOffset</strong>[layer:integer]: <a href="BGRAClasses.html#TPoint">TPoint</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOffset">GetLayerOffset</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOffset">SetLayerOffset</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOpacity"></span><code>property <strong>LayerOpacity</strong>[layer:integer]: byte read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOpacity">GetLayerOpacity</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOpacity">SetLayerOpacity</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginal"></span><code>property <strong>LayerOriginal</strong>[layer:integer]: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginal">GetLayerOriginal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginalClass"></span><code>property <strong>LayerOriginalClass</strong>[layer:integer]: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a> read GetLayerOriginalClass;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginalGuid"></span><code>property <strong>LayerOriginalGuid</strong>[layer:integer]: TGuid read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalGuid">GetLayerOriginalGuid</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalGuid">SetLayerOriginalGuid</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginalKnown"></span><code>property <strong>LayerOriginalKnown</strong>[layer:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalKnown">GetLayerOriginalKnown</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginalMatrix"></span><code>property <strong>LayerOriginalMatrix</strong>[layer:integer]: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalMatrix">GetLayerOriginalMatrix</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalMatrix">SetLayerOriginalMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerOriginalRenderStatus"></span><code>property <strong>LayerOriginalRenderStatus</strong>[layer:integer]: <a href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerOriginalRenderStatus">GetLayerOriginalRenderStatus</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerOriginalRenderStatus">SetLayerOriginalRenderStatus</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerUniqueId"></span><code>property <strong>LayerUniqueId</strong>[layer:integer]: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerUniqueId">GetLayerUniqueId</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerUniqueId">SetLayerUniqueId</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LayerVisible"></span><code>property <strong>LayerVisible</strong>[layer:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetLayerVisible">GetLayerVisible</a> write <a href="BGRALayers.TBGRALayeredBitmap.html#SetLayerVisible">SetLayerVisible</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NbLayers"></span><code>property <strong>NbLayers</strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetNbLayers">GetNbLayers</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnActionDone"></span><code>property <strong>OnActionDone</strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnActionDone write SetOnActionDone;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnActionProgress"></span><code>property <strong>OnActionProgress</strong>: <a href="BGRALayers.html#TLayeredActionProgressEvent">TLayeredActionProgressEvent</a> read FOnActionProgress write SetOnActionProgress;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnEditorFocusChanged"></span><code>property <strong>OnEditorFocusChanged</strong>: <a href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a> read FOnEditorFocusChanged write FOnEditorFocusChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnOriginalChange"></span><code>property <strong>OnOriginalChange</strong>: <a href="BGRALayers.html#TEmbeddedOriginalChangeEvent">TEmbeddedOriginalChangeEvent</a> read FOriginalChange write FOriginalChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnOriginalEditingChange"></span><code>property <strong>OnOriginalEditingChange</strong>: <a href="BGRALayers.html#TEmbeddedOriginalEditingChangeEvent">TEmbeddedOriginalEditingChangeEvent</a> read FOriginalEditingChange write FOriginalEditingChange;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnOriginalLoadError"></span><code>property <strong>OnOriginalLoadError</strong>: <a href="BGRALayers.html#TEmbeddedOriginalLoadErrorEvent">TEmbeddedOriginalLoadErrorEvent</a> read FOnOriginalLoadError write FOnOriginalLoadError;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Original"></span><code>property <strong>Original</strong>[AIndex:integer]: <a href="BGRALayerOriginal.TBGRALayerCustomOriginal.html">TBGRALayerCustomOriginal</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndex">GetOriginalByIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalClass"></span><code>property <strong>OriginalClass</strong>[AIndex:integer]: <a href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a> read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexClass">GetOriginalByIndexClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalCount"></span><code>property <strong>OriginalCount</strong>: integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalCount">GetOriginalCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalEditor"></span><code>property <strong>OriginalEditor</strong>: <a href="BGRALayerOriginal.TBGRAOriginalEditor.html">TBGRAOriginalEditor</a> read GetOriginalEditor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalGuid"></span><code>property <strong>OriginalGuid</strong>[AIndex:integer]: TGUID read GetOriginalGuid;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalKnown"></span><code>property <strong>OriginalKnown</strong>[AIndex:integer]: boolean read <a href="BGRALayers.TBGRALayeredBitmap.html#GetOriginalByIndexKnown">GetOriginalByIndexKnown</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Width"></span><code>property <strong>Width</strong> : integer read <a href="BGRALayers.TBGRALayeredBitmap.html#GetWidth">GetWidth</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

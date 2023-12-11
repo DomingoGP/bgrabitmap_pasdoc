@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASceneTypes: Interface IBGRAPart3D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IBGRAPart3D"></span><h1 class="cio">Interface IBGRAPart3D</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASceneTypes.html">BGRASceneTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IBGRAPart3D = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>IBGRAPart3D</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IBGRAPart3D</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; normal: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(const coords: array of single): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(const pts: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(x,y,z: single): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(const pts_128: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; normal: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#AddNormal">AddNormal</a></strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#AddNormal">AddNormal</a></strong>(x,y,z: single): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#AddNormal">AddNormal</a></strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#ComputeCoordinate">ComputeCoordinate</a></strong>(var ASceneCoord: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AProjection: <a href="BGRAMatrix3D.TProjection3D.html">TProjection3D</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#CreatePart">CreatePart</a></strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetBoundingBox">GetBoundingBox</a></strong>: <a href="BGRASceneTypes.TBox3D.html">TBox3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetContainer">GetContainer</a></strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetMatrix">GetMatrix</a></strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetNormal">GetNormal</a></strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetNormalCount">GetNormalCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetPart">GetPart</a></strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetPartCount">GetPartCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetRadius">GetRadius</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalNormalCount">GetTotalNormalCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalVertexCount">GetTotalVertexCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetVertex">GetVertex</a></strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#GetVertexCount">GetVertexCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRAPart3D.html#IndexOf">IndexOf</a></strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Add">Add</a></strong>(const pts: array of <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Clear">Clear</a></strong>(ARecursive: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#ComputeWithMatrix">ComputeWithMatrix</a></strong>(const AMatrix: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; const AProjection: <a href="BGRAMatrix3D.TProjection3D.html">TProjection3D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#ForEachVertex">ForEachVertex</a></strong>(ACallback: <a href="BGRASceneTypes.html#TVertex3DCallback">TVertex3DCallback</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#LookAt">LookAt</a></strong>(AWhere: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; ATopDir: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#NormalizeViewNormal">NormalizeViewNormal</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RemoveNormal">RemoveNormal</a></strong>(Index: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RemoveUnusedVertices">RemoveUnusedVertices</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RemoveVertex">RemoveVertex</a></strong>(Index: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#ResetTransform">ResetTransform</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateXDeg">RotateXDeg</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateXRad">RotateXRad</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateYDeg">RotateYDeg</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateYRad">RotateYRad</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateZDeg">RotateZDeg</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#RotateZRad">RotateZRad</a></strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Scale">Scale</a></strong>(size: single; Before: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Scale">Scale</a></strong>(x,y,z: single; Before: boolean = true); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Scale">Scale</a></strong>(size: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; Before: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#SetMatrix">SetMatrix</a></strong>(const AValue: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#SetNormal">SetNormal</a></strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#SetVertex">SetVertex</a></strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Translate">Translate</a></strong>(ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; Before: boolean = true); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Translate">Translate</a></strong>(x,y,z: single; Before: boolean = true); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#BoundingBox">BoundingBox</a></strong>: <a href="BGRASceneTypes.TBox3D.html">TBox3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetBoundingBox">GetBoundingBox</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Container">Container</a></strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetContainer">GetContainer</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Matrix">Matrix</a></strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetMatrix">GetMatrix</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Normal">Normal</a></strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetNormal">GetNormal</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetNormal">SetNormal</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#NormalCount">NormalCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetNormalCount">GetNormalCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Part">Part</a></strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetPart">GetPart</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#PartCount">PartCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetPartCount">GetPartCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Radius">Radius</a></strong>: single read <a href="BGRASceneTypes.IBGRAPart3D.html#GetRadius">GetRadius</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#TotalNormalCount">TotalNormalCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalNormalCount">GetTotalNormalCount</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#TotalVertexCount">TotalVertexCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalVertexCount">GetTotalVertexCount</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#Vertex">Vertex</a></strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetVertex">GetVertex</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetVertex">SetVertex</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRAPart3D.html#VertexCount">VertexCount</a></strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetVertexCount">GetVertexCount</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; normal: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(const coords: array of single): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(const pts: array of <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(x,y,z: single): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(const pts_128: array of <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; normal: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>function <strong>Add</strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddNormal"></span><code>function <strong>AddNormal</strong>(pt: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddNormal"></span><code>function <strong>AddNormal</strong>(x,y,z: single): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddNormal"></span><code>function <strong>AddNormal</strong>(pt: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeCoordinate"></span><code>function <strong>ComputeCoordinate</strong>(var ASceneCoord: <a href="BGRASSE.TPoint3D_128.html">TPoint3D_128</a>; const AProjection: <a href="BGRAMatrix3D.TProjection3D.html">TProjection3D</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreatePart"></span><code>function <strong>CreatePart</strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBoundingBox"></span><code>function <strong>GetBoundingBox</strong>: <a href="BGRASceneTypes.TBox3D.html">TBox3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetContainer"></span><code>function <strong>GetContainer</strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMatrix"></span><code>function <strong>GetMatrix</strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetNormal"></span><code>function <strong>GetNormal</strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetNormalCount"></span><code>function <strong>GetNormalCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPart"></span><code>function <strong>GetPart</strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPartCount"></span><code>function <strong>GetPartCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetRadius"></span><code>function <strong>GetRadius</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTotalNormalCount"></span><code>function <strong>GetTotalNormalCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTotalVertexCount"></span><code>function <strong>GetTotalVertexCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertex"></span><code>function <strong>GetVertex</strong>(AIndex: Integer): <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVertexCount"></span><code>function <strong>GetVertexCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IndexOf"></span><code>function <strong>IndexOf</strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(AVertex: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Add"></span><code>procedure <strong>Add</strong>(const pts: array of <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>(ARecursive: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeWithMatrix"></span><code>procedure <strong>ComputeWithMatrix</strong>(const AMatrix: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>; const AProjection: <a href="BGRAMatrix3D.TProjection3D.html">TProjection3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ForEachVertex"></span><code>procedure <strong>ForEachVertex</strong>(ACallback: <a href="BGRASceneTypes.html#TVertex3DCallback">TVertex3DCallback</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LookAt"></span><code>procedure <strong>LookAt</strong>(AWhere: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; ATopDir: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NormalizeViewNormal"></span><code>procedure <strong>NormalizeViewNormal</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveNormal"></span><code>procedure <strong>RemoveNormal</strong>(Index: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveUnusedVertices"></span><code>procedure <strong>RemoveUnusedVertices</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RemoveVertex"></span><code>procedure <strong>RemoveVertex</strong>(Index: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ResetTransform"></span><code>procedure <strong>ResetTransform</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateXDeg"></span><code>procedure <strong>RotateXDeg</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateXRad"></span><code>procedure <strong>RotateXRad</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateYDeg"></span><code>procedure <strong>RotateYDeg</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateYRad"></span><code>procedure <strong>RotateYRad</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateZDeg"></span><code>procedure <strong>RotateZDeg</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RotateZRad"></span><code>procedure <strong>RotateZRad</strong>(angle: single; Before: boolean = true);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Scale"></span><code>procedure <strong>Scale</strong>(size: single; Before: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Scale"></span><code>procedure <strong>Scale</strong>(x,y,z: single; Before: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Scale"></span><code>procedure <strong>Scale</strong>(size: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; Before: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMatrix"></span><code>procedure <strong>SetMatrix</strong>(const AValue: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetNormal"></span><code>procedure <strong>SetNormal</strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetVertex"></span><code>procedure <strong>SetVertex</strong>(AIndex: Integer; AValue: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Translate"></span><code>procedure <strong>Translate</strong>(ofs: <a href="BGRABitmapTypes.TPoint3D.html">TPoint3D</a>; Before: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Translate"></span><code>procedure <strong>Translate</strong>(x,y,z: single; Before: boolean = true); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BoundingBox"></span><code>property <strong>BoundingBox</strong>: <a href="BGRASceneTypes.TBox3D.html">TBox3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetBoundingBox">GetBoundingBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Container"></span><code>property <strong>Container</strong>: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetContainer">GetContainer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Matrix"></span><code>property <strong>Matrix</strong>: <a href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetMatrix">GetMatrix</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetMatrix">SetMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Normal"></span><code>property <strong>Normal</strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRANormal3D.html">IBGRANormal3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetNormal">GetNormal</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetNormal">SetNormal</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NormalCount"></span><code>property <strong>NormalCount</strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetNormalCount">GetNormalCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Part"></span><code>property <strong>Part</strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAPart3D.html">IBGRAPart3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetPart">GetPart</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartCount"></span><code>property <strong>PartCount</strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetPartCount">GetPartCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Radius"></span><code>property <strong>Radius</strong>: single read <a href="BGRASceneTypes.IBGRAPart3D.html#GetRadius">GetRadius</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TotalNormalCount"></span><code>property <strong>TotalNormalCount</strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalNormalCount">GetTotalNormalCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TotalVertexCount"></span><code>property <strong>TotalVertexCount</strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetTotalVertexCount">GetTotalVertexCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Vertex"></span><code>property <strong>Vertex</strong>[AIndex:Integer]: <a href="BGRASceneTypes.IBGRAVertex3D.html">IBGRAVertex3D</a> read <a href="BGRASceneTypes.IBGRAPart3D.html#GetVertex">GetVertex</a> write <a href="BGRASceneTypes.IBGRAPart3D.html#SetVertex">SetVertex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="VertexCount"></span><code>property <strong>VertexCount</strong>: integer read <a href="BGRASceneTypes.IBGRAPart3D.html#GetVertexCount">GetVertexCount</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

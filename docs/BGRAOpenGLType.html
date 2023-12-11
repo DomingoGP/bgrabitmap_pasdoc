@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAOpenGLType</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAOpenGLType</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmap.html">BGRABitmap</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li>FPimage</li><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRATransform.html">BGRATransform</a></li><li><a href="BGRASSE.html">BGRASSE</a></li><li><a href="BGRAMatrix3D.html">BGRAMatrix3D</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Interface&nbsp;<a class="bold" href="BGRAOpenGLType.IBGLFont.html"><code>IBGLFont</code></a></td>
+<td class="itemdesc"><code>IBGLFont</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Interface&nbsp;<a class="bold" href="BGRAOpenGLType.IBGLTexture.html"><code>IBGLTexture</code></a></td>
+<td class="itemdesc"><code>IBGLTexture</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGLType.TBGLCustomBitmap.html"><code>TBGLCustomBitmap</code></a></td>
+<td class="itemdesc"><code>TBGLCustomBitmap</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGLType.TBGLCustomFont.html"><code>TBGLCustomFont</code></a></td>
+<td class="itemdesc"><code>TBGLCustomFont</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGLType.TBGLCustomFrameBuffer.html"><code>TBGLCustomFrameBuffer</code></a></td>
+<td class="itemdesc"><code>TBGLCustomFrameBuffer</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAOpenGLType.TBGLCustomTexture.html"><code>TBGLCustomTexture</code></a></td>
+<td class="itemdesc"><code>TBGLCustomTexture</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGLType.html#GetPowerOfTwo">GetPowerOfTwo</a></strong>( Value : Integer ) : Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAOpenGLType.html#OrthoProjectionToOpenGL">OrthoProjectionToOpenGL</a></strong>(AMinX,AMinY,AMaxX,AMaxY: Single): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TBGLBitmapAny">TBGLBitmapAny</a></strong> = class of <a href="BGRAOpenGLType.TBGLCustomBitmap.html">TBGLCustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TBGLTextureAny">TBGLTextureAny</a></strong> = class of <a href="BGRAOpenGLType.TBGLCustomTexture.html">TBGLCustomTexture</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TBGLTextureHandle">TBGLTextureHandle</a></strong> = type Pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TFaceCulling">TFaceCulling</a></strong> = <a href="BGRABitmapTypes.html#TFaceCulling">BGRABitmapTypes.TFaceCulling</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TOpenGLPrimitive">TOpenGLPrimitive</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TOpenGLResampleFilter">TOpenGLResampleFilter</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#TWaitForGPUOption">TWaitForGPUOption</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#fcKeepCCW">fcKeepCCW</a></strong> = <a href="BGRABitmapTypes.html#fcKeepCCW">BGRABitmapTypes.fcKeepCCW</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#fcKeepCW">fcKeepCW</a></strong> = <a href="BGRABitmapTypes.html#fcKeepCW">BGRABitmapTypes.fcKeepCW</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#fcNone">fcNone</a></strong> = <a href="BGRABitmapTypes.html#fcNone">BGRABitmapTypes.fcNone</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#BGLBitmapFactory">BGLBitmapFactory</a></strong>: <a href="BGRAOpenGLType.html#TBGLBitmapAny">TBGLBitmapAny</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAOpenGLType.html#BGLTextureFactory">BGLTextureFactory</a></strong>: <a href="BGRAOpenGLType.html#TBGLTextureAny">TBGLTextureAny</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPowerOfTwo"></span><code>function <strong>GetPowerOfTwo</strong>( Value : Integer ) : Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="OrthoProjectionToOpenGL"></span><code>function <strong>OrthoProjectionToOpenGL</strong>(AMinX,AMinY,AMaxX,AMaxY: Single): <a href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLBitmapAny"></span><code><strong>TBGLBitmapAny</strong> = class of <a href="BGRAOpenGLType.TBGLCustomBitmap.html">TBGLCustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLTextureAny"></span><code><strong>TBGLTextureAny</strong> = class of <a href="BGRAOpenGLType.TBGLCustomTexture.html">TBGLCustomTexture</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGLTextureHandle"></span><code><strong>TBGLTextureHandle</strong> = type Pointer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFaceCulling"></span><code><strong>TFaceCulling</strong> = <a href="BGRABitmapTypes.html#TFaceCulling">BGRABitmapTypes.TFaceCulling</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLBlendMode"></span><code><strong>TOpenGLBlendMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="obmNormal">obmNormal</span></li>
+<li>
+<span id="obmAdd">obmAdd</span></li>
+<li>
+<span id="obmMultiply">obmMultiply</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLPrimitive"></span><code><strong>TOpenGLPrimitive</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="opPoints">opPoints</span></li>
+<li>
+<span id="opLineStrip">opLineStrip</span></li>
+<li>
+<span id="opLineLoop">opLineLoop</span></li>
+<li>
+<span id="opLines">opLines</span></li>
+<li>
+<span id="opTriangleStrip">opTriangleStrip</span></li>
+<li>
+<span id="opTriangleFan">opTriangleFan</span></li>
+<li>
+<span id="opTriangles">opTriangles</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TOpenGLResampleFilter"></span><code><strong>TOpenGLResampleFilter</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="orfBox">orfBox</span></li>
+<li>
+<span id="orfLinear">orfLinear</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TWaitForGPUOption"></span><code><strong>TWaitForGPUOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="wfgQueueAllCommands">wfgQueueAllCommands</span></li>
+<li>
+<span id="wfgFinishAllCommands">wfgFinishAllCommands</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fcKeepCCW"></span><code><strong>fcKeepCCW</strong> = <a href="BGRABitmapTypes.html#fcKeepCCW">BGRABitmapTypes.fcKeepCCW</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fcKeepCW"></span><code><strong>fcKeepCW</strong> = <a href="BGRABitmapTypes.html#fcKeepCW">BGRABitmapTypes.fcKeepCW</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="fcNone"></span><code><strong>fcNone</strong> = <a href="BGRABitmapTypes.html#fcNone">BGRABitmapTypes.fcNone</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLBitmapFactory"></span><code><strong>BGLBitmapFactory</strong>: <a href="BGRAOpenGLType.html#TBGLBitmapAny">TBGLBitmapAny</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGLTextureFactory"></span><code><strong>BGLTextureFactory</strong>: <a href="BGRAOpenGLType.html#TBGLTextureAny">TBGLTextureAny</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

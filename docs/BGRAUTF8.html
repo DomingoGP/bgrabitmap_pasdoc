@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAUTF8</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAUTF8</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li>math</li><li><a href="BGRAUnicode.html">BGRAUnicode</a></li><li>classes</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAUTF8.TBidiUTF8Info.html"><code>TBidiUTF8Info</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRAUTF8.TGlyphCursorUtf8.html"><code>TGlyphCursorUtf8</code></a></td>
+<td class="itemdesc"><code>TGlyphCursorUtf8</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRAUTF8.TGlyphUtf8.html"><code>TGlyphUtf8</code></a></td>
+<td class="itemdesc"><code>TGlyphUtf8</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#AddParagraphBidiUTF8">AddParagraphBidiUTF8</a></strong>(s: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#AnalyzeBidiUTF8">AnalyzeBidiUTF8</a></strong>(const sUTF8: string; ARightToLeft: boolean): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#AnalyzeBidiUTF8">AnalyzeBidiUTF8</a></strong>(const sUTF8: string; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#AnalyzeBidiUTF8">AnalyzeBidiUTF8</a></strong>(const sUTF8: string): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#ContainsBidiIsolateOrFormattingUTF8">ContainsBidiIsolateOrFormattingUTF8</a></strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#DeleteFileUTF8">DeleteFileUTF8</a></strong>(Const FileName : string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FileCreateUTF8">FileCreateUTF8</a></strong>(Const FileName : string; Rights: LongWord) : THandle; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FileCreateUTF8">FileCreateUTF8</a></strong>(Const FileName : string) : THandle; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FileExistsUTF8">FileExistsUTF8</a></strong>(Const FileName : string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FileOpenUTF8">FileOpenUTF8</a></strong>(Const FileName : string; Mode : Integer) : THandle;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#FindCloseUTF8">FindCloseUTF8</a></strong>(var F: TSearchrec);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FindFirstUTF8">FindFirstUTF8</a></strong>(const Path: string; Attr: Longint; out Rslt: TSearchRec): Longint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#FindNextUTF8">FindNextUTF8</a></strong>(var Rslt: TSearchRec): Longint;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#GetBidiClassUTF8">GetBidiClassUTF8</a></strong>(P: PChar): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#GetFirstStrongBidiClassUTF8">GetFirstStrongBidiClassUTF8</a></strong>(const sUTF8: string): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#GetLastStrongBidiClassUTF8">GetLastStrongBidiClassUTF8</a></strong>(const sUTF8: string): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#GetUTF8DisplayOrder">GetUTF8DisplayOrder</a></strong>(const ABidi: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>): <a href="BGRAUTF8.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#IsRightToLeftUTF8">IsRightToLeftUTF8</a></strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#IsZeroWidthUTF8">IsZeroWidthUTF8</a></strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#LEReadByte">LEReadByte</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#LEReadInt64">LEReadInt64</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): int64;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#LEReadLongint">LEReadLongint</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): longint;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#LEReadSingle">LEReadSingle</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#LEWriteByte">LEWriteByte</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: Byte);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#LEWriteInt64">LEWriteInt64</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: int64);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#LEWriteLongint">LEWriteLongint</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: LongInt);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#LEWriteSingle">LEWriteSingle</a></strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#LoadStringsFromFileUTF8">LoadStringsFromFileUTF8</a></strong>(List: <a href="BGRAClasses.html#TStrings">TStrings</a>; const FileName: string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#SaveStringsToFileUTF8">SaveStringsToFileUTF8</a></strong>(List: <a href="BGRAClasses.html#TStrings">TStrings</a>; const FileName: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#SysToUTF8">SysToUTF8</a></strong>(const s: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UnicodeCharToUTF8">UnicodeCharToUTF8</a></strong>(u: LongWord): <a href="BGRAUTF8.html#string4">string4</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF16ToUTF8">UTF16ToUTF8</a></strong>(const S: UnicodeString): AnsiString;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8CharacterLength">UTF8CharacterLength</a></strong>(p: PChar): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8CharStart">UTF8CharStart</a></strong>(UTF8Str: PChar; Len, CharIndex: PtrInt): PChar;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8CodepointToUnicode">UTF8CodepointToUnicode</a></strong>(p: PChar; ACodePointLen: integer): LongWord;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8CompareStr">UTF8CompareStr</a></strong>(const S1, S2: string): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8CompareText">UTF8CompareText</a></strong>(const S1, S2: string): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8EmbedDirection">UTF8EmbedDirection</a></strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8Length">UTF8Length</a></strong>(p: PChar; ByteCount: PtrInt): PtrInt; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8Length">UTF8Length</a></strong>(const s: string): PtrInt; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8Ligature">UTF8Ligature</a></strong>(const sUTF8: string; ARightToLeft: boolean; ALigatureLeft, ALigatureRight: boolean): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8LowerCase">UTF8LowerCase</a></strong>(const s: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8OverrideDirection">UTF8OverrideDirection</a></strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8ReverseString">UTF8ReverseString</a></strong>(const s: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8ToSys">UTF8ToSys</a></strong>(const s: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAUTF8.html#UTF8ToUnicodeArray">UTF8ToUnicodeArray</a></strong>(const sUTF8: string; out u: <a href="BGRAUTF8.html#TUnicodeArray">TUnicodeArray</a>; out ofs: <a href="BGRAUTF8.html#TIntegerArray">TIntegerArray</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8ToUTF16">UTF8ToUTF16</a></strong>(const S: AnsiString): UnicodeString;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUTF8.html#UTF8UpperCase">UTF8UpperCase</a></strong>(const s: string): string;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#string4">string4</a></strong> = string[4];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a></strong> = packed array of <a href="BGRAUTF8.TBidiUTF8Info.html">TBidiUTF8Info</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TFileStreamUTF8">TFileStreamUTF8</a></strong> = TFileStream;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TIntegerArray">TIntegerArray</a></strong> = array of integer;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TStringListUTF8">TStringListUTF8</a></strong> = <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TUnicodeArray">TUnicodeArray</a></strong> = packed array of LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TUnicodeBidiInfo">TUnicodeBidiInfo</a></strong> = <a href="BGRAUnicode.TUnicodeBidiInfo.html">BGRAUnicode.TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a></strong> = <a href="BGRAUnicode.html#TUnicodeDisplayOrder">BGRAUnicode.TUnicodeDisplayOrder</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ARABIC_ALEPH">UTF8_ARABIC_ALEPH</a></strong> = 'ا';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ARABIC_ALEPH_HAMZA_ABOVE">UTF8_ARABIC_ALEPH_HAMZA_ABOVE</a></strong> = 'أ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ARABIC_ALEPH_HAMZA_BELOW">UTF8_ARABIC_ALEPH_HAMZA_BELOW</a></strong> = 'إ';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ARABIC_ALEPH_MADDA_ABOVE">UTF8_ARABIC_ALEPH_MADDA_ABOVE</a></strong> = 'آ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ARABIC_LAM">UTF8_ARABIC_LAM</a></strong> = 'ل';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_LINE_SEPARATOR">UTF8_LINE_SEPARATOR</a></strong> = #$E2#$80#$A8;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_NEXT_LINE">UTF8_NEXT_LINE</a></strong> = #$C2#$85;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_NO_BREAK_SPACE">UTF8_NO_BREAK_SPACE</a></strong> = ' ';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_PARAGRAPH_SEPARATOR">UTF8_PARAGRAPH_SEPARATOR</a></strong> = #$E2#$80#$A9;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ZERO_WIDTH_JOINER">UTF8_ZERO_WIDTH_JOINER</a></strong> = '‍';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUTF8.html#UTF8_ZERO_WIDTH_NON_JOINER">UTF8_ZERO_WIDTH_NON_JOINER</a></strong> = '‌';</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AddParagraphBidiUTF8"></span><code>function <strong>AddParagraphBidiUTF8</strong>(s: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AnalyzeBidiUTF8"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string; ARightToLeft: boolean): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AnalyzeBidiUTF8"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AnalyzeBidiUTF8"></span><code>function <strong>AnalyzeBidiUTF8</strong>(const sUTF8: string): <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ContainsBidiIsolateOrFormattingUTF8"></span><code>function <strong>ContainsBidiIsolateOrFormattingUTF8</strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DeleteFileUTF8"></span><code>function <strong>DeleteFileUTF8</strong>(Const FileName : string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FileCreateUTF8"></span><code>function <strong>FileCreateUTF8</strong>(Const FileName : string; Rights: LongWord) : THandle; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FileCreateUTF8"></span><code>function <strong>FileCreateUTF8</strong>(Const FileName : string) : THandle; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FileExistsUTF8"></span><code>function <strong>FileExistsUTF8</strong>(Const FileName : string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FileOpenUTF8"></span><code>function <strong>FileOpenUTF8</strong>(Const FileName : string; Mode : Integer) : THandle;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FindCloseUTF8"></span><code>procedure <strong>FindCloseUTF8</strong>(var F: TSearchrec);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FindFirstUTF8"></span><code>function <strong>FindFirstUTF8</strong>(const Path: string; Attr: Longint; out Rslt: TSearchRec): Longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FindNextUTF8"></span><code>function <strong>FindNextUTF8</strong>(var Rslt: TSearchRec): Longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetBidiClassUTF8"></span><code>function <strong>GetBidiClassUTF8</strong>(P: PChar): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetFirstStrongBidiClassUTF8"></span><code>function <strong>GetFirstStrongBidiClassUTF8</strong>(const sUTF8: string): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetLastStrongBidiClassUTF8"></span><code>function <strong>GetLastStrongBidiClassUTF8</strong>(const sUTF8: string): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUTF8DisplayOrder"></span><code>function <strong>GetUTF8DisplayOrder</strong>(const ABidi: <a href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a>): <a href="BGRAUTF8.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsRightToLeftUTF8"></span><code>function <strong>IsRightToLeftUTF8</strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsZeroWidthUTF8"></span><code>function <strong>IsZeroWidthUTF8</strong>(const sUTF8: string): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEReadByte"></span><code>function <strong>LEReadByte</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): byte;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEReadInt64"></span><code>function <strong>LEReadInt64</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): int64;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+little endian stream functions</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEReadLongint"></span><code>function <strong>LEReadLongint</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEReadSingle"></span><code>function <strong>LEReadSingle</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>): single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEWriteByte"></span><code>procedure <strong>LEWriteByte</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: Byte);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEWriteInt64"></span><code>procedure <strong>LEWriteInt64</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: int64);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEWriteLongint"></span><code>procedure <strong>LEWriteLongint</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: LongInt);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LEWriteSingle"></span><code>procedure <strong>LEWriteSingle</strong>(Stream: <a href="BGRAClasses.html#TStream">TStream</a>; AValue: single);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="LoadStringsFromFileUTF8"></span><code>procedure <strong>LoadStringsFromFileUTF8</strong>(List: <a href="BGRAClasses.html#TStrings">TStrings</a>; const FileName: string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SaveStringsToFileUTF8"></span><code>procedure <strong>SaveStringsToFileUTF8</strong>(List: <a href="BGRAClasses.html#TStrings">TStrings</a>; const FileName: string);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SysToUTF8"></span><code>function <strong>SysToUTF8</strong>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UnicodeCharToUTF8"></span><code>function <strong>UnicodeCharToUTF8</strong>(u: LongWord): <a href="BGRAUTF8.html#string4">string4</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF16ToUTF8"></span><code>function <strong>UTF16ToUTF8</strong>(const S: UnicodeString): AnsiString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8CharacterLength"></span><code>function <strong>UTF8CharacterLength</strong>(p: PChar): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8CharStart"></span><code>function <strong>UTF8CharStart</strong>(UTF8Str: PChar; Len, CharIndex: PtrInt): PChar;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8CodepointToUnicode"></span><code>function <strong>UTF8CodepointToUnicode</strong>(p: PChar; ACodePointLen: integer): LongWord;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8CompareStr"></span><code>function <strong>UTF8CompareStr</strong>(const S1, S2: string): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8CompareText"></span><code>function <strong>UTF8CompareText</strong>(const S1, S2: string): Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8EmbedDirection"></span><code>function <strong>UTF8EmbedDirection</strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8Length"></span><code>function <strong>UTF8Length</strong>(p: PChar; ByteCount: PtrInt): PtrInt; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8Length"></span><code>function <strong>UTF8Length</strong>(const s: string): PtrInt; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8Ligature"></span><code>function <strong>UTF8Ligature</strong>(const sUTF8: string; ARightToLeft: boolean; ALigatureLeft, ALigatureRight: boolean): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8LowerCase"></span><code>function <strong>UTF8LowerCase</strong>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8OverrideDirection"></span><code>function <strong>UTF8OverrideDirection</strong>(const sUTF8: string; ARightToLeft: boolean): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8ReverseString"></span><code>function <strong>UTF8ReverseString</strong>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8ToSys"></span><code>function <strong>UTF8ToSys</strong>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8ToUnicodeArray"></span><code>procedure <strong>UTF8ToUnicodeArray</strong>(const sUTF8: string; out u: <a href="BGRAUTF8.html#TUnicodeArray">TUnicodeArray</a>; out ofs: <a href="BGRAUTF8.html#TIntegerArray">TIntegerArray</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8ToUTF16"></span><code>function <strong>UTF8ToUTF16</strong>(const S: AnsiString): UnicodeString;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8UpperCase"></span><code>function <strong>UTF8UpperCase</strong>(const s: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="string4"></span><code><strong>string4</strong> = string[4];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBidiUTF8Array"></span><code><strong>TBidiUTF8Array</strong> = packed array of <a href="BGRAUTF8.TBidiUTF8Info.html">TBidiUTF8Info</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFileStreamUTF8"></span><code><strong>TFileStreamUTF8</strong> = TFileStream;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of CRLF</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TIntegerArray"></span><code><strong>TIntegerArray</strong> = array of integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringListUTF8"></span><code><strong>TStringListUTF8</strong> = <a href="BGRAClasses.html#TStringList">TStringList</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeArray"></span><code><strong>TUnicodeArray</strong> = packed array of LongWord;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeBidiInfo"></span><code><strong>TUnicodeBidiInfo</strong> = <a href="BGRAUnicode.TUnicodeBidiInfo.html">BGRAUnicode.TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeDisplayOrder"></span><code><strong>TUnicodeDisplayOrder</strong> = <a href="BGRAUnicode.html#TUnicodeDisplayOrder">BGRAUnicode.TUnicodeDisplayOrder</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ARABIC_ALEPH"></span><code><strong>UTF8_ARABIC_ALEPH</strong> = 'ا';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ARABIC_ALEPH_HAMZA_ABOVE"></span><code><strong>UTF8_ARABIC_ALEPH_HAMZA_ABOVE</strong> = 'أ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ARABIC_ALEPH_HAMZA_BELOW"></span><code><strong>UTF8_ARABIC_ALEPH_HAMZA_BELOW</strong> = 'إ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ARABIC_ALEPH_MADDA_ABOVE"></span><code><strong>UTF8_ARABIC_ALEPH_MADDA_ABOVE</strong> = 'آ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ARABIC_LAM"></span><code><strong>UTF8_ARABIC_LAM</strong> = 'ل';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_LINE_SEPARATOR"></span><code><strong>UTF8_LINE_SEPARATOR</strong> = #$E2#$80#$A8;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_NEXT_LINE"></span><code><strong>UTF8_NEXT_LINE</strong> = #$C2#$85;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of &lt;/p&gt;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_NO_BREAK_SPACE"></span><code><strong>UTF8_NO_BREAK_SPACE</strong> = ' ';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_PARAGRAPH_SEPARATOR"></span><code><strong>UTF8_PARAGRAPH_SEPARATOR</strong> = #$E2#$80#$A9;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of &lt;br&gt;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ZERO_WIDTH_JOINER"></span><code><strong>UTF8_ZERO_WIDTH_JOINER</strong> = '‍';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UTF8_ZERO_WIDTH_NON_JOINER"></span><code><strong>UTF8_ZERO_WIDTH_NON_JOINER</strong> = '‌';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

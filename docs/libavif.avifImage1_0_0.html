@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: libavif: Record avifImage1_0_0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="avifImage1_0_0"></span><h1 class="cio">Record avifImage1_0_0</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section">Methods</div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="libavif.html">libavif</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type avifImage1_0_0 = record</code></p>
+<h2 class="description">Description</h2>
+&nbsp;<h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#width">width</a></strong>: UInt32;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#height">height</a></strong>: UInt32;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#depth">depth</a></strong>: UInt32;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#yuvFormat">yuvFormat</a></strong>: <a href="libavif.html#avifPixelFormat">avifPixelFormat</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#yuvRange">yuvRange</a></strong>: <a href="libavif.html#avifRange">avifRange</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#yuvChromaSamplePosition">yuvChromaSamplePosition</a></strong>: <a href="libavif.html#avifChromaSamplePosition">avifChromaSamplePosition</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#yuvPlanes">yuvPlanes</a></strong>: array[0..(<a href="libavif.html#AVIF_PLANE_COUNT_YUV">AVIF_PLANE_COUNT_YUV</a>)-1] of PUInt8;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#yuvRowBytes">yuvRowBytes</a></strong>: array[0..(<a href="libavif.html#AVIF_PLANE_COUNT_YUV">AVIF_PLANE_COUNT_YUV</a>)-1] of UInt32;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#imageOwnsYUVPlanes">imageOwnsYUVPlanes</a></strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#alphaPlane">alphaPlane</a></strong>: PUInt8;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#alphaRowBytes">alphaRowBytes</a></strong>: UInt32;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#imageOwnsAlphaPlane">imageOwnsAlphaPlane</a></strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#alphaPremultiplied">alphaPremultiplied</a></strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#icc">icc</a></strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#colorPrimaries">colorPrimaries</a></strong>: <a href="libavif.html#avifColorPrimaries">avifColorPrimaries</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#transferCharacteristics">transferCharacteristics</a></strong>: <a href="libavif.html#avifTransferCharacteristics">avifTransferCharacteristics</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#matrixCoefficients">matrixCoefficients</a></strong>: <a href="libavif.html#avifMatrixCoefficients">avifMatrixCoefficients</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#clli">clli</a></strong>:<a href="libavif.avifContentLightLevelInformationBox.html">avifContentLightLevelInformationBox</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#transformFlags">transformFlags</a></strong>: <a href="libavif.html#avifTransformFlags">avifTransformFlags</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#pasp">pasp</a></strong>: <a href="libavif.avifPixelAspectRatioBox.html">avifPixelAspectRatioBox</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#clap">clap</a></strong>: <a href="libavif.avifCleanApertureBox.html">avifCleanApertureBox</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#irot">irot</a></strong>: <a href="libavif.avifImageRotation.html">avifImageRotation</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#imir">imir</a></strong>: <a href="libavif.avifImageMirror.html">avifImageMirror</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#exif">exif</a></strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="libavif.avifImage1_0_0.html#xmp">xmp</a></strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="width"></span><code><strong>width</strong>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Image information</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="height"></span><code><strong>height</strong>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="depth"></span><code><strong>depth</strong>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="yuvFormat"></span><code><strong>yuvFormat</strong>: <a href="libavif.html#avifPixelFormat">avifPixelFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+all planes must share this <a class="normal" href="libavif.avifImage1_0_0.html#depth">depth</a>; if <a class="normal" href="libavif.avifImage1_0_0.html#depth">depth</a>&gt;8, all planes are UInt16 internally</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="yuvRange"></span><code><strong>yuvRange</strong>: <a href="libavif.html#avifRange">avifRange</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="yuvChromaSamplePosition"></span><code><strong>yuvChromaSamplePosition</strong>: <a href="libavif.html#avifChromaSamplePosition">avifChromaSamplePosition</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="yuvPlanes"></span><code><strong>yuvPlanes</strong>: array[0..(<a href="libavif.html#AVIF_PLANE_COUNT_YUV">AVIF_PLANE_COUNT_YUV</a>)-1] of PUInt8;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="yuvRowBytes"></span><code><strong>yuvRowBytes</strong>: array[0..(<a href="libavif.html#AVIF_PLANE_COUNT_YUV">AVIF_PLANE_COUNT_YUV</a>)-1] of UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="imageOwnsYUVPlanes"></span><code><strong>imageOwnsYUVPlanes</strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="alphaPlane"></span><code><strong>alphaPlane</strong>: PUInt8;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="alphaRowBytes"></span><code><strong>alphaRowBytes</strong>: UInt32;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="imageOwnsAlphaPlane"></span><code><strong>imageOwnsAlphaPlane</strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="alphaPremultiplied"></span><code><strong>alphaPremultiplied</strong>: <a href="libavif.html#avifBool">avifBool</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="icc"></span><code><strong>icc</strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>ICC</code> Profile</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="colorPrimaries"></span><code><strong>colorPrimaries</strong>: <a href="libavif.html#avifColorPrimaries">avifColorPrimaries</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+of one (avifImage.icc) before relying on the values listed here!</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="transferCharacteristics"></span><code><strong>transferCharacteristics</strong>: <a href="libavif.html#avifTransferCharacteristics">avifTransferCharacteristics</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="matrixCoefficients"></span><code><strong>matrixCoefficients</strong>: <a href="libavif.html#avifMatrixCoefficients">avifMatrixCoefficients</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="clli"></span><code><strong>clli</strong>:<a href="libavif.avifContentLightLevelInformationBox.html">avifContentLightLevelInformationBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>CLLI</code> information: Content Light Level Information. Used to represent maximum and average light level of an image. Useful for tone mapping HDR images, especially when using transfer characteristics SMPTE2084 (PQ). The default value of (0, 0) means the content light level information is unknown or unavailable, and will cause <a class="normal" href="libavif.html">libavif</a> to avoid writing a <code>clli</code> box for it.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="transformFlags"></span><code><strong>transformFlags</strong>: <a href="libavif.html#avifTransformFlags">avifTransformFlags</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>transformFlags</code>. On decode, only honor the values in boxes with the associated transform flag set.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="pasp"></span><code><strong>pasp</strong>: <a href="libavif.avifPixelAspectRatioBox.html">avifPixelAspectRatioBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="clap"></span><code><strong>clap</strong>: <a href="libavif.avifCleanApertureBox.html">avifCleanApertureBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="irot"></span><code><strong>irot</strong>: <a href="libavif.avifImageRotation.html">avifImageRotation</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="imir"></span><code><strong>imir</strong>: <a href="libavif.avifImageMirror.html">avifImageMirror</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="exif"></span><code><strong>exif</strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Metadata - set with avifImageSetMetadata*() before write, check .size&gt;0 for existence after read</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="xmp"></span><code><strong>xmp</strong>: <a href="libavif.avifRWData.html">avifRWData</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

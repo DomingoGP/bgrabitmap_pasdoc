@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRATextBidi: Class TBidiTextLayout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBidiTextLayout"></span><h1 class="cio">Class TBidiTextLayout</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRATextBidi.html">BGRATextBidi</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBidiTextLayout = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBidiTextLayout</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBidiTextLayout</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FAnalysis">FAnalysis</a></strong>: <a href="BGRAUnicodeText.TUnicodeAnalysis.html">TUnicodeAnalysis</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FColor">FColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FComputedBrokenLineCount">FComputedBrokenLineCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FComputedPartCount">FComputedPartCount</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FLineHeight">FLineHeight</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FParagraph">FParagraph</a></strong>: array of <a href="BGRATextBidi.TParagraphInfo.html">TParagraphInfo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FRenderer">FRenderer</a></strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATextBidi.TBidiTextLayout.html#FTexture">FTexture</a></strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRATextBidi.TBidiTextLayout.html#Create">Create</a></strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRATextBidi.TBidiTextLayout.html#Create">Create</a></strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string; ARightToLeft: boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRATextBidi.TBidiTextLayout.html#Create">Create</a></strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string; AFontBidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRATextBidi.TBidiTextLayout.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#AddOverrideIfNecessary">AddOverrideIfNecessary</a></strong>(var sUTF8: string; ARightToLeft: boolean): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#CopyText">CopyText</a></strong>(APosition, ACount: integer): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#CopyTextBefore">CopyTextBefore</a></strong>(APosition, ACount: integer): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#DeleteText">DeleteText</a></strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#DeleteTextBefore">DeleteTextBefore</a></strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#FindTextAbove">FindTextAbove</a></strong>(AFromPosition: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#FindTextBelow">FindTextBelow</a></strong>(AFromPosition: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetBrokenLineAt">GetBrokenLineAt</a></strong>(ACharIndex: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetCaret">GetCaret</a></strong>(ACharIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetCharIndexAt">GetCharIndexAt</a></strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABetweenGlyphs: boolean = true): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetParagraphAt">GetParagraphAt</a></strong>(ACharIndex: Integer): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetParagraphAt">GetParagraphAt</a></strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>): integer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetTextEnveloppe">GetTextEnveloppe</a></strong>(AStartIndex, AEndIndex: integer; APixelCenteredCoordinates: boolean = true; AMergeBoxes: boolean = true; AVerticalClip: boolean = false): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetTextPart">GetTextPart</a></strong>(APartIndex: integer; AAddOverrideIfNecessary: boolean): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedCaret">GetUntransformedCaret</a></strong>(ACharIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedTextEnveloppe">GetUntransformedTextEnveloppe</a></strong>(AStartIndex, AEndIndex: integer; APixelCenteredCoordinates: boolean = true; AMergeBoxes: boolean = true; AVerticalClip: boolean = false): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#IncludeNonSpacingChars">IncludeNonSpacingChars</a></strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#IncludeNonSpacingCharsBefore">IncludeNonSpacingCharsBefore</a></strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#InsertLineSeparator">InsertLineSeparator</a></strong>(APosition: integer): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#InsertText">InsertText</a></strong>(ATextUTF8: string; APosition: integer): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#ComputeBidiTree">ComputeBidiTree</a></strong>(AMaxWidth: single; startIndex, endIndex: integer; bidiLevel: byte): <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetFontBaseline">GetFontBaseline</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetFontFullHeight">GetFontFullHeight</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetFontOrientation">GetFontOrientation</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetPartEndCaret">GetPartEndCaret</a></strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetPartStartCaret">GetPartStartCaret</a></strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetSameLevelString">GetSameLevelString</a></strong>(startIndex,endIndex: integer; out nonDiscardedCount: integer): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetSameLevelString">GetSameLevelString</a></strong>(startIndex,endIndex: integer): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedParagraphAt">GetUntransformedParagraphAt</a></strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>): integer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedPartEndCaret">GetUntransformedPartEndCaret</a></strong>(APartIndex: integer; APart: <a href="BGRATextBidi.html#PPartInfo">PPartInfo</a>): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedPartEndCaret">GetUntransformedPartEndCaret</a></strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedPartStartCaret">GetUntransformedPartStartCaret</a></strong>(APartIndex: integer; APrevPart, APart: <a href="BGRATextBidi.html#PPartInfo">PPartInfo</a>): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#GetUntransformedPartStartCaret">GetUntransformedPartStartCaret</a></strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextFitInfoBidiOverride">TextFitInfoBidiOverride</a></strong>(sUTF8: string; AWidth: single; ARightToLeft: boolean): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextSizeBidiOverride">TextSizeBidiOverride</a></strong>(sUTF8: string; ARightToLeft: boolean): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextSizeBidiOverrideSplit">TextSizeBidiOverrideSplit</a></strong>(AStartIndex, AEndIndex: integer; ARightToLeft: boolean; ASplitIndex: integer): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#ComputeLayoutIfNeeded">ComputeLayoutIfNeeded</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawBrokenLines">DrawBrokenLines</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawBrokenLines">DrawBrokenLines</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawBrokenLines">DrawBrokenLines</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawCaret">DrawCaret</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ACharIndex: integer; AMainColor, ASecondaryColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawParagraphs">DrawParagraphs</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawParagraphs">DrawParagraphs</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawParagraphs">DrawParagraphs</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawSelection">DrawSelection</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStartIndex, AEndIndex: integer; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APenWidth: single); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawSelection">DrawSelection</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStartIndex, AEndIndex: integer; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawText">DrawText</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawText">DrawText</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawText">DrawText</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawTextParts">DrawTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawTextParts">DrawTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#DrawTextParts">DrawTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InvalidateLayout">InvalidateLayout</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathBrokenLines">PathBrokenLines</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathBrokenLines">PathBrokenLines</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathParagraphs">PathParagraphs</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathParagraphs">PathParagraphs</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathText">PathText</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathText">PathText</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathTextParts">PathTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#PathTextParts">PathTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#SetLayout">SetLayout</a></strong>(ARect: <a href="BGRAClasses.html#TRectF">TRectF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#AddPart">AddPart</a></strong>(AStartIndex, AEndIndex: integer; ABidiLevel: byte; ARectF: <a href="BGRAClasses.html#TRectF">TRectF</a>; APosCorrection: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABrokenLineIndex: integer; ABrokenLine: <a href="BGRATextBidi.html#PBrokenLineInfo">PBrokenLineInfo</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#AddPartsFromTree">AddPartsFromTree</a></strong>(APos: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATree: <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>; fullHeight, baseLine: single; ABrokenLineIndex: integer; ABrokenLine: <a href="BGRATextBidi.html#PBrokenLineInfo">PBrokenLineInfo</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#AnalysisChanged">AnalysisChanged</a></strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#BidiModeChanged">BidiModeChanged</a></strong>(ASender: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#CharDeleted">CharDeleted</a></strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#CharInserted">CharInserted</a></strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#CheckTextLayout">CheckTextLayout</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#ComputeLayout">ComputeLayout</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#Init">Init</a></strong>(ATextUTF8: string; ABidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalDrawText">InternalDrawText</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalDrawTextParts">InternalDrawTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPart, ALastPartPlus1: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalInvalidateParagraphLayout">InternalInvalidateParagraphLayout</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalParagraphDeleted">InternalParagraphDeleted</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalPathText">InternalPathText</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalPathText">InternalPathText</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalPathTextParts">InternalPathTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalPathTextParts">InternalPathTextParts</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InternalRangeError">InternalRangeError</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#InvalidateParagraphLayout">InvalidateParagraphLayout</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#NeedLayout">NeedLayout</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#OffsetParagraph">OffsetParagraph</a></strong>(AParagraphIndex: integer; ADeltaY: single; ADeltaBroken, ADeltaPart: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#OffsetParagraphCharIndex">OffsetParagraphCharIndex</a></strong>(AParagraphIndex: integer; ADeltaChar: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphDeleted">ParagraphDeleted</a></strong>(ASender: TObject; AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphMergedWithNext">ParagraphMergedWithNext</a></strong>(ASender: TObject; AParagraphIndex: integer);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphSplit">ParagraphSplit</a></strong>(ASender: TObject; AParagraphIndex: integer; ACharIndex: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextOutBidiOverride">TextOutBidiOverride</a></strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; ARightToLeft: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextPathBidiOverride">TextPathBidiOverride</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; sUTF8: string; ARightToLeft: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATextBidi.TBidiTextLayout.html#TrimParagraphLayoutVertically">TrimParagraphLayoutVertically</a></strong>(AParagraphIndex: integer);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#AvailableHeight">AvailableHeight</a></strong>: single read FAvailableHeight write SetAvailableHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#AvailableWidth">AvailableWidth</a></strong>: single read FAvailableWidth write SetAvailableWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineAffineBox">BrokenLineAffineBox</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetBrokenLineAffineBox;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineCount">BrokenLineCount</a></strong>: integer read GetBrokenLineCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineEndCaret">BrokenLineEndCaret</a></strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read GetBrokenLineEndCaret;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineEndIndex">BrokenLineEndIndex</a></strong>[AIndex:integer]: integer read GetBrokenLineEndIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineEndPart">BrokenLineEndPart</a></strong>[AIndex:integer]: integer read GetBrokenLineEndPart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineParagraphIndex">BrokenLineParagraphIndex</a></strong>[AIndex:integer]: integer read GetBrokenLineParagraphIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineRectF">BrokenLineRectF</a></strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetBrokenLineRectF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineRightToLeft">BrokenLineRightToLeft</a></strong>[AIndex:integer]: boolean read GetBrokenLineRightToLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineStartCaret">BrokenLineStartCaret</a></strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read GetBrokenLineStartCaret;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineStartIndex">BrokenLineStartIndex</a></strong>[AIndex:integer]: integer read GetBrokenLineStartIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineStartPart">BrokenLineStartPart</a></strong>[AIndex:integer]: integer read GetBrokenLineStartPart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineUnbrokenIndex">BrokenLineUnbrokenIndex</a></strong>[AIndex:integer]: integer read GetBrokenLineUnbrokenIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#BrokenLineUsedWidth">BrokenLineUsedWidth</a></strong>[AIndex:integer]: single read GetBrokenLineUsedWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#CharCount">CharCount</a></strong>: integer read GetCharCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ClipMargin">ClipMargin</a></strong>: integer read FClipMargin write FClipMargin;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#FontBidiMode">FontBidiMode</a></strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read GetFontBidiMode write SetFontBidiMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#FontRenderer">FontRenderer</a></strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a> read <a href="BGRATextBidi.TBidiTextLayout.html#FRenderer">FRenderer</a> write SetFontRenderer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#LayoutComputed">LayoutComputed</a></strong>: boolean read GetLayoutComputed;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#LineHeight">LineHeight</a></strong>: single read GetLineHeight;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#Matrix">Matrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read GetMatrix;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#MatrixInverse">MatrixInverse</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read GetMatrixInverse;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnBrokenLinesChanged">OnBrokenLinesChanged</a></strong>: <a href="BGRATextBidi.html#TBrokenLinesChangedEvent">TBrokenLinesChangedEvent</a> read FOnBrokenLinesChanged write FOnBrokenLinesChanged;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnParagraphChanged">OnParagraphChanged</a></strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphChanged write FOnParagraphChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnParagraphDeleted">OnParagraphDeleted</a></strong> : <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphDeleted write FOnParagraphDeleted;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnParagraphMergedWithNext">OnParagraphMergedWithNext</a></strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphMergedWithNext write FOnParagraphMergedWithNext;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnParagraphSplit">OnParagraphSplit</a></strong>: <a href="BGRATextBidi.html#TParagraphLayoutSplitEvent">TParagraphLayoutSplitEvent</a> read FOnParagraphSplit write FOnParagraphSplit;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#OnParagraphVerticalTrimChanged">OnParagraphVerticalTrimChanged</a></strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphVerticalTrimChanged write FOnParagraphVerticalTrimChanged;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphAffineBox">ParagraphAffineBox</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetParagraphAffineBox;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphAlignment">ParagraphAlignment</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> read GetParagraphAlignment write SetParagraphAlignment;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphCount">ParagraphCount</a></strong>: integer read GetParagraphCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphEndBrokenLine">ParagraphEndBrokenLine</a></strong>[AIndex:integer]: integer read GetParagraphEndBrokenLine;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphEndIndex">ParagraphEndIndex</a></strong>[AIndex:integer]: integer read GetParagraphEndIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphEndIndexBeforeParagraphSeparator">ParagraphEndIndexBeforeParagraphSeparator</a></strong>[AIndex:integer]: integer read GetParagraphEndIndexBeforeParagraphSeparator;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphEndPart">ParagraphEndPart</a></strong>[AIndex:integer]: integer read GetParagraphEndPart;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphRectF">ParagraphRectF</a></strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetParagraphRectF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphRightToLeft">ParagraphRightToLeft</a></strong>[AIndex:integer]: boolean read GetParagraphRightToLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphSpacingAbove">ParagraphSpacingAbove</a></strong>: single read FParagraphSpacingAbove write SetParagraphSpacingAbove;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphSpacingBelow">ParagraphSpacingBelow</a></strong>: single read FParagraphSpacingBelow write SetParagraphSpacingBelow;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphStartBrokenLine">ParagraphStartBrokenLine</a></strong>[AIndex:integer]: integer read GetParagraphStartBrokenLine;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphStartIndex">ParagraphStartIndex</a></strong>[AIndex:integer]: integer read GetParagraphStartIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#ParagraphStartPart">ParagraphStartPart</a></strong>[AIndex:integer]: integer read GetParagraphStartPart;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartAffineBox">PartAffineBox</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetPartAffineBox;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartBrokenLineIndex">PartBrokenLineIndex</a></strong>[AIndex:integer]: integer read GetPartBrokenLineIndex;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartCount">PartCount</a></strong>: integer read GetPartCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartEndCaret">PartEndCaret</a></strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read <a href="BGRATextBidi.TBidiTextLayout.html#GetPartEndCaret">GetPartEndCaret</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartEndIndex">PartEndIndex</a></strong>[AIndex:integer]: integer read GetPartEndIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartRectF">PartRectF</a></strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetPartRectF;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartRightToLeft">PartRightToLeft</a></strong>[AIndex:integer]: boolean read GetPartRightToLeft;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartStartCaret">PartStartCaret</a></strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read <a href="BGRATextBidi.TBidiTextLayout.html#GetPartStartCaret">GetPartStartCaret</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#PartStartIndex">PartStartIndex</a></strong>[AIndex:integer]: integer read GetPartStartIndex;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#TabSize">TabSize</a></strong>: single read FTabSize write SetTabSize;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#TextUTF8">TextUTF8</a></strong>: string read GetText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#TopLeft">TopLeft</a></strong>: <a href="BGRAClasses.html#TPointF">TPointF</a> read FTopLeft write SetTopLeft;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#TotalTextHeight">TotalTextHeight</a></strong>: single read GetTotalTextHeight;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#UnicodeChar">UnicodeChar</a></strong>[APosition0:integer]: LongWord read GetUnicodeChar;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#UsedWidth">UsedWidth</a></strong>: single read GetUsedWidth;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#UTF8Char">UTF8Char</a></strong>[APosition0:integer]: <a href="BGRAUTF8.html#string4">string4</a> read GetUTF8Char;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATextBidi.TBidiTextLayout.html#WordBreakHandler">WordBreakHandler</a></strong>: <a href="BGRABitmapTypes.html#TWordBreakHandler">TWordBreakHandler</a> read FWordBreakHandler write FWordBreakHandler;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FAnalysis"></span><code><strong>FAnalysis</strong>: <a href="BGRAUnicodeText.TUnicodeAnalysis.html">TUnicodeAnalysis</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FColor"></span><code><strong>FColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FComputedBrokenLineCount"></span><code><strong>FComputedBrokenLineCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FComputedPartCount"></span><code><strong>FComputedPartCount</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineHeight"></span><code><strong>FLineHeight</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FParagraph"></span><code><strong>FParagraph</strong>: array of <a href="BGRATextBidi.TParagraphInfo.html">TParagraphInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FRenderer"></span><code><strong>FRenderer</strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTexture"></span><code><strong>FTexture</strong>: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string; ARightToLeft: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AFontRenderer: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; sUTF8: string; AFontBidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddOverrideIfNecessary"></span><code>function <strong>AddOverrideIfNecessary</strong>(var sUTF8: string; ARightToLeft: boolean): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyText"></span><code>function <strong>CopyText</strong>(APosition, ACount: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextBefore"></span><code>function <strong>CopyTextBefore</strong>(APosition, ACount: integer): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteText"></span><code>function <strong>DeleteText</strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteTextBefore"></span><code>function <strong>DeleteTextBefore</strong>(APosition, ACount: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindTextAbove"></span><code>function <strong>FindTextAbove</strong>(AFromPosition: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindTextBelow"></span><code>function <strong>FindTextBelow</strong>(AFromPosition: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBrokenLineAt"></span><code>function <strong>GetBrokenLineAt</strong>(ACharIndex: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCaret"></span><code>function <strong>GetCaret</strong>(ACharIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCharIndexAt"></span><code>function <strong>GetCharIndexAt</strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABetweenGlyphs: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetParagraphAt"></span><code>function <strong>GetParagraphAt</strong>(ACharIndex: Integer): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetParagraphAt"></span><code>function <strong>GetParagraphAt</strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextEnveloppe"></span><code>function <strong>GetTextEnveloppe</strong>(AStartIndex, AEndIndex: integer; APixelCenteredCoordinates: boolean = true; AMergeBoxes: boolean = true; AVerticalClip: boolean = false): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextPart"></span><code>function <strong>GetTextPart</strong>(APartIndex: integer; AAddOverrideIfNecessary: boolean): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetUntransformedCaret"></span><code>function <strong>GetUntransformedCaret</strong>(ACharIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetUntransformedTextEnveloppe"></span><code>function <strong>GetUntransformedTextEnveloppe</strong>(AStartIndex, AEndIndex: integer; APixelCenteredCoordinates: boolean = true; AMergeBoxes: boolean = true; AVerticalClip: boolean = false): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IncludeNonSpacingChars"></span><code>function <strong>IncludeNonSpacingChars</strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IncludeNonSpacingCharsBefore"></span><code>function <strong>IncludeNonSpacingCharsBefore</strong>(APosition, ACount: integer; AIncludeCombiningMarks: boolean = true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertLineSeparator"></span><code>function <strong>InsertLineSeparator</strong>(APosition: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InsertText"></span><code>function <strong>InsertText</strong>(ATextUTF8: string; APosition: integer): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeBidiTree"></span><code>function <strong>ComputeBidiTree</strong>(AMaxWidth: single; startIndex, endIndex: integer; bidiLevel: byte): <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontBaseline"></span><code>function <strong>GetFontBaseline</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontFullHeight"></span><code>function <strong>GetFontFullHeight</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFontOrientation"></span><code>function <strong>GetFontOrientation</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPartEndCaret"></span><code>function <strong>GetPartEndCaret</strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetPartStartCaret"></span><code>function <strong>GetPartStartCaret</strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetSameLevelString"></span><code>function <strong>GetSameLevelString</strong>(startIndex,endIndex: integer; out nonDiscardedCount: integer): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetSameLevelString"></span><code>function <strong>GetSameLevelString</strong>(startIndex,endIndex: integer): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUntransformedParagraphAt"></span><code>function <strong>GetUntransformedParagraphAt</strong>(APosition: <a href="BGRAClasses.html#TPointF">TPointF</a>): integer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUntransformedPartEndCaret"></span><code>function <strong>GetUntransformedPartEndCaret</strong>(APartIndex: integer; APart: <a href="BGRATextBidi.html#PPartInfo">PPartInfo</a>): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUntransformedPartEndCaret"></span><code>function <strong>GetUntransformedPartEndCaret</strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUntransformedPartStartCaret"></span><code>function <strong>GetUntransformedPartStartCaret</strong>(APartIndex: integer; APrevPart, APart: <a href="BGRATextBidi.html#PPartInfo">PPartInfo</a>): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUntransformedPartStartCaret"></span><code>function <strong>GetUntransformedPartStartCaret</strong>(APartIndex: integer): <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TextFitInfoBidiOverride"></span><code>function <strong>TextFitInfoBidiOverride</strong>(sUTF8: string; AWidth: single; ARightToLeft: boolean): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TextSizeBidiOverride"></span><code>function <strong>TextSizeBidiOverride</strong>(sUTF8: string; ARightToLeft: boolean): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TextSizeBidiOverrideSplit"></span><code>function <strong>TextSizeBidiOverrideSplit</strong>(AStartIndex, AEndIndex: integer; ARightToLeft: boolean; ASplitIndex: integer): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeLayoutIfNeeded"></span><code>procedure <strong>ComputeLayoutIfNeeded</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawBrokenLines"></span><code>procedure <strong>DrawBrokenLines</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawBrokenLines"></span><code>procedure <strong>DrawBrokenLines</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawBrokenLines"></span><code>procedure <strong>DrawBrokenLines</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawCaret"></span><code>procedure <strong>DrawCaret</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ACharIndex: integer; AMainColor, ASecondaryColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawParagraphs"></span><code>procedure <strong>DrawParagraphs</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawParagraphs"></span><code>procedure <strong>DrawParagraphs</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawParagraphs"></span><code>procedure <strong>DrawParagraphs</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawSelection"></span><code>procedure <strong>DrawSelection</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStartIndex, AEndIndex: integer; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; ABorderColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; APenWidth: single); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawSelection"></span><code>procedure <strong>DrawSelection</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AStartIndex, AEndIndex: integer; AFillColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawText"></span><code>procedure <strong>DrawText</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawText"></span><code>procedure <strong>DrawText</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawText"></span><code>procedure <strong>DrawText</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawTextParts"></span><code>procedure <strong>DrawTextParts</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; ATexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawTextParts"></span><code>procedure <strong>DrawTextParts</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawTextParts"></span><code>procedure <strong>DrawTextParts</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="InvalidateLayout"></span><code>procedure <strong>InvalidateLayout</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathBrokenLines"></span><code>procedure <strong>PathBrokenLines</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathBrokenLines"></span><code>procedure <strong>PathBrokenLines</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstBroken, ALastBrokenPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathParagraphs"></span><code>procedure <strong>PathParagraphs</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathParagraphs"></span><code>procedure <strong>PathParagraphs</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPara, ALastParaPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathText"></span><code>procedure <strong>PathText</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathText"></span><code>procedure <strong>PathText</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathTextParts"></span><code>procedure <strong>PathTextParts</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PathTextParts"></span><code>procedure <strong>PathTextParts</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetLayout"></span><code>procedure <strong>SetLayout</strong>(ARect: <a href="BGRAClasses.html#TRectF">TRectF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AddPart"></span><code>procedure <strong>AddPart</strong>(AStartIndex, AEndIndex: integer; ABidiLevel: byte; ARectF: <a href="BGRAClasses.html#TRectF">TRectF</a>; APosCorrection: <a href="BGRAClasses.html#TPointF">TPointF</a>; ABrokenLineIndex: integer; ABrokenLine: <a href="BGRATextBidi.html#PBrokenLineInfo">PBrokenLineInfo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AddPartsFromTree"></span><code>procedure <strong>AddPartsFromTree</strong>(APos: <a href="BGRAClasses.html#TPointF">TPointF</a>; ATree: <a href="BGRAUnicodeText.TBidiTree.html">TBidiTree</a>; fullHeight, baseLine: single; ABrokenLineIndex: integer; ABrokenLine: <a href="BGRATextBidi.html#PBrokenLineInfo">PBrokenLineInfo</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AnalysisChanged"></span><code>procedure <strong>AnalysisChanged</strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BidiModeChanged"></span><code>procedure <strong>BidiModeChanged</strong>(ASender: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+unicode analysis events</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CharDeleted"></span><code>procedure <strong>CharDeleted</strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CharInserted"></span><code>procedure <strong>CharInserted</strong>(ASender: TObject; AParagraphIndex: integer; ACharStart, ACharCount: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CheckTextLayout"></span><code>procedure <strong>CheckTextLayout</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeLayout"></span><code>procedure <strong>ComputeLayout</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>(ATextUTF8: string; ABidiMode: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDrawText"></span><code>procedure <strong>InternalDrawText</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalDrawTextParts"></span><code>procedure <strong>InternalDrawTextParts</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AFirstPart, ALastPartPlus1: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalInvalidateParagraphLayout"></span><code>procedure <strong>InternalInvalidateParagraphLayout</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalParagraphDeleted"></span><code>procedure <strong>InternalParagraphDeleted</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalPathText"></span><code>procedure <strong>InternalPathText</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalPathText"></span><code>procedure <strong>InternalPathText</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalPathTextParts"></span><code>procedure <strong>InternalPathTextParts</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalPathTextParts"></span><code>procedure <strong>InternalPathTextParts</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AClipRect: <a href="BGRAClasses.html#TRect">TRect</a>; AFirstPart, ALastPartPlus1: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalRangeError"></span><code>procedure <strong>InternalRangeError</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InvalidateParagraphLayout"></span><code>procedure <strong>InvalidateParagraphLayout</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NeedLayout"></span><code>procedure <strong>NeedLayout</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OffsetParagraph"></span><code>procedure <strong>OffsetParagraph</strong>(AParagraphIndex: integer; ADeltaY: single; ADeltaBroken, ADeltaPart: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OffsetParagraphCharIndex"></span><code>procedure <strong>OffsetParagraphCharIndex</strong>(AParagraphIndex: integer; ADeltaChar: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ParagraphDeleted"></span><code>procedure <strong>ParagraphDeleted</strong>(ASender: TObject; AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ParagraphMergedWithNext"></span><code>procedure <strong>ParagraphMergedWithNext</strong>(ASender: TObject; AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ParagraphSplit"></span><code>procedure <strong>ParagraphSplit</strong>(ASender: TObject; AParagraphIndex: integer; ACharIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TextOutBidiOverride"></span><code>procedure <strong>TextOutBidiOverride</strong>(ADest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y: single; sUTF8: string; ARightToLeft: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TextPathBidiOverride"></span><code>procedure <strong>TextPathBidiOverride</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; x, y: single; sUTF8: string; ARightToLeft: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TrimParagraphLayoutVertically"></span><code>procedure <strong>TrimParagraphLayoutVertically</strong>(AParagraphIndex: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AvailableHeight"></span><code>property <strong>AvailableHeight</strong>: single read FAvailableHeight write SetAvailableHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AvailableWidth"></span><code>property <strong>AvailableWidth</strong>: single read FAvailableWidth write SetAvailableWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineAffineBox"></span><code>property <strong>BrokenLineAffineBox</strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetBrokenLineAffineBox;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineCount"></span><code>property <strong>BrokenLineCount</strong>: integer read GetBrokenLineCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineEndCaret"></span><code>property <strong>BrokenLineEndCaret</strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read GetBrokenLineEndCaret;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineEndIndex"></span><code>property <strong>BrokenLineEndIndex</strong>[AIndex:integer]: integer read GetBrokenLineEndIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineEndPart"></span><code>property <strong>BrokenLineEndPart</strong>[AIndex:integer]: integer read GetBrokenLineEndPart;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineParagraphIndex"></span><code>property <strong>BrokenLineParagraphIndex</strong>[AIndex:integer]: integer read GetBrokenLineParagraphIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineRectF"></span><code>property <strong>BrokenLineRectF</strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetBrokenLineRectF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineRightToLeft"></span><code>property <strong>BrokenLineRightToLeft</strong>[AIndex:integer]: boolean read GetBrokenLineRightToLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineStartCaret"></span><code>property <strong>BrokenLineStartCaret</strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read GetBrokenLineStartCaret;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineStartIndex"></span><code>property <strong>BrokenLineStartIndex</strong>[AIndex:integer]: integer read GetBrokenLineStartIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineStartPart"></span><code>property <strong>BrokenLineStartPart</strong>[AIndex:integer]: integer read GetBrokenLineStartPart;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineUnbrokenIndex"></span><code>property <strong>BrokenLineUnbrokenIndex</strong>[AIndex:integer]: integer read GetBrokenLineUnbrokenIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BrokenLineUsedWidth"></span><code>property <strong>BrokenLineUsedWidth</strong>[AIndex:integer]: single read GetBrokenLineUsedWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CharCount"></span><code>property <strong>CharCount</strong>: integer read GetCharCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ClipMargin"></span><code>property <strong>ClipMargin</strong>: integer read FClipMargin write FClipMargin;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontBidiMode"></span><code>property <strong>FontBidiMode</strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read GetFontBidiMode write SetFontBidiMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FontRenderer"></span><code>property <strong>FontRenderer</strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a> read <a href="BGRATextBidi.TBidiTextLayout.html#FRenderer">FRenderer</a> write SetFontRenderer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+how many pixels can the text go outside of its box</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LayoutComputed"></span><code>property <strong>LayoutComputed</strong>: boolean read GetLayoutComputed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineHeight"></span><code>property <strong>LineHeight</strong>: single read GetLineHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Matrix"></span><code>property <strong>Matrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read GetMatrix;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MatrixInverse"></span><code>property <strong>MatrixInverse</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a> read GetMatrixInverse;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnBrokenLinesChanged"></span><code>property <strong>OnBrokenLinesChanged</strong>: <a href="BGRATextBidi.html#TBrokenLinesChangedEvent">TBrokenLinesChangedEvent</a> read FOnBrokenLinesChanged write FOnBrokenLinesChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphChanged"></span><code>property <strong>OnParagraphChanged</strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphChanged write FOnParagraphChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphDeleted"></span><code>property <strong>OnParagraphDeleted</strong> : <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphDeleted write FOnParagraphDeleted;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphMergedWithNext"></span><code>property <strong>OnParagraphMergedWithNext</strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphMergedWithNext write FOnParagraphMergedWithNext;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphSplit"></span><code>property <strong>OnParagraphSplit</strong>: <a href="BGRATextBidi.html#TParagraphLayoutSplitEvent">TParagraphLayoutSplitEvent</a> read FOnParagraphSplit write FOnParagraphSplit;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnParagraphVerticalTrimChanged"></span><code>property <strong>OnParagraphVerticalTrimChanged</strong>: <a href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a> read FOnParagraphVerticalTrimChanged write FOnParagraphVerticalTrimChanged;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphAffineBox"></span><code>property <strong>ParagraphAffineBox</strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetParagraphAffineBox;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphAlignment"></span><code>property <strong>ParagraphAlignment</strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a> read GetParagraphAlignment write SetParagraphAlignment;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphCount"></span><code>property <strong>ParagraphCount</strong>: integer read GetParagraphCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndBrokenLine"></span><code>property <strong>ParagraphEndBrokenLine</strong>[AIndex:integer]: integer read GetParagraphEndBrokenLine;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndIndex"></span><code>property <strong>ParagraphEndIndex</strong>[AIndex:integer]: integer read GetParagraphEndIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndIndexBeforeParagraphSeparator"></span><code>property <strong>ParagraphEndIndexBeforeParagraphSeparator</strong>[AIndex:integer]: integer read GetParagraphEndIndexBeforeParagraphSeparator;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphEndPart"></span><code>property <strong>ParagraphEndPart</strong>[AIndex:integer]: integer read GetParagraphEndPart;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphRectF"></span><code>property <strong>ParagraphRectF</strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetParagraphRectF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphRightToLeft"></span><code>property <strong>ParagraphRightToLeft</strong>[AIndex:integer]: boolean read GetParagraphRightToLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphSpacingAbove"></span><code>property <strong>ParagraphSpacingAbove</strong>: single read FParagraphSpacingAbove write SetParagraphSpacingAbove;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphSpacingBelow"></span><code>property <strong>ParagraphSpacingBelow</strong>: single read FParagraphSpacingBelow write SetParagraphSpacingBelow;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphStartBrokenLine"></span><code>property <strong>ParagraphStartBrokenLine</strong>[AIndex:integer]: integer read GetParagraphStartBrokenLine;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphStartIndex"></span><code>property <strong>ParagraphStartIndex</strong>[AIndex:integer]: integer read GetParagraphStartIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParagraphStartPart"></span><code>property <strong>ParagraphStartPart</strong>[AIndex:integer]: integer read GetParagraphStartPart;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartAffineBox"></span><code>property <strong>PartAffineBox</strong>[AIndex:integer]: <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a> read GetPartAffineBox;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartBrokenLineIndex"></span><code>property <strong>PartBrokenLineIndex</strong>[AIndex:integer]: integer read GetPartBrokenLineIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartCount"></span><code>property <strong>PartCount</strong>: integer read GetPartCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartEndCaret"></span><code>property <strong>PartEndCaret</strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read <a href="BGRATextBidi.TBidiTextLayout.html#GetPartEndCaret">GetPartEndCaret</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartEndIndex"></span><code>property <strong>PartEndIndex</strong>[AIndex:integer]: integer read GetPartEndIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartRectF"></span><code>property <strong>PartRectF</strong>[AIndex:integer]: <a href="BGRAClasses.html#TRectF">TRectF</a> read GetPartRectF;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartRightToLeft"></span><code>property <strong>PartRightToLeft</strong>[AIndex:integer]: boolean read GetPartRightToLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartStartCaret"></span><code>property <strong>PartStartCaret</strong>[AIndex:integer]: <a href="BGRATextBidi.TBidiCaretPos.html">TBidiCaretPos</a> read <a href="BGRATextBidi.TBidiTextLayout.html#GetPartStartCaret">GetPartStartCaret</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PartStartIndex"></span><code>property <strong>PartStartIndex</strong>[AIndex:integer]: integer read GetPartStartIndex;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TabSize"></span><code>property <strong>TabSize</strong>: single read FTabSize write SetTabSize;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextUTF8"></span><code>property <strong>TextUTF8</strong>: string read GetText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TopLeft"></span><code>property <strong>TopLeft</strong>: <a href="BGRAClasses.html#TPointF">TPointF</a> read FTopLeft write SetTopLeft;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TotalTextHeight"></span><code>property <strong>TotalTextHeight</strong>: single read GetTotalTextHeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnicodeChar"></span><code>property <strong>UnicodeChar</strong>[APosition0:integer]: LongWord read GetUnicodeChar;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UsedWidth"></span><code>property <strong>UsedWidth</strong>: single read GetUsedWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UTF8Char"></span><code>property <strong>UTF8Char</strong>[APosition0:integer]: <a href="BGRAUTF8.html#string4">string4</a> read GetUTF8Char;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WordBreakHandler"></span><code>property <strong>WordBreakHandler</strong>: <a href="BGRABitmapTypes.html#TWordBreakHandler">TWordBreakHandler</a> read FWordBreakHandler write FWordBreakHandler;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

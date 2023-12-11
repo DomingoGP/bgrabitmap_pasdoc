@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAColorQuantization</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAColorQuantization</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRAPalette.html">BGRAPalette</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAColorQuantization.TBGRAApproxPalette.html"><code>TBGRAApproxPalette</code></a></td>
+<td class="itemdesc"><code>TBGRAApproxPalette</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAColorQuantization.TBGRAApproxPaletteViaLargerPalette.html"><code>TBGRAApproxPaletteViaLargerPalette</code></a></td>
+<td class="itemdesc"><code>TBGRAApproxPaletteViaLargerPalette</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAColorQuantization.TBGRAColorBox.html"><code>TBGRAColorBox</code></a></td>
+<td class="itemdesc"><code>TBGRAColorBox</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAColorQuantization.TBGRAColorQuantizer.html"><code>TBGRAColorQuantizer</code></a></td>
+<td class="itemdesc"><code>TBGRAColorQuantizer</code></td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAColorQuantization.TBGRAColorTree.html"><code>TBGRAColorTree</code></a></td>
+<td class="itemdesc"><code>TBGRAColorTree</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Object&nbsp;<a class="bold" href="BGRAColorQuantization.TDimensionMinMax.html"><code>TDimensionMinMax</code></a></td>
+<td class="itemdesc"><code>TDimensionMinMax</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.html#BGRAColorCount">BGRAColorCount</a></strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAlpha: <a href="BGRABitmapTypes.html#TAlphaChannelPaletteOption">TAlphaChannelPaletteOption</a>): integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.html#GetPixelStrictComparer">GetPixelStrictComparer</a></strong>(ADimension: <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>): <a href="BGRAColorQuantization.html#TIsChannelStrictlyGreaterFunc">TIsChannelStrictlyGreaterFunc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.html#GetPixelValueComparer">GetPixelValueComparer</a></strong>(ADimension: <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>): <a href="BGRAColorQuantization.html#TIsChannelGreaterThanOrEqualToValueFunc">TIsChannelGreaterThanOrEqualToValueFunc</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TColorBoxBounds">TColorBoxBounds</a></strong> = array[<a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>] of <a href="BGRAColorQuantization.TDimensionMinMax.html">TDimensionMinMax</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a></strong> = set of <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TIsChannelGreaterThanOrEqualToValueFunc">TIsChannelGreaterThanOrEqualToValueFunc</a></strong> = function (p : <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; v: UInt32): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#TIsChannelStrictlyGreaterFunc">TIsChannelStrictlyGreaterFunc</a></strong> = <a href="BGRAPalette.html#TBGRAPixelComparer">TBGRAPixelComparer</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAColorQuantization.html#AllColorDimensions">AllColorDimensions</a></strong> = [<a href="BGRAColorQuantization.html#cdRed">cdRed</a>,<a href="BGRAColorQuantization.html#cdGreen">cdGreen</a>,<a href="BGRAColorQuantization.html#cdBlue">cdBlue</a>,<a href="BGRAColorQuantization.html#cdAlpha">cdAlpha</a>,<a href="BGRAColorQuantization.html#cdRGB">cdRGB</a>,<a href="BGRAColorQuantization.html#cdRG">cdRG</a>,<a href="BGRAColorQuantization.html#cdGB">cdGB</a>,<a href="BGRAColorQuantization.html#cdRB">cdRB</a>,<a href="BGRAColorQuantization.html#cdRInvG">cdRInvG</a>,<a href="BGRAColorQuantization.html#cdGInvB">cdGInvB</a>,<a href="BGRAColorQuantization.html#cdRInvB">cdRInvB</a>,<a href="BGRAColorQuantization.html#cdRInvGB">cdRInvGB</a>,<a href="BGRAColorQuantization.html#cdGInvRB">cdGInvRB</a>,<a href="BGRAColorQuantization.html#cdBInvRG">cdBInvRG</a>,
+                            <a href="BGRAColorQuantization.html#cdSaturation">cdSaturation</a>];</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAColorCount"></span><code>function <strong>BGRAColorCount</strong>(ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAlpha: <a href="BGRABitmapTypes.html#TAlphaChannelPaletteOption">TAlphaChannelPaletteOption</a>): integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPixelStrictComparer"></span><code>function <strong>GetPixelStrictComparer</strong>(ADimension: <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>): <a href="BGRAColorQuantization.html#TIsChannelStrictlyGreaterFunc">TIsChannelStrictlyGreaterFunc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetPixelValueComparer"></span><code>function <strong>GetPixelValueComparer</strong>(ADimension: <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>): <a href="BGRAColorQuantization.html#TIsChannelGreaterThanOrEqualToValueFunc">TIsChannelGreaterThanOrEqualToValueFunc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRALeafColorMode"></span><code><strong>TBGRALeafColorMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="lcAverage">lcAverage</span></li>
+<li>
+<span id="lcCenter">lcCenter</span></li>
+<li>
+<span id="lcExtremum">lcExtremum</span></li>
+<li>
+<span id="lcMix">lcMix</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBiggestLeafMethod"></span><code><strong>TBiggestLeafMethod</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="blMix">blMix</span></li>
+<li>
+<span id="blApparentInterval">blApparentInterval</span></li>
+<li>
+<span id="blWeight">blWeight</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TColorBoxBounds"></span><code><strong>TColorBoxBounds</strong> = array[<a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>] of <a href="BGRAColorQuantization.TDimensionMinMax.html">TDimensionMinMax</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TColorDimension"></span><code><strong>TColorDimension</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="cdFast">cdFast</span></li>
+<li>
+<span id="cdRed">cdRed</span></li>
+<li>
+<span id="cdGreen">cdGreen</span></li>
+<li>
+<span id="cdBlue">cdBlue</span></li>
+<li>
+<span id="cdAlpha">cdAlpha</span></li>
+<li>
+<span id="cdRGB">cdRGB</span></li>
+<li>
+<span id="cdRG">cdRG</span></li>
+<li>
+<span id="cdGB">cdGB</span></li>
+<li>
+<span id="cdRB">cdRB</span></li>
+<li>
+<span id="cdRInvG">cdRInvG</span></li>
+<li>
+<span id="cdGInvB">cdGInvB</span></li>
+<li>
+<span id="cdRInvB">cdRInvB</span></li>
+<li>
+<span id="cdRInvGB">cdRInvGB</span></li>
+<li>
+<span id="cdGInvRB">cdGInvRB</span></li>
+<li>
+<span id="cdBInvRG">cdBInvRG</span></li>
+<li>
+<span id="cdSaturation">cdSaturation</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TColorDimensions"></span><code><strong>TColorDimensions</strong> = set of <a href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TIsChannelGreaterThanOrEqualToValueFunc"></span><code><strong>TIsChannelGreaterThanOrEqualToValueFunc</strong> = function (p : <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>; v: UInt32): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TIsChannelStrictlyGreaterFunc"></span><code><strong>TIsChannelStrictlyGreaterFunc</strong> = <a href="BGRAPalette.html#TBGRAPixelComparer">TBGRAPixelComparer</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AllColorDimensions"></span><code><strong>AllColorDimensions</strong> = [<a href="BGRAColorQuantization.html#cdRed">cdRed</a>,<a href="BGRAColorQuantization.html#cdGreen">cdGreen</a>,<a href="BGRAColorQuantization.html#cdBlue">cdBlue</a>,<a href="BGRAColorQuantization.html#cdAlpha">cdAlpha</a>,<a href="BGRAColorQuantization.html#cdRGB">cdRGB</a>,<a href="BGRAColorQuantization.html#cdRG">cdRG</a>,<a href="BGRAColorQuantization.html#cdGB">cdGB</a>,<a href="BGRAColorQuantization.html#cdRB">cdRB</a>,<a href="BGRAColorQuantization.html#cdRInvG">cdRInvG</a>,<a href="BGRAColorQuantization.html#cdGInvB">cdGInvB</a>,<a href="BGRAColorQuantization.html#cdRInvB">cdRInvB</a>,<a href="BGRAColorQuantization.html#cdRInvGB">cdRInvGB</a>,<a href="BGRAColorQuantization.html#cdGInvRB">cdGInvRB</a>,<a href="BGRAColorQuantization.html#cdBInvRG">cdBInvRG</a>,
+                            <a href="BGRAColorQuantization.html#cdSaturation">cdSaturation</a>];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

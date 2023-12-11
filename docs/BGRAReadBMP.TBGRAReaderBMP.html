@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAReadBMP: Class TBGRAReaderBMP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAReaderBMP"></span><h1 class="cio">Class TBGRAReaderBMP</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAReadBMP.html">BGRAReadBMP</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAReaderBMP = class(<a class="normal" href="BGRABitmapTypes.TBGRAImageReader.html">TBGRAImageReader</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAReaderBMP</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TFPCustomImageReader</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRAImageReader.html">TBGRAImageReader</a></li>
+<li class="thisitem">TBGRAReaderBMP</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#BFH">BFH</a></strong>: <a href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#BFI">BFI</a></strong>: <a href="BGRAReadBMP.html#TBitMapInfoHeader">TBitMapInfoHeader</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#BlueMask">BlueMask</a></strong>: LongWord;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#BlueShift">BlueShift</a></strong>: shortint;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FBGRAPalette">FBGRAPalette</a></strong>: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FBuffer">FBuffer</a></strong>: packed of byte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FBufferPos">FBufferPos</a></strong>: integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FBufferSize">FBufferSize</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FBufferStream">FBufferStream</a></strong>: <a href="BGRAClasses.html#TStream">TStream</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FHasAlphaValues">FHasAlphaValues</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FMaskData">FMaskData</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FMaskDataSize">FMaskDataSize</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FOriginalHeight">FOriginalHeight</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FOutputHeight">FOutputHeight</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FPalette">FPalette</a></strong>: PFPcolor;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FPaletteEntrySize">FPaletteEntrySize</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#FTransparencyOption">FTransparencyOption</a></strong>: <a href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#GreenMask">GreenMask</a></strong>: LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#GreenShift">GreenShift</a></strong>: shortint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#Hotspot">Hotspot</a></strong>: <a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#LineBuf">LineBuf</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#MinifyHeight">MinifyHeight</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ReadSize">ReadSize</a></strong>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#RedMask">RedMask</a></strong>: LongWord;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#RedShift">RedShift</a></strong>: shortint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#Subformat">Subformat</a></strong>: <a href="BGRAReadBMP.html#TBitmapSubFormat">TBitmapSubFormat</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#WantedHeight">WantedHeight</a></strong>: integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#Create">Create</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#GetBitmapDraft">GetBitmapDraft</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxWidth, AMaxHeight: integer; out AOriginalWidth,AOriginalHeight: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#GetQuickInfo">GetQuickInfo</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRABitmapTypes.TQuickImageInfo.html">TQuickImageInfo</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#CountBits">CountBits</a></strong>(Value : byte) : shortint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ExpandColor">ExpandColor</a></strong>(value : LongWord) : TFPColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ExpandColorBGRA">ExpandColorBGRA</a></strong>(value : LongWord) : <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#GetNextBufferByte">GetNextBufferByte</a></strong>: byte;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#InternalCheck">InternalCheck</a></strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>) : boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ShiftCount">ShiftCount</a></strong>(Mask : LongWord) : shortint;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#CloseReadBuffer">CloseReadBuffer</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ExpandRLE4ScanLine">ExpandRLE4ScanLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ExpandRLE8ScanLine">ExpandRLE8ScanLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ImageVerticalLoop">ImageVerticalLoop</a></strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage; ReadProc, SkipProc: <a href="BGRAReadBMP.html#TReadScanlineProc">TReadScanlineProc</a>; WriteProc: <a href="BGRAReadBMP.html#TWriteScanlineProc">TWriteScanlineProc</a>; ProgressProc: <a href="BGRAReadBMP.html#TProgressProc">TProgressProc</a>; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#InitReadBuffer">InitReadBuffer</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ASize: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#InternalRead">InternalRead</a></strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#LoadMask">LoadMask</a></strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#MainProgressProc">MainProgressProc</a></strong>(Percent: integer; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#MakeOpaque">MakeOpaque</a></strong>(Img: TFPCustomImage);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ReadMaskLine">ReadMaskLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ReadResolutionValues">ReadResolutionValues</a></strong>(Img: TFPCustomImage); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#ReadScanLine">ReadScanLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#SetupRead">SetupRead</a></strong>(nPalette, nRowBits: Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#SkipMaskLine">SkipMaskLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#SkipScanLine">SkipScanLine</a></strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#WriteMaskLine">WriteMaskLine</a></strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#WriteScanLine">WriteScanLine</a></strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#WriteScanLineBGRA">WriteScanLineBGRA</a></strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#OriginalHeight">OriginalHeight</a></strong>: integer read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FOriginalHeight">FOriginalHeight</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#OutputHeight">OutputHeight</a></strong>: integer read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FOutputHeight">FOutputHeight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAReadBMP.TBGRAReaderBMP.html#TransparencyOption">TransparencyOption</a></strong>: <a href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a> read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FTransparencyOption">FTransparencyOption</a> write <a href="BGRAReadBMP.TBGRAReaderBMP.html#FTransparencyOption">FTransparencyOption</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BFH"></span><code><strong>BFH</strong>: <a href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<a class="normal" href="BGRAClasses.html#Size">Size</a> (in bytes) of 1 scanline.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BFI"></span><code><strong>BFI</strong>: <a href="BGRAReadBMP.html#TBitMapInfoHeader">TBitMapInfoHeader</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The file header</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BlueMask"></span><code><strong>BlueMask</strong>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Buffer for 1 scanline. Can be Byte, Word, TColorRGB or TColorRGBA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BlueShift"></span><code><strong>BlueShift</strong>: shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Used if Compression=bi_bitfields</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBGRAPalette"></span><code><strong>FBGRAPalette</strong>: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Buffer with Palette entries. (useless now)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBuffer"></span><code><strong>FBuffer</strong>: packed of byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBufferPos"></span><code><strong>FBufferPos</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBufferSize"></span><code><strong>FBufferSize</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBufferStream"></span><code><strong>FBufferStream</strong>: <a href="BGRAClasses.html#TStream">TStream</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FHasAlphaValues"></span><code><strong>FHasAlphaValues</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMaskData"></span><code><strong>FMaskData</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMaskDataSize"></span><code><strong>FMaskDataSize</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOriginalHeight"></span><code><strong>FOriginalHeight</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FOutputHeight"></span><code><strong>FOutputHeight</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPalette"></span><code><strong>FPalette</strong>: PFPcolor;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+4 for Windows, 3 for OS/2 1.x</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPaletteEntrySize"></span><code><strong>FPaletteEntrySize</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The header as read from the stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTransparencyOption"></span><code><strong>FTransparencyOption</strong>: <a href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GreenMask"></span><code><strong>GreenMask</strong>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Buffer for 1 scanline. Can be Byte, Word, TColorRGB or TColorRGBA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GreenShift"></span><code><strong>GreenShift</strong>: shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Used if Compression=bi_bitfields</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Hotspot"></span><code><strong>Hotspot</strong>: <a href="BGRAClasses.html#TPoint">TPoint</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LineBuf"></span><code><strong>LineBuf</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinifyHeight"></span><code><strong>MinifyHeight</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadSize"></span><code><strong>ReadSize</strong>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Free (and nil) buffers.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RedMask"></span><code><strong>RedMask</strong>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Buffer for 1 scanline. Can be Byte, Word, TColorRGB or TColorRGBA</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RedShift"></span><code><strong>RedShift</strong>: shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Used if Compression=bi_bitfields</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Subformat"></span><code><strong>Subformat</strong>: <a href="BGRAReadBMP.html#TBitmapSubFormat">TBitmapSubFormat</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="WantedHeight"></span><code><strong>WantedHeight</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBitmapDraft"></span><code>function <strong>GetBitmapDraft</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AMaxWidth, AMaxHeight: integer; out AOriginalWidth,AOriginalHeight: integer): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetQuickInfo"></span><code>function <strong>GetQuickInfo</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRABitmapTypes.TQuickImageInfo.html">TQuickImageInfo</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CountBits"></span><code>function <strong>CountBits</strong>(Value : byte) : shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExpandColor"></span><code>function <strong>ExpandColor</strong>(value : LongWord) : TFPColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExpandColorBGRA"></span><code>function <strong>ExpandColorBGRA</strong>(value : LongWord) : <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetNextBufferByte"></span><code>function <strong>GetNextBufferByte</strong>: byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalCheck"></span><code>function <strong>InternalCheck</strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>) : boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ShiftCount"></span><code>function <strong>ShiftCount</strong>(Mask : LongWord) : shortint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CloseReadBuffer"></span><code>procedure <strong>CloseReadBuffer</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExpandRLE4ScanLine"></span><code>procedure <strong>ExpandRLE4ScanLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExpandRLE8ScanLine"></span><code>procedure <strong>ExpandRLE8ScanLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ImageVerticalLoop"></span><code>procedure <strong>ImageVerticalLoop</strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage; ReadProc, SkipProc: <a href="BGRAReadBMP.html#TReadScanlineProc">TReadScanlineProc</a>; WriteProc: <a href="BGRAReadBMP.html#TWriteScanlineProc">TWriteScanlineProc</a>; ProgressProc: <a href="BGRAReadBMP.html#TProgressProc">TProgressProc</a>; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InitReadBuffer"></span><code>procedure <strong>InitReadBuffer</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; ASize: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalRead"></span><code>procedure <strong>InternalRead</strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+required by TFPCustomImageReader</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadMask"></span><code>procedure <strong>LoadMask</strong>(Stream:<a href="BGRAClasses.html#TStream">TStream</a>; Img:TFPCustomImage; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MainProgressProc"></span><code>procedure <strong>MainProgressProc</strong>(Percent: integer; var ShouldContinue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MakeOpaque"></span><code>procedure <strong>MakeOpaque</strong>(Img: TFPCustomImage);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadMaskLine"></span><code>procedure <strong>ReadMaskLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadResolutionValues"></span><code>procedure <strong>ReadResolutionValues</strong>(Img: TFPCustomImage); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadScanLine"></span><code>procedure <strong>ReadScanLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetupRead"></span><code>procedure <strong>SetupRead</strong>(nPalette, nRowBits: Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+<code>SetupRead</code> will allocate the needed buffers, and read the colormap if needed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SkipMaskLine"></span><code>procedure <strong>SkipMaskLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SkipScanLine"></span><code>procedure <strong>SkipScanLine</strong>(Row : Integer; Stream : <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="WriteMaskLine"></span><code>procedure <strong>WriteMaskLine</strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="WriteScanLine"></span><code>procedure <strong>WriteScanLine</strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="WriteScanLineBGRA"></span><code>procedure <strong>WriteScanLineBGRA</strong>(Row : Integer; Img : TFPCustomImage); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OriginalHeight"></span><code>property <strong>OriginalHeight</strong>: integer read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FOriginalHeight">FOriginalHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OutputHeight"></span><code>property <strong>OutputHeight</strong>: integer read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FOutputHeight">FOutputHeight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TransparencyOption"></span><code>property <strong>TransparencyOption</strong>: <a href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a> read <a href="BGRAReadBMP.TBGRAReaderBMP.html#FTransparencyOption">FTransparencyOption</a> write <a href="BGRAReadBMP.TBGRAReaderBMP.html#FTransparencyOption">FTransparencyOption</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

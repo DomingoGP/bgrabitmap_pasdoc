@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: UniversalDrawer: Class TUniversalDrawer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TUniversalDrawer"></span><h1 class="cio">Class TUniversalDrawer</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="UniversalDrawer.html">UniversalDrawer</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TUniversalDrawer = class(<a class="normal" href="BGRABitmapTypes.TCustomUniversalDrawer.html">TCustomUniversalDrawer</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TUniversalDrawer</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TCustomUniversalDrawer.html">TCustomUniversalDrawer</a></li>
+<li class="thisitem">TUniversalDrawer</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="UniversalDrawer.TUniversalDrawer.html#CheckAntialiasRectBounds">CheckAntialiasRectBounds</a></strong>(var x, y, x2, y2: single; w: single): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="UniversalDrawer.TUniversalDrawer.html#CheckRectBounds">CheckRectBounds</a></strong>(var x,y,x2,y2: integer; minsize: integer): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="UniversalDrawer.TUniversalDrawer.html#CreateArrow">CreateArrow</a></strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="UniversalDrawer.TUniversalDrawer.html#CreatePenStroker">CreatePenStroker</a></strong>: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="UniversalDrawer.TUniversalDrawer.html#GetMaxColorChannelDepth">GetMaxColorChannelDepth</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): byte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawLine">DrawLine</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawLineAntialias">DrawLineAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawLineAntialias">DrawLineAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; var DashPos: integer; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolygon">DrawPolygon</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolygonAntialias">DrawPolygonAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolyLine">DrawPolyLine</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#DrawPolyLineAntialias">DrawPolyLineAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#Ellipse">Ellipse</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single; AAlpha: Word=65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#Ellipse">Ellipse</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single; AAlpha: Word=65535); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#EllipseAntialias">EllipseAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#EllipseAntialias">EllipseAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillPoly">FillPoly</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillPolyAntialias">FillPolyAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillRectAntialias">FillRectAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean = true); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillRoundRect">FillRoundRect</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillRoundRectAntialias">FillRoundRectAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x,y,x2,y2, rx,ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AOptions: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillShape">FillShape</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FillShapeAntialias">FillShapeAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FilterBlurMotion">FilterBlurMotion</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; distance: single; angle: single; oriented: boolean; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FilterBlurRadial">FilterBlurRadial</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#FilterCustomBlur">FilterCustomBlur</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFile">LoadFromFile</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFile">LoadFromFile</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename:String; AHandler:TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFile">LoadFromFile</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFile">LoadFromFile</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename:String; AHandler:TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFileUTF8">LoadFromFileUTF8</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a> = []); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromFileUTF8">LoadFromFileUTF8</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a> = []); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromResource">LoadFromResource</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromResource">LoadFromResource</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromResource">LoadFromResource</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AHandler: TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromResource">LoadFromResource</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromStream">LoadFromStream</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromStream">LoadFromStream</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AHandler: TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromStream">LoadFromStream</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#LoadFromStream">LoadFromStream</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#Rectangle">Rectangle</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: integer; const ABorderBrush, AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#Rectangle">Rectangle</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#RectangleAntialias">RectangleAntialias</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, x2, y2: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#RoundRect">RoundRect</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderBrush, AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#RoundRect">RoundRect</a></strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToFile">SaveToFile</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string; AHandler:TFPCustomImageWriter); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToFile">SaveToFile</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToFileUTF8">SaveToFileUTF8</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string); overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToFileUTF8">SaveToFileUTF8</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AHandler:TFPCustomImageWriter); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToStreamAs">SaveToStreamAs</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <strong><a href="UniversalDrawer.TUniversalDrawer.html#SaveToStreamAsPng">SaveToStreamAsPng</a></strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CheckAntialiasRectBounds"></span><code>class function <strong>CheckAntialiasRectBounds</strong>(var x, y, x2, y2: single; w: single): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CheckRectBounds"></span><code>class function <strong>CheckRectBounds</strong>(var x,y,x2,y2: integer; minsize: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+==== Pixelwise drawing ====</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateArrow"></span><code>class function <strong>CreateArrow</strong>: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreatePenStroker"></span><code>class function <strong>CreatePenStroker</strong>: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+==== Using pen ====</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMaxColorChannelDepth"></span><code>class function <strong>GetMaxColorChannelDepth</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>): byte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLine"></span><code>class procedure <strong>DrawLine</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws an aliased line from (x1,y1) to (x2,y2) using Bresenham's algorithm. ''DrawLastPixel'' specifies if (x2,y2) must be drawn.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>class procedure <strong>DrawLineAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws an antialiased line from (x1,y1) to (x2,y2) using an improved version of Bresenham's algorithm ''c'' specifies the color. ''DrawLastPixel'' specifies if (x2,y2) must be drawn</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawLineAntialias"></span><code>class procedure <strong>DrawLineAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x1, y1, x2, y2: integer; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; var DashPos: integer; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draws an antialiased line with two colors ''c1'' and ''c2'' as dashes of length ''dashLen''. ''DashPos'' can be used to specify the start dash position and to retrieve the dash position at the end of the line, in order to draw a polyline with consistent dashes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygon"></span><code>class procedure <strong>DrawPolygon</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>class procedure <strong>DrawPolygonAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>class procedure <strong>DrawPolygonAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolygonAntialias"></span><code>class procedure <strong>DrawPolygonAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLine"></span><code>class procedure <strong>DrawPolyLine</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>class procedure <strong>DrawPolyLineAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush1, ABrush2: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; ADashLen: integer; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawPolyLineAntialias"></span><code>class procedure <strong>DrawPolyLineAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPoint">TPoint</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; DrawLastPixel: boolean; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>class procedure <strong>Ellipse</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single; AAlpha: Word=65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Ellipse"></span><code>class procedure <strong>Ellipse</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single; AAlpha: Word=65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseAntialias"></span><code>class procedure <strong>EllipseAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="EllipseAntialias"></span><code>class procedure <strong>EllipseAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>class procedure <strong>FillEllipseAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AOrigin, AXAxis, AYAxis: <a href="BGRAClasses.html#TPointF">TPointF</a>; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>class procedure <strong>FillEllipseAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPoly"></span><code>class procedure <strong>FillPoly</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean = true; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillPolyAntialias"></span><code>class procedure <strong>FillPolyAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const APoints: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRectAntialias"></span><code>class procedure <strong>FillRectAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; APixelCenteredCoordinates: boolean = true); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+==== Filling ====</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRoundRect"></span><code>class procedure <strong>FillRoundRect</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillRoundRectAntialias"></span><code>class procedure <strong>FillRoundRectAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x,y,x2,y2, rx,ry: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AOptions: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a> = []; APixelCenteredCoordinates: boolean = true); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillShape"></span><code>class procedure <strong>FillShape</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FillShapeAntialias"></span><code>class procedure <strong>FillShapeAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AShape: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; AFillMode: <a href="BGRAGraphics.html#TFillMode">TFillMode</a>; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurMotion"></span><code>class procedure <strong>FilterBlurMotion</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; distance: single; angle: single; oriented: boolean; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterBlurRadial"></span><code>class procedure <strong>FilterBlurRadial</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; radiusX, radiusY: single; blurType: <a href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a>; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+filters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FilterCustomBlur"></span><code>class procedure <strong>FilterCustomBlur</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const ABounds: <a href="BGRAClasses.html#TRect">TRect</a>; mask: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>class procedure <strong>LoadFromFile</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a file. ''filename'' is an ANSI string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>class procedure <strong>LoadFromFile</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename:String; AHandler:TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a file with the specified image reader. ''filename'' is an ANSI string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>class procedure <strong>LoadFromFile</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>class procedure <strong>LoadFromFile</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename:String; AHandler:TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFileUTF8"></span><code>class procedure <strong>LoadFromFileUTF8</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a> = []); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a file. ''filename'' is an UTF8 string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFileUTF8"></span><code>class procedure <strong>LoadFromFileUTF8</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a> = []); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a file with the specified image reader. ''filename'' is an UTF8 string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>class procedure <strong>LoadFromResource</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>class procedure <strong>LoadFromResource</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from an embedded Lazarus resource. Format is detected automatically</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>class procedure <strong>LoadFromResource</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AHandler: TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from an embedded Lazarus resource. The specified image reader is used</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>class procedure <strong>LoadFromResource</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AFilename: string; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>class procedure <strong>LoadFromStream</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AHandler: TFPCustomImageReader; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>class procedure <strong>LoadFromStream</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AHandler: TFPCustomImageReader); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a stream. The specified image reader is used</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>class procedure <strong>LoadFromStream</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load image from a stream. Format is detected automatically</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>class procedure <strong>LoadFromStream</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>class procedure <strong>Rectangle</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: integer; const ABorderBrush, AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw a filled <code>rectangle</code> with a border</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rectangle"></span><code>class procedure <strong>Rectangle</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, x2, y2: integer; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Draw the border of a <a class="normal" href="UniversalDrawer.TUniversalDrawer.html#Rectangle">rectangle</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RectangleAntialias"></span><code>class procedure <strong>RectangleAntialias</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; APen: <a href="BGRABitmapTypes.TBGRACustomPenStroker.html">TBGRACustomPenStroker</a>; x, y, x2, y2: single; const ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AWidth: single); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>class procedure <strong>RoundRect</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderBrush, AFillBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RoundRect"></span><code>class procedure <strong>RoundRect</strong>(ADest: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; X1, Y1, X2, Y2: integer; DX, DY: integer; const ABorderBrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: Word = 65535); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>class procedure <strong>SaveToFile</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string; AHandler:TFPCustomImageWriter); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a file with the specified image writer. ''filename'' is an ANSI string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>class procedure <strong>SaveToFile</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilename: string); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a file. The format is guessed from the file extension. ''filename'' is an ANSI string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFileUTF8"></span><code>class procedure <strong>SaveToFileUTF8</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a file. The format is guessed from the file extension. ''filename'' is an ANSI string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFileUTF8"></span><code>class procedure <strong>SaveToFileUTF8</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const AFilenameUTF8: string; AHandler:TFPCustomImageWriter); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a file with the specified image writer. ''filename'' is an UTF8 string</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStreamAs"></span><code>class procedure <strong>SaveToStreamAs</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AFormat: <a href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a stream in the specified image format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStreamAsPng"></span><code>class procedure <strong>SaveToStreamAsPng</strong>(ASource: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save image to a stream in PNG format</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

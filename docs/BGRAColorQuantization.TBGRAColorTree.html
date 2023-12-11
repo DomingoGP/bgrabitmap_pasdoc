@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAColorQuantization: Class TBGRAColorTree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAColorTree"></span><h1 class="cio">Class TBGRAColorTree</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAColorQuantization.html">BGRAColorQuantization</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAColorTree = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAColorTree</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRAColorTree</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#Create">Create</a></strong>(ADimensions: <a href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a>; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAlpha: <a href="BGRABitmapTypes.html#TAlphaChannelPaletteOption">TAlphaChannelPaletteOption</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#Create">Create</a></strong>(ADimensions: <a href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a>; APalette: <a href="BGRAPalette.TBGRACustomPalette.html">TBGRACustomPalette</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#Create">Create</a></strong>(ABox: <a href="BGRAColorQuantization.TBGRAColorBox.html">TBGRAColorBox</a>; AOwned: boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#ApproximateColor">ApproximateColor</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#ApproximateColorIndex">ApproximateColorIndex</a></strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#FindBiggestLeaf">FindBiggestLeaf</a></strong>(AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>): <a href="BGRAColorQuantization.TBGRAColorTree.html">TBGRAColorTree</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#GetAsArrayOfApproximatedColors">GetAsArrayOfApproximatedColors</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTBGRAPixel">ArrayOfTBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#GetAsArrayOfWeightedColors">GetAsArrayOfWeightedColors</a></strong>: <a href="BGRAPalette.html#ArrayOfWeightedColor">ArrayOfWeightedColor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#SplitIntoPaletteWithSubPalette">SplitIntoPaletteWithSubPalette</a></strong>(ACount: integer; AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>; ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>; ASubPaletteCount: integer): <a href="BGRABitmapTypes.html#ArrayOfTBGRAPixel">ArrayOfTBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#TrySplitLeaf">TrySplitLeaf</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#ComputeLeavesColor">ComputeLeavesColor</a></strong>(ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#FreeLeaves">FreeLeaves</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#SplitIntoPalette">SplitIntoPalette</a></strong>(ACount: integer; AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>; ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#ApproximatedColorCount">ApproximatedColorCount</a></strong>: integer read GetApproximatedColorCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#HasPureTransparentColor">HasPureTransparentColor</a></strong>: boolean read GetHasPureTransparentColor;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#IsLeaf">IsLeaf</a></strong>: boolean read FIsLeaf;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#LargestApparentInterval">LargestApparentInterval</a></strong>: integer read FLargestApparentInterval;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#LeafCount">LeafCount</a></strong>: integer read GetLeafCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#PureTransparentColorCount">PureTransparentColorCount</a></strong>: integer read FPureTransparentColorCount;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAColorQuantization.TBGRAColorTree.html#Weight">Weight</a></strong>: UInt32 read FWeight;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ADimensions: <a href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a>; ABitmap: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AAlpha: <a href="BGRABitmapTypes.html#TAlphaChannelPaletteOption">TAlphaChannelPaletteOption</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ADimensions: <a href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a>; APalette: <a href="BGRAPalette.TBGRACustomPalette.html">TBGRACustomPalette</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(ABox: <a href="BGRAColorQuantization.TBGRAColorBox.html">TBGRAColorBox</a>; AOwned: boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ApproximateColor"></span><code>function <strong>ApproximateColor</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ApproximateColorIndex"></span><code>function <strong>ApproximateColorIndex</strong>(AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindBiggestLeaf"></span><code>function <strong>FindBiggestLeaf</strong>(AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>): <a href="BGRAColorQuantization.TBGRAColorTree.html">TBGRAColorTree</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAsArrayOfApproximatedColors"></span><code>function <strong>GetAsArrayOfApproximatedColors</strong>: <a href="BGRABitmapTypes.html#ArrayOfTBGRAPixel">ArrayOfTBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAsArrayOfWeightedColors"></span><code>function <strong>GetAsArrayOfWeightedColors</strong>: <a href="BGRAPalette.html#ArrayOfWeightedColor">ArrayOfWeightedColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SplitIntoPaletteWithSubPalette"></span><code>function <strong>SplitIntoPaletteWithSubPalette</strong>(ACount: integer; AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>; ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>; ASubPaletteCount: integer): <a href="BGRABitmapTypes.html#ArrayOfTBGRAPixel">ArrayOfTBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TrySplitLeaf"></span><code>function <strong>TrySplitLeaf</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeLeavesColor"></span><code>procedure <strong>ComputeLeavesColor</strong>(ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FreeLeaves"></span><code>procedure <strong>FreeLeaves</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SplitIntoPalette"></span><code>procedure <strong>SplitIntoPalette</strong>(ACount: integer; AMethod: <a href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a>; ALeafColor: <a href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ApproximatedColorCount"></span><code>property <strong>ApproximatedColorCount</strong>: integer read GetApproximatedColorCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HasPureTransparentColor"></span><code>property <strong>HasPureTransparentColor</strong>: boolean read GetHasPureTransparentColor;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsLeaf"></span><code>property <strong>IsLeaf</strong>: boolean read FIsLeaf;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LargestApparentInterval"></span><code>property <strong>LargestApparentInterval</strong>: integer read FLargestApparentInterval;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LeafCount"></span><code>property <strong>LeafCount</strong>: integer read GetLeafCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PureTransparentColorCount"></span><code>property <strong>PureTransparentColorCount</strong>: integer read FPureTransparentColorCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Weight"></span><code>property <strong>Weight</strong>: UInt32 read FWeight;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

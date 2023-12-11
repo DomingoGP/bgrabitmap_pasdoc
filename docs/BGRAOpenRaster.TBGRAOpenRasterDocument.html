@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAOpenRaster: Class TBGRAOpenRasterDocument</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRAOpenRasterDocument"></span><h1 class="cio">Class TBGRAOpenRasterDocument</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAOpenRaster.html">BGRAOpenRaster</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRAOpenRasterDocument = class(<a class="normal" href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRAOpenRasterDocument</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor"><a class="normal" href="BGRALayers.TBGRACustomLayeredBitmap.html">TBGRACustomLayeredBitmap</a></li>
+<li class="ancestor"><a class="normal" href="BGRALayers.TBGRALayeredBitmap.html">TBGRALayeredBitmap</a></li>
+<li class="thisitem">TBGRAOpenRasterDocument</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#Create">Create</a></strong>; overload; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#Create">Create</a></strong>(AWidth, AHeight: integer); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#CheckMimeType">CheckMimeType</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#AddLayerFromMemoryStream">AddLayerFromMemoryStream</a></strong>(ALayerFilename: string): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#CopyBitmapToMemoryStream">CopyBitmapToMemoryStream</a></strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AFilename: string): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#CopyRasterLayerToMemoryStream">CopyRasterLayerToMemoryStream</a></strong>(ALayerIndex: integer; ALayerFilename: string): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#GetMemoryStream">GetMemoryStream</a></strong>(AFilename: string): <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#GetMemoryStreamAsString">GetMemoryStreamAsString</a></strong>(AFilename: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#GetMimeType">GetMimeType</a></strong>: string; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#Clear">Clear</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#LoadFlatImageFromStream">LoadFlatImageFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; out ANbLayers: integer; out ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#LoadFromFile">LoadFromFile</a></strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#LoadFromStream">LoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#SaveToFile">SaveToFile</a></strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#SaveToStream">SaveToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#AnalyzeZip">AnalyzeZip</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ClearFiles">ClearFiles</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#CopySVGToMemoryStream">CopySVGToMemoryStream</a></strong>(ASVG: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; ASVGMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; AOutFilename: string; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#CopyThumbnailToMemoryStream">CopyThumbnailToMemoryStream</a></strong>(AMaxWidth, AMaxHeight: integer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#InternalLoadFromStream">InternalLoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#InternalSaveToStream">InternalSaveToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#PrepareZipToSave">PrepareZipToSave</a></strong>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#SetMemoryStream">SetMemoryStream</a></strong>(AFilename: string; AStream: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#SetMemoryStreamAsString">SetMemoryStreamAsString</a></strong>(AFilename: string; AContent: string);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#UnzipFromFile">UnzipFromFile</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#UnzipFromStream">UnzipFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AFileList: <a href="BGRAClasses.html#TStrings">TStrings</a> = nil);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipOnCloseInputStream">ZipOnCloseInputStream</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipOnCreateStream">ZipOnCreateStream</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipOnDoneStream">ZipOnDoneStream</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>Procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipOnOpenInputStream">ZipOnOpenInputStream</a></strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipToFile">ZipToFile</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#ZipToStream">ZipToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#MimeType">MimeType</a></strong> : string read <a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#GetMimeType">GetMimeType</a> write SetMimeType;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#StackXML">StackXML</a></strong> : TXMLDocument read FStackXML;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>; overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AWidth, AHeight: integer); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CheckMimeType"></span><code>function <strong>CheckMimeType</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AddLayerFromMemoryStream"></span><code>function <strong>AddLayerFromMemoryStream</strong>(ALayerFilename: string): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CopyBitmapToMemoryStream"></span><code>function <strong>CopyBitmapToMemoryStream</strong>(ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>; AFilename: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CopyRasterLayerToMemoryStream"></span><code>function <strong>CopyRasterLayerToMemoryStream</strong>(ALayerIndex: integer; ALayerFilename: string): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMemoryStream"></span><code>function <strong>GetMemoryStream</strong>(AFilename: string): <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMemoryStreamAsString"></span><code>function <strong>GetMemoryStreamAsString</strong>(AFilename: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMimeType"></span><code>function <strong>GetMimeType</strong>: string; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFlatImageFromStream"></span><code>procedure <strong>LoadFlatImageFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; out ANbLayers: integer; out ABitmap: <a href="BGRABitmap.TBGRABitmap.html">TBGRABitmap</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromFile"></span><code>procedure <strong>LoadFromFile</strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToFile"></span><code>procedure <strong>SaveToFile</strong>(const filenameUTF8: string); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AnalyzeZip"></span><code>procedure <strong>AnalyzeZip</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ClearFiles"></span><code>procedure <strong>ClearFiles</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CopySVGToMemoryStream"></span><code>procedure <strong>CopySVGToMemoryStream</strong>(ASVG: <a href="BGRASVG.TBGRASVG.html">TBGRASVG</a>; ASVGMatrix: <a href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a>; AOutFilename: string; out AOffset: <a href="BGRAClasses.html#TPoint">TPoint</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CopyThumbnailToMemoryStream"></span><code>procedure <strong>CopyThumbnailToMemoryStream</strong>(AMaxWidth, AMaxHeight: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalLoadFromStream"></span><code>procedure <strong>InternalLoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalSaveToStream"></span><code>procedure <strong>InternalSaveToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="PrepareZipToSave"></span><code>procedure <strong>PrepareZipToSave</strong>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMemoryStream"></span><code>procedure <strong>SetMemoryStream</strong>(AFilename: string; AStream: <a href="BGRAClasses.html#TMemoryStream">TMemoryStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMemoryStreamAsString"></span><code>procedure <strong>SetMemoryStreamAsString</strong>(AFilename: string; AContent: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UnzipFromFile"></span><code>procedure <strong>UnzipFromFile</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="UnzipFromStream"></span><code>procedure <strong>UnzipFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>; AFileList: <a href="BGRAClasses.html#TStrings">TStrings</a> = nil);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipOnCloseInputStream"></span><code>Procedure <strong>ZipOnCloseInputStream</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipOnCreateStream"></span><code>Procedure <strong>ZipOnCreateStream</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipOnDoneStream"></span><code>Procedure <strong>ZipOnDoneStream</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>; AItem : TFullZipFileEntry);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipOnOpenInputStream"></span><code>Procedure <strong>ZipOnOpenInputStream</strong>(Sender : TObject; var AStream : <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipToFile"></span><code>procedure <strong>ZipToFile</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ZipToStream"></span><code>procedure <strong>ZipToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MimeType"></span><code>property <strong>MimeType</strong> : string read <a href="BGRAOpenRaster.TBGRAOpenRasterDocument.html#GetMimeType">GetMimeType</a> write SetMimeType;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StackXML"></span><code>property <strong>StackXML</strong> : TXMLDocument read FStackXML;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

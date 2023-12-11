@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRASceneTypes: Interface IBGRALight3D</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IBGRALight3D"></span><h1 class="cio">Interface IBGRALight3D</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRASceneTypes.html">BGRASceneTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IBGRALight3D = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>IBGRALight3D</code></p>
+<h6 class="description_section">Attributes</h6>
+<dl class="attributes">
+  <dt>GUID['{85C683B6-07AC-4B8D-9324-06BC22882433}']</dt>
+  <dd></dd>
+</dl>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IBGRALight3D</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetAsObject">GetAsObject</a></strong>: TObject;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetColor">GetColor</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetColoredLight">GetColoredLight</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetColorF">GetColorF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetColorInt">GetColorInt</a></strong>: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetLightnessF">GetLightnessF</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#GetMinIntensity">GetMinIntensity</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRASceneTypes.IBGRALight3D.html#IsDirectional">IsDirectional</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#ComputeDiffuseAndSpecularColor">ComputeDiffuseAndSpecularColor</a></strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#ComputeDiffuseColor">ComputeDiffuseColor</a></strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#ComputeDiffuseLightness">ComputeDiffuseLightness</a></strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#SetColor">SetColor</a></strong>(const AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#SetColorF">SetColorF</a></strong>(const AValue: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#SetColorInt">SetColorInt</a></strong>(const AValue: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRASceneTypes.IBGRALight3D.html#SetMinIntensity">SetMinIntensity</a></strong>(const AValue: single);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#Color">Color</a></strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColor">GetColor</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColor">SetColor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#ColoredLight">ColoredLight</a></strong>: boolean read <a href="BGRASceneTypes.IBGRALight3D.html#GetColoredLight">GetColoredLight</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#ColorF">ColorF</a></strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColorF">GetColorF</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColorF">SetColorF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#ColorInt">ColorInt</a></strong>: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColorInt">GetColorInt</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColorInt">SetColorInt</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#LightnessF">LightnessF</a></strong>: single read <a href="BGRASceneTypes.IBGRALight3D.html#GetLightnessF">GetLightnessF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRASceneTypes.IBGRALight3D.html#MinIntensity">MinIntensity</a></strong>: single read <a href="BGRASceneTypes.IBGRALight3D.html#GetMinIntensity">GetMinIntensity</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetMinIntensity">SetMinIntensity</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetAsObject"></span><code>function <strong>GetAsObject</strong>: TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetColor"></span><code>function <strong>GetColor</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetColoredLight"></span><code>function <strong>GetColoredLight</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetColorF"></span><code>function <strong>GetColorF</strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetColorInt"></span><code>function <strong>GetColorInt</strong>: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLightnessF"></span><code>function <strong>GetLightnessF</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetMinIntensity"></span><code>function <strong>GetMinIntensity</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsDirectional"></span><code>function <strong>IsDirectional</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeDiffuseAndSpecularColor"></span><code>procedure <strong>ComputeDiffuseAndSpecularColor</strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeDiffuseColor"></span><code>procedure <strong>ComputeDiffuseColor</strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeDiffuseLightness"></span><code>procedure <strong>ComputeDiffuseLightness</strong>(Context: <a href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColor"></span><code>procedure <strong>SetColor</strong>(const AValue: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColorF"></span><code>procedure <strong>SetColorF</strong>(const AValue: <a href="BGRABitmapTypes.html#TColorF">TColorF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetColorInt"></span><code>procedure <strong>SetColorInt</strong>(const AValue: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetMinIntensity"></span><code>procedure <strong>SetMinIntensity</strong>(const AValue: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Color"></span><code>property <strong>Color</strong>: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColor">GetColor</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColor">SetColor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ColoredLight"></span><code>property <strong>ColoredLight</strong>: boolean read <a href="BGRASceneTypes.IBGRALight3D.html#GetColoredLight">GetColoredLight</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ColorF"></span><code>property <strong>ColorF</strong>: <a href="BGRABitmapTypes.html#TColorF">TColorF</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColorF">GetColorF</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColorF">SetColorF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ColorInt"></span><code>property <strong>ColorInt</strong>: <a href="BGRAColorInt.TColorInt65536.html">TColorInt65536</a> read <a href="BGRASceneTypes.IBGRALight3D.html#GetColorInt">GetColorInt</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetColorInt">SetColorInt</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LightnessF"></span><code>property <strong>LightnessF</strong>: single read <a href="BGRASceneTypes.IBGRALight3D.html#GetLightnessF">GetLightnessF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinIntensity"></span><code>property <strong>MinIntensity</strong>: single read <a href="BGRASceneTypes.IBGRALight3D.html#GetMinIntensity">GetMinIntensity</a> write <a href="BGRASceneTypes.IBGRALight3D.html#SetMinIntensity">SetMinIntensity</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAUnits</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAUnits</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAUnits.TCSSUnitConverter.html"><code>TCSSUnitConverter</code></a></td>
+<td class="itemdesc"><code>TCSSUnitConverter</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRAUnits.TFloatWithCSSUnit.html"><code>TFloatWithCSSUnit</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnits.html#FloatWithCSSUnit">FloatWithCSSUnit</a></strong>(AValue: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a></strong> = array of <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a></strong> = array of <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a></strong> = single;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnits.html#CSSUnitShortName">CSSUnitShortName</a></strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of string =
+        ('','px',
+         'cm','mm',
+         'in','pc','pt',
+         'em','ex','%');</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FloatWithCSSUnit"></span><code>function <strong>FloatWithCSSUnit</strong>(AValue: single; AUnit: <a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>): <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfTFloatWithCSSUnit"></span><code><strong>ArrayOfTFloatWithCSSUnit</strong> = array of <a href="BGRAUnits.TFloatWithCSSUnit.html">TFloatWithCSSUnit</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArrayOfTSVGNumber"></span><code><strong>ArrayOfTSVGNumber</strong> = array of <a href="BGRAUnits.html#TSVGNumber">TSVGNumber</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+double</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TCSSUnit"></span><code><strong>TCSSUnit</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="cuCustom">cuCustom</span></li>
+<li>
+<span id="cuPixel">cuPixel</span></li>
+<li>
+<span id="cuCentimeter">cuCentimeter</span></li>
+<li>
+<span id="cuMillimeter">cuMillimeter</span></li>
+<li>
+<span id="cuInch">cuInch</span></li>
+<li>
+<span id="cuPica">cuPica</span></li>
+<li>
+<span id="cuPoint">cuPoint</span></li>
+<li>
+<span id="cuFontEmHeight">cuFontEmHeight</span></li>
+<li>
+<span id="cuFontXHeight">cuFontXHeight</span></li>
+<li>
+<span id="cuPercent">cuPercent</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TSVGNumber"></span><code><strong>TSVGNumber</strong> = single;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CSSUnitShortName"></span><code><strong>CSSUnitShortName</strong>: array[<a href="BGRAUnits.html#TCSSUnit">TCSSUnit</a>] of string =
+        ('','px',
+         'cm','mm',
+         'in','pc','pt',
+         'em','ex','%');</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

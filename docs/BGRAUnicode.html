@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAUnicode</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAUnicode</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Packed Record&nbsp;<a class="bold" href="BGRAUnicode.TUnicodeBidiInfo.html"><code>TUnicodeBidiInfo</code></a></td>
+<td class="itemdesc"><code>TUnicodeBidiInfo</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="BGRAUnicode.TUnicodeBracketInfo.html"><code>TUnicodeBracketInfo</code></a></td>
+<td class="itemdesc">bracket matching</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#AnalyzeBidiUnicode">AnalyzeBidiUnicode</a></strong>(u: PLongWord; ALength: integer; baseDirection: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#AnalyzeBidiUnicode">AnalyzeBidiUnicode</a></strong>(u: PLongWord; ALength: integer; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeBidiClass">GetUnicodeBidiClass</a></strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeBidiClassEx">GetUnicodeBidiClassEx</a></strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeBracketInfo">GetUnicodeBracketInfo</a></strong>(u: LongWord): <a href="BGRAUnicode.TUnicodeBracketInfo.html">TUnicodeBracketInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeCombiningClass">GetUnicodeCombiningClass</a></strong>(u: LongWord): byte;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeDisplayOrder">GetUnicodeDisplayOrder</a></strong>(const AInfo: <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeDisplayOrder">GetUnicodeDisplayOrder</a></strong>(ABidiInfo: <a href="BGRAUnicode.html#PUnicodeBidiInfo">PUnicodeBidiInfo</a>; AStride, ACount: integer): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeDisplayOrder">GetUnicodeDisplayOrder</a></strong>(ALevels: PByte; ACount: integer): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#GetUnicodeJoiningType">GetUnicodeJoiningType</a></strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeJoiningType">TUnicodeJoiningType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsModifierCombiningMark">IsModifierCombiningMark</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsUnicodeCrLf">IsUnicodeCrLf</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsUnicodeIsolateOrFormatting">IsUnicodeIsolateOrFormatting</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsUnicodeMirrored">IsUnicodeMirrored</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsUnicodeParagraphSeparator">IsUnicodeParagraphSeparator</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsUnicodeSpace">IsUnicodeSpace</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAUnicode.html#IsZeroWidthUnicode">IsZeroWidthUnicode</a></strong>(u: LongWord): boolean;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#PUnicodeBidiInfo">PUnicodeBidiInfo</a></strong> = &circ;<a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a></strong> = packed array of <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a></strong> = array of integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#TUnicodeJoiningType">TUnicodeJoiningType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_COMBINING_LEFT">BIDI_FLAG_COMBINING_LEFT</a></strong> = 1024;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_COMBINING_RIGHT">BIDI_FLAG_COMBINING_RIGHT</a></strong> = 2048;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_END_OF_LINE">BIDI_FLAG_END_OF_LINE</a></strong> = 8;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_EXPLICIT_END_OF_PARAGRAPH">BIDI_FLAG_EXPLICIT_END_OF_PARAGRAPH</a></strong> = 4;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_IMPLICIT_END_OF_PARAGRAPH">BIDI_FLAG_IMPLICIT_END_OF_PARAGRAPH</a></strong> = 2;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_LIGATURE_BOUNDARY">BIDI_FLAG_LIGATURE_BOUNDARY</a></strong> = 64;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_LIGATURE_LEFT">BIDI_FLAG_LIGATURE_LEFT</a></strong> = 32;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_LIGATURE_RIGHT">BIDI_FLAG_LIGATURE_RIGHT</a></strong> = 16;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_LIGATURE_TRANSPARENT">BIDI_FLAG_LIGATURE_TRANSPARENT</a></strong> = 128;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_MIRRORED">BIDI_FLAG_MIRRORED</a></strong> = 8192;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_MULTICHAR_START">BIDI_FLAG_MULTICHAR_START</a></strong> = 4096;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_NON_SPACING_MARK">BIDI_FLAG_NON_SPACING_MARK</a></strong> = 512;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_REMOVED">BIDI_FLAG_REMOVED</a></strong> = 1;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#BIDI_FLAG_RTL_SCRIPT">BIDI_FLAG_RTL_SCRIPT</a></strong> = 256;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#ubcNeutral">ubcNeutral</a></strong> = [<a href="BGRAUnicode.html#ubcSegmentSeparator">ubcSegmentSeparator</a>, <a href="BGRAUnicode.html#ubcParagraphSeparator">ubcParagraphSeparator</a>, <a href="BGRAUnicode.html#ubcWhiteSpace">ubcWhiteSpace</a>, <a href="BGRAUnicode.html#ubcOtherNeutrals">ubcOtherNeutrals</a>];</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ARABIC_LETTER_MARK">UNICODE_ARABIC_LETTER_MARK</a></strong> = $061C;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ARABIC_TATWEEL">UNICODE_ARABIC_TATWEEL</a></strong> = $0640;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_COMBINING_GRAPHEME_JOINER">UNICODE_COMBINING_GRAPHEME_JOINER</a></strong> = $034F;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_FIRST_STRONG_ISOLATE">UNICODE_FIRST_STRONG_ISOLATE</a></strong> = $2068;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_FULLWIDTH_COMMA">UNICODE_FULLWIDTH_COMMA</a></strong> = $FF0C;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_HORIZONTAL_ELLIPSIS">UNICODE_HORIZONTAL_ELLIPSIS</a></strong> = $2026;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_IDEOGRAPHIC_COMMA">UNICODE_IDEOGRAPHIC_COMMA</a></strong> = $3001;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_IDEOGRAPHIC_FULL_STOP">UNICODE_IDEOGRAPHIC_FULL_STOP</a></strong> = $3002;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_INFORMATION_SEPARATOR_FOUR">UNICODE_INFORMATION_SEPARATOR_FOUR</a></strong> = $001C;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_INFORMATION_SEPARATOR_ONE">UNICODE_INFORMATION_SEPARATOR_ONE</a></strong> = $001F;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_INFORMATION_SEPARATOR_THREE">UNICODE_INFORMATION_SEPARATOR_THREE</a></strong> = $001D;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_INFORMATION_SEPARATOR_TWO">UNICODE_INFORMATION_SEPARATOR_TWO</a></strong> = $001E;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_LEFT_TO_RIGHT_EMBEDDING">UNICODE_LEFT_TO_RIGHT_EMBEDDING</a></strong> = $202A;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_LEFT_TO_RIGHT_ISOLATE">UNICODE_LEFT_TO_RIGHT_ISOLATE</a></strong> = $2066;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_LEFT_TO_RIGHT_MARK">UNICODE_LEFT_TO_RIGHT_MARK</a></strong> = $200E;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_LEFT_TO_RIGHT_OVERRIDE">UNICODE_LEFT_TO_RIGHT_OVERRIDE</a></strong> = $202D;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_LINE_SEPARATOR">UNICODE_LINE_SEPARATOR</a></strong> = $2028;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_MAX_BIDI_DEPTH">UNICODE_MAX_BIDI_DEPTH</a></strong> = 125;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_NEXT_LINE">UNICODE_NEXT_LINE</a></strong> = $0085;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_NO_BREAK_SPACE">UNICODE_NO_BREAK_SPACE</a></strong> = $A0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_PARAGRAPH_SEPARATOR">UNICODE_PARAGRAPH_SEPARATOR</a></strong> = $2029;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_POP_DIRECTIONAL_FORMATTING">UNICODE_POP_DIRECTIONAL_FORMATTING</a></strong> = $202C;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_POP_DIRECTIONAL_ISOLATE">UNICODE_POP_DIRECTIONAL_ISOLATE</a></strong> = $2069;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_ANGLE_BRACKET">UNICODE_RIGHT_ANGLE_BRACKET</a></strong> = $3009;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_POINTING_ANGLE_BRACKET">UNICODE_RIGHT_POINTING_ANGLE_BRACKET</a></strong> = $232A;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_TO_LEFT_EMBEDDING">UNICODE_RIGHT_TO_LEFT_EMBEDDING</a></strong> = $202B;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_TO_LEFT_ISOLATE">UNICODE_RIGHT_TO_LEFT_ISOLATE</a></strong> = $2067;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_TO_LEFT_MARK">UNICODE_RIGHT_TO_LEFT_MARK</a></strong> = $200F;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_RIGHT_TO_LEFT_OVERRIDE">UNICODE_RIGHT_TO_LEFT_OVERRIDE</a></strong> = $202E;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ZERO_WIDTH_JOINER">UNICODE_ZERO_WIDTH_JOINER</a></strong> = $200D;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ZERO_WIDTH_NON_JOINER">UNICODE_ZERO_WIDTH_NON_JOINER</a></strong> = $200C;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ZERO_WIDTH_NO_BREAK_SPACE">UNICODE_ZERO_WIDTH_NO_BREAK_SPACE</a></strong> = $FEFF;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAUnicode.html#UNICODE_ZERO_WIDTH_SPACE">UNICODE_ZERO_WIDTH_SPACE</a></strong> = $200B;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AnalyzeBidiUnicode"></span><code>function <strong>AnalyzeBidiUnicode</strong>(u: PLongWord; ALength: integer; baseDirection: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Analyze unicode and return bidi levels for each character. baseDirection can be either <a class="normal" href="BGRAUnicode.html#UNICODE_LEFT_TO_RIGHT_ISOLATE">UNICODE_LEFT_TO_RIGHT_ISOLATE</a>, <a class="normal" href="BGRAUnicode.html#UNICODE_RIGHT_TO_LEFT_ISOLATE">UNICODE_RIGHT_TO_LEFT_ISOLATE</a> or <a class="normal" href="BGRAUnicode.html#UNICODE_FIRST_STRONG_ISOLATE">UNICODE_FIRST_STRONG_ISOLATE</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="AnalyzeBidiUnicode"></span><code>function <strong>AnalyzeBidiUnicode</strong>(u: PLongWord; ALength: integer; ABidiMode: <a href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a>): <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeBidiClass"></span><code>function <strong>GetUnicodeBidiClass</strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the Bidi class as defined by Unicode used to determine text direction</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeBidiClassEx"></span><code>function <strong>GetUnicodeBidiClassEx</strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Same as above but returns additional classes: <a class="normal" href="BGRAUnicode.html#ubcCombiningLeftToRight">ubcCombiningLeftToRight</a> and <a class="normal" href="BGRAUnicode.html#ubcMirroredNeutral">ubcMirroredNeutral</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeBracketInfo"></span><code>function <strong>GetUnicodeBracketInfo</strong>(u: LongWord): <a href="BGRAUnicode.TUnicodeBracketInfo.html">TUnicodeBracketInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeCombiningClass"></span><code>function <strong>GetUnicodeCombiningClass</strong>(u: LongWord): byte;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the Combining class defined by unicode for non-spacing marks and combining marks or 255 if the character is not to be combined</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeDisplayOrder"></span><code>function <strong>GetUnicodeDisplayOrder</strong>(const AInfo: <a href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a>): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Determine diplay order, provided the display surface is horizontally infinite</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeDisplayOrder"></span><code>function <strong>GetUnicodeDisplayOrder</strong>(ABidiInfo: <a href="BGRAUnicode.html#PUnicodeBidiInfo">PUnicodeBidiInfo</a>; AStride, ACount: integer): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeDisplayOrder"></span><code>function <strong>GetUnicodeDisplayOrder</strong>(ALevels: PByte; ACount: integer): <a href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetUnicodeJoiningType"></span><code>function <strong>GetUnicodeJoiningType</strong>(u: LongWord): <a href="BGRAUnicode.html#TUnicodeJoiningType">TUnicodeJoiningType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns how the letter can be joined to the surrounding letters (for example in arabic)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsModifierCombiningMark"></span><code>function <strong>IsModifierCombiningMark</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsUnicodeCrLf"></span><code>function <strong>IsUnicodeCrLf</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsUnicodeIsolateOrFormatting"></span><code>function <strong>IsUnicodeIsolateOrFormatting</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsUnicodeMirrored"></span><code>function <strong>IsUnicodeMirrored</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns if the symbol can be mirrored horizontally for right-to-left text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsUnicodeParagraphSeparator"></span><code>function <strong>IsUnicodeParagraphSeparator</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsUnicodeSpace"></span><code>function <strong>IsUnicodeSpace</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsZeroWidthUnicode"></span><code>function <strong>IsZeroWidthUnicode</strong>(u: LongWord): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PUnicodeBidiInfo"></span><code><strong>PUnicodeBidiInfo</strong> = &circ;<a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+the glyph is mirrored when in RTL text</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFontBidiMode"></span><code><strong>TFontBidiMode</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+C</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="fbmAuto">fbmAuto</span></li>
+<li>
+<span id="fbmLeftToRight">fbmLeftToRight</span></li>
+<li>
+<span id="fbmRightToLeft">fbmRightToLeft</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeBidiArray"></span><code><strong>TUnicodeBidiArray</strong> = packed array of <a href="BGRAUnicode.TUnicodeBidiInfo.html">TUnicodeBidiInfo</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeBidiClass"></span><code><strong>TUnicodeBidiClass</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ubcBoundaryNeutral">ubcBoundaryNeutral</span></li>
+<li>
+<span id="ubcSegmentSeparator">ubcSegmentSeparator</span></li>
+<li>
+<span id="ubcParagraphSeparator">ubcParagraphSeparator</span></li>
+<li>
+<span id="ubcWhiteSpace">ubcWhiteSpace</span></li>
+<li>
+<span id="ubcOtherNeutrals">ubcOtherNeutrals</span></li>
+<li>
+<span id="ubcCommonSeparator">ubcCommonSeparator</span></li>
+<li>
+<span id="ubcNonSpacingMark">ubcNonSpacingMark</span></li>
+<li>
+<span id="ubcLeftToRight">ubcLeftToRight</span></li>
+<li>
+<span id="ubcEuropeanNumber">ubcEuropeanNumber</span></li>
+<li>
+<span id="ubcEuropeanNumberSeparator">ubcEuropeanNumberSeparator</span></li>
+<li>
+<span id="ubcEuropeanNumberTerminator">ubcEuropeanNumberTerminator</span></li>
+<li>
+<span id="ubcRightToLeft">ubcRightToLeft</span></li>
+<li>
+<span id="ubcArabicLetter">ubcArabicLetter</span></li>
+<li>
+<span id="ubcArabicNumber">ubcArabicNumber</span></li>
+<li>
+<span id="ubcUnknown">ubcUnknown</span></li>
+<li>
+<span id="ubcCombiningLeftToRight">ubcCombiningLeftToRight</span></li>
+<li>
+<span id="ubcMirroredNeutral">ubcMirroredNeutral</span>: <a class="normal" href="BGRAUnicode.html#ubcLeftToRight">ubcLeftToRight</a> in Mc category</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeDisplayOrder"></span><code><strong>TUnicodeDisplayOrder</strong> = array of integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TUnicodeJoiningType"></span><code><strong>TUnicodeJoiningType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+<a class="normal" href="BGRAUnicode.html#ubcOtherNeutrals">ubcOtherNeutrals</a> with Mirrored property</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ujtNonJoining">ujtNonJoining</span></li>
+<li>
+<span id="ujtTransparent">ujtTransparent</span>: U</li>
+<li>
+<span id="ujtRightJoining">ujtRightJoining</span>: T</li>
+<li>
+<span id="ujtLeftJoining">ujtLeftJoining</span>: R</li>
+<li>
+<span id="ujtDualJoining">ujtDualJoining</span>: L</li>
+<li>
+<span id="ujtJoinCausing">ujtJoinCausing</span>: D</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_COMBINING_LEFT"></span><code><strong>BIDI_FLAG_COMBINING_LEFT</strong> = 1024;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+it is a non-spacing mark</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_COMBINING_RIGHT"></span><code><strong>BIDI_FLAG_COMBINING_RIGHT</strong> = 2048;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+this letter is to be combined to the left of previous letter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_END_OF_LINE"></span><code><strong>BIDI_FLAG_END_OF_LINE</strong> = 8;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+explicit end of paragraph (paragraph spacing below due to paragraph split)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_EXPLICIT_END_OF_PARAGRAPH"></span><code><strong>BIDI_FLAG_EXPLICIT_END_OF_PARAGRAPH</strong> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+implicit end of paragraph (paragraph spacing below due to end of text)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_IMPLICIT_END_OF_PARAGRAPH"></span><code><strong>BIDI_FLAG_IMPLICIT_END_OF_PARAGRAPH</strong> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+RLE, LRE, RLO, LRO, PDF and BN are supposed to be removed</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_LIGATURE_BOUNDARY"></span><code><strong>BIDI_FLAG_LIGATURE_BOUNDARY</strong> = 64;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+joins to the letter on the left (possible for joining type L and D)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_LIGATURE_LEFT"></span><code><strong>BIDI_FLAG_LIGATURE_LEFT</strong> = 32;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+joins to the letter on the right (possible for joining type R and D)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_LIGATURE_RIGHT"></span><code><strong>BIDI_FLAG_LIGATURE_RIGHT</strong> = 16;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+line break &lt;br&gt;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_LIGATURE_TRANSPARENT"></span><code><strong>BIDI_FLAG_LIGATURE_TRANSPARENT</strong> = 128;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+zero-width joiner or non-joiner</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_MIRRORED"></span><code><strong>BIDI_FLAG_MIRRORED</strong> = 8192;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+start of a multichar (letter + non spacing marks, non spacing marks)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_MULTICHAR_START"></span><code><strong>BIDI_FLAG_MULTICHAR_START</strong> = 4096;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+this letter is to be combined to the right of previous letter</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_NON_SPACING_MARK"></span><code><strong>BIDI_FLAG_NON_SPACING_MARK</strong> = 512;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+script is written from right to left (arabic, N'Ko...)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_REMOVED"></span><code><strong>BIDI_FLAG_REMOVED</strong> = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BIDI_FLAG_RTL_SCRIPT"></span><code><strong>BIDI_FLAG_RTL_SCRIPT</strong> = 256;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+does not affect ligature</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ubcNeutral"></span><code><strong>ubcNeutral</strong> = [<a href="BGRAUnicode.html#ubcSegmentSeparator">ubcSegmentSeparator</a>, <a href="BGRAUnicode.html#ubcParagraphSeparator">ubcParagraphSeparator</a>, <a href="BGRAUnicode.html#ubcWhiteSpace">ubcWhiteSpace</a>, <a href="BGRAUnicode.html#ubcOtherNeutrals">ubcOtherNeutrals</a>];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ARABIC_LETTER_MARK"></span><code><strong>UNICODE_ARABIC_LETTER_MARK</strong> = $061C;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ARABIC_TATWEEL"></span><code><strong>UNICODE_ARABIC_TATWEEL</strong> = $0640;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+arabic letters</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_COMBINING_GRAPHEME_JOINER"></span><code><strong>UNICODE_COMBINING_GRAPHEME_JOINER</strong> = $034F;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_FIRST_STRONG_ISOLATE"></span><code><strong>UNICODE_FIRST_STRONG_ISOLATE</strong> = $2068;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_FULLWIDTH_COMMA"></span><code><strong>UNICODE_FULLWIDTH_COMMA</strong> = $FF0C;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_HORIZONTAL_ELLIPSIS"></span><code><strong>UNICODE_HORIZONTAL_ELLIPSIS</strong> = $2026;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_IDEOGRAPHIC_COMMA"></span><code><strong>UNICODE_IDEOGRAPHIC_COMMA</strong> = $3001;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+horizontal line that makes a ligature with most letters ideographic punctuation</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_IDEOGRAPHIC_FULL_STOP"></span><code><strong>UNICODE_IDEOGRAPHIC_FULL_STOP</strong> = $3002;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_INFORMATION_SEPARATOR_FOUR"></span><code><strong>UNICODE_INFORMATION_SEPARATOR_FOUR</strong> = $001C;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+data separators</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_INFORMATION_SEPARATOR_ONE"></span><code><strong>UNICODE_INFORMATION_SEPARATOR_ONE</strong> = $001F;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+record separator, kind of equivalent to paragraph separator</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_INFORMATION_SEPARATOR_THREE"></span><code><strong>UNICODE_INFORMATION_SEPARATOR_THREE</strong> = $001D;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+end-of-file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_INFORMATION_SEPARATOR_TWO"></span><code><strong>UNICODE_INFORMATION_SEPARATOR_TWO</strong> = $001E;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+section separator</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_LEFT_TO_RIGHT_EMBEDDING"></span><code><strong>UNICODE_LEFT_TO_RIGHT_EMBEDDING</strong> = $202A;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+characters that split into bidi sub-blocks (called &quot;formatting&quot;)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_LEFT_TO_RIGHT_ISOLATE"></span><code><strong>UNICODE_LEFT_TO_RIGHT_ISOLATE</strong> = $2066;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of CRLF characters that split lines into top-level bidi blocks</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_LEFT_TO_RIGHT_MARK"></span><code><strong>UNICODE_LEFT_TO_RIGHT_MARK</strong> = $200E;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+characters that mark direction without splitting the bidi block</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_LEFT_TO_RIGHT_OVERRIDE"></span><code><strong>UNICODE_LEFT_TO_RIGHT_OVERRIDE</strong> = $202D;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_LINE_SEPARATOR"></span><code><strong>UNICODE_LINE_SEPARATOR</strong> = $2028;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_MAX_BIDI_DEPTH"></span><code><strong>UNICODE_MAX_BIDI_DEPTH</strong> = 125;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+maximum nesting level of isolates and bidi-formatting blocks (char bidi level can actually be higher due to char properties)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_NEXT_LINE"></span><code><strong>UNICODE_NEXT_LINE</strong> = $0085;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of &lt;/p&gt;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_NO_BREAK_SPACE"></span><code><strong>UNICODE_NO_BREAK_SPACE</strong> = $A0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_PARAGRAPH_SEPARATOR"></span><code><strong>UNICODE_PARAGRAPH_SEPARATOR</strong> = $2029;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+equivalent of &lt;br&gt;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_POP_DIRECTIONAL_FORMATTING"></span><code><strong>UNICODE_POP_DIRECTIONAL_FORMATTING</strong> = $202C;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_POP_DIRECTIONAL_ISOLATE"></span><code><strong>UNICODE_POP_DIRECTIONAL_ISOLATE</strong> = $2069;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_ANGLE_BRACKET"></span><code><strong>UNICODE_RIGHT_ANGLE_BRACKET</strong> = $3009;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_POINTING_ANGLE_BRACKET"></span><code><strong>UNICODE_RIGHT_POINTING_ANGLE_BRACKET</strong> = $232A;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+bracket equivalence</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_TO_LEFT_EMBEDDING"></span><code><strong>UNICODE_RIGHT_TO_LEFT_EMBEDDING</strong> = $202B;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_TO_LEFT_ISOLATE"></span><code><strong>UNICODE_RIGHT_TO_LEFT_ISOLATE</strong> = $2067;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_TO_LEFT_MARK"></span><code><strong>UNICODE_RIGHT_TO_LEFT_MARK</strong> = $200F;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_RIGHT_TO_LEFT_OVERRIDE"></span><code><strong>UNICODE_RIGHT_TO_LEFT_OVERRIDE</strong> = $202E;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ZERO_WIDTH_JOINER"></span><code><strong>UNICODE_ZERO_WIDTH_JOINER</strong> = $200D;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+byte order mark</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ZERO_WIDTH_NON_JOINER"></span><code><strong>UNICODE_ZERO_WIDTH_NON_JOINER</strong> = $200C;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ZERO_WIDTH_NO_BREAK_SPACE"></span><code><strong>UNICODE_ZERO_WIDTH_NO_BREAK_SPACE</strong> = $FEFF;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="UNICODE_ZERO_WIDTH_SPACE"></span><code><strong>UNICODE_ZERO_WIDTH_SPACE</strong> = $200B;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+field separator, kind of equivalent to Tab zero-width</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

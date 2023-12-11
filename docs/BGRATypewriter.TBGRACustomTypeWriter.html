@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRATypewriter: Class TBGRACustomTypeWriter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRACustomTypeWriter"></span><h1 class="cio">Class TBGRACustomTypeWriter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRATypewriter.html">BGRATypewriter</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRACustomTypeWriter = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRACustomTypeWriter</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TBGRACustomTypeWriter</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#DrawGlyphsSimultaneously">DrawGlyphsSimultaneously</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#LigatureWithF">LigatureWithF</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#OutlineMode">OutlineMode</a></strong>: <a href="BGRABitmapTypes.html#TBGRATypeWriterOutlineMode">TBGRATypeWriterOutlineMode</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#SubstituteBidiBracket">SubstituteBidiBracket</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#TypeWriterMatrix">TypeWriterMatrix</a></strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#Create">Create</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetGlyphBox">GetGlyphBox</a></strong>(AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetTextBox">GetTextBox</a></strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetTextGlyphBoxes">GetTextGlyphBoxes</a></strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRATypewriter.html#TGlyphBoxes">TGlyphBoxes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetTextSizeBeforeTransform">GetTextSizeBeforeTransform</a></strong>(ATextUTF8 :string): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#ComputeKerning">ComputeKerning</a></strong>(AIdLeft, AIdRight: string): single; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#CustomHeaderSize">CustomHeaderSize</a></strong>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#FindGlyph">FindGlyph</a></strong>(AIdentifier: string): TAVLTreeNode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#FindKerning">FindKerning</a></strong>(AIdLeft, AIdRight: string): TAVLTreeNode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetDisplayInfo">GetDisplayInfo</a></strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRATypewriter.html#TBGRATextDisplayInfo">TBGRATextDisplayInfo</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetGlyph">GetGlyph</a></strong>(AIdentifier: string): <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetGlyphMatrix">GetGlyphMatrix</a></strong>(AGlyph: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetKerningOffset">GetKerningOffset</a></strong>(AIdBefore, AIdAfter: string; ARightToLeft: boolean): single; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetTextMatrix">GetTextMatrix</a></strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#HeaderName">HeaderName</a></strong>: string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#ReadCustomTypeWriterHeader">ReadCustomTypeWriterHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRATypewriter.TBGRACustomTypeWriterHeader.html">TBGRACustomTypeWriterHeader</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#CopyTextPathTo">CopyTextPathTo</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#DrawGlyph">DrawGlyph</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>; AMirrored: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#DrawText">DrawText</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#LoadGlyphsFromFile">LoadGlyphsFromFile</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#LoadGlyphsFromStream">LoadGlyphsFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#NeedGlyphAnsiRange">NeedGlyphAnsiRange</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#NeedGlyphRange">NeedGlyphRange</a></strong>(AUnicodeFrom, AUnicodeTo: LongWord);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#SaveGlyphsToFile">SaveGlyphsToFile</a></strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#SaveGlyphsToStream">SaveGlyphsToStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#TextFitInfoBeforeTransform">TextFitInfoBeforeTransform</a></strong>(ATextUTF8: string; AMaxWidth: single; out ACharCount, AByteCount: integer; out AUsedWidth: single);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#AddGlyph">AddGlyph</a></strong>(AGlyph: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#BrowseAllGlyphs">BrowseAllGlyphs</a></strong>(ACallback: <a href="BGRATypewriter.html#TBrowseGlyphCallback">TBrowseGlyphCallback</a>; AData: pointer);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#BrowseGlyphs">BrowseGlyphs</a></strong>(ATextUTF8: string; ACallback: <a href="BGRATypewriter.html#TBrowseGlyphCallback">TBrowseGlyphCallback</a>; AData: pointer; ADisplayOrder: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#ClearGlyphs">ClearGlyphs</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#DrawLastPath">DrawLastPath</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#GlyphPath">GlyphPath</a></strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>; AMirrored: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#ReadAdditionalHeader">ReadAdditionalHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#RemoveGlyph">RemoveGlyph</a></strong>(AIdentifier: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#SetGlyph">SetGlyph</a></strong>(AIdentifier: string; AValue: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#WriteCustomHeader">WriteCustomHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#BidiMode">BidiMode</a></strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read FBidiMode write SetBidiMode;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRATypewriter.TBGRACustomTypeWriter.html#Glyph">Glyph</a></strong>[AIdentifier:string]: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a> read <a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetGlyph">GetGlyph</a> write <a href="BGRATypewriter.TBGRACustomTypeWriter.html#SetGlyph">SetGlyph</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawGlyphsSimultaneously"></span><code><strong>DrawGlyphsSimultaneously</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LigatureWithF"></span><code><strong>LigatureWithF</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OutlineMode"></span><code><strong>OutlineMode</strong>: <a href="BGRABitmapTypes.html#TBGRATypeWriterOutlineMode">TBGRATypeWriterOutlineMode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SubstituteBidiBracket"></span><code><strong>SubstituteBidiBracket</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="TypeWriterMatrix"></span><code><strong>TypeWriterMatrix</strong>: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetGlyphBox"></span><code>function <strong>GetGlyphBox</strong>(AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextBox"></span><code>function <strong>GetTextBox</strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRABitmapTypes.TAffineBox.html">TAffineBox</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextGlyphBoxes"></span><code>function <strong>GetTextGlyphBoxes</strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>): <a href="BGRATypewriter.html#TGlyphBoxes">TGlyphBoxes</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetTextSizeBeforeTransform"></span><code>function <strong>GetTextSizeBeforeTransform</strong>(ATextUTF8 :string): <a href="BGRAClasses.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeKerning"></span><code>function <strong>ComputeKerning</strong>(AIdLeft, AIdRight: string): single; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CustomHeaderSize"></span><code>function <strong>CustomHeaderSize</strong>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FindGlyph"></span><code>function <strong>FindGlyph</strong>(AIdentifier: string): TAVLTreeNode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FindKerning"></span><code>function <strong>FindKerning</strong>(AIdLeft, AIdRight: string): TAVLTreeNode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDisplayInfo"></span><code>function <strong>GetDisplayInfo</strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRATypewriter.html#TBGRATextDisplayInfo">TBGRATextDisplayInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGlyph"></span><code>function <strong>GetGlyph</strong>(AIdentifier: string): <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetGlyphMatrix"></span><code>function <strong>GetGlyphMatrix</strong>(AGlyph: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetKerningOffset"></span><code>function <strong>GetKerningOffset</strong>(AIdBefore, AIdAfter: string; ARightToLeft: boolean): single; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTextMatrix"></span><code>function <strong>GetTextMatrix</strong>(ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a>): <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="HeaderName"></span><code>function <strong>HeaderName</strong>: string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadCustomTypeWriterHeader"></span><code>function <strong>ReadCustomTypeWriterHeader</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRATypewriter.TBGRACustomTypeWriterHeader.html">TBGRACustomTypeWriterHeader</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTextPathTo"></span><code>procedure <strong>CopyTextPathTo</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawGlyph"></span><code>procedure <strong>DrawGlyph</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>; AMirrored: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DrawText"></span><code>procedure <strong>DrawText</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; ATextUTF8: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadGlyphsFromFile"></span><code>procedure <strong>LoadGlyphsFromFile</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadGlyphsFromStream"></span><code>procedure <strong>LoadGlyphsFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NeedGlyphAnsiRange"></span><code>procedure <strong>NeedGlyphAnsiRange</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="NeedGlyphRange"></span><code>procedure <strong>NeedGlyphRange</strong>(AUnicodeFrom, AUnicodeTo: LongWord);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveGlyphsToFile"></span><code>procedure <strong>SaveGlyphsToFile</strong>(AFilenameUTF8: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveGlyphsToStream"></span><code>procedure <strong>SaveGlyphsToStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TextFitInfoBeforeTransform"></span><code>procedure <strong>TextFitInfoBeforeTransform</strong>(ATextUTF8: string; AMaxWidth: single; out ACharCount, AByteCount: integer; out AUsedWidth: single);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AddGlyph"></span><code>procedure <strong>AddGlyph</strong>(AGlyph: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BrowseAllGlyphs"></span><code>procedure <strong>BrowseAllGlyphs</strong>(ACallback: <a href="BGRATypewriter.html#TBrowseGlyphCallback">TBrowseGlyphCallback</a>; AData: pointer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="BrowseGlyphs"></span><code>procedure <strong>BrowseGlyphs</strong>(ATextUTF8: string; ACallback: <a href="BGRATypewriter.html#TBrowseGlyphCallback">TBrowseGlyphCallback</a>; AData: pointer; ADisplayOrder: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ClearGlyphs"></span><code>procedure <strong>ClearGlyphs</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DrawLastPath"></span><code>procedure <strong>DrawLastPath</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GlyphPath"></span><code>procedure <strong>GlyphPath</strong>(ADest: <a href="BGRACanvas2D.TBGRACanvas2D.html">TBGRACanvas2D</a>; AIdentifier: string; X,Y: Single; AAlign: <a href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a> = <a href="BGRABitmapTypes.html#twaTopLeft">twaTopLeft</a>; AMirrored: boolean = false);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ReadAdditionalHeader"></span><code>procedure <strong>ReadAdditionalHeader</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RemoveGlyph"></span><code>procedure <strong>RemoveGlyph</strong>(AIdentifier: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetGlyph"></span><code>procedure <strong>SetGlyph</strong>(AIdentifier: string; AValue: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="WriteCustomHeader"></span><code>procedure <strong>WriteCustomHeader</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BidiMode"></span><code>property <strong>BidiMode</strong>: <a href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a> read FBidiMode write SetBidiMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="Glyph"></span><code>property <strong>Glyph</strong>[AIdentifier:string]: <a href="BGRATypewriter.TBGRAGlyph.html">TBGRAGlyph</a> read <a href="BGRATypewriter.TBGRACustomTypeWriter.html#GetGlyph">GetGlyph</a> write <a href="BGRATypewriter.TBGRACustomTypeWriter.html#SetGlyph">SetGlyph</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

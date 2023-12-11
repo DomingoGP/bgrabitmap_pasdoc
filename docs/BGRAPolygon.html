@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAPolygon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAPolygon</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section">Types</div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRAClasses.html">BGRAClasses</a></li><li>SysUtils</li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRAFillInfo.html">BGRAFillInfo</a></li><li><a href="BGRAPath.html">BGRAPath</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAPolygon.TBGRAMultishapeFiller.html"><code>TBGRAMultishapeFiller</code></a></td>
+<td class="itemdesc"><code>TBGRAMultishapeFiller</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderAndFillRoundRectangleAntialias">BorderAndFillRoundRectangleAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; bordercolor,fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; bordertexture,filltexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; EraseMode: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipse">BorderEllipse</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipse">BorderEllipse</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry, w: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: word = 65535);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipseAntialias">BorderEllipseAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipseAntialias">BorderEllipseAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry, w: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipseAntialiasWithTexture">BorderEllipseAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderEllipseWithTexture">BorderEllipseWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderRoundRectangleAntialias">BorderRoundRectangleAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#BorderRoundRectangleAntialiasWithTexture">BorderRoundRectangleAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillEllipseAntialias">FillEllipseAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillEllipseAntialiasWithTexture">FillEllipseAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAliased">FillPolyAliased</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; Alpha: Word; NonZeroWinding: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAliased">FillPolyAliased</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAliasedWithTexture">FillPolyAliasedWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAntialias">FillPolyAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; NonZeroWinding: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAntialias">FillPolyAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; NonZeroWinding: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillPolyAntialiasWithTexture">FillPolyAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillRoundRectangleAntialias">FillRoundRectangleAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillRoundRectangleAntialiasWithTexture">FillRoundRectangleAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAliased">FillShapeAliased</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AliasingIncludeBottomRight: Boolean= false);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAliased">FillShapeAliased</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; Alpha: Word; NonZeroWinding: boolean; AliasingIncludeBottomRight: Boolean= false);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAntialias">FillShapeAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; NonZeroWinding: boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAntialias">FillShapeAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAntialias">FillShapeAntialias</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPolygon.html#FillShapeAntialiasWithTexture">FillShapeAntialiasWithTexture</a></strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderAndFillRoundRectangleAntialias"></span><code>procedure <strong>BorderAndFillRoundRectangleAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; bordercolor,fillcolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; bordertexture,filltexture: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; EraseMode: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipse"></span><code>procedure <strong>BorderEllipse</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipse"></span><code>procedure <strong>BorderEllipse</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry, w: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; AAlpha: word = 65535);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipseAntialias"></span><code>procedure <strong>BorderEllipseAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipseAntialias"></span><code>procedure <strong>BorderEllipseAntialias</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry, w: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipseAntialiasWithTexture"></span><code>procedure <strong>BorderEllipseAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderEllipseWithTexture"></span><code>procedure <strong>BorderEllipseWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry, w: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderRoundRectangleAntialias"></span><code>procedure <strong>BorderRoundRectangleAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BorderRoundRectangleAntialiasWithTexture"></span><code>procedure <strong>BorderRoundRectangleAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry, w: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>procedure <strong>FillEllipseAntialias</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; x, y, rx, ry: single; ABrush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillEllipseAntialias"></span><code>procedure <strong>FillEllipseAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry: single; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillEllipseAntialiasWithTexture"></span><code>procedure <strong>FillEllipseAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x, y, rx, ry: single; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAliased"></span><code>procedure <strong>FillPolyAliased</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; Alpha: Word; NonZeroWinding: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAliased"></span><code>procedure <strong>FillPolyAliased</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAliasedWithTexture"></span><code>procedure <strong>FillPolyAliasedWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAntialias"></span><code>procedure <strong>FillPolyAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; NonZeroWinding: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAntialias"></span><code>procedure <strong>FillPolyAntialias</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; NonZeroWinding: boolean; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPolyAntialiasWithTexture"></span><code>procedure <strong>FillPolyAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; const points: array of <a href="BGRAClasses.html#TPointF">TPointF</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillRoundRectangleAntialias"></span><code>procedure <strong>FillRoundRectangleAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillRoundRectangleAntialiasWithTexture"></span><code>procedure <strong>FillRoundRectangleAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2, rx, ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; LinearBlend: boolean = false; APixelCenteredCoordinates: boolean = true);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAliased"></span><code>procedure <strong>FillShapeAliased</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>; AliasingIncludeBottomRight: Boolean= false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAliased"></span><code>procedure <strong>FillShapeAliased</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; Alpha: Word; NonZeroWinding: boolean; AliasingIncludeBottomRight: Boolean= false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAntialias"></span><code>procedure <strong>FillShapeAntialias</strong>(bmp: <a href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; brush: <a href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a>; NonZeroWinding: boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAntialias"></span><code>procedure <strong>FillShapeAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; drawmode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAntialias"></span><code>procedure <strong>FillShapeAntialias</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; EraseMode: boolean; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillShapeAntialiasWithTexture"></span><code>procedure <strong>FillShapeAntialiasWithTexture</strong>(bmp: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; shapeInfo: <a href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>; scan: <a href="BGRABitmapTypes.IBGRAScanner.html">IBGRAScanner</a>; NonZeroWinding: boolean; LinearBlend: boolean = false);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

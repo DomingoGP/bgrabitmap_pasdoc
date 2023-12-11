@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRALCLBitmap: Class TBGRALCLBitmap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TBGRALCLBitmap"></span><h1 class="cio">Class TBGRALCLBitmap</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRALCLBitmap.html">BGRALCLBitmap</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBGRALCLBitmap = class(<a class="normal" href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TBGRALCLBitmap</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TFPCustomImage</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a></li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TGenericUniversalBitmap.html">TGenericUniversalBitmap</a></li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a></li>
+<li class="ancestor"><a class="normal" href="BGRADefaultBitmap.TBGRADefaultBitmap.html">TBGRADefaultBitmap</a></li>
+<li class="thisitem">TBGRALCLBitmap</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#MakeBitmapCopy">MakeBitmapCopy</a></strong>(BackgroundColor: <a href="BGRAGraphics.html#TColor">TColor</a>; AMasked: boolean = False): <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#CreateDefaultFontRenderer">CreateDefaultFontRenderer</a></strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#CreatePtrBitmap">CreatePtrBitmap</a></strong>(AWidth, AHeight: integer; AData: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a> ): <a href="BGRADefaultBitmap.TBGRAPtrBitmap.html">TBGRAPtrBitmap</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#LoadFromRawImage">LoadFromRawImage</a></strong>(ARawImage: <a href="BGRAGraphics.html#TRawImage">TRawImage</a>; DefaultOpacity: byte; AlwaysReplaceAlpha: boolean = False; RaiseErrorOnInvalidPixelFormat: boolean = True): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#Assign">Assign</a></strong>(Source: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#AssignToBitmap">AssignToBitmap</a></strong>(ADestination: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#DataDrawOpaque">DataDrawOpaque</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AData: Pointer; ALineOrder: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>; AWidth, AHeight: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#DataDrawTransparent">DataDrawTransparent</a></strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; AData: Pointer; ALineOrder: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>; AWidth, AHeight: integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#GetImageFromCanvas">GetImageFromCanvas</a></strong>(CanvasSource: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; x, y: integer); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#LoadFromDevice">LoadFromDevice</a></strong>(DC: <a href="BGRABitmapTypes.html#HDC">HDC</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#LoadFromDevice">LoadFromDevice</a></strong>(DC: <a href="BGRABitmapTypes.html#HDC">HDC</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#LoadFromResource">LoadFromResource</a></strong>(AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#TakeScreenshot">TakeScreenshot</a></strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#TakeScreenshotOfPrimaryMonitor">TakeScreenshotOfPrimaryMonitor</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#AssignRasterImage">AssignRasterImage</a></strong>(ARaster: <a href="BGRAGraphics.html#TRasterImage">TRasterImage</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#DoLoadFromBitmap">DoLoadFromBitmap</a></strong>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#ExtractXorMask">ExtractXorMask</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRALCLBitmap.TBGRALCLBitmap.html#RebuildBitmap">RebuildBitmap</a></strong>; override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MakeBitmapCopy"></span><code>function <strong>MakeBitmapCopy</strong>(BackgroundColor: <a href="BGRAGraphics.html#TColor">TColor</a>; AMasked: boolean = False): <a href="BGRAGraphics.html#TBitmap">TBitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreateDefaultFontRenderer"></span><code>function <strong>CreateDefaultFontRenderer</strong>: <a href="BGRABitmapTypes.TBGRACustomFontRenderer.html">TBGRACustomFontRenderer</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreatePtrBitmap"></span><code>function <strong>CreatePtrBitmap</strong>(AWidth, AHeight: integer; AData: <a href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a> ): <a href="BGRADefaultBitmap.TBGRAPtrBitmap.html">TBGRAPtrBitmap</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="LoadFromRawImage"></span><code>function <strong>LoadFromRawImage</strong>(ARawImage: <a href="BGRAGraphics.html#TRawImage">TRawImage</a>; DefaultOpacity: byte; AlwaysReplaceAlpha: boolean = False; RaiseErrorOnInvalidPixelFormat: boolean = True): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Assign"></span><code>procedure <strong>Assign</strong>(Source: <a href="BGRAClasses.html#TPersistent">TPersistent</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AssignToBitmap"></span><code>procedure <strong>AssignToBitmap</strong>(ADestination: <a href="BGRAGraphics.html#TBitmap">TBitmap</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DataDrawOpaque"></span><code>procedure <strong>DataDrawOpaque</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>; AData: Pointer; ALineOrder: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>; AWidth, AHeight: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DataDrawTransparent"></span><code>procedure <strong>DataDrawTransparent</strong>(ACanvas: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; Rect: <a href="BGRAClasses.html#TRect">TRect</a>; AData: Pointer; ALineOrder: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>; AWidth, AHeight: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetImageFromCanvas"></span><code>procedure <strong>GetImageFromCanvas</strong>(CanvasSource: <a href="BGRAGraphics.html#TCanvas">TCanvas</a>; x, y: integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromDevice"></span><code>procedure <strong>LoadFromDevice</strong>(DC: <a href="BGRABitmapTypes.html#HDC">HDC</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromDevice"></span><code>procedure <strong>LoadFromDevice</strong>(DC: <a href="BGRABitmapTypes.html#HDC">HDC</a>; ARect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromResource"></span><code>procedure <strong>LoadFromResource</strong>(AFilename: string; AOptions: <a href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a>); overload; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TakeScreenshot"></span><code>procedure <strong>TakeScreenshot</strong>(ARect: <a href="BGRAClasses.html#TRect">TRect</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="TakeScreenshotOfPrimaryMonitor"></span><code>procedure <strong>TakeScreenshotOfPrimaryMonitor</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="AssignRasterImage"></span><code>procedure <strong>AssignRasterImage</strong>(ARaster: <a href="BGRAGraphics.html#TRasterImage">TRasterImage</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoLoadFromBitmap"></span><code>procedure <strong>DoLoadFromBitmap</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ExtractXorMask"></span><code>procedure <strong>ExtractXorMask</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="RebuildBitmap"></span><code>procedure <strong>RebuildBitmap</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

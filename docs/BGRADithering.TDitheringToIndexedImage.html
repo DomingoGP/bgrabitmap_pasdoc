@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRADithering: Class TDitheringToIndexedImage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TDitheringToIndexedImage"></span><h1 class="cio">Class TDitheringToIndexedImage</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRADithering.html">BGRADithering</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TDitheringToIndexedImage = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TDitheringToIndexedImage</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TDitheringToIndexedImage</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FBitOrder">FBitOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FBitsPerPixel">FBitsPerPixel</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FByteOrder">FByteOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentBitOrderMask">FCurrentBitOrderMask</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentData">FCurrentData</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentMaxY">FCurrentMaxY</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentOutputScanline">FCurrentOutputScanline</a></strong>: PByte;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentOutputY">FCurrentOutputY</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FCurrentScanlineSize">FCurrentScanlineSize</a></strong>: PtrInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FIgnoreAlpha">FIgnoreAlpha</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FLineOrder">FLineOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FPalette">FPalette</a></strong>: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRADithering.TDitheringToIndexedImage.html#FTransparentColorIndex">FTransparentColorIndex</a></strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRADithering.TDitheringToIndexedImage.html#Create">Create</a></strong>(APalette: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>; AIgnoreAlpha: boolean; ABitsPerPixelForIndices: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRADithering.TDitheringToIndexedImage.html#Create">Create</a></strong>(APalette: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>; AIgnoreAlpha: boolean; ABitsPerPixelForIndices: integer; AByteOrder: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#AllocateSpaceForIndexedData">AllocateSpaceForIndexedData</a></strong>(AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AScanlineSize: PtrInt): pointer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#ComputeMinimumScanlineSize">ComputeMinimumScanlineSize</a></strong>(AWidthInPixels: integer): PtrInt;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#DitherImage">DitherImage</a></strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AScanlineSize: PtrInt): Pointer; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#DitherImage">DitherImage</a></strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): Pointer; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#GetScanline">GetScanline</a></strong>(Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>): Pointer; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRADithering.TDitheringToIndexedImage.html#GetTransparentColorIndex">GetTransparentColorIndex</a></strong>: integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#DitherImageTo">DitherImageTo</a></strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; AScanlineSize: PtrInt); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#DitherImageTo">DitherImageTo</a></strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#OutputPixelFullByte">OutputPixelFullByte</a></strong>(X,Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColorIndex: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#OutputPixelSubByte">OutputPixelSubByte</a></strong>(X,Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColorIndex: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetBitOrder">SetBitOrder</a></strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetBitsPerPixel">SetBitsPerPixel</a></strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetByteOrder">SetByteOrder</a></strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetIgnoreAlpha">SetIgnoreAlpha</a></strong>(AValue: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetLineOrder">SetLineOrder</a></strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetPalette">SetPalette</a></strong>(AValue: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRADithering.TDitheringToIndexedImage.html#SetTransparentColorIndex">SetTransparentColorIndex</a></strong>(AValue: integer);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#BitOrder">BitOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FBitOrder">FBitOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetBitOrder">SetBitOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#BitsPerPixel">BitsPerPixel</a></strong>: integer read <a href="BGRADithering.TDitheringToIndexedImage.html#FBitsPerPixel">FBitsPerPixel</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetBitsPerPixel">SetBitsPerPixel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#ByteOrder">ByteOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FByteOrder">FByteOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetByteOrder">SetByteOrder</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#DefaultTransparentColorIndex">DefaultTransparentColorIndex</a></strong>: integer read <a href="BGRADithering.TDitheringToIndexedImage.html#GetTransparentColorIndex">GetTransparentColorIndex</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetTransparentColorIndex">SetTransparentColorIndex</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#IgnoreAlpha">IgnoreAlpha</a></strong>: boolean read <a href="BGRADithering.TDitheringToIndexedImage.html#FIgnoreAlpha">FIgnoreAlpha</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetIgnoreAlpha">SetIgnoreAlpha</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#LineOrder">LineOrder</a></strong>: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FLineOrder">FLineOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetLineOrder">SetLineOrder</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRADithering.TDitheringToIndexedImage.html#Palette">Palette</a></strong>: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FPalette">FPalette</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetPalette">SetPalette</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBitOrder"></span><code><strong>FBitOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FBitsPerPixel"></span><code><strong>FBitsPerPixel</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FByteOrder"></span><code><strong>FByteOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentBitOrderMask"></span><code><strong>FCurrentBitOrderMask</strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentData"></span><code><strong>FCurrentData</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentMaxY"></span><code><strong>FCurrentMaxY</strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentOutputScanline"></span><code><strong>FCurrentOutputScanline</strong>: PByte;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentOutputY"></span><code><strong>FCurrentOutputY</strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurrentScanlineSize"></span><code><strong>FCurrentScanlineSize</strong>: PtrInt;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+following variables are used during dithering</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FIgnoreAlpha"></span><code><strong>FIgnoreAlpha</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FLineOrder"></span><code><strong>FLineOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPalette"></span><code><strong>FPalette</strong>: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FTransparentColorIndex"></span><code><strong>FTransparentColorIndex</strong>: <a href="BGRAClasses.html#Int32or64">Int32or64</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(APalette: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>; AIgnoreAlpha: boolean; ABitsPerPixelForIndices: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(APalette: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>; AIgnoreAlpha: boolean; ABitsPerPixelForIndices: integer; AByteOrder: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+use platform byte order</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AllocateSpaceForIndexedData"></span><code>function <strong>AllocateSpaceForIndexedData</strong>(AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AScanlineSize: PtrInt): pointer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeMinimumScanlineSize"></span><code>function <strong>ComputeMinimumScanlineSize</strong>(AWidthInPixels: integer): PtrInt;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DitherImage"></span><code>function <strong>DitherImage</strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AScanlineSize: PtrInt): Pointer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+use minimum scanline <a class="normal" href="BGRAClasses.html#Size">size</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DitherImage"></span><code>function <strong>DitherImage</strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>): Pointer; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+maybe necessary if larger than 8 bits per pixel</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetScanline"></span><code>function <strong>GetScanline</strong>(Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>): Pointer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetTransparentColorIndex"></span><code>function <strong>GetTransparentColorIndex</strong>: integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DitherImageTo"></span><code>procedure <strong>DitherImageTo</strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer; AScanlineSize: PtrInt); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+use minimum scanline <a class="normal" href="BGRAClasses.html#Size">size</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DitherImageTo"></span><code>procedure <strong>DitherImageTo</strong>(AAlgorithm: <a href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a>; AImage: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; AData: Pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OutputPixelFullByte"></span><code>procedure <strong>OutputPixelFullByte</strong>(X,Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColorIndex: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="OutputPixelSubByte"></span><code>procedure <strong>OutputPixelSubByte</strong>(X,Y: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColorIndex: <a href="BGRAClasses.html#Int32or64">Int32or64</a>; AColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetBitOrder"></span><code>procedure <strong>SetBitOrder</strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetBitsPerPixel"></span><code>procedure <strong>SetBitsPerPixel</strong>(AValue: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetByteOrder"></span><code>procedure <strong>SetByteOrder</strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetIgnoreAlpha"></span><code>procedure <strong>SetIgnoreAlpha</strong>(AValue: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetLineOrder"></span><code>procedure <strong>SetLineOrder</strong>(AValue: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetPalette"></span><code>procedure <strong>SetPalette</strong>(AValue: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetTransparentColorIndex"></span><code>procedure <strong>SetTransparentColorIndex</strong>(AValue: integer);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BitOrder"></span><code>property <strong>BitOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FBitOrder">FBitOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetBitOrder">SetBitOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BitsPerPixel"></span><code>property <strong>BitsPerPixel</strong>: integer read <a href="BGRADithering.TDitheringToIndexedImage.html#FBitsPerPixel">FBitsPerPixel</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetBitsPerPixel">SetBitsPerPixel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+optional customization of format</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ByteOrder"></span><code>property <strong>ByteOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FByteOrder">FByteOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetByteOrder">SetByteOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DefaultTransparentColorIndex"></span><code>property <strong>DefaultTransparentColorIndex</strong>: integer read <a href="BGRADithering.TDitheringToIndexedImage.html#GetTransparentColorIndex">GetTransparentColorIndex</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetTransparentColorIndex">SetTransparentColorIndex</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+when there is no transparent color in the <a class="normal" href="BGRADithering.TDitheringToIndexedImage.html#Palette">palette</a>, or that <a class="normal" href="BGRADithering.TDitheringToIndexedImage.html#IgnoreAlpha">IgnoreAlpha</a> is set to True, this allows to define the index for the fully transparent color</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IgnoreAlpha"></span><code>property <strong>IgnoreAlpha</strong>: boolean read <a href="BGRADithering.TDitheringToIndexedImage.html#FIgnoreAlpha">FIgnoreAlpha</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetIgnoreAlpha">SetIgnoreAlpha</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LineOrder"></span><code>property <strong>LineOrder</strong>: <a href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FLineOrder">FLineOrder</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetLineOrder">SetLineOrder</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Palette"></span><code>property <strong>Palette</strong>: <a href="BGRAPalette.TBGRACustomApproxPalette.html">TBGRACustomApproxPalette</a> read <a href="BGRADithering.TDitheringToIndexedImage.html#FPalette">FPalette</a> write <a href="BGRADithering.TDitheringToIndexedImage.html#SetPalette">SetPalette</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

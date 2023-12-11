@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAPath</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAPath</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+SPDX-License-Identifier: LGPL-3.0-linking-exception</p>
+<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRATransform.html">BGRATransform</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAPath.TBGRAPath.html"><code>TBGRAPath</code></a></td>
+<td class="itemdesc"><code>TBGRAPath</code></td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAPath.TBGRAPathCursor.html"><code>TBGRAPathCursor</code></a></td>
+<td class="itemdesc"><code>TBGRAPathCursor</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ArcEndPoint">ArcEndPoint</a></strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ArcStartPoint">ArcStartPoint</a></strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ClosedSplineStartPoint">ClosedSplineStartPoint</a></strong>(const points: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeArc">ComputeArc</a></strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeArc65536">ComputeArc65536</a></strong>(x, y, rx, ry: single; start65536,end65536: word; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeArc65536">ComputeArc65536</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; start65536,end65536: word; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeArcRad">ComputeArcRad</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; startRadCCW,endRadCCW: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeArcRad">ComputeArcRad</a></strong>(x, y, rx, ry: single; startRadCCW,endRadCCW: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeBezierCurve">ComputeBezierCurve</a></strong>(const curve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeBezierCurve">ComputeBezierCurve</a></strong>(const curve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeBezierSpline">ComputeBezierSpline</a></strong>(const spline: array of <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeBezierSpline">ComputeBezierSpline</a></strong>(const spline: array of <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeClosedSpline">ComputeClosedSpline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeClosedSpline">ComputeClosedSpline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStart, ACount: integer; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeEasyBezier">ComputeEasyBezier</a></strong>(const curve: <a href="BGRABitmapTypes.TEasyBezierCurve.html">TEasyBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeEllipse">ComputeEllipse</a></strong>(x,y,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeEllipse">ComputeEllipse</a></strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeOpenedSpline">ComputeOpenedSpline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AEndCoeff: single = 0.25; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeOpenedSpline">ComputeOpenedSpline</a></strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStart, ACount: integer; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AEndCoeff: single = 0.25; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeRoundRect">ComputeRoundRect</a></strong>(x1,y1,x2,y2,rx,ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#ComputeRoundRect">ComputeRoundRect</a></strong>(x1,y1,x2,y2,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#Html5ArcTo">Html5ArcTo</a></strong>(const p0, p1, p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; radius: single): <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#IsLargeArc">IsLargeArc</a></strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#SplineVertexToSide">SplineVertexToSide</a></strong>(y0, y1, y2, y3: single; t: single): single;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPath.html#SvgArcTo">SvgArcTo</a></strong>(const p0: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; rx, ry, xAngleRadCW: single; largeArc, anticlockwise: boolean; const p1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a></strong> = <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">BGRABitmapTypes.TBGRAPathDrawProc</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a></strong> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a></strong> = <a href="BGRABitmapTypes.html#TBGRAPathFillProc">BGRABitmapTypes.TBGRAPathFillProc</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a></strong> = 0.1;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArcEndPoint"></span><code>function <strong>ArcEndPoint</strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ArcStartPoint"></span><code>function <strong>ArcStartPoint</strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClosedSplineStartPoint"></span><code>function <strong>ClosedSplineStartPoint</strong>(const points: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; Style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeArc"></span><code>function <strong>ComputeArc</strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeArc65536"></span><code>function <strong>ComputeArc65536</strong>(x, y, rx, ry: single; start65536,end65536: word; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeArc65536"></span><code>function <strong>ComputeArc65536</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; start65536,end65536: word; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeArcRad"></span><code>function <strong>ComputeArcRad</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; startRadCCW,endRadCCW: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeArcRad"></span><code>function <strong>ComputeArcRad</strong>(x, y, rx, ry: single; startRadCCW,endRadCCW: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeBezierCurve"></span><code>function <strong>ComputeBezierCurve</strong>(const curve: <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeBezierCurve"></span><code>function <strong>ComputeBezierCurve</strong>(const curve: <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeBezierSpline"></span><code>function <strong>ComputeBezierSpline</strong>(const spline: array of <a href="BGRABitmapTypes.TCubicBezierCurve.html">TCubicBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeBezierSpline"></span><code>function <strong>ComputeBezierSpline</strong>(const spline: array of <a href="BGRABitmapTypes.TQuadraticBezierCurve.html">TQuadraticBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeClosedSpline"></span><code>function <strong>ComputeClosedSpline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeClosedSpline"></span><code>function <strong>ComputeClosedSpline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStart, ACount: integer; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeEasyBezier"></span><code>function <strong>ComputeEasyBezier</strong>(const curve: <a href="BGRABitmapTypes.TEasyBezierCurve.html">TEasyBezierCurve</a>; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeEllipse"></span><code>function <strong>ComputeEllipse</strong>(x,y,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compute points to draw an antialiased ellipse</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeEllipse"></span><code>function <strong>ComputeEllipse</strong>(AOrigin, AXAxis, AYAxis: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeOpenedSpline"></span><code>function <strong>ComputeOpenedSpline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AEndCoeff: single = 0.25; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeOpenedSpline"></span><code>function <strong>ComputeOpenedSpline</strong>(const APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AStart, ACount: integer; AStyle: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>; AEndCoeff: single = 0.25; AAcceptedDeviation: single = <a href="BGRAPath.html#DefaultDeviation">DefaultDeviation</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeRoundRect"></span><code>function <strong>ComputeRoundRect</strong>(x1,y1,x2,y2,rx,ry: single; options: <a href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a>; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeRoundRect"></span><code>function <strong>ComputeRoundRect</strong>(x1,y1,x2,y2,rx,ry: single; quality: single = 1): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="Html5ArcTo"></span><code>function <strong>Html5ArcTo</strong>(const p0, p1, p2: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; radius: single): <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsLargeArc"></span><code>function <strong>IsLargeArc</strong>(const arc: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SplineVertexToSide"></span><code>function <strong>SplineVertexToSide</strong>(y0, y1, y2, y3: single; t: single): single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Spline &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SvgArcTo"></span><code>function <strong>SvgArcTo</strong>(const p0: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; rx, ry, xAngleRadCW: single; largeArc, anticlockwise: boolean; const p1: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>): <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRAPathDrawProc"></span><code><strong>TBGRAPathDrawProc</strong> = <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">BGRABitmapTypes.TBGRAPathDrawProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRAPathElementType"></span><code><strong>TBGRAPathElementType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="peNone">peNone</span></li>
+<li>
+<span id="peMoveTo">peMoveTo</span></li>
+<li>
+<span id="peLineTo">peLineTo</span></li>
+<li>
+<span id="peCloseSubPath">peCloseSubPath</span></li>
+<li>
+<span id="peQuadraticBezierTo">peQuadraticBezierTo</span></li>
+<li>
+<span id="peCubicBezierTo">peCubicBezierTo</span></li>
+<li>
+<span id="peArc">peArc</span></li>
+<li>
+<span id="peOpenedSpline">peOpenedSpline</span></li>
+<li>
+<span id="peClosedSpline">peClosedSpline</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRAPathFillProc"></span><code><strong>TBGRAPathFillProc</strong> = <a href="BGRABitmapTypes.html#TBGRAPathFillProc">BGRABitmapTypes.TBGRAPathFillProc</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DefaultDeviation"></span><code><strong>DefaultDeviation</strong> = 0.1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

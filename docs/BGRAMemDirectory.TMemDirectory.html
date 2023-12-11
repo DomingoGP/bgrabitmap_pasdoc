@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAMemDirectory: Class TMemDirectory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TMemDirectory"></span><h1 class="cio">Class TMemDirectory</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAMemDirectory.html">BGRAMemDirectory</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TMemDirectory = class(<a class="normal" href="BGRAMultiFileType.TMultiFileContainer.html">TMultiFileContainer</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">No description available, ancestor TMultiFileContainer description follows</div><p>
+<code>TMultiFileContainer</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor"><a class="normal" href="BGRAMultiFileType.TMultiFileContainer.html">TMultiFileContainer</a></li>
+<li class="thisitem">TMemDirectory</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="BGRAMemDirectory.TMemDirectory.html#Create">Create</a></strong>(AParentDirectory: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> = nil);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#AddDirectory">AddDirectory</a></strong>(AName: utf8string; AExtension: utf8string= ''; ACaseSensitive: boolean= true): integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <strong><a href="BGRAMemDirectory.TMemDirectory.html#CheckHeader">CheckHeader</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean; static;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#Equals">Equals</a></strong>(Obj: TObject): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#FindEntry">FindEntry</a></strong>(APath: utf8String; ACaseSensitive: boolean = true): <a href="BGRAMemDirectory.TMemDirectoryEntry.html">TMemDirectoryEntry</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#FindPath">FindPath</a></strong>(APath: utf8String; ACaseSensitive: boolean = true): <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#Rename">Rename</a></strong>(AName: utf8string; AExtension: utf8string; ANewName: utf8string; ACaseSensitive: boolean= true): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#CreateEntry">CreateEntry</a></strong>(AName: utf8string; AExtension: utf8string; AContent: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAMultiFileType.TMultiFileEntry.html">TMultiFileEntry</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAMemDirectory.TMemDirectory.html#SplitPath">SplitPath</a></strong>(APath: utf8string): <a href="BGRAMemDirectory.html#TMemDirectoryPath">TMemDirectoryPath</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAMemDirectory.TMemDirectory.html#CopyTo">CopyTo</a></strong>(ADest: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>; ARecursive: boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAMemDirectory.TMemDirectory.html#LoadFromEmbeddedStream">LoadFromEmbeddedStream</a></strong>(ARootStream, ADataStream: <a href="BGRAClasses.html#TStream">TStream</a>; AStartPos: int64);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAMemDirectory.TMemDirectory.html#LoadFromStream">LoadFromStream</a></strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAMemDirectory.TMemDirectory.html#SaveToEmbeddedStream">SaveToEmbeddedStream</a></strong>(ARootDest, ADataDest: <a href="BGRAClasses.html#TStream">TStream</a>; AStartPos: int64);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAMemDirectory.TMemDirectory.html#SaveToStream">SaveToStream</a></strong>(ADestination: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAMemDirectory.TMemDirectory.html#Directory">Directory</a></strong>[AIndex:integer]: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> read GetDirectory;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAMemDirectory.TMemDirectory.html#IsDirectory">IsDirectory</a></strong>[AIndex:integer]: boolean read GetIsDirectory;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAMemDirectory.TMemDirectory.html#IsEntryCompressed">IsEntryCompressed</a></strong>[AIndex:integer]: boolean read GetEntryCompressed write SetEntryCompressed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRAMemDirectory.TMemDirectory.html#ParentDirectory">ParentDirectory</a></strong>: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> read FParentDirectory;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(AParentDirectory: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> = nil);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddDirectory"></span><code>function <strong>AddDirectory</strong>(AName: utf8string; AExtension: utf8string= ''; ACaseSensitive: boolean= true): integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CheckHeader"></span><code>class function <strong>CheckHeader</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>): boolean; static;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Equals"></span><code>function <strong>Equals</strong>(Obj: TObject): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindEntry"></span><code>function <strong>FindEntry</strong>(APath: utf8String; ACaseSensitive: boolean = true): <a href="BGRAMemDirectory.TMemDirectoryEntry.html">TMemDirectoryEntry</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FindPath"></span><code>function <strong>FindPath</strong>(APath: utf8String; ACaseSensitive: boolean = true): <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Rename"></span><code>function <strong>Rename</strong>(AName: utf8string; AExtension: utf8string; ANewName: utf8string; ACaseSensitive: boolean= true): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="CreateEntry"></span><code>function <strong>CreateEntry</strong>(AName: utf8string; AExtension: utf8string; AContent: <a href="BGRAClasses.html#TStream">TStream</a>): <a href="BGRAMultiFileType.TMultiFileEntry.html">TMultiFileEntry</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SplitPath"></span><code>function <strong>SplitPath</strong>(APath: utf8string): <a href="BGRAMemDirectory.html#TMemDirectoryPath">TMemDirectoryPath</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyTo"></span><code>procedure <strong>CopyTo</strong>(ADest: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a>; ARecursive: boolean);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromEmbeddedStream"></span><code>procedure <strong>LoadFromEmbeddedStream</strong>(ARootStream, ADataStream: <a href="BGRAClasses.html#TStream">TStream</a>; AStartPos: int64);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFromStream"></span><code>procedure <strong>LoadFromStream</strong>(AStream: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToEmbeddedStream"></span><code>procedure <strong>SaveToEmbeddedStream</strong>(ARootDest, ADataDest: <a href="BGRAClasses.html#TStream">TStream</a>; AStartPos: int64);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveToStream"></span><code>procedure <strong>SaveToStream</strong>(ADestination: <a href="BGRAClasses.html#TStream">TStream</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Directory"></span><code>property <strong>Directory</strong>[AIndex:integer]: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> read GetDirectory;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsDirectory"></span><code>property <strong>IsDirectory</strong>[AIndex:integer]: boolean read GetIsDirectory;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsEntryCompressed"></span><code>property <strong>IsEntryCompressed</strong>[AIndex:integer]: boolean read GetEntryCompressed write SetEntryCompressed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ParentDirectory"></span><code>property <strong>ParentDirectory</strong>: <a href="BGRAMemDirectory.TMemDirectory.html">TMemDirectory</a> read FParentDirectory;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

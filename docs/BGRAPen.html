@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAPen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="unit">Unit BGRAPen</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Uses">Uses</a></div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="uses">Uses</h2>
+<ul class="useslist"><li>SysUtils</li><li><a href="BGRAGraphics.html">BGRAGraphics</a></li><li><a href="BGRABitmapTypes.html">BGRABitmapTypes</a></li><li><a href="BGRATransform.html">BGRATransform</a></li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BGRAPen.TBGRAPenStroker.html"><code>TBGRAPenStroker</code></a></td>
+<td class="itemdesc"><code>TBGRAPenStroker</code></td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPen.html#BGRADrawLineAliased">BGRADrawLineAliased</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; DrawLastPixel: boolean; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); deprecated;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPen.html#BGRADrawLineAntialias">BGRADrawLineAntialias</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; DrawLastPixel: boolean; LinearBlend : boolean = false); overload; deprecated;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPen.html#BGRADrawLineAntialias">BGRADrawLineAntialias</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; dashLen: integer; DrawLastPixel: boolean; var DashPos: integer; LinearBlend : boolean = false); overload; deprecated;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPen.html#BGRAEraseLineAliased">BGRAEraseLineAliased</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; alpha: byte; DrawLastPixel: boolean); deprecated;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="BGRAPen.html#BGRAEraseLineAntialias">BGRAEraseLineAntialias</a></strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; calpha: byte; DrawLastPixel: boolean); overload; deprecated;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#BGRAToPenStyle">BGRAToPenStyle</a></strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#ComputeWidePolylinePoints">ComputeWidePolylinePoints</a></strong>(const linepts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; width: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; linecap: <a href="BGRAPen.html#TPenEndCap">TPenEndCap</a>; joinstyle: <a href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a>; const penstyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; options: <a href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a>; miterLimit: single = 2; arrow: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> = nil): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#ComputeWidePolyPolylinePoints">ComputeWidePolyPolylinePoints</a></strong>(const linepts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; width: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; linecap: <a href="BGRAPen.html#TPenEndCap">TPenEndCap</a>; joinstyle: <a href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a>; const penstyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; options: <a href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a>; miterLimit: single = 2; arrow: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> = nil): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#CreateBrushTexture">CreateBrushTexture</a></strong>(prototype: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; brushstyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; PatternColor, BackgroundColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; width: integer = 8; height: integer = 8; penwidth: single = 1): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#DuplicatePenStyle">DuplicatePenStyle</a></strong>(ACustomPenStyle: array of single): <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#GetAlphaJoinFactor">GetAlphaJoinFactor</a></strong>(alpha: byte): single;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#IsClearPenStyle">IsClearPenStyle</a></strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#IsSolidPenStyle">IsSolidPenStyle</a></strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#PenStyleEqual">PenStyleEqual</a></strong>(AStyle1, AStyle2: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="BGRAPen.html#PenStyleToBGRA">PenStyleToBGRA</a></strong>(APenStyle: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>): <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#TBGRAPolyLineOption">TBGRAPolyLineOption</a></strong> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a></strong> = set of <a href="BGRAPen.html#TBGRAPolyLineOption">TBGRAPolyLineOption</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#TComputeArrowHeadProc">TComputeArrowHeadProc</a></strong> = function(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a> of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#TPenEndCap">TPenEndCap</a></strong> = <a href="BGRAGraphics.html#TPenEndCap">BGRAGraphics.TPenEndCap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a></strong> = <a href="BGRAGraphics.html#TPenJoinStyle">BGRAGraphics.TPenJoinStyle</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#ClearPenStyle">ClearPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#DashDotDotPenStyle">DashDotDotPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#DashDotPenStyle">DashDotPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#DashPenStyle">DashPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#DotPenStyle">DotPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="BGRAPen.html#SolidPenStyle">SolidPenStyle</a></strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRADrawLineAliased"></span><code>procedure <strong>BGRADrawLineAliased</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; DrawLastPixel: boolean; ADrawMode: <a href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a> = <a href="BGRABitmapTypes.html#dmDrawWithTransparency">dmDrawWithTransparency</a>); deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p><p>
+aliased version</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRADrawLineAntialias"></span><code>procedure <strong>BGRADrawLineAntialias</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; DrawLastPixel: boolean; LinearBlend : boolean = false); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p><p>
+antialiased version</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRADrawLineAntialias"></span><code>procedure <strong>BGRADrawLineAntialias</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; c1, c2: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; dashLen: integer; DrawLastPixel: boolean; var DashPos: integer; LinearBlend : boolean = false); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p><p>
+antialiased version with bicolor dashes (to draw a frame)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAEraseLineAliased"></span><code>procedure <strong>BGRAEraseLineAliased</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; alpha: byte; DrawLastPixel: boolean); deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p>&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAEraseLineAntialias"></span><code>procedure <strong>BGRAEraseLineAntialias</strong>(dest: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; x1, y1, x2, y2: integer; calpha: byte; DrawLastPixel: boolean); overload; deprecated;</code></td>
+</tr>
+<tr><td colspan="1">
+<p class="hint_directive">Warning: this symbol is deprecated.</p>&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BGRAToPenStyle"></span><code>function <strong>BGRAToPenStyle</strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeWidePolylinePoints"></span><code>function <strong>ComputeWidePolylinePoints</strong>(const linepts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; width: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; linecap: <a href="BGRAPen.html#TPenEndCap">TPenEndCap</a>; joinstyle: <a href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a>; const penstyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; options: <a href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a>; miterLimit: single = 2; arrow: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> = nil): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compute the path for a polyline</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ComputeWidePolyPolylinePoints"></span><code>function <strong>ComputeWidePolyPolylinePoints</strong>(const linepts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; width: single; pencolor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; linecap: <a href="BGRAPen.html#TPenEndCap">TPenEndCap</a>; joinstyle: <a href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a>; const penstyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>; options: <a href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a>; miterLimit: single = 2; arrow: <a href="BGRABitmapTypes.TBGRACustomArrow.html">TBGRACustomArrow</a> = nil): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compute the path for a poly-polyline</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="CreateBrushTexture"></span><code>function <strong>CreateBrushTexture</strong>(prototype: <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>; brushstyle: <a href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a>; PatternColor, BackgroundColor: <a href="BGRABitmapTypes.TBGRAPixel.html">TBGRAPixel</a>; width: integer = 8; height: integer = 8; penwidth: single = 1): <a href="BGRABitmapTypes.TBGRACustomBitmap.html">TBGRACustomBitmap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+create standard brush texture</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DuplicatePenStyle"></span><code>function <strong>DuplicatePenStyle</strong>(ACustomPenStyle: array of single): <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="GetAlphaJoinFactor"></span><code>function <strong>GetAlphaJoinFactor</strong>(alpha: byte): single;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+length added to ensure accepable alpha join (using <a class="normal" href="BGRAPolygon.TBGRAMultishapeFiller.html">TBGRAMultishapeFiller</a> is still better)</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsClearPenStyle"></span><code>function <strong>IsClearPenStyle</strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="IsSolidPenStyle"></span><code>function <strong>IsSolidPenStyle</strong>(ACustomPenStyle: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+check special pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PenStyleEqual"></span><code>function <strong>PenStyleEqual</strong>(AStyle1, AStyle2: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>): boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PenStyleToBGRA"></span><code>function <strong>PenStyleToBGRA</strong>(APenStyle: <a href="BGRAGraphics.html#TPenStyle">TPenStyle</a>): <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRAPolyLineOption"></span><code><strong>TBGRAPolyLineOption</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="plRoundCapOpen">plRoundCapOpen</span></li>
+<li>
+<span id="plCycle">plCycle</span>: specifies that the line ending is opened</li>
+<li>
+<span id="plAutoCycle">plAutoCycle</span>: specifies that it is a polygon</li>
+<li>
+<span id="plNoStartCap">plNoStartCap</span>: specifies that a cycle must be used if the last <a class="normal" href="BGRAClasses.html#Point">point</a> is the first <a class="normal" href="BGRAClasses.html#Point">point</a></li>
+<li>
+<span id="plNoEndCap">plNoEndCap</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBGRAPolyLineOptions"></span><code><strong>TBGRAPolyLineOptions</strong> = set of <a href="BGRAPen.html#TBGRAPolyLineOption">TBGRAPolyLineOption</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TComputeArrowHeadProc"></span><code><strong>TComputeArrowHeadProc</strong> = function(const APosition: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const ADirection: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; const AWidth: single; const ACurrentPos: single): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a> of object;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenEndCap"></span><code><strong>TPenEndCap</strong> = <a href="BGRAGraphics.html#TPenEndCap">BGRAGraphics.TPenEndCap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TPenJoinStyle"></span><code><strong>TPenJoinStyle</strong> = <a href="BGRAGraphics.html#TPenJoinStyle">BGRAGraphics.TPenJoinStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ClearPenStyle"></span><code><strong>ClearPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DashDotDotPenStyle"></span><code><strong>DashDotDotPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DashDotPenStyle"></span><code><strong>DashDotPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DashPenStyle"></span><code><strong>DashPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DotPenStyle"></span><code><strong>DotPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SolidPenStyle"></span><code><strong>SolidPenStyle</strong>: <a href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+predefined pen styles</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

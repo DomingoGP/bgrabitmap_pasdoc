@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Object TEasyBezierCurve</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TEasyBezierCurve"></span><h1 class="cio">Object TEasyBezierCurve</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TEasyBezierCurve = object(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TEasyBezierCurve</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TEasyBezierCurve</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#FClosed">FClosed</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#FCurves">FCurves</a></strong>: array of record
+      isCurvedToNext,isCurvedToPrevious: boolean;
+      Center,ControlPoint,NextCenter: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;
+    end;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#FInvalidated">FInvalidated</a></strong>: boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#FMinimumDotProduct">FMinimumDotProduct</a></strong>: single;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#FPoints">FPoints</a></strong>: array of record
+               Coord: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;
+               CurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>;
+             end;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#ComputeLength">ComputeLength</a></strong>: single;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#ToPoints">ToPoints</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#MaybeCurve">MaybeCurve</a></strong>(start1, end1, start2, end2: integer): boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#PointTransformNone">PointTransformNone</a></strong>(APoint: <a href="BGRABitmapTypes.html#PPointF">PPointF</a>; AData: Pointer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#PointTransformOffset">PointTransformOffset</a></strong>(APoint: <a href="BGRABitmapTypes.html#PPointF">PPointF</a>; AData: Pointer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#Clear">Clear</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#CopyToPath">CopyToPath</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AOffset: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AReverse: boolean = false); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#CopyToPath">CopyToPath</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; ATransformFunc: <a href="BGRABitmapTypes.html#TEasyBezierPointTransformFunc">TEasyBezierPointTransformFunc</a>; ATransformData: Pointer; AReverse: boolean = false); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#CopyToPath">CopyToPath</a></strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#Init">Init</a></strong>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#SetPoints">SetPoints</a></strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: array of <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#SetPoints">SetPoints</a></strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#SetPoints">SetPoints</a></strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: array of <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>; AStart, ACount: integer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#SetPoints">SetPoints</a></strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>; AStart, ACount: integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#ComputeQuadraticCurves">ComputeQuadraticCurves</a></strong>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#Closed">Closed</a></strong>: boolean read <a href="BGRABitmapTypes.TEasyBezierCurve.html#FClosed">FClosed</a> write SetClosed;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#CurveMode">CurveMode</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a> read GetCurveMode write SetCurveMode;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#CurveStartPoint">CurveStartPoint</a></strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetCurveStartPoint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#MinimumDotProduct">MinimumDotProduct</a></strong>: single read <a href="BGRABitmapTypes.TEasyBezierCurve.html#FMinimumDotProduct">FMinimumDotProduct</a> write SetMinimumDotProduct;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#Point">Point</a></strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetPoint write SetPoint;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <strong><a href="BGRABitmapTypes.TEasyBezierCurve.html#PointCount">PointCount</a></strong>: integer read GetPointCount;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FClosed"></span><code><strong>FClosed</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FCurves"></span><code><strong>FCurves</strong>: array of record
+      isCurvedToNext,isCurvedToPrevious: boolean;
+      Center,ControlPoint,NextCenter: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;
+    end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FInvalidated"></span><code><strong>FInvalidated</strong>: boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FMinimumDotProduct"></span><code><strong>FMinimumDotProduct</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPoints"></span><code><strong>FPoints</strong>: array of record
+               Coord: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;
+               CurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>;
+             end;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeLength"></span><code>function <strong>ComputeLength</strong>: single;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ToPoints"></span><code>function <strong>ToPoints</strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="MaybeCurve"></span><code>function <strong>MaybeCurve</strong>(start1, end1, start2, end2: integer): boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="PointTransformNone"></span><code>function <strong>PointTransformNone</strong>(APoint: <a href="BGRABitmapTypes.html#PPointF">PPointF</a>; AData: Pointer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="PointTransformOffset"></span><code>function <strong>PointTransformOffset</strong>(APoint: <a href="BGRABitmapTypes.html#PPointF">PPointF</a>; AData: Pointer): <a href="BGRABitmapTypes.html#TPointF">TPointF</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <strong>Clear</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyToPath"></span><code>procedure <strong>CopyToPath</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; AOffset: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; AReverse: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyToPath"></span><code>procedure <strong>CopyToPath</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>; ATransformFunc: <a href="BGRABitmapTypes.html#TEasyBezierPointTransformFunc">TEasyBezierPointTransformFunc</a>; ATransformData: Pointer; AReverse: boolean = false); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CopyToPath"></span><code>procedure <strong>CopyToPath</strong>(ADest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Init"></span><code>procedure <strong>Init</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPoints"></span><code>procedure <strong>SetPoints</strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: array of <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPoints"></span><code>procedure <strong>SetPoints</strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPoints"></span><code>procedure <strong>SetPoints</strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: array of <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>; AStart, ACount: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetPoints"></span><code>procedure <strong>SetPoints</strong>(APoints: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; ACurveMode: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a>; AStart, ACount: integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeQuadraticCurves"></span><code>procedure <strong>ComputeQuadraticCurves</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Closed"></span><code>property <strong>Closed</strong>: boolean read <a href="BGRABitmapTypes.TEasyBezierCurve.html#FClosed">FClosed</a> write SetClosed;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurveMode"></span><code>property <strong>CurveMode</strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a> read GetCurveMode write SetCurveMode;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CurveStartPoint"></span><code>property <strong>CurveStartPoint</strong>: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetCurveStartPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="MinimumDotProduct"></span><code>property <strong>MinimumDotProduct</strong>: single read <a href="BGRABitmapTypes.TEasyBezierCurve.html#FMinimumDotProduct">FMinimumDotProduct</a> write SetMinimumDotProduct;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Point"></span><code>property <strong>Point</strong>[AIndex:integer]: <a href="BGRABitmapTypes.html#TPointF">TPointF</a> read GetPoint write SetPoint;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PointCount"></span><code>property <strong>PointCount</strong>: integer read GetPointCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

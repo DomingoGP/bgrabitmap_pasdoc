@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRABitmapTypes: Interface IBGRAPath</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="IBGRAPath"></span><h1 class="cio">Interface IBGRAPath</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRABitmapTypes.html">BGRABitmapTypes</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IBGRAPath = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+* A path is the ability to define a contour with ''<a class="normal" href="BGRABitmapTypes.IBGRAPath.html#moveTo">moveTo</a>'', ''<a class="normal" href="BGRABitmapTypes.IBGRAPath.html#lineTo">lineTo</a>''... Even if it is an interface, it must not implement reference counting.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IBGRAPath</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAPath.html#getCursor">getCursor</a></strong>: <a href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAPath.html#getPoints">getPoints</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRABitmapTypes.IBGRAPath.html#getPoints">getPoints</a></strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#arc">arc</a></strong>(constref arcDef: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#bezierCurveTo">bezierCurveTo</a></strong>(constref cp1,cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#closedSpline">closedSpline</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#closePath">closePath</a></strong>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#copyTo">copyTo</a></strong>(dest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#fill">fill</a></strong>(AFillProc: <a href="BGRABitmapTypes.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#fill">fill</a></strong>(AFillProc: <a href="BGRABitmapTypes.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#lineTo">lineTo</a></strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#moveTo">moveTo</a></strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#openedSpline">openedSpline</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#polylineTo">polylineTo</a></strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#quadraticCurveTo">quadraticCurveTo</a></strong>(constref cp,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#stroke">stroke</a></strong>(ADrawProc: <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRABitmapTypes.IBGRAPath.html#stroke">stroke</a></strong>(ADrawProc: <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="getCursor"></span><code>function <strong>getCursor</strong>: <a href="BGRABitmapTypes.TBGRACustomPathCursor.html">TBGRACustomPathCursor</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns a cursor to go through the path. The cursor must be freed by calling ''Free''.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="getPoints"></span><code>function <strong>getPoints</strong>: <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the content of the path as an array of points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="getPoints"></span><code>function <strong>getPoints</strong>(AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>): <a href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the content of the path as an array of points with the transformation specified by ''AMatrix''</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="arc"></span><code>procedure <strong>arc</strong>(constref arcDef: <a href="BGRABitmapTypes.TArcDef.html">TArcDef</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an <code>arc</code>. If there is a current <a class="normal" href="BGRAClasses.html#Point">point</a>, it is connected to the beginning of the <code>arc</code></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="bezierCurveTo"></span><code>procedure <strong>bezierCurveTo</strong>(constref cp1,cp2,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a cubic BÃ©zier curve from the current <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="closedSpline"></span><code>procedure <strong>closedSpline</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an closed spline. If there is a current <a class="normal" href="BGRAClasses.html#Point">point</a>, it is connected to the beginning of the spline</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="closePath"></span><code>procedure <strong>closePath</strong>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Closes the current path with a line to the starting <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="copyTo"></span><code>procedure <strong>copyTo</strong>(dest: <a href="BGRABitmapTypes.IBGRAPath.html">IBGRAPath</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Copy the content of this path to the specified destination</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill"></span><code>procedure <strong>fill</strong>(AFillProc: <a href="BGRABitmapTypes.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calls a given <a class="normal" href="BGRABitmapTypes.IBGRAPath.html#fill">fill</a> procedure for each sub path with computed coordinates for rendering</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="fill"></span><code>procedure <strong>fill</strong>(AFillProc: <a href="BGRABitmapTypes.html#TBGRAPathFillProc">TBGRAPathFillProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="lineTo"></span><code>procedure <strong>lineTo</strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a line from the current <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="moveTo"></span><code>procedure <strong>moveTo</strong>(constref pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Moves to a location, disconnected from previous points</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="openedSpline"></span><code>procedure <strong>openedSpline</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>; style: <a href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds an opened spline. If there is a current <a class="normal" href="BGRAClasses.html#Point">point</a>, it is connected to the beginning of the spline</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="polylineTo"></span><code>procedure <strong>polylineTo</strong>(const pts: array of <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a polyline from the current <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="quadraticCurveTo"></span><code>procedure <strong>quadraticCurveTo</strong>(constref cp,pt: <a href="BGRABitmapTypes.html#TPointF">TPointF</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds a quadratic BÃ©zier curve from the current <a class="normal" href="BGRAClasses.html#Point">point</a></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke"></span><code>procedure <strong>stroke</strong>(ADrawProc: <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calls a given draw procedure for each sub path with computed coordinates for rendering</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="stroke"></span><code>procedure <strong>stroke</strong>(ADrawProc: <a href="BGRABitmapTypes.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a>; const AMatrix: <a href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a>; AData: pointer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

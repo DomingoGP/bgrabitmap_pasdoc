@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: All Types</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<h1 class="allitems">All Types</h1>
+<table class="itemstable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemunit">Unit</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#ArrayOfFloat">ArrayOfFloat</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#arrayOfIBGRAVertex3D">arrayOfIBGRAVertex3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRADNetDeserial.html#arrayOfLongword">arrayOfLongword</a></td>
+<td class="itemunit"><a class="bold" href="BGRADNetDeserial.html">BGRADNetDeserial</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRADNetDeserial.html#ArrayOfNameValue">ArrayOfNameValue</a></td>
+<td class="itemunit"><a class="bold" href="BGRADNetDeserial.html">BGRADNetDeserial</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#ArrayOfSingle">ArrayOfSingle</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>A quasi-standard rational quadratic Bezier curve is defined by three points and a number: p1 = starting <a class="normal" href="BGRAClasses.html#Point">point</a> c = control <a class="normal" href="BGRAClasses.html#Point">point</a> p2 = ending <a class="normal" href="BGRAClasses.html#Point">point</a> weight = weight for the control <a class="normal" href="BGRAClasses.html#Point">point</a>
+
+<p>The curve is defined with the function (t in [0;1]): f: t -&gt; ((1-t)&circ;2*p1 + 2*t*(1-t)*weight*c + t&circ;2*p2) / (1-t)&circ;2 + 2*t*(1-t)*weight + t&circ;2)
+
+<p>The curve is an arc of: - ellipse when weight in ]-1;1[ - parabola when weight = 1 (classical quadratic Bezier curve) - hyperbola when weight &gt; 1
+
+<p>A negative weight give the complementary curve for its positive counterpart.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#ArrayOfSingle">ArrayOfSingle</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRACanvas2D.html#ArrayOfString">ArrayOfString</a></td>
+<td class="itemunit"><a class="bold" href="BGRACanvas2D.html">BGRACanvas2D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#ArrayOfString">ArrayOfString</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#ArrayOfTBGRAPixel">ArrayOfTBGRAPixel</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Array of pixels</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#ArrayOfTColorF">ArrayOfTColorF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#ArrayOfTColorF">ArrayOfTColorF</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGShapes.html#ArrayOfTextParts">ArrayOfTextParts</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGShapes.html">BGRASVGShapes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnits.html#ArrayOfTFloatWithCSSUnit">ArrayOfTFloatWithCSSUnit</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnits.html">BGRAUnits</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>An array of intersections between an horizontal line and any shape</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#ArrayOfTPointF">ArrayOfTPointF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Contains an array of points with single-precision floating <a class="normal" href="BGRAClasses.html#Point">point</a> coordinates</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#ArrayOfTStyleAttribute">ArrayOfTStyleAttribute</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnits.html#ArrayOfTSVGNumber">ArrayOfTSVGNumber</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnits.html">BGRAUnits</a></td>
+<td class="itemdesc"><p>double</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGShapes.html#ArrayOfTSVGStyleItem">ArrayOfTSVGStyleItem</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGShapes.html">BGRASVGShapes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#ArrayOfWeightedColor">ArrayOfWeightedColor</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifAddImageFlag">avifAddImageFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifAddImageFlags">avifAddImageFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifBool">avifBool</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifChannelIndex">avifChannelIndex</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>These can be used as the index for the yuvPlanes and yuvRowBytes arrays in avifImage.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifChromaDownsampling">avifChromaDownsampling</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Uses bilinear filter</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifChromaSamplePosition">avifChromaSamplePosition</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifChromaUpsampling">avifChromaUpsampling</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="avifbgra.html#avifCodecChoice">avifCodecChoice</a></td>
+<td class="itemunit"><a class="bold" href="avifbgra.html">avifbgra</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifCodecChoice">avifCodecChoice</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifCodecFlag">avifCodecFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifCodecFlags">avifCodecFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifColorPrimaries">avifColorPrimaries</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifDecoderSource">avifDecoderSource</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifIODestroyFunc">avifIODestroyFunc</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>a <a class="normal" href="libavif.html">libavif</a> encoder/decoder.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifIOReadFunc">avifIOReadFunc</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>* Otherwise, provide the range and return <a class="normal" href="libavif.html#AVIF_RESULT_OK">AVIF_RESULT_OK</a>.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifIOWriteFunc">avifIOWriteFunc</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifMatrixCoefficients">avifMatrixCoefficients</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="avifbgra.html#avifPixelFormat">avifPixelFormat</a></td>
+<td class="itemunit"><a class="bold" href="avifbgra.html">avifbgra</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifPixelFormat">avifPixelFormat</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifPlanesFlag">avifPlanesFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifPlanesFlags">avifPlanesFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifProgressiveState">avifProgressiveState</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifRange">avifRange</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifResult">avifResult</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifRGBFormat">avifRGBFormat</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifStrictFlag">avifStrictFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifStrictFlags">avifStrictFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifTransferCharacteristics">avifTransferCharacteristics</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#avifTransformFlag">avifTransformFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#avifTransformFlags">avifTransformFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#EFCreateError">EFCreateError</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#EFOpenError">EFOpenError</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#EInvalidOperation">EInvalidOperation</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#float">float</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#HDC">HDC</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#IBGLFont">IBGLFont</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#IBGLRenderedFont">IBGLRenderedFont</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#IBGLTexture">IBGLTexture</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRADirectionalLight3D">IBGRADirectionalLight3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAFace3D">IBGRAFace3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRALight3D">IBGRALight3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAMaterial3D">IBGRAMaterial3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRANormal3D">IBGRANormal3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAObject3D">IBGRAObject3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAPart3D">IBGRAPart3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAPointLight3D">IBGRAPointLight3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#IBGRAVertex3D">IBGRAVertex3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#Int32or64">Int32or64</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#Int32or64">Int32or64</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PAdobeRGBA">PAdobeRGBA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TAdobeRGBA.html">TAdobeRGBA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PArcDef">PArcDef</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Pointer to an arc definition</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifAddImageFlag">PavifAddImageFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Use this flag when encoding a single frame, single layer image.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifAddImageFlags">PavifAddImageFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifBool">PavifBool</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifChromaSamplePosition">PavifChromaSamplePosition</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.html#avifChromaSamplePosition">avifChromaSamplePosition</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifChromaUpsampling">PavifChromaUpsampling</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCleanApertureBox">PavifCleanApertureBox</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCodecChoice">PavifCodecChoice</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Codec selection</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCodecFlag">PavifCodecFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Experimental (AV2)</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCodecFlags">PavifCodecFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCodecSpecificOptions">PavifCodecSpecificOptions</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifColorPrimaries">PavifColorPrimaries</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifCropRect">PavifCropRect</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.avifCropRect.html">avifCropRect</a> - Helper struct/functions to work with <a class="normal" href="libavif.avifCleanApertureBox.html">avifCleanApertureBox</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder">PavifDecoder</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>NOTE: The avifDecoder struct may be extended in a future release.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder0_10_0">PavifDecoder0_10_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder0_11_0">PavifDecoder0_11_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder0_8_4">PavifDecoder0_8_4</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder0_9_2">PavifDecoder0_9_2</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder0_9_3">PavifDecoder0_9_3</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoder1_0_0">PavifDecoder1_0_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoderData">PavifDecoderData</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDecoderSource">PavifDecoderSource</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifDiagnostics">PavifDiagnostics</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>more detail.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifEncoder">PavifEncoder</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>call to <a class="normal" href="libavif.html#avifEncoderAddImage">avifEncoderAddImage</a>().</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifEncoder0_11_0">PavifEncoder0_11_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifEncoder1_0_0">PavifEncoder1_0_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifEncoderData">PavifEncoderData</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.avifEncoder.html">avifEncoder</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifExtent">PavifExtent</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.avifExtent.html">avifExtent</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImage">PavifImage</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImage0_11_0">PavifImage0_11_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImage0_8_4">PavifImage0_8_4</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImage1_0_0">PavifImage1_0_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>NOTE: The avifImage struct may be extended in a future release.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImageMirror">PavifImageMirror</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImageRotation">PavifImageRotation</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifImageTiming">PavifImageTiming</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Information about the timing of a single image in an image sequence</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifIO">PavifIO</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.avifIO.html">avifIO</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifIOStats">PavifIOStats</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Useful stats related to a read/write</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifMatrixCoefficients">PavifMatrixCoefficients</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifPixelAspectRatioBox">PavifPixelAspectRatioBox</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>define the relative width and height of a pixel</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifPixelFormat">PavifPixelFormat</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>No pixels are present</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifPixelFormatInfo">PavifPixelFormatInfo</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifPlanesFlag">PavifPlanesFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifPlanesFlags">PavifPlanesFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifProgressiveState">PavifProgressiveState</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRange">PavifRange</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.html#avifRange">avifRange</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifResult">PavifResult</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>a requested code path is not (yet) implemented</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBFormat">PavifRGBFormat</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>correctness.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBImage">PavifRGBImage</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Uses sharp yuv filter (libsharpyuv), available for 4:2:0 only, ignored for 4:2:2 NOTE: avifRGBImage must be initialized with <a class="normal" href="libavif.html#avifRGBImageSetDefaults">avifRGBImageSetDefaults</a>() (preferred) or memset() before use.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBImage0_10_0">PavifRGBImage0_10_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBImage0_11_0">PavifRGBImage0_11_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBImage0_8_4">PavifRGBImage0_8_4</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRGBImage1_0_0">PavifRGBImage1_0_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifROData">PavifROData</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p><a class="normal" href="libavif.avifROData.html">avifROData</a>/<a class="normal" href="libavif.avifRWData.html">avifRWData</a>: Generic raw memory storage</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifRWData">PavifRWData</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Note: Use <a class="normal" href="libavif.html#avifRWDataFree">avifRWDataFree</a>() if any avif*() function populates one of these.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifStrictFlag">PavifStrictFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>allow a user of avifDecoder to decide what level of strictness they want in their project.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifStrictFlags">PavifStrictFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifTransferCharacteristics">PavifTransferCharacteristics</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PavifTransformFlag">PavifTransformFlag</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>Optional transformation structs</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PavifTransformFlags">PavifTransformFlags</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASSE.html#PBasicLightingContext">PBasicLightingContext</a></td>
+<td class="itemunit"><a class="bold" href="BGRASSE.html">BGRASSE</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRACoordPool3D.html#PBGRACoordData3D">PBGRACoordData3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRACoordPool3D.html">BGRACoordPool3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#PBGRAIndexedPaletteEntry">PBGRAIndexedPaletteEntry</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRACoordPool3D.html#PBGRANormalData3D">PBGRANormalData3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRACoordPool3D.html">BGRACoordPool3D</a></td>
+<td class="itemdesc"><p>80</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PBGRAPixel">PBGRAPixel</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Pointer for direct pixel access.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#PBGRAWeightedPaletteEntry">PBGRAWeightedPaletteEntry</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATextBidi.html#PBrokenLineInfo">PBrokenLineInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRATextBidi.html">BGRATextBidi</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PByteMask">PByteMask</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TByteMask.html">TByteMask</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#PColor">PColor</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFillInfo.html#PCustomPointRecord">PCustomPointRecord</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFillInfo.html">BGRAFillInfo</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PDefaultSolidBrushIndirectFixedData">PDefaultSolidBrushIndirectFixedData</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFillInfo.html#PDensity">PDensity</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFillInfo.html">BGRAFillInfo</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PExpandedPixel">PExpandedPixel</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadGif.html#PGifRGB">PGifRGB</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadGif.html">BGRAReadGif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PIntersectionInfo">PIntersectionInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PLabA">PLabA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TLabA.html">TLabA</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PLChA">PLChA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TLChA.html">TLChA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#PLinearColorInfo">PLinearColorInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PLinearRGBA">PLinearRGBA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TLinearRGBA.html">TLinearRGBA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#PLinearTextureInfo">PLinearTextureInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAFillInfo.html#POnePassRecord">POnePassRecord</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFillInfo.html">BGRAFillInfo</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATextBidi.html#PParagraphInfo">PParagraphInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRATextBidi.html">BGRATextBidi</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATextBidi.html#PPartInfo">PPartInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRATextBidi.html">BGRATextBidi</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PPavifImage">PPavifImage</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PPavifImage0_11_0">PPavifImage0_11_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#PPavifImage0_8_4">PPavifImage0_8_4</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PPavifImage1_0_0">PPavifImage1_0_0</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#PPerspectiveColorInfo">PPerspectiveColorInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#PPerspectiveTextureInfo">PPerspectiveTextureInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#PPoint">PPoint</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PPoint3D">PPoint3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* <a class="normal" href="BGRAClasses.html#Point">Point</a> in 3D with single-precision floating <a class="normal" href="BGRAClasses.html#Point">point</a> coordinates</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASSE.html#PPoint3D_128">PPoint3D_128</a></td>
+<td class="itemunit"><a class="bold" href="BGRASSE.html">BGRASSE</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PPointF">PPointF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Pointer to a ''<a class="normal" href="BGRABitmapTypes.html#TPointF">TPointF</a>'' structure</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadPSD.html#PPSDResourceBlock">PPSDResourceBlock</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPSD.html">BGRAReadPSD</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadPSD.html#PPSDResourceBlockData">PPSDResourceBlockData</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPSD.html">BGRAReadPSD</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#PRect">PRect</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PRectF">PRectF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#PRectF">PRectF</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#PSceneLightingContext">PSceneLightingContext</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#PSize">PSize</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#PSize_type">PSize_type</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PStdCMYK">PStdCMYK</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TStdCMYK.html">TStdCMYK</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PStdHSLA">PStdHSLA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TStdHSLA.html">TStdHSLA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PStdHSVA">PStdHSVA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TStdHSVA.html">TStdHSVA</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PStdRGBA">PStdRGBA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TStdRGBA.html">TStdRGBA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAWriteTiff.html#PTiffWriterChunk">PTiffWriterChunk</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWriteTiff.html">BGRAWriteTiff</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PUniBrushContext">PUniBrushContext</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Working area to be provided to a brush</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#PUnicodeBidiInfo">PUnicodeBidiInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p>the glyph is mirrored when in RTL text</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PUniversalBrush">PUniversalBrush</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TUniversalBrush.html">TUniversalBrush</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#PVP8Decoder">PVP8Decoder</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Main decoding object.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libwebp.html#PVP8Io">PVP8Io</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Input / Output</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#PWebPAuxStats">PWebPAuxStats</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p><a class="normal" href="libwebp.TWebPPicture.html">TWebPPicture</a> = record end; // main structure for I/O non-essential structure for storing auxilliary statistics</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libwebp.html#PWebPConfig">PWebPConfig</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Coding parameters</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#PWebPDecParams">PWebPDecParams</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Decoding output parameters.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libwebp.html#PWebPIDecoder">PWebPIDecoder</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#PWebPPicture">PWebPPicture</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>text-like</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PWordXYZA">PWordXYZA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TWordXYZA.html">TWordXYZA</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PXYZA">PXYZA</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TXYZA.html">TXYZA</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PXYZReferenceWhite">PXYZReferenceWhite</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>ITU-R BT.601 ITU-R BT.601 adapted for JPEG ITU-R BT.709 ITU-R BT.709 adapted for JPEG SMPTE 240M</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PYCbCr601">PYCbCr601</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TYCbCr601.html">TYCbCr601</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PYCbCr601JPEG">PYCbCr601JPEG</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TYCbCr601JPEG.html">TYCbCr601JPEG</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PYCbCr709">PYCbCr709</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TYCbCr709.html">TYCbCr709</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#PYCbCr709JPEG">PYCbCr709JPEG</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TYCbCr709JPEG.html">TYCbCr709JPEG</a></p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#size_type">size_type</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#string4">string4</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATransform.html#TAffineBox">TAffineBox</a></td>
+<td class="itemunit"><a class="bold" href="BGRATransform.html">BGRATransform</a></td>
+<td class="itemdesc"><p>Contains an affine base and information on the resulting box</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TAffineMatrix">TAffineMatrix</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* An affine matrix contains three 2D vectors: the image of x, the image of y and the translation</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TAffineMatrix">TAffineMatrix</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TAffineMatrix">TAffineMatrix</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATransform.html#TAffineMatrix">TAffineMatrix</a></td>
+<td class="itemunit"><a class="bold" href="BGRATransform.html">BGRATransform</a></td>
+<td class="itemdesc"><p>Contains an affine matrix, i.e.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TAlignment">TAlignment</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TAlphaChannelPaletteOption">TAlphaChannelPaletteOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Specifies how a palette handles the alpha channel</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TAnalysisChangedEvent">TAnalysisChangedEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TAntialiasingMode">TAntialiasingMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TAntialiasingMode3D">TAntialiasingMode3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TAntialiasingMode3D">TAntialiasingMode3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TArcOption">TArcOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Possible options for drawing an arc of an ellipse (used in ''<a class="normal" href="BGRACanvas.html">BGRACanvas</a>'')</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TArcOptions">TArcOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Set of options for drawing an arc</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL3D.html#TAttributeVariable">TAttributeVariable</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL3D.html">BGRAOpenGL3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libavif.html#TAvifArrayOf256AnsiChar">TAvifArrayOf256AnsiChar</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libavif.html#TAvifArrayOf8Float">TAvifArrayOf8Float</a></td>
+<td class="itemunit"><a class="bold" href="libavif.html">libavif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TBGLBitmapAny">TBGLBitmapAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TBGLCustomArray">TBGLCustomArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TBGLCustomCanvas">TBGLCustomCanvas</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TBGLCustomElementArray">TBGLCustomElementArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TBGLPath">TBGLPath</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TBGLSprite">TBGLSprite</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TBGLTextureAny">TBGLTextureAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TBGLTextureHandle">TBGLTextureHandle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAArrowStyle">TBGRAArrowStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRABitmapAny">TBGRABitmapAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TBGRABitmapArray">TBGRABitmapArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradientOriginal.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientOriginal.html">BGRAGradientOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#TBGRAColorInterpolation">TBGRAColorInterpolation</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TBGRAColorQuantizerAny">TBGRAColorQuantizerAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadPng.html#TBGRAConvertColorProc">TBGRAConvertColorProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPng.html">BGRAReadPng</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRACustomLayeredBitmapClass">TBGRACustomLayeredBitmapClass</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAFontQuality">TBGRAFontQuality</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Quality to be used to render text</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAGradientGetColorAtFloatFunc">TBGRAGradientGetColorAtFloatFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAGradientGetColorAtFunc">TBGRAGradientGetColorAtFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAGradientGetExpandedColorAtFloatFunc">TBGRAGradientGetExpandedColorAtFloatFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAGradientGetExpandedColorAtFunc">TBGRAGradientGetExpandedColorAtFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradientOriginal.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientOriginal.html">BGRAGradientOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#TBGRAGradientRepetition">TBGRAGradientRepetition</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanAtFunc">TBGRAGradientScannerInternalScanAtFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#TBGRAGradientScannerInternalScanNextFunc">TBGRAGradientScannerInternalScanNextFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAImageFormat">TBGRAImageFormat</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* List of image formats</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRALayeredBitmapCheckStreamProc">TBGRALayeredBitmapCheckStreamProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRALayeredBitmapClass">TBGRALayeredBitmapClass</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRALayeredBitmapLoadFromStreamProc">TBGRALayeredBitmapLoadFromStreamProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRALayeredBitmapSaveToStreamProc">TBGRALayeredBitmapSaveToStreamProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TBGRALayerOriginalAny">TBGRALayerOriginalAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TBGRALayerOriginalList">TBGRALayerOriginalList</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TBGRALeafColorMode">TBGRALeafColorMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRALoadingOption">TBGRALoadingOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Options when loading an image</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRALoadingOptions">TBGRALoadingOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TBGRAMaterialTextureChangedEvent">TBGRAMaterialTextureChangedEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TBGRAOriginalPolylineStyle">TBGRAOriginalPolylineStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TBGRAPaletteFormat">TBGRAPaletteFormat</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAPathAny">TBGRAPathAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPath.html#TBGRAPathDrawProc">TBGRAPathDrawProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPath.html">BGRAPath</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPath.html#TBGRAPathElementType">TBGRAPathElementType</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPath.html">BGRAPath</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAPathFillProc">TBGRAPathFillProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPath.html#TBGRAPathFillProc">TBGRAPathFillProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPath.html">BGRAPath</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAPenStyle">TBGRAPenStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* A pen style can be dashed, dotted, etc.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRAPixelBuffer">TBGRAPixelBuffer</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TBGRAPixelComparer">TBGRAPixelComparer</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPen.html#TBGRAPolyLineOption">TBGRAPolyLineOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPen.html">BGRAPen</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPen.html#TBGRAPolyLineOptions">TBGRAPolyLineOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPen.html">BGRAPen</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TBGRATextDisplayInfo">TBGRATextDisplayInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRATextOutImproveReadabilityMode">TBGRATextOutImproveReadabilityMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Output mode for the improved renderer for readability.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRATypeWriterAlignment">TBGRATypeWriterAlignment</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Alignment for a typewriter, that does not have any more information than a square shape containing glyphs</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBGRATypeWriterOutlineMode">TBGRATypeWriterOutlineMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* How a typewriter must render its content on a <a class="normal" href="introduction.html#Canvas2d">Canvas2d</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBidiTextAlignment">TBidiTextAlignment</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TBidiTreeAny">TBidiTreeAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TBidiUTF8Array">TBidiUTF8Array</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TBiggestLeafMethod">TBiggestLeafMethod</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TBitmap">TBitmap</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TBitMapFileHeader">TBitMapFileHeader</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TBitMapInfoHeader">TBitMapInfoHeader</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TBitmapSubFormat">TBitmapSubFormat</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TBlendOperation">TBlendOperation</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Advanced blending modes.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TBMPTransparencyOption">TBMPTransparencyOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATextBidi.html#TBrokenLinesChangedEvent">TBrokenLinesChangedEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRATextBidi.html">BGRATextBidi</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TBrowseGlyphCallback">TBrowseGlyphCallback</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TBrowseGlyphCallbackFlag">TBrowseGlyphCallbackFlag</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TBrowseGlyphCallbackFlags">TBrowseGlyphCallbackFlags</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TBrush">TBrush</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TBrushStyle">TBrushStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadIco.html#TByteSet">TByteSet</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadIco.html">BGRAReadIco</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TCanvas">TCanvas</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TChannel">TChannel</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Possible channels in a bitmap using any RGBA colorspace</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TChannels">TChannels</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Combination of channels</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TCheckPaletteFormatProc">TCheckPaletteFormatProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFilterType.html#TCheckShouldStopFunc">TCheckShouldStopFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFilterType.html">BGRAFilterType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TClickPointHandlers">TClickPointHandlers</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TColor">TColor</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TColorBoxBounds">TColorBoxBounds</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TColorDimension">TColorDimension</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TColorDimensions">TColorDimensions</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorF">TColorF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* General purpose color variable with single-precision floating <a class="normal" href="BGRAClasses.html#Point">point</a> values</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAWritePNG.html#TColorFormatFunction">TColorFormatFunction</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWritePNG.html">BGRAWritePNG</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorspaceAny">TColorspaceAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorspaceConvertArrayProc">TColorspaceConvertArrayProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorspaceFlag">TColorspaceFlag</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorspaceFlags">TColorspaceFlags</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>XYZ, L*a*b*, LCh</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorspaceOverflow">TColorspaceOverflow</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* How to handle overflow when converting from XYZ</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TColorTransparency">TColorTransparency</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TComponent">TComponent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPen.html#TComputeArrowHeadProc">TComputeArrowHeadProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPen.html">BGRAPen</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAMatrix3D.html#TComputeProjectionFunc">TComputeProjectionFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMatrix3D.html">BGRAMatrix3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadPng.html#TConvertColorProc">TConvertColorProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPng.html">BGRAReadPng</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGShapes.html#TConvMethod">TConvMethod</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGShapes.html">BGRASVGShapes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVG.html#TCSSUnit">TCSSUnit</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVG.html">BGRASVG</a></td>
+<td class="itemdesc"><p>An SVG file has a width and height which describe the viewport <a class="normal" href="BGRAClasses.html#Size">size</a>.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnits.html#TCSSUnit">TCSSUnit</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnits.html">BGRAUnits</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadIco.html#TCustomIconClass">TCustomIconClass</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadIco.html">BGRAReadIco</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#TDecState">TDecState</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TDeleteCharEvent">TDeleteCharEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFillInfo.html#TDensity">TDensity</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFillInfo.html">BGRAFillInfo</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAAnimatedGif.html#TDisposeMode">TDisposeMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAAnimatedGif.html">BGRAAnimatedGif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGifFormat.html#TDisposeMode">TDisposeMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGifFormat.html">BGRAGifFormat</a></td>
+<td class="itemdesc"><p>what to do when finishing a frame and starting the next one</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TDitheringAlgorithm">TDitheringAlgorithm</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Dithering algorithms that specifies how to handle colors that are not found in the palette</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TDrawMode">TDrawMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Possible modes when drawing a pixel over another one</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TEasyBezierCurveMode">TEasyBezierCurveMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TEasyBezierPointTransformFunc">TEasyBezierPointTransformFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TEmbeddedOriginalChangeEvent">TEmbeddedOriginalChangeEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TEmbeddedOriginalEditingChangeEvent">TEmbeddedOriginalEditingChangeEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TEmbeddedOriginalLoadErrorEvent">TEmbeddedOriginalLoadErrorEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TEmbossOption">TEmbossOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TEmbossOptions">TEmbossOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAMemDirectory.html#TEntryFilename">TEntryFilename</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMemDirectory.html">BGRAMemDirectory</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TExpandedPixelBuffer">TExpandedPixelBuffer</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TFace3DCallback">TFace3DCallback</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TFaceCulling">TFaceCulling</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TFaceCulling">TFaceCulling</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TFileStreamUTF8">TFileStreamUTF8</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>equivalent of CRLF</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFillMode">TFillMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFillStyle">TFillStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFilters.html#TFilterTask">TFilterTask</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFilters.html">BGRAFilters</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TFindStyleState">TFindStyleState</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TFloodfillMode">TFloodfillMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Options when doing a floodfill (also called bucket fill)</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFont">TFont</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TFontBidiMode">TFontBidiMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#TFontBidiMode">TFontBidiMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p>C</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFontQuality">TFontQuality</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFontStyle">TFontStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TFontStyles">TFontStyles</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TFontVerticalAnchor">TFontVerticalAnchor</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Vertical anchoring of the font.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAWriteJpeg.html#TFPJPEGCompressionQuality">TFPJPEGCompressionQuality</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWriteJpeg.html">BGRAWriteJpeg</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRAWriteJpeg.TBGRAWriterJPEG.html">TBGRAWriterJPEG</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TFPList">TFPList</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>types always imported from Classes</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRADNetDeserial.html#TGenericArrayType">TGenericArrayType</a></td>
+<td class="itemunit"><a class="bold" href="BGRADNetDeserial.html">BGRADNetDeserial</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TGetFineClearTypeAutoFunc">TGetFineClearTypeAutoFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAWritePNG.html#TGetPixelBGRAFunc">TGetPixelBGRAFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWritePNG.html">BGRAWritePNG</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAWritePNG.html#TGetPixelFunc">TGetPixelFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWritePNG.html">BGRAWritePNG</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAAnimatedGif.html#TGifBackgroundMode">TGifBackgroundMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAAnimatedGif.html">BGRAAnimatedGif</a></td>
+<td class="itemdesc"><p>how to deal with the background under the GIF animation</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGifFormat.html#TGIFSignature">TGIFSignature</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGifFormat.html">BGRAGifFormat</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAAnimatedGif.html#TGifSubImage">TGifSubImage</a></td>
+<td class="itemunit"><a class="bold" href="BGRAAnimatedGif.html">BGRAAnimatedGif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAAnimatedGif.html#TGifSubImageArray">TGifSubImageArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAAnimatedGif.html">BGRAAnimatedGif</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGifFormat.html#TGifSubImageArray">TGifSubImageArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGifFormat.html">BGRAGifFormat</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TGlyphBoxes">TGlyphBoxes</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRATypewriter.html#TGlyphPointCurveMode">TGlyphPointCurveMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRATypewriter.html">BGRATypewriter</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAVectorize.html#TGlyphSizes">TGlyphSizes</a></td>
+<td class="itemunit"><a class="bold" href="BGRAVectorize.html">BGRAVectorize</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TGradientDirection">TGradientDirection</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#TGradientInterpolationFunction">TGradientInterpolationFunction</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TGradientType">TGradientType</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Shape of a gradient</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TGraphic">TGraphic</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TGraphicsBevelCut">TGraphicsBevelCut</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Definition of a single line 3D bevel</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadPng.html#THandleScanLineProc">THandleScanLineProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPng.html">BGRAReadPng</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#THandleStream">THandleStream</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#THoverPointHandlers">THoverPointHandlers</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#THueGradientOption">THueGradientOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradientScanner.html#THueGradientOptions">THueGradientOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradientScanner.html">BGRAGradientScanner</a></td>
+<td class="itemdesc"><p>color interpolation</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TInsertCharEvent">TInsertCharEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRARenderer3D.html#TInt65536ShaderFunction3D">TInt65536ShaderFunction3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRARenderer3D.html">BGRARenderer3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TIntegerArray">TIntegerArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TIsChannelGreaterThanOrEqualToValueFunc">TIsChannelGreaterThanOrEqualToValueFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAColorQuantization.html#TIsChannelStrictlyGreaterFunc">TIsChannelStrictlyGreaterFunc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAColorQuantization.html">BGRAColorQuantization</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TIterateElementCallback">TIterateElementCallback</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadJpeg.html#TJPEGReadPerformance">TJPEGReadPerformance</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadJpeg.html">BGRAReadJpeg</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadJpeg.html#TJPEGScale">TJPEGScale</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadJpeg.html">BGRAReadJpeg</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TLayeredActionProgressEvent">TLayeredActionProgressEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TLightingInterpolation3D">TLightingInterpolation3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TLightingInterpolation3D">TLightingInterpolation3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TLightingNormal3D">TLightingNormal3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TLightingNormal3D">TLightingNormal3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TList">TList</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALazPaint.html#TLzpCompression">TLzpCompression</a></td>
+<td class="itemunit"><a class="bold" href="BGRALazPaint.html">BGRALazPaint</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALzpCommon.html#TLzpCompression">TLzpCompression</a></td>
+<td class="itemunit"><a class="bold" href="BGRALzpCommon.html">BGRALzpCommon</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAMatrix3D.html#TMatrix3D">TMatrix3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMatrix3D.html">BGRAMatrix3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAMatrix3D.html#TMatrix4D">TMatrix4D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMatrix3D.html">BGRAMatrix3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TMedianOption">TMedianOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Specifies how much smoothing is applied to the computation of the median</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAMemDirectory.html#TMemDirectoryPath">TMemDirectoryPath</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMemDirectory.html">BGRAMemDirectory</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TMemoryStream">TMemoryStream</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAFilters.html#TMotionBlurTask">TMotionBlurTask</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFilters.html">BGRAFilters</a></td>
+<td class="itemdesc"><p>Motion blur merge pixels in a direction.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TMultiFileContainer">TMultiFileContainer</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAMultiFileType.html#TMultiFileEntryList">TMultiFileEntryList</a></td>
+<td class="itemunit"><a class="bold" href="BGRAMultiFileType.html">BGRAMultiFileType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TNotifyEvent">TNotifyEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapLoadedProc">TOnLayeredBitmapLoadedProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapLoadProgressProc">TOnLayeredBitmapLoadProgressProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapLoadStartProc">TOnLayeredBitmapLoadStartProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapSavedProc">TOnLayeredBitmapSavedProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapSaveProgressProc">TOnLayeredBitmapSaveProgressProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOnLayeredBitmapSaveStartProc">TOnLayeredBitmapSaveStartProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TOpenGLBlendMode">TOpenGLBlendMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TOpenGLBlendMode">TOpenGLBlendMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TOpenGLPrimitive">TOpenGLPrimitive</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TOpenGLPrimitive">TOpenGLPrimitive</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TOpenGLResampleFilter">TOpenGLResampleFilter</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TOpenGLResampleFilter">TOpenGLResampleFilter</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalChangeEvent">TOriginalChangeEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalClickPointEvent">TOriginalClickPointEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalEditingChangeEvent">TOriginalEditingChangeEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalEditorCursor">TOriginalEditorCursor</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalHoverPointEvent">TOriginalHoverPointEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalMovePointEvent">TOriginalMovePointEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRALayers.html#TOriginalRenderStatus">TOriginalRenderStatus</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayers.html">BGRALayers</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TOriginalStartMovePointEvent">TOriginalStartMovePointEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRADithering.html#TOutputPixelProc">TOutputPixelProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRADithering.html">BGRADithering</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TPaletteReaderProc">TPaletteReaderProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPalette.html#TPaletteWriterProc">TPaletteWriterProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPalette.html">BGRAPalette</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TParagraphEvent">TParagraphEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRATextBidi.html#TParagraphLayoutSplitEvent">TParagraphLayoutSplitEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRATextBidi.html">BGRATextBidi</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicodeText.html#TParagraphSplitEvent">TParagraphSplitEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicodeText.html">BGRAUnicodeText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TPen">TPen</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TPenEndCap">TPenEndCap</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPen.html#TPenEndCap">TPenEndCap</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPen.html">BGRAPen</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TPenJoinStyle">TPenJoinStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPen.html#TPenJoinStyle">TPenJoinStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPen.html">BGRAPen</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TPenMode">TPenMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TPenStyle">TPenStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TPersistent">TPersistent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TPerspectiveMode3D">TPerspectiveMode3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TPerspectiveMode3D">TPerspectiveMode3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadBmpMioMap.html#TPixelArray">TPixelArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBmpMioMap.html">BGRAReadBmpMioMap</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAWritePNG.html#TPNGArrayOfFrameToWrite">TPNGArrayOfFrameToWrite</a></td>
+<td class="itemunit"><a class="bold" href="BGRAWritePNG.html">BGRAWritePNG</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadPng.html#TPNGFrameList">TPNGFrameList</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPng.html">BGRAReadPng</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TPoint">TPoint</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TPoint">TPoint</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TPointF">TPointF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Contains a <a class="normal" href="BGRAClasses.html#Point">point</a> with single-precision floating <a class="normal" href="BGRAClasses.html#Point">point</a> coordinates</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TPointF">TPointF</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TPolygonOrder">TPolygonOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Order of polygons when rendered using ''<a class="normal" href="BGRAPolygon.TBGRAMultishapeFiller.html">TBGRAMultiShapeFiller</a>'' (in unit ''<a class="normal" href="BGRAPolygon.html">BGRAPolygon</a>'')</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRADNetDeserial.html#TPrimitiveType">TPrimitiveType</a></td>
+<td class="itemunit"><a class="bold" href="BGRADNetDeserial.html">BGRADNetDeserial</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TProgressProc">TProgressProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TProjection3D">TProjection3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAFilters.html#TRadialBlurTask">TRadialBlurTask</a></td>
+<td class="itemunit"><a class="bold" href="BGRAFilters.html">BGRAFilters</a></td>
+<td class="itemdesc"><p>A radial blur applies a blur with a circular influence, i.e, each pixel is merged with pixels within the specified radius.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRadialBlurType">TRadialBlurType</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Specifies the shape of a predefined blur</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TRasterImage">TRasterImage</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TRawImage">TRawImage</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRawImageBitOrder">TRawImageBitOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Order of the bits in a byte containing pixel values</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRawImageByteOrder">TRawImageByteOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Order of the bytes in a group of byte containing pixel values</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRawImageLineOrder">TRawImageLineOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Order of the lines in an image</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TReadScanlineProc">TReadScanlineProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TRect">TRect</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGradients.html#TRectangleMapOption">TRectangleMapOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradients.html">BGRAGradients</a></td>
+<td class="itemdesc"><p>Phong shading functions.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAGradients.html#TRectangleMapOptions">TRectangleMapOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGradients.html">BGRAGradients</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRectF">TRectF</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TRectF">TRectF</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAScene3D.html#TRenderingOptions">TRenderingOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRAScene3D.html">BGRAScene3D</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TResampleFilter">TResampleFilter</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* List of resample filter to be used with ''<a class="normal" href="BGRABitmapTypes.html#rmFineResample">rmFineResample</a>''</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TResampleMode">TResampleMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* How the resample is to be computed</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TResolutionUnit">TResolutionUnit</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRABitmapTypes.TCustomUniversalBitmap.html">TCustomUniversalBitmap</a></p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TResourceStream">TResourceStream</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRoundRectangleOption">TRoundRectangleOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Possible options for a round rectangle</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TRoundRectangleOptions">TRoundRectangleOptions</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>A set of options for a round rectangle</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TScanAtFunction">TScanAtFunction</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>A type of function of a scanner that returns the content at floating <a class="normal" href="BGRAClasses.html#Point">point</a> coordinates</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TScanAtIntegerFunction">TScanAtIntegerFunction</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>A type of function of a scanner that returns the content at integer coordinates</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TScanNextPixelFunction">TScanNextPixelFunction</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>A type of function of a scanner that returns the next pixel</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TSeekOrigin">TSeekOrigin</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadPng.html#TSetPixelProc">TSetPixelProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadPng.html">BGRAReadPng</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAPolygonAliased.html#TShaderFunction3D">TShaderFunction3D</a></td>
+<td class="itemunit"><a class="bold" href="BGRAPolygonAliased.html">BGRAPolygonAliased</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TShiftState">TShiftState</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TSize">TSize</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TSize">TSize</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceBitmapArray">TSliceBitmapArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSlicePosition">TSlicePosition</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceRectArray">TSliceRectArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceRepeatArray">TSliceRepeatArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceRepeatPosition">TSliceRepeatPosition</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceScalingArray">TSliceScalingArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASliceScaling.html#TSliceScalingDirection">TSliceScalingDirection</a></td>
+<td class="itemunit"><a class="bold" href="BGRASliceScaling.html">BGRASliceScaling</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TSpecialKey">TSpecialKey</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TSplineStyle">TSplineStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Different types of spline.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRALayerOriginal.html#TStartMoveHandlers">TStartMoveHandlers</a></td>
+<td class="itemunit"><a class="bold" href="BGRALayerOriginal.html">BGRALayerOriginal</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TStream">TStream</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TStringList">TStringList</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TStringListUTF8">TStringListUTF8</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TStrings">TStrings</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#TStringStream">TStringStream</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGColorInterpolation">TSVGColorInterpolation</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGElementDictionary">TSVGElementDictionary</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGElementList">TSVGElementList</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGFactory">TSVGFactory</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGFillMode">TSVGFillMode</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGImageRendering">TSVGImageRendering</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGLengthAdjust">TSVGLengthAdjust</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGLinkEvent">TSVGLinkEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGMarkerUnits">TSVGMarkerUnits</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnits.html#TSVGNumber">TSVGNumber</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnits.html">BGRAUnits</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGObjectUnits">TSVGObjectUnits</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGOrientAuto">TSVGOrientAuto</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGPaintOrder">TSVGPaintOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGRecomputeEvent">TSVGRecomputeEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGRenderingIntent">TSVGRenderingIntent</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGSpreadMethod">TSVGSpreadMethod</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGTextAnchor">TSVGTextAnchor</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGTextDirection">TSVGTextDirection</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGTextPathMethod">TSVGTextPathMethod</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASVGType.html#TSVGTextPathSpacing">TSVGTextPathSpacing</a></td>
+<td class="itemunit"><a class="bold" href="BGRASVGType.html">BGRASVGType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TTextLayout">TTextLayout</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TTextLayout">TTextLayout</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TTextLayout">TTextLayout</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAGraphics.html#TTextStyle">TTextStyle</a></td>
+<td class="itemunit"><a class="bold" href="BGRAGraphics.html">BGRAGraphics</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAReadTiff.html#TTiffCheckIFDOrder">TTiffCheckIFDOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadTiff.html">BGRAReadTiff</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadTiff.html#TTiffCreateCompatibleImgEvent">TTiffCreateCompatibleImgEvent</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadTiff.html">BGRAReadTiff</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRADNetDeserial.html#TTypeCategory">TTypeCategory</a></td>
+<td class="itemunit"><a class="bold" href="BGRADNetDeserial.html">BGRADNetDeserial</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TUniBrushInitContextProc">TUniBrushInitContextProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Additional initialization of the brush context (optional)</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TUniBrushPutNextPixelsProc">TUniBrushPutNextPixelsProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>Outputs pixels from current position defined in context</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TUnicodeArray">TUnicodeArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#TUnicodeBidiArray">TUnicodeBidiArray</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#TUnicodeBidiClass">TUnicodeBidiClass</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TUnicodeBidiInfo">TUnicodeBidiInfo</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAUTF8.html#TUnicodeDisplayOrder">TUnicodeDisplayOrder</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUTF8.html">BGRAUTF8</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAUnicode.html#TUnicodeJoiningType">TUnicodeJoiningType</a></td>
+<td class="itemunit"><a class="bold" href="BGRAUnicode.html">BGRAUnicode</a></td>
+<td class="itemdesc"><p><a class="normal" href="BGRAUnicode.html#ubcOtherNeutrals">ubcOtherNeutrals</a> with Mirrored property</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TUniversalDrawerAny">TUniversalDrawerAny</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRASceneTypes.html#TVertex3DCallback">TVertex3DCallback</a></td>
+<td class="itemunit"><a class="bold" href="BGRASceneTypes.html">BGRASceneTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#TVP8StatusCode">TVP8StatusCode</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Enumeration of the status codes</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAOpenGL.html#TWaitForGPUOption">TWaitForGPUOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGL.html">BGRAOpenGL</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAOpenGLType.html#TWaitForGPUOption">TWaitForGPUOption</a></td>
+<td class="itemunit"><a class="bold" href="BGRAOpenGLType.html">BGRAOpenGLType</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libwebp.html#TWebPPreset">TWebPPreset</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Enumerate some predefined settings for WebPConfig, depending on the type of source picture.</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="libwebp.html#TWebPWriterFunction">TWebPWriterFunction</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>Signature for output function.</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TWordBreakHandler">TWordBreakHandler</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>* Definition of a function that handles work-break</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAText.html#TWordBreakHandler">TWordBreakHandler</a></td>
+<td class="itemunit"><a class="bold" href="BGRAText.html">BGRAText</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRAReadBMP.html#TWriteScanlineProc">TWriteScanlineProc</a></td>
+<td class="itemunit"><a class="bold" href="BGRAReadBMP.html">BGRAReadBMP</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#TYCbCrStdColorspace">TYCbCrStdColorspace</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>YCbCr colorspaces based on sRGB colorspace (with some minor variations in the definition of the primary colors)</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="BGRABitmapTypes.html#UInt32or64">UInt32or64</a></td>
+<td class="itemunit"><a class="bold" href="BGRABitmapTypes.html">BGRABitmapTypes</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold" href="BGRAClasses.html#UInt32or64">UInt32or64</a></td>
+<td class="itemunit"><a class="bold" href="BGRAClasses.html">BGRAClasses</a></td>
+<td class="itemdesc"><p>&nbsp;</p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold" href="libwebp.html#WEBP_CSP_MODE">WEBP_CSP_MODE</a></td>
+<td class="itemunit"><a class="bold" href="libwebp.html">libwebp</a></td>
+<td class="itemdesc"><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; Output colorspaces</p></td>
+</tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

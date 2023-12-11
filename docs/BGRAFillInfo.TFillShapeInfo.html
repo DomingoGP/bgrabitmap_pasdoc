@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bgrabitmap: BGRAFillInfo: Class TFillShapeInfo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">bgrabitmap</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li><li><a href="GVUses.svg">Unit dependency graph</a></li><li><a href="GVClasses.svg">Classes hierarchy graph</a></li><li><form class="search-form" action="tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></div></form>
+<div style="clear: both"></div>
+</li></ul></div><div class="content">
+<span id="TFillShapeInfo"></span><h1 class="cio">Class TFillShapeInfo</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a href="BGRAFillInfo.html">BGRAFillInfo</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TFillShapeInfo = class(<a class="normal" href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+<code>TFillShapeInfo</code></p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BGRABitmapTypes.TBGRACustomFillInfo.html">TBGRACustomFillInfo</a></li>
+<li class="thisitem">TFillShapeInfo</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code><strong><a href="BGRAFillInfo.TFillShapeInfo.html#FPointInsideInter">FPointInsideInter</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <strong><a href="BGRAFillInfo.TFillShapeInfo.html#Destroy">Destroy</a></strong>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#CreateIntersectionArray">CreateIntersectionArray</a></strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#CreateIntersectionInfo">CreateIntersectionInfo</a></strong>: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#GetBounds">GetBounds</a></strong>: <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#GetSliceIndex">GetSliceIndex</a></strong>: integer; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#IsPointInside">IsPointInside</a></strong>(x,y: single; windingMode: boolean): boolean; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#SegmentsCurved">SegmentsCurved</a></strong>: boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <strong><a href="BGRAFillInfo.TFillShapeInfo.html#NbMaxIntersection">NbMaxIntersection</a></strong>: integer; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#ComputeAndSort">ComputeAndSort</a></strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; out nbInter: integer; windingMode: boolean); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#FreeIntersectionArray">FreeIntersectionArray</a></strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#ComputeIntersection">ComputeIntersection</a></strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; var nbInter: integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#ConvertFromNonZeroWinding">ConvertFromNonZeroWinding</a></strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; var nbInter: integer); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#InternalQuickSortIntersection">InternalQuickSortIntersection</a></strong>(inter0: pointer; idxL, idxH: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="BGRAFillInfo.TFillShapeInfo.html#SortIntersection">SortIntersection</a></strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; nbInter: integer); virtual;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Fields</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="FPointInsideInter"></span><code><strong>FPointInsideInter</strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateIntersectionArray"></span><code>function <strong>CreateIntersectionArray</strong>: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+create an array that will contain computed intersections. you may augment, in this case, use <a class="normal" href="BGRAFillInfo.TFillShapeInfo.html#CreateIntersectionInfo">CreateIntersectionInfo</a> for new items</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="CreateIntersectionInfo"></span><code>function <strong>CreateIntersectionInfo</strong>: <a href="BGRABitmapTypes.TIntersectionInfo.html">TIntersectionInfo</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetBounds"></span><code>function <strong>GetBounds</strong>: <a href="BGRAClasses.html#TRect">TRect</a>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns integer bounds</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetSliceIndex"></span><code>function <strong>GetSliceIndex</strong>: integer; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+can be called after <a class="normal" href="BGRAFillInfo.TFillShapeInfo.html#ComputeAndSort">ComputeAndSort</a> or <a class="normal" href="BGRAFillInfo.TFillShapeInfo.html#ComputeIntersection">ComputeIntersection</a> to determine the current horizontal slice so that it can be checked if the intermediates scanlines can be skipped</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="IsPointInside"></span><code>function <strong>IsPointInside</strong>(x,y: single; windingMode: boolean): boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+check if the <a class="normal" href="BGRAClasses.html#Point">point</a> is inside the filling zone</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SegmentsCurved"></span><code>function <strong>SegmentsCurved</strong>: boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns true if the same segment number can be curved</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="NbMaxIntersection"></span><code>function <strong>NbMaxIntersection</strong>: integer; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+returns maximum of intersection per line</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ComputeAndSort"></span><code>procedure <strong>ComputeAndSort</strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; out nbInter: integer; windingMode: boolean); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+fill a previously created array of intersections with actual intersections at the current y coordinate. nbInter gets the number of computed intersections</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FreeIntersectionArray"></span><code>procedure <strong>FreeIntersectionArray</strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+creates a single info</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ComputeIntersection"></span><code>procedure <strong>ComputeIntersection</strong>(cury: single; var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; var nbInter: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+compute intersections. the array must be big enough</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="ConvertFromNonZeroWinding"></span><code>procedure <strong>ConvertFromNonZeroWinding</strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; var nbInter: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+apply non-zero winding rule. it can change the number of intersections</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="InternalQuickSortIntersection"></span><code>procedure <strong>InternalQuickSortIntersection</strong>(inter0: pointer; idxL, idxH: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SortIntersection"></span><code>procedure <strong>SortIntersection</strong>(var inter: <a href="BGRABitmapTypes.html#ArrayOfTIntersectionInfo">ArrayOfTIntersectionInfo</a>; nbInter: integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+sort from left to right</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>
