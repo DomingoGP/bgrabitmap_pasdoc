@@ -1,4 +1,4 @@
-#Generated documentation for [bgrabitmap](www.github.com/bgrabitmap) using pasdoc.
+## Generated documentation for www.github.com/bgrabitmap using pasdoc.
 
 https://domingogp.github.io/bgrabitmap_pasdoc/
 
